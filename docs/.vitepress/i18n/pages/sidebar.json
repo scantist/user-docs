@@ -1,8 +1,15 @@
 {
-  "text": "User Docs",
-  "items": [
-    { "text": "Getting Started", "link": "/getting-started" },
-    { "text": "Markdown Examples", "link": "/markdown-examples" },
-    { "text": "Markdown Examples", "link": "/markdown-examples" }
-  ]
+  "en-US": [
+    {
+      "text": "Guide",
+      "link": "/guide/design",
+      "activeMatch": "/guide/"
+    },
+    {
+      "text": "Component",
+      "link": "/component/button",
+      "activeMatch": "/component/"
+    }
+  ],
+  "zh-CN": []
 }
