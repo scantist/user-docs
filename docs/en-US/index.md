@@ -5,6 +5,6 @@ lang: en-US
 ---
 
 <ClientOnly>
-home
+English home
   <!-- <ParallaxHome /> -->
 </ClientOnly>

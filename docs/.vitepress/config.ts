@@ -18,11 +18,11 @@ export default defineConfig({
   description: "An useful docs for users",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    // nav: [
-    //   { text: 'Home', link: '/' },
-    //   { text: 'Examples', link: '/markdown-examples' }
-    // ],
-    nav,
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Examples', link: '/markdown-examples' }
+    ],
+    // nav,
 
     sidebar: [
       {

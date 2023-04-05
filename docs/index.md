@@ -2,8 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 
 ---
-<ClientOnly>
-<home/>
-</ClientOnly>
-# layout: home
+<script setup>
+  window.location.replace('/en-US/')
+</script>
 
