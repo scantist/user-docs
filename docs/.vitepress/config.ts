@@ -1,54 +1,87 @@
 import { defineConfig } from 'vitepress'
 import { languages } from './utils/lang'
-import { nav } from './config'
+import { getSidebar } from './others/sidebar'
+
+// console.log('get sidebar', getSidebar())
 
 const locales = {}
-console.log('language is', languages)
 languages.forEach((lang) => {
-  console.log('got lang', lang);
   locales[`/${lang}`] = {
     label: lang,
     lang,
   }
 })
 
-// https://vitepress.dev/reference/site-config
+// // https://vitepress.dev/reference/site-config
+console.log('what is getsidebar', getSidebar())
+
 export default defineConfig({
   title: "Scantist User Docs",
-  description: "An useful docs for users",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
     ],
     // nav,
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: getSidebar() as any,
+    // sidebar: [
+    //   {
+    //     text: 'Getting started',
+    //     collapsible: true,
+    //     collapsed: true,
+    //     items: [
+    //       { text: 'Introduction', link: '/getting-started/introduction' },
+    //     ]
+    //   },
+    // ],
+    // sidebar: [
+    //   {
+    //     text: 'Examples',
+    //     collapsed: true, 
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' },
+    //       { 
+    //         text: 'childern',  
+    //         collapsed: true,            
+    //         items: [
+    //           { text: 'son', link: '/childern' },
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
   },
   locales,
-  // markdown: {
-  //   config: (md) => mdPlugin(md),
-  // },
+});
+//   description: "An useful docs for users",
+//   themeConfig: {
+//     // https://vitepress.dev/reference/default-theme-config
+//     nav: nav as any,
+//     // nav,
 
-  // vue: {
-  //   template: {
-  //     ssr: true,
-  //     compilerOptions: {
-  //       directiveTransforms: buildTransformers(),
-  //     },
-  //   },
-  // },  
-})
+//     sidebar: getSidebar() as any,
+
+//     socialLinks: [
+//       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+//     ],
+//   },
+//   locales,
+//   // markdown: {
+//   //   config: (md) => mdPlugin(md),
+//   // },
+
+//   // vue: {
+//   //   template: {
+//   //     ssr: true,
+//   //     compilerOptions: {
+//   //       directiveTransforms: buildTransformers(),
+//   //     },
+//   //   },
+//   // },  
+// })

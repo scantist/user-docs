@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/scantist/user-docs#readme",
   "dependencies": {
-    "element-plus": "file:element-plus-v0.1.0-sct.tgz"
+    "element-plus": "file:element-plus-v0.1.0-sct.tgz",
+    "vue": "^3.2.37",
+    "vue-router": "4"
   },
   "devDependencies": {
+    "@algolia/client-search": "^4.10.2",
     "vitepress": "1.0.0-alpha.64"
   }
 }
