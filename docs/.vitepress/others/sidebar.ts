@@ -16,7 +16,7 @@ function getSidebarItems(dir: string[], currentRoot: string | undefined, root: s
     } else if (e.endsWith('.md')) {
       return {
         text: ((e.charAt(0).toUpperCase() + e.slice(1)).slice(0, -3)).replaceAll('-', ' '),
-        link: '/en-US/'.concat(childDir.replace(root ?? '', ''))
+        link: `/en-US/`.concat(childDir.replace(root ?? '', ''))
       };
     }
     return {};

@@ -1,6 +1,6 @@
 # Create an account with Scantist
 
-To get started with Scantist, navigate to [https://scantist.io](https://scantist.io/) and sign up for an account using your preferred method. Scantist offers two login options:
+创建账号, navigate to [https://scantist.io](https://scantist.io/) and sign up for an account using your preferred method. Scantist offers two login options:
 
 ### Option 1: SCM (Source Code Management) Account Login <a href="#option-1-scm-source-code-management-account-login" id="option-1-scm-source-code-management-account-login"></a>
 

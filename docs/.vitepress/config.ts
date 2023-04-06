@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import { defineConfig } from 'vitepress'
 import { languages } from './utils/lang'
 import { getSidebar } from './others/sidebar'
@@ -17,7 +19,19 @@ console.log('what is my locale', locales);
 
 // // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Scantist User Docs",  
+  title: "Scantist",  
+  head: [
+    [
+      'script',
+      {},
+      `;(() => {
+        window.supportedLangs = ${JSON.stringify(languages)}
+      })()`,
+    ],
+  
+    ['script', {}, fs.readFileSync(path.resolve(__dirname, 'lang.js'), 'utf-8')],
+      // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [],
@@ -25,7 +39,7 @@ export default defineConfig({
     sidebar: getSidebar() as any,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
+    ],    
   },
   locales: {
     'en-US': {
@@ -35,37 +49,4 @@ export default defineConfig({
       label: '简体中文',
     }
   }  
-  // locales:{
-  //   '/': {
-  //     lang:'en-US',
-  //     title: 'Scantist User Docs',
-  //     description: 'An useful docs for users',
-  //   }
-  // },
-});
-//   description: "An useful docs for users",
-//   themeConfig: {
-//     // https://vitepress.dev/reference/default-theme-config
-//     nav: nav as any,
-//     // nav,
-
-//     sidebar: getSidebar() as any,
-
-//     socialLinks: [
-//       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-//     ],
-//   },
-//   locales,
-//   // markdown: {
-//   //   config: (md) => mdPlugin(md),
-//   // },
-
-//   // vue: {
-//   //   template: {
-//   //     ssr: true,
-//   //     compilerOptions: {
-//   //       directiveTransforms: buildTransformers(),
-//   //     },
-//   //   },
-//   // },  
-// })
+}); 
