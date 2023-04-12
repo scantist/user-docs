@@ -3,6 +3,7 @@ title: Language and File Support
 page: true
 lang: en-US
 ---
+<ClientOnly>
 # Language and File Support
 >You can work with a wide range of programming languages, along with their corresponding package managers and binary file formats. Each language may have unique file extensions associated with their specific package manager of the manifest files. 
 
@@ -58,16 +59,5 @@ Scantist supports various file extensions for each binary file format. To learn 
 |Mobile|.apk, .xapk, .aab|
 |Image|.tar (docker image)|
 
-## What's next?
-
-<hr style="border:2px solid gray" />
-
-You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools.
-
-- [Trigger a scan]()
-
-- [Access scan results]()
-
-- [Fix vulnerabilities]()
-
-- [Create compliance policies]()
+<!--@include: ../../parts/whats-next.md-->
+</ClientOnly>
