@@ -1,23 +1,70 @@
 ---
-title: Create an account with Scantist
+title: Sign up with Scantist
 page: true
 lang: en-US
 ---
 
 <ClientOnly>
 
-# Create an account with Scantist
+# Sign up with Scantist
 
-To get started with Scantist, navigate to [https://scantist.io](https://scantist.io/) and sign up for an account using your preferred method. Scantist offers two login options:
+>To start using Scantist, you will need to have an account. 
 
-### Option 1: SCM (Source Code Management) Account Login <a href="#option-1-scm-source-code-management-account-login" id="option-1-scm-source-code-management-account-login"></a>
+## Sign in with your SCM account 
 
-You can use your existing account in Github, Gitlab, or Bitbucket to log in to Scantist. This is a recommended option as it provides access to more features when you link your SCM account with Scantist.
+<hr style="border:2px solid gray" />
 
-### Option 2: Email Login  <a href="#option-2-email-login" id="option-2-email-login"></a>
+Linking your Scantist account with your SCM accounts, such as GitHub, GitLab or Bitbucket, provides access to more features. 
 
-If you don’t have an SCM account or prefer to use your email address, you can create a new account by clicking on “Create Account” and following the prompts.
+<div style="display: flex;">
+<div style="flex: 3;">
 
-Once you have signed up and logged in, you can start scanning your projects for vulnerabilities and taking steps to remediate them. If you have any questions or need assistance, don’t hesitate to reach out to Scantist’s support team at [support@scantist.com](mailto:support@scantist.com).
+**1.&nbsp;&nbsp;&nbsp;Go to [scantist.io](https://scantist.io) login page**
+
+**2.&nbsp;&nbsp;&nbsp;Click on your preferred SCM icon**
+
+**3.&nbsp;&nbsp;&nbsp;Enter your SCM credentials to authorize Scantist**
+
+**4.&nbsp;&nbsp;&nbsp;You will be redirected to Scantist and logged in automatically**
+</div><div style="flex: 1;">
+
+![GitHub, GitLab, and Bitbucket Logo](/images/SCM_logo.png)
+</div></div>
+
+<br />
+
+Once you have linked your SCM account with Scantist, you will be able to scan your open source projects directly from your SCM repositories and pipelines. This provides a more streamlined process for managing and securing your open source software. 
+
+## Create an account with an email login 
+
+<hr style="border:2px solid gray" />
+
+If you do not have an SCM account, you can create a new account with Scantist. 
+
+**1.&nbsp;&nbsp;&nbsp;Go to scantist.io login page**
+
+**2.&nbsp;&nbsp;&nbsp;Click on "Create Account"**
+
+**3.&nbsp;&nbsp;&nbsp;Enter your valid email address and a secure password**
+
+**4.&nbsp;&nbsp;&nbsp;You will receive an email to confirm your account. Click on the link provided in the email to activate your account**
+
+<br />
+
+Congratulations! You have successfully created your Scantist account using your email login. You can now sign in to your account and start scanning your open source projects for vulnerabilities and licensing risks.
+
+## What's next?
+
+<hr style="border:2px solid gray" />
+
+You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools.
+
+- [Trigger a scan]()
+
+- [Access scan results]()
+
+- [Fix vulnerabilities]()
+
+- [Create compliance policies]()
 
 </ClientOnly>
