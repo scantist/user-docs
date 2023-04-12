@@ -44,7 +44,7 @@ export default defineConfig({
   locales: {
     root: {
       label: 'English',
-      lang: 'en',
+      lang: 'en-SG',
       link: '/en-US/'
     },
     //'en-US': {
