@@ -14,6 +14,7 @@ lang: en-US
 
 <hr style="border:2px solid gray">
 
+
 ### 1.&nbsp;&nbsp;&nbsp;Sign up for Scantist
 To start using Scantist, sign up for an account by following the instructions in our documentation. 
 

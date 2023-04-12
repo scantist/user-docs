@@ -19,7 +19,7 @@ console.log('what is my locale', locales);
 
 // // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Scantist",  
+  title: "Scantist",
   head: [
     [
       'script',

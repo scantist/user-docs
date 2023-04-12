@@ -24,11 +24,12 @@
     "element-plus": "file:element-plus-v0.1.0-sct.tgz",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
-    "vue": "^3.2.37",
     "vue-router": "4"
   },
   "devDependencies": {
     "@algolia/client-search": "^4.10.2",
-    "vitepress": "1.0.0-alpha.64"
+    "@types/node": "^18.15.11",
+    "vitepress": "1.0.0-alpha.64",
+    "vue": "^3.2.47"
   }
 }
