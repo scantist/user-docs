@@ -6,9 +6,10 @@ lang: en-US
 tags: java, maven, gradle, ant, kotlin
 ---
 <ClientOnly>
+
 # {{ $frontmatter.title }}
 
->![Java logo]() Discover Scantist’s capabilities with Java programming language 
+>![Java logo]() Discover Scantist's capabilities with Java programming language 
 
 ## Here's what we support 
 
@@ -27,9 +28,7 @@ tags: java, maven, gradle, ant, kotlin
 
 Scantist scans the third-party components by examining `pom.xml`, `build.gradle`, `ivy.xml`, `build.xml` or `build.gradle.kts` files in the source code. 
 
-Maximize your results by building your project with a CI tool before scanning with Scantist. This allows Scantist to obtain both direct and transitive dependencies from the build result. 
-
-- [Integrate Scantist with your preferred CI/CD pipeline tools]()
+<!--@include: ../../parts/maximize-results.md-->
 
 ## Handling no components found in Gradle or Kotlin project 
 
