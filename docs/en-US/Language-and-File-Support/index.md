@@ -4,6 +4,7 @@ page: true
 lang: en-US
 ---
 <ClientOnly>
+
 # Language and File Support
 >You can work with a wide range of programming languages, along with their corresponding package managers and binary file formats. Each language may have unique file extensions associated with their specific package manager of the manifest files. 
 
