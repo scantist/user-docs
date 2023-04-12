@@ -19,7 +19,7 @@ tags: perl, cpan, makefile.pl
 |----------|---------------|-----------------------|
 |Perl      |CPAN           |Makefile.PL            |
 
-## Scan your JavaScript project with Scantist 
+## Scan your Perl project with Scantist 
 
 <hr style="border:2px solid gray" />
 
