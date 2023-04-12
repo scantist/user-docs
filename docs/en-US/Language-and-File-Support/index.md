@@ -31,7 +31,7 @@ Scantist supports various package managers and manifests files for each programm
 |          |Kotlin         |build.gradle.kts       |
 |Javascript|NPM / PNPM     |package.json, package-lock.json, npm-shrinkwrap.json|
 |          |Yarn           |yarn.lock, package.json|
-|Perl|CPAN|Makefile.PL.|
+|Perl|CPAN|Makefile.PL|
 |Go|Go Modules|go.mod|
 |Python|pip|setup.py|
 |||requirements.txt|
