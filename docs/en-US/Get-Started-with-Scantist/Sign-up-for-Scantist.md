@@ -1,12 +1,12 @@
 ---
-title: Sign up with Scantist
+title: Sign up for Scantist
 page: true
 lang: en-US
 ---
 
 <ClientOnly>
 
-# Sign up with Scantist
+# Sign up for Scantist
 
 >To start using Scantist, you will need to have an account. 
 

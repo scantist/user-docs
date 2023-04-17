@@ -5,6 +5,7 @@ page: true
 lang: en-US
 tags: create project, manage project, connect scm, add scm, upload file directly
 ---
+<ClientOnly>
 
 # {{ $frontmatter.title }}
 
@@ -69,3 +70,5 @@ Scan settings for both upload and SCM scans help you tailor the scanning process
 - [Upload Scan Settings](../Trigger-Scan/Upload-Scan-Settings)
 
 - [SCM Scan Settings](../Trigger-Scan/SCM-Scan-Settings)
+
+</ClientOnly>
