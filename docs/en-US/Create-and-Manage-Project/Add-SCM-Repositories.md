@@ -39,9 +39,9 @@ tags: repository, repositories, scm, add repo, github, gitlab, bitbucket
 
 When creating a new project with your SCM in Scantist, it is important to provide the necessary information. Here's what you need to do: 
 
-1. Select the team that you want to assign the project to
+1.&nbsp;&nbsp;&nbsp;Select the team that you want to assign the project to
 
-2. Choose the compliance policy you want to apply. If you have not created a compliance policy for the project, you can choose the default compliance. 
+2.&nbsp;&nbsp;&nbsp;Choose the compliance policy you want to apply. If you have not created a compliance policy for the project, you can choose the default compliance. 
 
 ## What's next?
 
