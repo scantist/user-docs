@@ -1,0 +1,35 @@
+{
+  "name": "user-docs",
+  "version": "1.0.0",
+  "description": "### **Get started with Scantist’s SCA platform** <a href=\"#get-started-with-scantists-sca-platform\" id=\"get-started-with-scantists-sca-platform\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scantist/user-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scantist/user-docs/issues"
+  },
+  "homepage": "https://github.com/scantist/user-docs#readme",
+  "dependencies": {
+    "@vueuse/core": "^9.13.0",
+    "element-plus": "file:element-plus-v0.1.0-sct.tgz",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@algolia/client-search": "^4.10.2",
+    "@types/node": "^18.15.11",
+    "vitepress": "1.0.0-alpha.64",
+    "vue": "^3.2.47"
+  }
+}

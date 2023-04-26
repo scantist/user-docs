@@ -1,0 +1,15 @@
+{
+  "en-US": [
+    {
+      "text": "Guide",
+      "link": "/guide/design",
+      "activeMatch": "/guide/"
+    },
+    {
+      "text": "Component",
+      "link": "/component/button",
+      "activeMatch": "/component/"
+    }
+  ],
+  "zh-CN": []
+}

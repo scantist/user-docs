@@ -1,0 +1,8 @@
+.vitepress/cache
+.vitepress/dist
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+node_modules
+element-plus*.tgz
+temp
