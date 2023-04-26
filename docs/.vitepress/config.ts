@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { defineConfig } from 'vitepress'
 import { languages } from './utils/lang'
-import { getSidebar } from './others/sidebar'
+import { enUSSidebar, zhCNSidebar, getSidebar } from './others/sidebar'
 import { nav } from './others/nav'
 
 console.log('get nav', nav)
@@ -36,7 +36,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [],
     i18nRouting: true,
-    sidebar: getSidebar() as any,
+    // sidebar: getSidebar() as any,
+    sidebar: {
+      '/en-US/': enUSSidebar() as any,
+      '/zh-CN/': zhCNSidebar() as any,
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ], 
@@ -45,13 +49,11 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en-SG',
-      link: '/en-US/'
+      link: '/en-US/',
     },
-    //'en-US': {
-    //  label: 'English',
-    //},
     'zh-CN': {
       label: '简体中文',
+      link: '/zh-CN/'
     }
   },
   lastUpdated: true

@@ -6,7 +6,7 @@ lang: zh-CN
 
 <ClientOnly>
 
-# 开始使用Scantist
+# 开始使用思探明
 
 > Discover the ultimate tool for managing and securing the use of your open source software. With Scantist, you can easily identify vulnerabilities and licensing risks in your open source projects and remediate them efficiently. 
 
