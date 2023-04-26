@@ -7,29 +7,29 @@ import { nav } from './others/nav'
 
 console.log('get nav', nav)
 
-const locales = {}
-languages.forEach((lang) => {
-  locales[`/${lang}`] = {
-    label: lang,
-    lang,
-  }
-})
+// const locales = {}
+// languages.forEach((lang) => {
+//   locales[`/${lang}`] = {
+//     label: lang,
+//     lang,
+//   }
+// })
 
-console.log('what is my locale', locales);
+// console.log('what is my locale', locales);
 
 // // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Scantist",  
+  title: "Scantist",
   head: [
-    [
-      'script',
-      {},
-      `;(() => {
-        window.supportedLangs = ${JSON.stringify(languages)}
-      })()`,
-    ],
+    // [
+    //   'script',
+    //   {},
+    //   `;(() => {
+    //     window.supportedLangs = ${JSON.stringify(languages)}
+    //   })()`,
+    // ],
   
-    ['script', {}, fs.readFileSync(path.resolve(__dirname, 'lang.js'), 'utf-8')],
+    // ['script', {}, fs.readFileSync(path.resolve(__dirname, 'lang.js'), 'utf-8')],
       // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   ],
   themeConfig: {
@@ -39,14 +39,20 @@ export default defineConfig({
     sidebar: getSidebar() as any,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],    
+    ], 
   },
   locales: {
-    'en-US': {
+    root: {
       label: 'English',
+      lang: 'en-SG',
+      link: '/en-US/'
     },
+    //'en-US': {
+    //  label: 'English',
+    //},
     'zh-CN': {
       label: '简体中文',
     }
-  }  
+  },
+  lastUpdated: true
 }); 

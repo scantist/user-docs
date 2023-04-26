@@ -5,22 +5,24 @@ import path from "path";
 
 function getSidebarItems(dir: string[], currentRoot: string | undefined, root: string | undefined, options: Options): object {
 	return dir.filter(e => e.endsWith('.md') || fs.statSync(path.resolve(currentRoot ?? '/', e)).isDirectory()).map((e: string) => {
-    const childDir = path.resolve(currentRoot ?? '/', e);
+    const childDir: string = path.resolve(currentRoot ?? '/', e);
     if (fs.statSync(childDir).isDirectory()) {
+      const sectionLink = `/en-US/`.concat(childDir.replace(root ?? '', '')).concat(`/index.md`);
       return {
         text: (e.charAt(0).toUpperCase() + e.slice(1)).replaceAll('-', ' '),
+        link: sectionLink,
         collapsible: options.collapsible,
         collapsed: options.collapsed,
         items: getSidebarItems(fs.readdirSync(childDir), childDir, root, options)
       };
-    } else if (e.endsWith('.md')) {
+    } else if (e.endsWith('.md') && e !== 'index.md') {
       return {
         text: ((e.charAt(0).toUpperCase() + e.slice(1)).slice(0, -3)).replaceAll('-', ' '),
         link: `/en-US/`.concat(childDir.replace(root ?? '', ''))
       };
     }
     return {};
-  })
+  });
 };
 
 export function getSidebar(options: Options = {}) {

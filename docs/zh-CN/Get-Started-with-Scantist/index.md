@@ -1,18 +1,19 @@
 ---
 title: Welcome to Scantist Thompson SCA Tool!
 page: true
-lang: en-US
+lang: zh-CN
 ---
 
 <ClientOnly>
 
-# Get Started with Scantist
+# 开始使用Scantist
 
 > Discover the ultimate tool for managing and securing the use of your open source software. With Scantist, you can easily identify vulnerabilities and licensing risks in your open source projects and remediate them efficiently. 
 
 ## Follow these five simple steps to get started
 
 <hr style="border:2px solid gray">
+
 
 ### 1.&nbsp;&nbsp;&nbsp;Sign up for Scantist
 To start using Scantist, sign up for an account by following the instructions in our documentation. 

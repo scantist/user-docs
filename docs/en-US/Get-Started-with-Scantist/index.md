@@ -14,6 +14,7 @@ lang: en-US
 
 <hr style="border:2px solid gray">
 
+
 ### 1.&nbsp;&nbsp;&nbsp;Sign up for Scantist
 To start using Scantist, sign up for an account by following the instructions in our documentation. 
 
@@ -25,8 +26,8 @@ Once you have signed up, you will have access to our powerful open source manage
 ### 2.&nbsp;&nbsp;&nbsp;Create a project
 To begin scanning your project for vulnerabilities, you'll need to create a project on Scantist. Follow our documentation to learn how to upload your source code projects.
 
-- Upload source code or binary file <a>[insert link]</a>
-- Upload SCM repositories <a>[insert link]</a>
+- [Upload source code or binary file]()
+- [Upload SCM repositories]()
 
 
 ### 3.&nbsp;&nbsp;&nbsp;Initiate a scan on your project
@@ -51,12 +52,12 @@ It's time to fix the vulnerabilities detected in your Scan. Use our remediation 
 <hr style="border:2px solid gray">
 
 You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools. 
-- Integrate Scantist with your preferred CI/CD pipeline tools <a>[insert link]</a>
-- Create compliance policies <a>[insert link]</a>
+- [Integrate Scantist with your preferred CI/CD pipeline tools]()
+- [Create compliance policies]()
 <br /><br />
 
 
 With Scantist, managing and securing your open source software has never been easier. Sign up today and start using our powerful tool to improve the security of your software. 
 
-If you have any questions or need assistance, please don't hesitate to contact Scantist support at <a href="mailto:support@scantist.com">support@scantist.com</a>.
+If you have any questions or need assistance, please don't hesitate to contact Scantist support at [support@scantist.com](mailto:support@scantist.com).
 </ClientOnly>
