@@ -6,6 +6,8 @@ lang: en-US
 tags: scan type, static, binary, build-based, docker, cli
 ---
 
+<ClientOnly>
+
 # {{ $frontmatter.title }}
 
 >You can initiate scans for your projects under different environments
@@ -68,3 +70,5 @@ Scantist supports various types of scanning under different environments or scen
         </tr>
     </tbody>
 </table>
+
+</ClientOnly>
