@@ -49,11 +49,11 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en-SG',
-      link: '/en-US/',
+      link: '/en-US/Get-Started-with-Scantist/',
     },
     'zh-CN': {
       label: '简体中文',
-      link: '/zh-CN/'
+      link: '/zh-CN/Get-Started-with-Scantist/'
     }
   },
   lastUpdated: true

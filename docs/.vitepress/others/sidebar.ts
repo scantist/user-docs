@@ -41,7 +41,6 @@ export function getSidebar() {
   return [{
     text: 'Get Started with Scantist',
     collapsed: true,
-    collapsible: true,
     link: '/Get-Started-with-Scantist'
   }];
 }
@@ -52,7 +51,6 @@ export function enUSSidebar() {
       text: 'Get Started with Scantist',
       link: '/en-US/Get-Started-with-Scantist/',
       collapsed: true,
-      collapsible: true,
       items: [
         {
           text: 'Sign up for Scantist',
@@ -72,7 +70,6 @@ export function enUSSidebar() {
       text: 'Language and File Support',
       link: '/en-US/Language-and-File-Support/',
       collapsed: true,
-      collapsible: true,
       items: [
         {
           text: 'Java Language Support',
@@ -120,7 +117,6 @@ export function enUSSidebar() {
       text: 'Create and Manage Project',
       link: '/en-US/Create-and-Manage-Project/',
       collapsed: true,
-      collapsible: true,
       items: [
         {
           text: 'Upload Files Directly',
@@ -136,7 +132,6 @@ export function enUSSidebar() {
       text: 'Trigger Scan',
       link: '/en-US/Trigger-Scan/',
       collapsed: true,
-      collapsible: true,
       items: [
         {
           text: 'Scan Type',
@@ -156,11 +151,14 @@ export function enUSSidebar() {
       text: 'Build-based Scan - CI/CD Pipeline',
       link: '/en-US/build-based-scan-ci-cd/',
       collapsed: true,
-      collapsible: true,
       items: [
         {
           text: 'Jenkins CI Integration',
           link: '/en-US/build-based-scan-ci-cd/Jenkins-CI-Integration'
+        },
+        {
+          text: 'Gitlab CI Integration',
+          link: '/en-US/build-based-scan-ci-cd/Gitlab-CI-Integration'
         },
       ]
     },
@@ -173,7 +171,6 @@ export function zhCNSidebar() {
       text: '开始使用思探明',
       link: '/zh-CN/Get-Started-with-Scantist/',
       collapsed: true,
-      collapsible: true,
       items: [
       ]
     }
