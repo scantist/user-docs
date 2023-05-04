@@ -41,7 +41,7 @@ Once you have linked your SCM account with Scantist, you will be able to scan yo
 
 If you do not have an SCM account, you can create a new account with Scantist. 
 
-**1.&nbsp;&nbsp;&nbsp;Go to scantist.io login page**
+**1.&nbsp;&nbsp;&nbsp;Go to [scantist.io](https://scantist.io) login page**
 
 **2.&nbsp;&nbsp;&nbsp;Click on "Create Account"**
 
