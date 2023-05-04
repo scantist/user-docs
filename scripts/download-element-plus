@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+download_element_plus() {
+    version=$(jq -r '."dependencies"."element-plus"' package.json)
+    echo "Downloading $version"
+    tag=${version:18:10}
+    fetch --repo="https://github.com/scantist/element-plus" --tag="$tag" --release-asset="element-plus-$tag.tgz" .
+}
+
+main() {
+    download_element_plus
+}
+
+main

@@ -17,7 +17,10 @@ pipeline {
     stages {
         stage('Download element-plus') {
             steps {
-                downloadElementPlus()
+                sh'''
+                    export GITHUB_OAUTH_TOKEN=$GITHUB_CREDS_PSW
+                    bash scripts/download-element-plus
+                '''
             }
         }
     }
