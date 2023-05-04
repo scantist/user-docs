@@ -19,13 +19,14 @@ When you create a Scantist account, you will have your own default organization 
 
 To create an organization group on Scantist, follow these steps: 
 
-1.&nbsp;&nbsp;&nbsp;Navigate to the organization group tab on the top right corner and select “Create Organization” from the drop-down list
+1.&nbsp;&nbsp;&nbsp;Navigate to the organization group tab on the top right corner and \
+select `Create Organization` from the drop-down list
 
-![insert image]()
+![select Create Organization](/images/Get-Started-with-Scantist/Organization-Group-1.png)
 
 2.&nbsp;&nbsp;&nbsp;Fill in the required information, including the name of the organization and description 
 
-![insert image]()
+![Fill in the information](/images/Get-Started-with-Scantist/Organization-Group-2.png)
 
 3.&nbsp;&nbsp;&nbsp;Once you have created an organization group, you can add team members and repositories from your SCM accounts to the organization group
 
@@ -49,10 +50,10 @@ If you are a developer assigned to an organization group on Scantist, you can sw
 
 It is important to make sure that you are scanning the correct organization group to avoid any confusion. You can view which organization group your repositories are being scanned. 
 
-![insert image]()
+![scanning the correct organization group](/images/Get-Started-with-Scantist/Organization-Group-3.png)
 
-::: info
-When you have multiple organization groups on Scantist, it can be helpful to set a default organization. Learn more of organization settings
+::: tip
+When you have multiple organization groups on Scantist, it can be helpful to set a default organization. Learn more of [organization settings]()
 :::
 
 
