@@ -1,12 +1,14 @@
 ---
 title: Sign up for Scantist
+author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
+tags: sign up, new account, get started
 ---
 
 <ClientOnly>
 
-# Sign up for Scantist
+# {{ $frontmatter.title }}
 
 >To start using Scantist, you will need to have an account. 
 
