@@ -26,8 +26,8 @@ Once you have signed up, you will have access to our powerful open source manage
 ### 2.&nbsp;&nbsp;&nbsp;Create a project
 To begin scanning your project for vulnerabilities, you'll need to create a project on Scantist. Follow our documentation to learn how to upload your source code projects.
 
-- [Upload source code or binary file]()
-- [Upload SCM repositories]()
+- [Upload source code or binary file](../Create-and-Manage-Project/Upload-Files-Directly.md)
+- [Upload SCM repositories](../Create-and-Manage-Project/Add-SCM-Repositories.md)
 
 
 ### 3.&nbsp;&nbsp;&nbsp;Initiate a scan on your project
