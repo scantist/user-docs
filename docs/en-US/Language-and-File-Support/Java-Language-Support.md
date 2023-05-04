@@ -9,7 +9,7 @@ tags: java, maven, gradle, ant, kotlin
 
 # {{ $frontmatter.title }}
 
->![Java logo]() Discover Scantist's capabilities with Java programming language 
+>![Java logo](/images/Language-and-File-Support/Java.png) Discover Scantist's capabilities with Java programming language 
 
 ## Here's what we support 
 
@@ -44,10 +44,10 @@ If you are working with Gradle or Kotlin projects and cannot find any components
 <div style="display:flex;">
 <div style="flex:1;">
 
-![A screenshot of build.gradle file]()
+![A screenshot of build.gradle file](/images/Language-and-File-Support/Java-Language-Support.webp)
 
 </div>
-<div style="flex:1;">
+<div style="flex:1; margin:15px;">
 You will find multiple gradleScope inside the dependencies section of the build.gradle file in this screenshot. 
 
 By default, Scantist will use the "implementation" gradleScope when scanning the build.gradle file. 

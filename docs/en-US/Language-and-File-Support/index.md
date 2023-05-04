@@ -14,11 +14,11 @@ lang: en-US
 
 Scantist supports various package managers and manifests files for each programming language. To learn more about the language of choice, please refer to the table below and select the corresponding language. 
 
-|![Java]()|![Javascript]()|![Perl]()|![Go]()|![Python]()|![C#]()|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|Java|JavaScript|Perl|Go|Python|C#|
+|![Java](/images/Language-and-File-Support/Java.png)|![JavaScript](/images/Language-and-File-Support/JavaScript.png)|![Perl](/images/Language-and-File-Support/Perl.png)|![Go](/images/Language-and-File-Support/Go.png)|![Python](/images/Language-and-File-Support/Python.png)|![C#](/images/Language-and-File-Support/CSharp.png)|
+|:-------:|:-------------:|:---:|:---:|:---:|:---:|
+|[Java](Java-Language-Support)     |JavaScript|Perl|Go|Python|C#|
 
-|![C/C++]()|![Ruby]()|![PHP]()|![Objective-C]()|![Swift]()|
+|![C/C++](/images/Language-and-File-Support/C.png)|![Ruby](/images/Language-and-File-Support/Ruby.png)|![PHP](/images/Language-and-File-Support/PHP.png)|![Objective-C](/images/Language-and-File-Support/Objective-C.png)|![Swift](/images/Language-and-File-Support/Swift.png)|
 |:---:|:---:|:---:|:---:|:---:|
 |C/C++|Ruby|PHP|Objective-C|Swift|
 
