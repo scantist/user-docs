@@ -23,5 +23,27 @@ pipeline {
                 '''
             }
         }
+
+        stage('Build and upload to v4dev') {
+            environment {
+                GCP_CREDENTIALS_ID ='scantist-v4'
+                GCP_BUCKET = 'docs.scantist.io/'
+                GCP_FILE_PATTERN = 'docs/.vitepress/dist/**/*'
+                GCP_FILE_PATH_PREFIX = "docs/.vitepress/dist/"
+            }
+            steps {
+                sh '''
+                    npm install
+                    yarn docs:build
+                '''
+                step([$class: 'ClassicUploadStep',
+                    credentialsId: env.GCP_CREDENTIALS_ID,
+                    bucket: "gs://${env.GCP_BUCKET}",
+                    pattern: env.GCP_FILE_PATTERN,
+                    pathPrefix: env.GCP_FILE_PATH_PREFIX,
+                    showInline: true])
+                pushHangoutsNotify("Deployed ${env.BRANCH_NAME} to docs.scantist.io.")
+            }
+        }
     }
 }
