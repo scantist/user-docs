@@ -10,7 +10,7 @@ language: Perl
 
 # {{ $frontmatter.title }}
 
->![Perl logo]() Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![Perl logo](/images/Language-and-File-Support/Perl.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 

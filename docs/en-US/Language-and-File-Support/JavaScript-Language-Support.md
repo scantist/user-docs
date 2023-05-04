@@ -9,7 +9,7 @@ tags: javascript, npm, pnpm, yarn, package.json
 
 # {{ $frontmatter.title }}
 
->![JavaScript logo]() Discover Scantist's capabilities with JavaScript programming language 
+>![JavaScript logo](/images/Language-and-File-Support/JavaScript.png) Discover Scantist's capabilities with JavaScript programming language 
 
 ## Here's what we support 
 

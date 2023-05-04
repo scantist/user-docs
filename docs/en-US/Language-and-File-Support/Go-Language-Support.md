@@ -9,15 +9,15 @@ tags: go, go modules, go.mod
 
 # {{ $frontmatter.title }}
 
->![Go logo]() Discover Scantist's capabilities with Go programming language 
+>![Go logo](/images/Language-and-File-Support/Go.png) Discover Scantist's capabilities with Go programming language 
 
 ## Here's what we support 
 
 <hr style="border:2px solid gray" />
 
-|Languages |Package Manager|Manifest Files         |
-|----------|---------------|-----------------------|
-|Perl      |CPAN           |Makefile.PL            |
+|Languages |Package Manager|Manifest Files|
+|----------|---------------|--------------|
+|Go        |Go Modules     |go.mod        |
 
 ## Scan your Go project with Scantist 
 
