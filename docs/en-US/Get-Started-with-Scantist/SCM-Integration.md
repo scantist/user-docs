@@ -33,14 +33,17 @@ To use the SCM integration with Scantist, you must have an active Scantist accou
 
 To connect your SCM account to Scantist, follow these steps: 
 
-1.&nbsp;&nbsp;&nbsp;Navigate to the profile tab and select "SCM Integration" from the drop-down list 
-![add image]()
+1.&nbsp;&nbsp;&nbsp;Navigate to the profile tab and select "SCM Integration" from the drop-down list
+
+![add image](/images/Get-Started-with-Scantist/SCM-Integration-1.png)
 
 2.&nbsp;&nbsp;&nbsp;Select the SCM platform you want to integrate with and click "Connect"
-![add image]()
+
+![add image](/images/Get-Started-with-Scantist/SCM-Integration-2.png)
 
 3.&nbsp;&nbsp;&nbsp;Follow the prompts to authorize Scantist to access your SCM account
-![add image]()
+
+![add image](/images/Get-Started-with-Scantist/SCM-Integration-3.png)
 
 4.&nbsp;&nbsp;&nbsp;Once authorized, you will be able to view your repositories in Scantist 
 

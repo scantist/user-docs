@@ -28,7 +28,7 @@ Linking your Scantist account with your SCM accounts, such as GitHub, GitLab or 
 **4.&nbsp;&nbsp;&nbsp;You will be redirected to Scantist and logged in automatically**
 </div><div style="flex: 1;">
 
-![GitHub, GitLab, and Bitbucket Logo](/images/SCM_logo.png)
+![GitHub, GitLab, and Bitbucket Logo](/images/Get-Started-with-Scantist/Sign-up-for-Scantist-1.png)
 </div></div>
 
 <br />
