@@ -22,7 +22,7 @@ tags: scan type, schedule scan, binary, build-based, docker, cli
 
 3. Under the "Scan Settings", select the testing solution you want to configure
 
-![insert image]()
+![Testing Solution tabs](/images/Trigger-Scan/Upload-Scan-Settings-1.png)
 
 ## Schedule Scan
 
@@ -42,10 +42,12 @@ every Monday at 7:00 AM Singapore Timezone
 Starting from the date the scheduled scan is enabled. For example, if you enable the schedule scan settings on Janaury 1, the subsequent monthly scans will occur on the 1st of every month
 :::
 
-<div style="display: flex;">
-<div style="flex: 2;">
+
 
 To schedule a scan in Scantist, you can follow these steps:
+
+<div style="display: flex;">
+<div style="flex: 1;">
 
 1. Toggle the switch to enable scheduled scans
 
@@ -60,7 +62,7 @@ To schedule a scan in Scantist, you can follow these steps:
 </div>
 <div style="flex: 1;">
 
-![insert image]()
+![insert image](/images/Trigger-Scan/Upload-Scan-Settings-2.png)
 
 </div>
 </div>

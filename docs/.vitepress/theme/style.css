@@ -127,6 +127,12 @@
   src: url('/font/goodtime.ttf') format('truetype');
 }
 
-.VPNavBarTitle {
+a.title {
   font-family: 'GoodTime';
+  font-size: 26px!important;
+}
+
+img.logo {
+  margin-top: -10px;
+  height: 40px!important;
 }

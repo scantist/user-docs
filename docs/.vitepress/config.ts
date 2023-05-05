@@ -28,9 +28,9 @@ export default defineConfig({
     //     window.supportedLangs = ${JSON.stringify(languages)}
     //   })()`,
     // ],
-  
+
     // ['script', {}, fs.readFileSync(path.resolve(__dirname, 'lang.js'), 'utf-8')],
-      // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -39,11 +39,11 @@ export default defineConfig({
     i18nRouting: true,
     sidebar: {
       '/en-US/': enUSSidebar() as any,
-      '/zh-CN/': zhCNSidebar() as any,
+      // '/zh-CN/': zhCNSidebar() as any,
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ], 
+    ],
   },
   locales: {
     root: {
@@ -53,7 +53,13 @@ export default defineConfig({
     },
     'zh-CN': {
       label: '简体中文',
-      link: '/zh-CN/Get-Started-with-Scantist/'
+      title: '探明思',
+      link: '/zh-CN/Get-Started-with-Scantist/',
+      themeConfig: {
+        sidebar: {
+          'zh-CN': zhCNSidebar() as any,
+        }
+      }
     }
   },
   lastUpdated: true

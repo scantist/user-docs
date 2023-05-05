@@ -55,6 +55,18 @@ If you do not have an SCM account, you can create a new account with Scantist.
 
 Congratulations! You have successfully created your Scantist account using your email login. You can now sign in to your account and start scanning your open source projects for vulnerabilities and licensing risks.
 
-<!--@include: ../../parts/whats-next.md-->
+## What's next?
+
+<hr style="border:2px solid gray" />
+
+You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools.
+
+- [Trigger a scan](../Trigger-Scan/)
+
+- [Access scan results](#)
+
+- [Fix vulnerabilities](#)
+
+- [Create compliance policies](#)
 
 </ClientOnly>
