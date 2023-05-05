@@ -15,19 +15,19 @@ tags: repository, repositories, scm, add repo, github, gitlab, bitbucket
 
 <hr style="border:2px solid gray" />
 
-1.&nbsp;&nbsp;&nbsp;Click on the "Projects" page on the navigation bar
+1.&nbsp;&nbsp;&nbsp;Click on the **"Projects"** page on the navigation bar
 
-2.&nbsp;&nbsp;&nbsp;Select "Create Project" 
+2.&nbsp;&nbsp;&nbsp;Select **"Create Project"** 
 
-3.&nbsp;&nbsp;&nbsp;In the pop-up window, select the option to add "Source Control" repositories 
+3.&nbsp;&nbsp;&nbsp;In the pop-up window, select the option to add **"Source Control"** repositories 
 
-4.&nbsp;&nbsp;&nbsp;Choose the SCM repository you want to scan by clicking on the "Add" icon next to the repository
+4.&nbsp;&nbsp;&nbsp;Choose the SCM repository you want to scan by clicking on the **"Add"** icon next to the repository
 
-![insert image]()
+![Adding Repository](/images/Create-and-Manage-Project/Add-SCM-Repositories-1.png)
  
 5.&nbsp;&nbsp;&nbsp;Select the team that you want to assign the project to and choose the compliance policy you want to apply. If you have not created a compliance policy for the project, you can choose the default compliance. 
 
-![insert image]()
+![Select Team and Compliance](/images/Create-and-Manage-Project/Add-SCM-Repositories-2.png)
 
 6.&nbsp;&nbsp;&nbsp;Once you have uploaded your repository, configure the [scan setting]() to your preference
 

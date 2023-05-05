@@ -16,9 +16,9 @@ tags: upload, projects, source code, binary file
 
 <hr style="border:2px solid gray" />
 
-1.&nbsp;&nbsp;&nbsp;Click on the “Projects” page on the navigation bar
+1.&nbsp;&nbsp;&nbsp;Click on the **"Projects"** page on the navigation bar
 
-2.&nbsp;&nbsp;&nbsp;Select “Create Project” 
+2.&nbsp;&nbsp;&nbsp;Select **"Create Project"** 
 
 3.&nbsp;&nbsp;&nbsp;In the pop-up window, select the option to upload the file directly
 
@@ -58,7 +58,7 @@ If you have made updates to your source code or binary file and wish to rescan i
 
 1.&nbsp;&nbsp;&nbsp;Navigate the project you want to upload a new version for 
 
-2.&nbsp;&nbsp;&nbsp;Click on the “Project Settings” in the top right corner
+2.&nbsp;&nbsp;&nbsp;Click on the **"Project Settings"** in the top right corner
 
 3.&nbsp;&nbsp;&nbsp;In the pop-up window, select the option to upload new version
 
