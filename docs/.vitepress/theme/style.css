@@ -120,3 +120,11 @@
   transition: color 0.25s;
 }
 
+@font-face {
+  font-family: 'GoodTime';
+  src: url('/font/goodtime.ttf') format('truetype');
+}
+
+.VPNavBarTitle {
+  font-family: 'GoodTime';
+}

@@ -19,7 +19,7 @@ console.log('get nav', nav)
 
 // // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Scantist",
+  title: "SCANTIST",
   head: [
     // [
     //   'script',
@@ -34,9 +34,9 @@ export default defineConfig({
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/images/scantist_logo.png',
     nav: [],
     i18nRouting: true,
-    // sidebar: getSidebar() as any,
     sidebar: {
       '/en-US/': enUSSidebar() as any,
       '/zh-CN/': zhCNSidebar() as any,
