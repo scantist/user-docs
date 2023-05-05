@@ -67,16 +67,6 @@ If you have made updates to your source code or binary file and wish to rescan i
 5.&nbsp;&nbsp;&nbsp;Once you have uploaded your file, initiate a scan according to your preferred scan type
 
  
-## What's next?
-
-<hr style="border:2px solid gray" />
-
-You can now trigger a scan for your open source projects and configure the [scan settings](). Scantist is designed to integrate seamlessly with your existing software development workflows and tools.
-
-- [Trigger a scan]()
-
-- [Configure scan settings]()
-
-- [Create compliance policies]()
+<!--@include: ./whats-next.md-->
 
 </ClientOnly>

@@ -43,16 +43,6 @@ When creating a new project with your SCM in Scantist, it is important to provid
 
 2.&nbsp;&nbsp;&nbsp;Choose the compliance policy you want to apply. If you have not created a compliance policy for the project, you can choose the default compliance. 
 
-## What's next?
-
-<hr style="border:2px solid gray" />
-
-You can now trigger a scan for your open source projects and configure the [scan settings](). Scantist is designed to integrate seamlessly with your existing software development workflows and tools. 
-
-- [Trigger a scan](#)
-
-- [Configure scan settings](#)
-
-- [Create compliance policies](#)
+<!--@include: ./whats-next.md-->
 
 </ClientOnly>
