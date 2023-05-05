@@ -56,9 +56,9 @@ After you have created a project and it is added to the Scantist dashboard, you 
 4. Click on the "Delete" icon if you wish to remove the project. Note that deleting a project will also delete all associated scan reports and findings. 
 
 </div>
-<div style="flex: 1;">
+<div style="flex: 1; margin: 15px;">
 
-![photo]()
+![Project Info](/images/Create-and-Manage-Project/Create-and-Manage-Project-1.png)
 
 </div>
 </div>

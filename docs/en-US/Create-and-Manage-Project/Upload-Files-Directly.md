@@ -24,7 +24,7 @@ tags: upload, projects, source code, binary file
 
 4.&nbsp;&nbsp;&nbsp;Choose the file you want to upload and provide any necessary information 
 
-![insert image]()
+![Create New Project](/images/Create-and-Manage-Project/Upload-Files-Directly-1.png)
 
 5.&nbsp;&nbsp;&nbsp;Once you have uploaded your file, configure the [scan settings]() according to your preferences
 
