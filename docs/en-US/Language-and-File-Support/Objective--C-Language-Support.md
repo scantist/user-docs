@@ -10,7 +10,7 @@ language: Objective-C
 
 # {{ $frontmatter.title }}
 
->![logo]() Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![Objective-C logo](/images/Language-and-File-Support/Objective-C.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 
