@@ -28,7 +28,7 @@ Scantist supports various application security testing solutions to help you add
     </thead>
     <tbody>
         <tr>
-            <td><a href="">SCA</a></td>
+            <td><a href="./SCA/">SCA</a></td>
             <td><a href="">SAST</a></td>
             <td><a href="">Fuzzing</a></td>
             <td><a href="">IaC</a></td>

@@ -149,16 +149,32 @@ export function enUSSidebar() {
     },
     {
       text: 'Build-based Scan - CI/CD Pipeline',
-      link: '/en-US/build-based-scan-ci-cd/',
+      link: '/en-US/Build-based-Scan-CICD-Pipeline/',
       collapsed: true,
       items: [
         {
           text: 'Jenkins CI Integration',
-          link: '/en-US/build-based-scan-ci-cd/Jenkins-CI-Integration'
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration'
         },
         {
           text: 'Gitlab CI Integration',
-          link: '/en-US/build-based-scan-ci-cd/Gitlab-CI-Integration'
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Gitlab-CI-Integration'
+        },
+      ]
+    },
+    {
+      text: 'Application Security Testing Solution',
+      link: '/en-US/Application-Security-Testing-Solution/',
+      collapsed: true,
+      items: [
+        {
+          text: 'SCA',
+          link: '/en-US/Application-Security-Testing-Solution/SCA/',
+          collapsed: true,
+        },
+        {
+          text: 'abc',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Gitlab-CI-Integration'
         },
       ]
     },
