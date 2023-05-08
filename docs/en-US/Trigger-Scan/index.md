@@ -13,7 +13,7 @@ tags: scan, sca, sast, fuzzing, iac
 
 ## Two methods for scanning in Scantist
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 There are two ways to initiate a scan for your project:
 
@@ -34,7 +34,7 @@ Click on the "Scan" button on top right corner
 
 ## Follow these steps to start scanning 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 ### 1.&nbsp;&nbsp;&nbsp;Configure your project settings
 To initiate scanning for your projects, you will need to configure the project settings based on the type of projects created 
@@ -59,7 +59,7 @@ Once you have configured the scan settings, you can start scanning by clicking o
 
 ## What's next?
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 You can now review your scan results for your open source projects and remediate any identified your vulnerabilities. 
 
