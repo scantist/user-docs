@@ -16,11 +16,11 @@ tags: scan type, schedule scan, binary, build-based, docker, cli
 
 <hr style="border:2px solid gray" />
 
-1. Click on the newly added project
+1.&nbsp;&nbsp;&nbsp;Click on the newly added project
 
-2. Click on "Project Settings" in the top right corner
+2.&nbsp;&nbsp;&nbsp;Click on "Project Settings" in the top right corner
 
-3. Under the "Scan Settings", select the testing solution you want to configure
+3.&nbsp;&nbsp;&nbsp;Under the "Scan Settings", select the testing solution you want to configure
 
 ![Testing Solution tabs](/images/Trigger-Scan/Upload-Scan-Settings-1.png)
 
@@ -43,28 +43,27 @@ Starting from the date the scheduled scan is enabled. For example, if you enable
 :::
 
 
-
 To schedule a scan in Scantist, you can follow these steps:
 
+1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
+
 <div style="display: flex;">
-<div style="flex: 1;">
+<div style="flex: 1;margin-right:5px;">
 
-1. Toggle the switch to enable scheduled scans
+2.&nbsp;&nbsp;&nbsp;Choose whether your project is a source code or binary project 
 
-2. Choose whether your project is a source code or binary project 
-
-3. Select the version of the project that you want to scan
-
-4. Choose the frequency of the scheduled scan: daily, weekly or monthly
-
-5. Click "Save" to save the scheduled scan settings
+3.&nbsp;&nbsp;&nbsp;Select the version of the project that you want to scan
 
 </div>
-<div style="flex: 1;">
+<div style="flex: 1; margin-left:20px;">
 
 ![insert image](/images/Trigger-Scan/Upload-Scan-Settings-2.png)
 
 </div>
 </div>
+
+4.&nbsp;&nbsp;&nbsp;Choose the frequency of the scheduled scan: daily, weekly or monthly
+
+5.&nbsp;&nbsp;&nbsp;Click "Save" to save the scheduled scan settings
 
 </ClientOnly>
