@@ -61,7 +61,51 @@ To identify vulnerable components that require immediate attention and remediati
 
 :::tip
 Learn more of vulnerabilities severity levels
+
+insert link
 :::
 
+## Detection Method
+
+<hr class="thick" />
+
+Scantist use various detection methods to identify and verify the open source component used in a software project.
+
+<div style="display: flex;">
+<div style="flex: 2;margin-left: 15px;">
+
+1.&nbsp;&nbsp;&nbsp;Navigate to the **"Detection Method"** bar in the SCA results page
+
+2.&nbsp;&nbsp;&nbsp;Select the methods of detection
+
+3.&nbsp;&nbsp;&nbsp;Once the filter is applied, the list displays only the components that have the selected detection method
+
+</div>
+<div style="flex: 1;">
+
+![Detection Method](/images/Application-Security-Testing-Solution/SCA/SCA-Components-Results-2.png)
+
+</div>
+</div>
+
+### Signature-based detection
+
+This method involves searching for the unique signatures of known open source components in the software's source code or binary. Each component has a unique signature that is generated based on its source code or binary.
+
+### Name matching
+
+This method involves comparing the names of the software components used in the project against a database of known open source components. This method may not be reliable since different versions of a component may have slightly different names or aliases. 
+
+### Hash
+
+This method involves comparing the hash value of a component's binary code with a database of known hash values. The hash value is a unique digital fingerprint of a component that is generated based on its binary code. This method is useful for identifying components that have been compiled or packaged. 
+
+### BOM 
+
+This method involves scanning a project's Bill-of-Materials (BOM) to identify the open source components used in the project. The BOM is a list of all the components and their versions used in a project. This method is the most accurate and reliable since it involves analyzing the entire list of components and dependencies.
+
+## Match Rate
+
+<hr class="thick" />
 
 </ClientOnly>
