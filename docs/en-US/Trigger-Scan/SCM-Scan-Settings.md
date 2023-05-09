@@ -14,7 +14,7 @@ tags: scan type, schedule scan, event driven scan
 
 ## Select your Scan Type
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 1.&nbsp;&nbsp;&nbsp;Click on the newly added project
 
@@ -22,11 +22,11 @@ tags: scan type, schedule scan, event driven scan
 
 3.&nbsp;&nbsp;&nbsp;Under the “Scan Settings”, select the testing solution you want to configure
 
-![Testing Solution tabs](/images/Trigger-Scan/Upload-Scan-Settings-1.png)
+![Testing Solution tabs](/images/Trigger-Scan/SCM-Scan-Settings-1.png)
 
 ## Schedule Scan
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 You can set your scan to be done on a scheduled basis for all scan types. The available options for the scheduled scans are as follows: 
 
@@ -45,31 +45,31 @@ Starting from the date the scheduled scan is enabled. For example, if you enable
 
 To schedule a scan in Scantist, you can follow these steps:
 
-1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
-
 <div style="display: flex;">
 <div style="flex: 1;margin-right:5px;">
 
-2.&nbsp;&nbsp;&nbsp;Choose whether your project is a source code or binary project 
-
-3.&nbsp;&nbsp;&nbsp;Select the version of the project that you want to scan
+![insert image](/images/Trigger-Scan/SCM-Scan-Settings-2.png)
 
 </div>
 <div style="flex: 1; margin-left:20px;">
 
-![insert image](/images/Trigger-Scan/Upload-Scan-Settings-2.png)
+1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
 
-</div>
-</div>
+2.&nbsp;&nbsp;&nbsp;Choose whether your project is a source code or binary project 
+
+3.&nbsp;&nbsp;&nbsp;Select the branch of the project that you want to scan
 
 4.&nbsp;&nbsp;&nbsp;Choose the frequency of the scheduled scan: daily, weekly or monthly
 
 5.&nbsp;&nbsp;&nbsp;Click "Save" to save the scheduled scan settings
 
+</div>
+</div>
+
 
 ## Event Driven Scan
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 You can set your scan to be done on PR triggered event. The available events for the event driven scans are as follows: 
 
@@ -91,18 +91,18 @@ To trigger a scan, you can follow these steps:
 <div style="display: flex;">
 <div style="flex: 1;margin-right:5px;">
 
-![Event Driven Scan]('')
+![Event Driven Scan](/images/Trigger-Scan/SCM-Scan-Settings-3.png)
 
 </div>
 <div style="flex: 1; margin-left:20px;">
 
-:one: Toggle the switch to enable scheduled scans
+1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
 
-:two: Choose the event of the scan: push, pull or both 
+2.&nbsp;&nbsp;&nbsp;Choose the event of the scan: push, pull or both 
 
-:three: Select the branch of the project that you want to scan
+3.&nbsp;&nbsp;&nbsp;Select the branch of the project that you want to scan
 
-:four: Click “Save” to save the scheduled scan settings
+4.&nbsp;&nbsp;&nbsp;Click "Save" to save the scheduled scan settings
 
 </div>
 </div>
