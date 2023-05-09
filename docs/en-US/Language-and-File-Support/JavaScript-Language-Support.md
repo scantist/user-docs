@@ -13,7 +13,7 @@ tags: javascript, npm, pnpm, yarn, package.json
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 |Languages |Package Manager|Manifest Files         |
 |----------|---------------|-----------------------|
@@ -23,7 +23,7 @@ tags: javascript, npm, pnpm, yarn, package.json
 
 ## Scan your JavaScript project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components by examining `package.json`, `package-lock.json`, `npm-shrinkwrap.json` or `yarn.lock` files in the source code. 
 

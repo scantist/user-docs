@@ -13,7 +13,7 @@ tags: scm, integration, github, gitlab, bitbucket
 
 ## Supported SCM platforms
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist currently supports integration with the following SCM platforms: 
 
@@ -29,7 +29,7 @@ To use the SCM integration with Scantist, you must have an active Scantist accou
 
 ## Connecting your SCM account to Scantist
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 To connect your SCM account to Scantist, follow these steps: 
 
@@ -50,7 +50,7 @@ To connect your SCM account to Scantist, follow these steps:
 
 ## Disconnect SCM account from Scantist
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 To disconnect your SCM account from Scantist, follow these steps:
 

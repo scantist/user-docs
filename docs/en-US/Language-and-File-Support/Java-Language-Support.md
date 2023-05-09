@@ -13,7 +13,7 @@ tags: java, maven, gradle, ant, kotlin
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 |Languages |Package Manager|Manifest Files         |
 |----------|---------------|-----------------------|
@@ -24,7 +24,7 @@ tags: java, maven, gradle, ant, kotlin
 
 ## Scan your Java project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components by examining `pom.xml`, `build.gradle`, `ivy.xml`, `build.xml` or `build.gradle.kts` files in the source code. 
 
@@ -32,7 +32,7 @@ Scantist scans the third-party components by examining `pom.xml`, `build.gradle`
 
 ## Handling no components found in Gradle or Kotlin project 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 If you are working with Gradle or Kotlin projects and cannot find any components, it may be due to multiple gradle scopes contained in the build.gradle or build.gradle.kts files. In such cases, you can refer to an example project like the BasicRx.JavaSampleKotlin app on GitHub to help you resolve this issue. 
 

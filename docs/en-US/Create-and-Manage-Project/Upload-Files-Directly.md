@@ -14,7 +14,7 @@ tags: upload, projects, source code, binary file
 
 ## Create a new project with your source code or binary file
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 1.&nbsp;&nbsp;&nbsp;Click on the **"Projects"** page on the navigation bar
 
@@ -33,7 +33,7 @@ tags: upload, projects, source code, binary file
 
 ## How to provide information when creating a new project?
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 When creating a new project by uploading your file directly, it is important to provide the necessary information. 
 
@@ -52,7 +52,7 @@ When creating a new project by uploading your file directly, it is important to 
 
 ## Upload new version
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 If you have made updates to your source code or binary file and wish to rescan it, you can upload a new version within the same project. 
 

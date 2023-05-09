@@ -13,7 +13,7 @@ tags: create project, manage project, connect scm, add scm, upload file directly
 
 ## Create a New Project
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 <table>
     <thead>
@@ -38,7 +38,7 @@ tags: create project, manage project, connect scm, add scm, upload file directly
 
 ## Project Settings
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 After you have created a project and it is added to the Scantist dashboard, you can configure the project settings and manage your list of projects. This includes deleting a project if you no longer need it. 
 

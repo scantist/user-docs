@@ -14,7 +14,7 @@ tags: scan type, schedule scan, binary, build-based, docker, cli
 
 ## Select your Scan Type
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 1.&nbsp;&nbsp;&nbsp;Click on the newly added project
 
@@ -26,7 +26,7 @@ tags: scan type, schedule scan, binary, build-based, docker, cli
 
 ## Schedule Scan
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 You can set your scan to be done on a scheduled basis for all scan types. The available options for the scheduled scans are as follows: 
 

@@ -10,7 +10,7 @@ lang: en-US
 
 ## Source Code Languages 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist supports various package managers and manifests files for each programming language. To learn more about the language of choice, please refer to the table below and select the corresponding language. 
 
@@ -48,7 +48,7 @@ Scantist supports various package managers and manifests files for each programm
 
 ## Binary File Formats 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist supports various file extensions for each binary file format. To learn more about the binary file of choice, please refer to the table below. 
 
@@ -62,7 +62,7 @@ Scantist supports various file extensions for each binary file format. To learn 
 
 ## What's next?
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools.
 

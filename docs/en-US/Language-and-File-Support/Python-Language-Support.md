@@ -14,7 +14,7 @@ language: Python
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 <table>
     <thead>
@@ -41,7 +41,7 @@ language: Python
 
 ## Scan your {{ $frontmatter.language }} project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components by examining `setup.py` file, which is the standard build file that lists the required packages and their versions. 
 

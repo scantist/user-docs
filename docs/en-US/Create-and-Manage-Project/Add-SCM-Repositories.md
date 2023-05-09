@@ -13,7 +13,7 @@ tags: repository, repositories, scm, add repo, github, gitlab, bitbucket
 
 ## Create a new project with your SCM
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 1.&nbsp;&nbsp;&nbsp;Click on the **"Projects"** page on the navigation bar
 
@@ -35,7 +35,7 @@ tags: repository, repositories, scm, add repo, github, gitlab, bitbucket
 
 ## How to provide information when creating a new project?
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 When creating a new project with your SCM in Scantist, it is important to provide the necessary information. Here's what you need to do: 
 

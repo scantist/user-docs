@@ -12,7 +12,7 @@ lang: en-US
 
 ## Follow these five simple steps to get started
 
-<hr style="border:2px solid gray">
+<hr class="thick">
 
 ### 1.&nbsp;&nbsp;&nbsp;Sign up for Scantist
 To start using Scantist, sign up for an account by following the instructions in our documentation. 
@@ -48,7 +48,7 @@ It's time to fix the vulnerabilities detected in your Scan. Use our remediation 
 
 ## What's next?
 
-<hr style="border:2px solid gray">
+<hr class="thick">
 
 You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools. 
 - Integrate Scantist with your preferred CI/CD pipeline tools <a>[insert link]</a>

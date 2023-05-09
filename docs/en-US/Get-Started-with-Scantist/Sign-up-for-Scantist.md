@@ -14,7 +14,7 @@ tags: sign up, new account, get started
 
 ## Sign in with your SCM account 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Linking your Scantist account with your SCM accounts, such as GitHub, GitLab or Bitbucket, provides access to more features. 
 
@@ -39,7 +39,7 @@ Once you have linked your SCM account with Scantist, you will be able to scan yo
 
 ## Create an account with an email login 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 If you do not have an SCM account, you can create a new account with Scantist. 
 
@@ -57,7 +57,7 @@ Congratulations! You have successfully created your Scantist account using your 
 
 ## What's next?
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools.
 
