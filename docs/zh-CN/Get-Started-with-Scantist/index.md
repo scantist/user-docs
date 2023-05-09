@@ -14,7 +14,7 @@ tags: 思探明, started, get started, welcome
 
 ## 按照以下五个简单步骤开始
 
-<hr style="border:2px solid gray">
+<hr class="thick">
 
 ### 1.&nbsp;&nbsp;&nbsp;注册思探明
 
@@ -33,14 +33,14 @@ To begin scanning your project for vulnerabilities, you'll need to create a proj
 ### 3.&nbsp;&nbsp;&nbsp;Initiate a scan on your project
 Use Scantist to scan your open source projects and identify vulnerabilities and licensing risks. Depending on your project type, you can trigger a scan by selecting from a range of options in our documentation.
 
-- [Software Composition Analysis (SCA)]()
-- [Static Application Security Testing (SAST)]() 
-- [Fuzzing]()
-- [Infrastructure as Code (IaC)]()
+- [Software Composition Analysis (SCA)](#)
+- [Static Application Security Testing (SAST)](#) 
+- [Fuzzing](#)
+- [Infrastructure as Code (IaC)](#)
 
 
 ### 4.&nbsp;&nbsp;&nbsp;Access your scan results
-After scanning your projects, Scantist will provide a detailed report on any [vulnerabilities]() or [licensing risks]() found.
+After scanning your projects, Scantist will provide a detailed report on any [vulnerabilities](#) or [licensing risks](#) found.
 
 
 ### 5.&nbsp;&nbsp;&nbsp;Fix your vulnerabilities
@@ -49,11 +49,11 @@ It's time to fix the vulnerabilities detected in your Scan. Use our remediation 
 
 ## What's next?
 
-<hr style="border:2px solid gray">
+<hr class="thick">
 
 You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools. 
-- [Integrate Scantist with your preferred CI/CD pipeline tools]()
-- [Create compliance policies]()
+- [Integrate Scantist with your preferred CI/CD pipeline tools](#)
+- [Create compliance policies](#)
 <br /><br />
 
 
