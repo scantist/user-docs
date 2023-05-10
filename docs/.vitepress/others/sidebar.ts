@@ -171,10 +171,44 @@ export function enUSSidebar() {
           text: 'SCA',
           link: '/en-US/Application-Security-Testing-Solution/SCA/',
           collapsed: true,
+          items: [
+            {
+              text: 'SCA Components Results',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/SCA-Components-Results',
+            },
+            {
+              text: 'SCA Vulnerabilities Results',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/SCA-Vulnerabilities-Results',
+            },
+            {
+              text: 'SCA Licenses',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/SCA-Licenses',
+            },
+            {
+              text: 'Export Reports on Scantist',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/Export-Reports-on-Scantist',
+            },
+          ]
         },
         {
-          text: 'abc',
-          link: '/en-US/Build-based-Scan-CICD-Pipeline/Gitlab-CI-Integration'
+          text: 'SAST',
+          link: '/en-US/Application-Security-Testing-Solution/SAST/',
+          collapsed: true,
+        },
+        {
+          text: 'IaC',
+          link: '/en-US/Application-Security-Testing-Solution/IaC/',
+          collapsed: true,
+        },
+        {
+          text: 'Fuzzing',
+          link: '/en-US/Application-Security-Testing-Solution/Fuzzing/',
+          collapsed: true,
+        },
+        {
+          text: 'Code Traceability',
+          link: '/en-US/Application-Security-Testing-Solution/Code-Traceability/',
+          collapsed: true,
         },
       ]
     },
@@ -185,24 +219,24 @@ export function enUSSidebar() {
       items: [
         {
           text: 'Policy Rule Type',
-          link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type',
+          link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/',
           collapsed: true,
           items: [
             {
               text: 'Component Rule Attribute',
-              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute',
             },
             {
               text: 'Vulnerability Rule Attribute',
-              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute',
             },
             {
               text: 'License Rule Attribute',
-              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute',
             },
             {
               text: 'Project Rule Attribute',
-              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute',
             },
           ]
         },
