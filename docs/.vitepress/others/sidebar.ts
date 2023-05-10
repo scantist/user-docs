@@ -178,6 +178,47 @@ export function enUSSidebar() {
         },
       ]
     },
+    {
+      text: 'Compliance Policy Rules',
+      link: '/en-US/Compliance-Policy-Rules/',
+      collapsed: true,
+      items: [
+        {
+          text: 'Policy Rule Type',
+          link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type',
+          collapsed: true,
+          items: [
+            {
+              text: 'Component Rule Attribute',
+              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute',
+            },
+            {
+              text: 'Vulnerability Rule Attribute',
+              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute',
+            },
+            {
+              text: 'License Rule Attribute',
+              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute',
+            },
+            {
+              text: 'Project Rule Attribute',
+              link: '/en-US/Projects-Overview/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute',
+            },
+          ]
+        },
+      ]
+    },
+    {
+      text: 'Projects Overview',
+      link: '/en-US/Projects-Overview/',
+      collapsed: true,
+      items: [
+        {
+          text: 'Categorize Projects',
+          link: '/en-US/Projects-Overview/categorize-projects',
+        },
+      ]
+    },
   ]
 }
 
