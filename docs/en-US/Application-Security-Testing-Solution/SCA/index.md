@@ -6,13 +6,9 @@ lang: en-US
 tags: SCA, software composition analysis, components, vulnerabilities, compliance
 description: This document explains what software composition analysis is
 ---
-<script setup lang="ts">
-    import HelloWorld from "/.vitepress/components/HelloWorld.vue"
-</script>
 
 <ClientOnly>
 
-<HelloWorld />
 # {{ $frontmatter.title }}
 
 > <img src="/images/Application-Security-Testing-Solution/SCA/SCA-logo.png" width=100 /> Discover Scantist's capabilities with SCA
