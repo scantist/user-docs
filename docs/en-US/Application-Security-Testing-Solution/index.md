@@ -15,12 +15,13 @@ description: This document explains what are application security testing soluti
 
 ## Application Testing Solutions
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist supports various application security testing solutions to help you address different risks. When triggering a new scan, you have the option to choose from different methods. To learn more, please refer to the table below and select the corresponding methods.  
 
 <table>
     <thead>
+        <th><img src="/images/Application-Security-Testing-Solution/SCA/SCA-logo.png" width=100 /></th>
         <th><img src=""/></th>
         <th><img src=""/></th>
         <th><img src=""/></th>
@@ -28,12 +29,14 @@ Scantist supports various application security testing solutions to help you add
     </thead>
     <tbody>
         <tr>
-            <td><a href="./SCA/">SCA</a></td>
-            <td><a href="">SAST</a></td>
-            <td><a href="">Fuzzing</a></td>
-            <td><a href="">IaC</a></td>
+            <td style="text-align:center;"><a href="./SCA/">SCA</a></td>
+            <td><a href="./SAST/">SAST</a></td>
+            <td><a href="./Fuzzing/">Fuzzing</a></td>
+            <td><a href="./IaC/">IaC</a></td>
+            <td><a href="./Code-Traceability/">Code-Traceability</a></td>
         </tr>
     </tbody>
 </table>
 
 </ClientOnly>
+
