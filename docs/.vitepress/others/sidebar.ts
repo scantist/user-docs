@@ -264,7 +264,7 @@ export function enUSSidebar() {
       items: [
         {
           text: 'Organization',
-          link: '/en-US/Settings/Organization/',
+          link: '/en-US/Settings/Organization',
         },
         {
           text: 'Members and Teams',
@@ -279,7 +279,7 @@ export function enUSSidebar() {
         },
         {
           text: 'Tags',
-          link: '/en-US/Settings/Tags/',
+          link: '/en-US/Settings/Tags',
         },
         {
           text: 'Integrations Settings',
