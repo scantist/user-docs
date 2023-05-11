@@ -253,6 +253,47 @@ export function enUSSidebar() {
         },
       ]
     },
+    {
+      text: 'Scan History',
+      link: '/en-US/Scan-History/',
+    },
+    {
+      text: 'Settings',
+      link: '/en-US/Settings/',
+      collapsed: true,
+      items: [
+        {
+          text: 'Organization',
+          link: '/en-US/Settings/Organization/',
+        },
+        {
+          text: 'Members and Teams',
+          link: '/en-US/Settings/Members-and-Teams/',
+          collapsed: true,
+          items: [
+            {
+              text: 'Member Roles',
+              link: '/en-US/Settings/Members-and-Teams/Member-Roles',
+            },
+          ]
+        },
+        {
+          text: 'Tags',
+          link: '/en-US/Settings/Tags/',
+        },
+        {
+          text: 'Integrations Settings',
+          link: '/en-US/Settings/Integrations-Settings/',
+          collapsed: true,
+          items: [
+            {
+              text: 'Jira (WIP)',
+              link: '/en-US/Settings/Integrations-Settings/Jira-WIP',
+            },
+          ]
+        },
+      ]
+    },
   ]
 }
 

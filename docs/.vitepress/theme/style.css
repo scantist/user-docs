@@ -140,3 +140,37 @@ img.logo {
 hr.thick {
   border:2px solid gray
 }
+
+th.green_highlight {
+  background-color:#ABF5D1;
+  font-weight: 800;
+}
+
+th.yellow_highlight {
+  background-color:#FFF0B3;
+  font-weight: 800;
+}
+
+th.red_highlight {
+  background-color:#FFBDAD;
+  font-weight: 800;
+}
+
+th.header_bold {
+  font-weight: 800;
+}
+
+.green_highlight {
+  text-align: center;
+  background-color:#ABF5D1;
+}
+
+.yellow_highlight {
+  text-align: center;
+  background-color:#FFF0B3;
+}
+
+.red_highlight {
+  text-align: center;
+  background-color:#FFBDAD;
+}
