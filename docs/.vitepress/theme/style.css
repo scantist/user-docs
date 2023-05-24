@@ -127,14 +127,14 @@
   src: url('/font/goodtime.ttf') format('truetype');
 }
 
-a.title {
-  font-family: 'GoodTime';
-  font-size: 26px!important;
+div.VPNavBarTitle > a.title {
+  font-family: 'GoodTime', sans-serif;
+  font-size: 26px;
 }
 
-img.logo {
+a.title > img.logo {
   margin-top: -10px;
-  height: 40px!important;
+  height: 40px;
 }
 
 hr.thick {
