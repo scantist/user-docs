@@ -10,11 +10,11 @@ language: C#
 
 # {{ $frontmatter.title }}
 
->![logo]() Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![C# logo](/images/Language-and-File-Support/CSharp.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 <table>
     <thead>
@@ -41,7 +41,7 @@ language: C#
 
 ## Scan your {{ $frontmatter.language }} project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components managed by Nuget. It locates the `.sln`, `packages.config`, `project.json`, `project.lock.json`, `.csproj (SDK-style)` or `project.assets.json` files in the source code, which provides information about the direct dependencies and their corresponding versions. 
 

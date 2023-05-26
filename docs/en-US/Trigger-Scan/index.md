@@ -13,7 +13,7 @@ tags: scan, sca, sast, fuzzing, iac
 
 ## Two methods for scanning in Scantist
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 There are two ways to initiate a scan for your project:
 
@@ -21,7 +21,7 @@ There are two ways to initiate a scan for your project:
 
 Click on the "Scan" icon on the project list 
 
-![insert image]()
+![Scan from Project List](/images/Trigger-Scan/Trigger-Scan-1.png)
 
 ### Project Details Page
 
@@ -29,12 +29,12 @@ Click on the project name to open the project details page
 
 Click on the "Scan" button on top right corner
 
-![insert image]()
+![Scan from Project Details Page](/images/Trigger-Scan/Trigger-Scan-2.png)
 
 
 ## Follow these steps to start scanning 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 ### 1.&nbsp;&nbsp;&nbsp;Configure your project settings
 To initiate scanning for your projects, you will need to configure the project settings based on the type of projects created 
@@ -48,7 +48,7 @@ Click on the "Scan" icon next to the project name. This will open a dialog where
 
 You can further customise the scan setting before triggering the scan. Some of the options you can customize include [scan type](./Scan-Type), upload file version, [compliance policy](). 
 
-![insert image]()
+![insert image](/images/Trigger-Scan/Trigger-Scan-3.png)
 
 ### 3.&nbsp;&nbsp;&nbsp;Start scanning
 Once you have configured the scan settings, you can start scanning by clicking on the "Scan" icon in the pop-up window. This will initiate the scan process and the results will be displayed once the scan is complete.
@@ -59,12 +59,12 @@ Once you have configured the scan settings, you can start scanning by clicking o
 
 ## What's next?
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 You can now review your scan results for your open source projects and remediate any identified your vulnerabilities. 
 
-- [Results]()
+- [Results](#)
 
-- [Fix vulnerabilities]()
+- [Fix vulnerabilities](#)
 
 </ClientOnly>

@@ -9,11 +9,11 @@ tags: java, maven, gradle, ant, kotlin
 
 # {{ $frontmatter.title }}
 
->![Java logo]() Discover Scantist's capabilities with Java programming language 
+>![Java logo](/images/Language-and-File-Support/Java.png) Discover Scantist's capabilities with Java programming language 
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 |Languages |Package Manager|Manifest Files         |
 |----------|---------------|-----------------------|
@@ -24,7 +24,7 @@ tags: java, maven, gradle, ant, kotlin
 
 ## Scan your Java project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components by examining `pom.xml`, `build.gradle`, `ivy.xml`, `build.xml` or `build.gradle.kts` files in the source code. 
 
@@ -32,7 +32,7 @@ Scantist scans the third-party components by examining `pom.xml`, `build.gradle`
 
 ## Handling no components found in Gradle or Kotlin project 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 If you are working with Gradle or Kotlin projects and cannot find any components, it may be due to multiple gradle scopes contained in the build.gradle or build.gradle.kts files. In such cases, you can refer to an example project like the BasicRx.JavaSampleKotlin app on GitHub to help you resolve this issue. 
 
@@ -44,10 +44,10 @@ If you are working with Gradle or Kotlin projects and cannot find any components
 <div style="display:flex;">
 <div style="flex:1;">
 
-![A screenshot of build.gradle file]()
+![A screenshot of build.gradle file](/images/Language-and-File-Support/Java-Language-Support.webp)
 
 </div>
-<div style="flex:1;">
+<div style="flex:1; margin:15px;">
 You will find multiple gradleScope inside the dependencies section of the build.gradle file in this screenshot. 
 
 By default, Scantist will use the "implementation" gradleScope when scanning the build.gradle file. 

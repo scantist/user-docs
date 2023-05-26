@@ -10,11 +10,11 @@ language: PHP
 
 # {{ $frontmatter.title }}
 
->![logo]() Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![PHP logo](/images/Language-and-File-Support/PHP.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 <table>
     <thead>
@@ -33,7 +33,7 @@ language: PHP
 
 ## Scan your {{ $frontmatter.language }} project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components by examining `composer.lock` or `composer.json` files in the source code project. 
 

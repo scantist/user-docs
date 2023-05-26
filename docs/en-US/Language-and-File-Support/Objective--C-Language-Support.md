@@ -10,11 +10,11 @@ language: Objective-C
 
 # {{ $frontmatter.title }}
 
->![logo]() Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![Objective-C logo](/images/Language-and-File-Support/Objective-C.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 <table>
     <thead>
@@ -33,7 +33,7 @@ language: Objective-C
 
 ## Scan your {{ $frontmatter.language }} project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist examines the third-party components by examining the `Podfile.lock` file in the source code.
 

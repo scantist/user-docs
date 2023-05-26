@@ -8,9 +8,11 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-brand: #646cff;
+  /* --vp-c-brand: #646cff; */
+  --vp-c-brand: #16B6B3;
   --vp-c-brand-light: #747bff;
-  --vp-c-brand-lighter: #9499ff;
+  /* --vp-c-brand-lighter: #9499ff; */
+  --vp-c-brand-lighter: #16B6B3;
   --vp-c-brand-lightest: #bcc0ff;
   --vp-c-brand-dark: #535bf2;
   --vp-c-brand-darker: #454ce1;
@@ -120,3 +122,55 @@
   transition: color 0.25s;
 }
 
+@font-face {
+  font-family: 'GoodTime';
+  src: url('/font/goodtime.ttf') format('truetype');
+}
+
+div.VPNavBarTitle > a.title {
+  font-family: 'GoodTime', sans-serif;
+  font-size: 26px;
+}
+
+a.title > img.logo {
+  margin-top: -10px;
+  height: 40px;
+}
+
+hr.thick {
+  border:2px solid gray
+}
+
+th.green_highlight {
+  background-color:#ABF5D1;
+  font-weight: 800;
+}
+
+th.yellow_highlight {
+  background-color:#FFF0B3;
+  font-weight: 800;
+}
+
+th.red_highlight {
+  background-color:#FFBDAD;
+  font-weight: 800;
+}
+
+th.header_bold {
+  font-weight: 800;
+}
+
+.green_highlight {
+  text-align: center;
+  background-color:#ABF5D1;
+}
+
+.yellow_highlight {
+  text-align: center;
+  background-color:#FFF0B3;
+}
+
+.red_highlight {
+  text-align: center;
+  background-color:#FFBDAD;
+}

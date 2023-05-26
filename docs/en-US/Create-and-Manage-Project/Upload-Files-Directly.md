@@ -14,17 +14,17 @@ tags: upload, projects, source code, binary file
 
 ## Create a new project with your source code or binary file
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
-1.&nbsp;&nbsp;&nbsp;Click on the “Projects” page on the navigation bar
+1.&nbsp;&nbsp;&nbsp;Click on the **"Projects"** page on the navigation bar
 
-2.&nbsp;&nbsp;&nbsp;Select “Create Project” 
+2.&nbsp;&nbsp;&nbsp;Select **"Create Project"** 
 
 3.&nbsp;&nbsp;&nbsp;In the pop-up window, select the option to upload the file directly
 
 4.&nbsp;&nbsp;&nbsp;Choose the file you want to upload and provide any necessary information 
 
-![insert image]()
+![Create New Project](/images/Create-and-Manage-Project/Upload-Files-Directly-1.png)
 
 5.&nbsp;&nbsp;&nbsp;Once you have uploaded your file, configure the [scan settings]() according to your preferences
 
@@ -33,7 +33,7 @@ tags: upload, projects, source code, binary file
 
 ## How to provide information when creating a new project?
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 When creating a new project by uploading your file directly, it is important to provide the necessary information. 
 
@@ -52,13 +52,13 @@ When creating a new project by uploading your file directly, it is important to 
 
 ## Upload new version
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 If you have made updates to your source code or binary file and wish to rescan it, you can upload a new version within the same project. 
 
 1.&nbsp;&nbsp;&nbsp;Navigate the project you want to upload a new version for 
 
-2.&nbsp;&nbsp;&nbsp;Click on the “Project Settings” in the top right corner
+2.&nbsp;&nbsp;&nbsp;Click on the **"Project Settings"** in the top right corner
 
 3.&nbsp;&nbsp;&nbsp;In the pop-up window, select the option to upload new version
 
@@ -67,16 +67,6 @@ If you have made updates to your source code or binary file and wish to rescan i
 5.&nbsp;&nbsp;&nbsp;Once you have uploaded your file, initiate a scan according to your preferred scan type
 
  
-## What's next?
-
-<hr style="border:2px solid gray" />
-
-You can now trigger a scan for your open source projects and configure the [scan settings](). Scantist is designed to integrate seamlessly with your existing software development workflows and tools.
-
-- [Trigger a scan]()
-
-- [Configure scan settings]()
-
-- [Create compliance policies]()
+<!--@include: ./whats-next.md-->
 
 </ClientOnly>

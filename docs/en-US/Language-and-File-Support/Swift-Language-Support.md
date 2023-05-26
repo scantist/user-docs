@@ -10,11 +10,11 @@ language: Swift
 
 # {{ $frontmatter.title }}
 
->![logo]() Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![Swift logo](/images/Language-and-File-Support/Swift.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 <table>
     <thead>
@@ -33,7 +33,7 @@ language: Swift
 
 ## Scan your {{ $frontmatter.language }} project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components by examining the `Package.swift` file in the source code.  
 

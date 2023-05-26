@@ -149,16 +149,148 @@ export function enUSSidebar() {
     },
     {
       text: 'Build-based Scan - CI/CD Pipeline',
-      link: '/en-US/build-based-scan-ci-cd/',
+      link: '/en-US/Build-based-Scan-CICD-Pipeline/',
       collapsed: true,
       items: [
         {
           text: 'Jenkins CI Integration',
-          link: '/en-US/build-based-scan-ci-cd/Jenkins-CI-Integration'
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration'
         },
         {
           text: 'Gitlab CI Integration',
-          link: '/en-US/build-based-scan-ci-cd/Gitlab-CI-Integration'
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Gitlab-CI-Integration'
+        },
+      ]
+    },
+    {
+      text: 'Application Security Testing Solution',
+      link: '/en-US/Application-Security-Testing-Solution/',
+      collapsed: true,
+      items: [
+        {
+          text: 'SCA',
+          link: '/en-US/Application-Security-Testing-Solution/SCA/',
+          collapsed: true,
+          items: [
+            {
+              text: 'SCA Components Results',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/SCA-Components-Results',
+            },
+            {
+              text: 'SCA Vulnerabilities Results',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/SCA-Vulnerabilities-Results',
+            },
+            {
+              text: 'SCA Licenses',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/SCA-Licenses',
+            },
+            {
+              text: 'Export Reports on Scantist',
+              link: '/en-US/Application-Security-Testing-Solution/SCA/Export-Reports-on-Scantist',
+            },
+          ]
+        },
+        {
+          text: 'SAST',
+          link: '/en-US/Application-Security-Testing-Solution/SAST/',
+          collapsed: true,
+        },
+        {
+          text: 'IaC',
+          link: '/en-US/Application-Security-Testing-Solution/IaC/',
+          collapsed: true,
+        },
+        {
+          text: 'Fuzzing',
+          link: '/en-US/Application-Security-Testing-Solution/Fuzzing/',
+          collapsed: true,
+        },
+        {
+          text: 'Code Traceability',
+          link: '/en-US/Application-Security-Testing-Solution/Code-Traceability/',
+          collapsed: true,
+        },
+      ]
+    },
+    {
+      text: 'Compliance Policy Rules',
+      link: '/en-US/Compliance-Policy-Rules/',
+      collapsed: true,
+      items: [
+        {
+          text: 'Policy Rule Type',
+          link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/',
+          collapsed: true,
+          items: [
+            {
+              text: 'Component Rule Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute',
+            },
+            {
+              text: 'Vulnerability Rule Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute',
+            },
+            {
+              text: 'License Rule Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute',
+            },
+            {
+              text: 'Project Rule Attribute',
+              link: '/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute',
+            },
+          ]
+        },
+      ]
+    },
+    {
+      text: 'Projects Overview',
+      link: '/en-US/Projects-Overview/',
+      collapsed: true,
+      items: [
+        {
+          text: 'Categorize Projects',
+          link: '/en-US/Projects-Overview/categorize-projects',
+        },
+      ]
+    },
+    {
+      text: 'Scan History',
+      link: '/en-US/Scan-History/',
+    },
+    {
+      text: 'Settings',
+      link: '/en-US/Settings/',
+      collapsed: true,
+      items: [
+        {
+          text: 'Organization',
+          link: '/en-US/Settings/Organization',
+        },
+        {
+          text: 'Members and Teams',
+          link: '/en-US/Settings/Members-and-Teams/',
+          collapsed: true,
+          items: [
+            {
+              text: 'Member Roles',
+              link: '/en-US/Settings/Members-and-Teams/Member-Roles',
+            },
+          ]
+        },
+        {
+          text: 'Tags',
+          link: '/en-US/Settings/Tags',
+        },
+        {
+          text: 'Integrations Settings',
+          link: '/en-US/Settings/Integrations-Settings/',
+          collapsed: true,
+          items: [
+            {
+              text: 'Jira (WIP)',
+              link: '/en-US/Settings/Integrations-Settings/Jira-WIP',
+            },
+          ]
         },
       ]
     },

@@ -1,22 +1,19 @@
 // https://vitepress.dev/guide/custom-theme
+// https://github.com/vuejs/vitepress/issues/603#issuecomment-1103884818
 import { h } from 'vue'
-import ElementPlus from 'element-plus'
-// import { globals } from '../vitepress'
-import Theme from 'vitepress/theme'
+import { install } from 'element-plus'
+import DefaultTheme from 'vitepress/theme'
+import "element-plus/dist/index.css"
 import './style.css'
 
 export default {
-  ...Theme,
+  ...DefaultTheme,
   Layout: () => {
-    return h(Theme.Layout, null, {
+    return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
   enhanceApp: ({ app }) => {
-    app.use(ElementPlus)
-
-    // globals.forEach(([name, Comp]) => {
-    //   app.component(name, Comp)
-    // })
+    install(app)
   },
 }

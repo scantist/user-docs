@@ -13,7 +13,7 @@ tags: scm, integration, github, gitlab, bitbucket
 
 ## Supported SCM platforms
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist currently supports integration with the following SCM platforms: 
 
@@ -29,25 +29,28 @@ To use the SCM integration with Scantist, you must have an active Scantist accou
 
 ## Connecting your SCM account to Scantist
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 To connect your SCM account to Scantist, follow these steps: 
 
-1.&nbsp;&nbsp;&nbsp;Navigate to the profile tab and select "SCM Integration" from the drop-down list 
-![add image]()
+1.&nbsp;&nbsp;&nbsp;Navigate to the profile tab and select "SCM Integration" from the drop-down list
+
+![profile tab then SCM Integration](/images/Get-Started-with-Scantist/SCM-Integration-1.png)
 
 2.&nbsp;&nbsp;&nbsp;Select the SCM platform you want to integrate with and click "Connect"
-![add image]()
+
+![SCM platform then Connect](/images/Get-Started-with-Scantist/SCM-Integration-2.png)
 
 3.&nbsp;&nbsp;&nbsp;Follow the prompts to authorize Scantist to access your SCM account
-![add image]()
+
+![authorize Scantist to access SCM account](/images/Get-Started-with-Scantist/SCM-Integration-3.png)
 
 4.&nbsp;&nbsp;&nbsp;Once authorized, you will be able to view your repositories in Scantist 
 
 
 ## Disconnect SCM account from Scantist
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 To disconnect your SCM account from Scantist, follow these steps:
 

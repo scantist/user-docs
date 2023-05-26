@@ -14,7 +14,7 @@ tags: scantist, started, get started, welcome
 
 ## Follow these five simple steps to get started
 
-<hr style="border:2px solid gray">
+<hr class="thick">
 
 
 ### 1.&nbsp;&nbsp;&nbsp;Sign up for Scantist
@@ -26,8 +26,8 @@ Once you have signed up, you will have access to our powerful open source manage
 ### 2.&nbsp;&nbsp;&nbsp;Create a project
 To begin scanning your project for vulnerabilities, you'll need to create a project on Scantist. Follow our documentation to learn how to upload your source code projects.
 
-- [Upload source code or binary file]()
-- [Upload SCM repositories]()
+- [Upload source code or binary file](../Create-and-Manage-Project/Upload-Files-Directly)
+- [Upload SCM repositories](../Create-and-Manage-Project/Add-SCM-Repositories)
 
 
 ### 3.&nbsp;&nbsp;&nbsp;Initiate a scan on your project
@@ -49,7 +49,7 @@ It's time to fix the vulnerabilities detected in your Scan. Use our remediation 
 
 ## What's next?
 
-<hr style="border:2px solid gray">
+<hr class="thick">
 
 You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools. 
 - [Integrate Scantist with your preferred CI/CD pipeline tools]()

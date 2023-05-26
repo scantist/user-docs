@@ -14,7 +14,7 @@ tags: scan type, static, binary, build-based, docker, cli
 
 ## Scan Types
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist supports various types of scanning under different environments or scenarios. When it comes to uploading files directly or connecting to SCM repositories, each method has its benefits and drawbacks. Here are the main differences between these scan methods. It is recommended to use the **build-based scan** whenever it is feasible. 
 

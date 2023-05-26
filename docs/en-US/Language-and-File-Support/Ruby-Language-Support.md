@@ -10,11 +10,11 @@ language: Ruby
 
 # {{ $frontmatter.title }}
 
->![logo]() Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![Ruby logo](/images/Language-and-File-Support/Ruby.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 <table>
     <thead>
@@ -33,7 +33,7 @@ language: Ruby
 
 ## Scan your {{ $frontmatter.language }} project with Scantist 
 
-<hr style="border:2px solid gray" />
+<hr class="thick" />
 
 Scantist scans the third-party components by examining `gemfile.lock` or `gemfile` files in the source code. 
 
