@@ -27,11 +27,11 @@ Once you have copied your access token, navigate back to Gitlab CI.
 
 1. Select `Settings > CI/CD` from your left panel.
 
-![Settings > CI/CD](/images/ci/gitlab/step2.1.png)
+    ![Settings > CI/CD](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.1.png)
 
-2. Scroll to the `Variables` section, then click on the `Expand` button. 
+2. Scroll to the `Variables` section, then click on the `Expand` button.
 
-![Variables > Expand](/images/ci/gitlab/step2.2.png)
+    ![Variables > Expand](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.2.png)
 
 3. Click on the `Add Variable` button. In the pop-up box,
     - set the `Key` as `SCANTISTTOKEN`
@@ -39,13 +39,13 @@ Once you have copied your access token, navigate back to Gitlab CI.
     - check the option `Mask variable`
     - complete the process by clicking on the `Add Variable` button
 
-![Add variable](/images/ci/gitlab/step2.3.png)
+![Add variable](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.3.png)
 
 In case you are using a dedicated Scantist deployment, you might need to set the `SCANTIST_IMPORT_URL` in a similar fashion.
 
 ### Step 3 - Add .gitlab-ci.yml on your repo
-Assuming that your code is hosted on Gitlab, the final step you will need to do is to add or merge the last two lines of code at the bottom of your `.gitlab-ci.yml` file in your repository. This command will download and execute our BOM Detector to scan after the build.
 
+Assuming that your code is hosted on Gitlab, the final step you will need to do is to add or merge the last two lines of code at the bottom of your `.gitlab-ci.yml` file in your repository. This command will download and execute our BOM Detector to scan after the build.
 
 ```yaml
 job:
