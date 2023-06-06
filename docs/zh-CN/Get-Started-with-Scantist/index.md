@@ -23,42 +23,42 @@ tags: 思探明, started, get started, welcome
 注册后，您将可以访问我们强大的开源管理平台。
 
 
-### 2.&nbsp;&nbsp;&nbsp;Create a project
-To begin scanning your project for vulnerabilities, you'll need to create a project on Scantist. Follow our documentation to learn how to upload your source code projects.
+### 2.&nbsp;&nbsp;&nbsp;创建一个项目
+要开始扫描您的项目以寻找漏洞，您需要在思探明上创建一个项目。请按照我们的文档学习如何上传您的源代码项目。
 
-- [Upload source code or binary file](../Create-and-Manage-Project/Upload-Files-Directly)
-- [Upload SCM repositories](../Create-and-Manage-Project/Add-SCM-Repositories)
-
-
-### 3.&nbsp;&nbsp;&nbsp;Initiate a scan on your project
-Use Scantist to scan your open source projects and identify vulnerabilities and licensing risks. Depending on your project type, you can trigger a scan by selecting from a range of options in our documentation.
-
-- [Software Composition Analysis (SCA)](#)
-- [Static Application Security Testing (SAST)](#) 
-- [Fuzzing](#)
-- [Infrastructure as Code (IaC)](#)
+- [上传源代码或二进制文件](../Create-and-Manage-Project/Upload-Files-Directly)
+- [上传源代码管理（SCM）存储库](../Create-and-Manage-Project/Add-SCM-Repositories)
 
 
-### 4.&nbsp;&nbsp;&nbsp;Access your scan results
-After scanning your projects, Scantist will provide a detailed report on any [vulnerabilities](#) or [licensing risks](#) found.
+### 3.&nbsp;&nbsp;&nbsp;在您的项目上发起一次扫描
+使用思探明扫描您的开源项目，识别漏洞和许可风险。根据您的项目类型，在我们的文档中选择一系列选项来触发扫描。
+
+- [软件组成分析 (SCA)](#)
+- [静态应用程序安全测试（SAST)](#) 
+- [模糊测试](#)
+- [基础设施即代码（IaC)](#)
 
 
-### 5.&nbsp;&nbsp;&nbsp;Fix your vulnerabilities
-It's time to fix the vulnerabilities detected in your Scan. Use our remediation strategies to quickly and efficiently address these issues and improve the overall quality of your software. 
+### 4.&nbsp;&nbsp;&nbsp;访问您的扫描结果
+在扫描您的项目后，思探明将提供关于发现的[漏洞](#)或[许可风险](#)的详细报告.
 
 
-## What's next?
+### 5.&nbsp;&nbsp;&nbsp;修复您的漏洞
+是时候修复您扫描中检测到的漏洞了。使用我们的修复策略，快速高效地解决这些问题，提高软件的整体质量。
+
+
+## 接下来
 
 <hr class="thick">
 
-You now set up Scantist SCA and are ready to start scanning your open source projects. Scantist is designed to integrate seamlessly with your existing software development workflows and tools. 
-- [Integrate Scantist with your preferred CI/CD pipeline tools](#)
-- [Create compliance policies](#)
+您已经设置好了思探明的软件组成分析（SCA），准备开始扫描您的开源项目。思探明旨在与您现有的软件开发工作流程和工具无缝集成。
+- [将思探明与您首选的持续集成/持续交付（CI/CD）流水线工具进行集成](#)
+- [创建合规策略](#)
 <br /><br />
 
 
-With Scantist, managing and securing your open source software has never been easier. Sign up today and start using our powerful tool to improve the security of your software. 
+使用思探明，管理和保护您的开源软件变得更加简单。立即注册并开始使用我们强大的工具来提升软件的安全性。
 
-If you have any questions or need assistance, please don't hesitate to contact Scantist support at [support@scantist.com](mailto:support@scantist.com).
+如果您有任何问题或需要帮助，请随时联系思探明的支持团队，联系方式为：[support@scantist.com](mailto:support@scantist.com).
 </ClientOnly>
 
