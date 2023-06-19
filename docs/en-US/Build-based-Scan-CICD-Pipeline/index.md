@@ -43,9 +43,9 @@ By integrating Scantist with your CI/CD system, you can automatically scan your 
     <thead></thead>
     <tbody>
         <tr>
-            <td><img class="ci_logo" src="../../../public/images/Build-based-Scan-CICD-Pipeline/bamboo.svg" /></td>
-            <td><img class="ci_logo" src="../../../public/images/Build-based-Scan-CICD-Pipeline/circle-ci.svg" /></td>
-            <td><img class="ci_logo" src="../../../public/images/Build-based-Scan-CICD-Pipeline/github.svg" /></td>
+            <td><img class="ci_logo" src="/images/Build-based-Scan-CICD-Pipeline/bamboo.svg" /></td>
+            <td><img class="ci_logo" src="/images/Build-based-Scan-CICD-Pipeline/circle-ci.svg" /></td>
+            <td><img class="ci_logo" src="/images/Build-based-Scan-CICD-Pipeline/github.svg" /></td>
         </tr>
         <tr>
             <td>Bamboo</td>
@@ -53,9 +53,9 @@ By integrating Scantist with your CI/CD system, you can automatically scan your 
             <td>Github Actions</td>
         </tr>
         <tr>
-            <td><img class="ci_logo" src="../../../public/images/Build-based-Scan-CICD-Pipeline/gitlab.svg" /></td>
-            <td><img class="ci_logo" src="../../../public/images/Build-based-Scan-CICD-Pipeline/jenkins.svg" /></td>
-            <td><img class="ci_logo" src="../../../public/images/Build-based-Scan-CICD-Pipeline/travis.svg" /></td>
+            <td><img class="ci_logo" src="/images/Build-based-Scan-CICD-Pipeline/gitlab.svg" /></td>
+            <td><img class="ci_logo" src="/images/Build-based-Scan-CICD-Pipeline/jenkins.svg" /></td>
+            <td><img class="ci_logo" src="/images/Build-based-Scan-CICD-Pipeline/travis.svg" /></td>
         </tr>
         <tr>
             <td>Gitlab CI</td>
