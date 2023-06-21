@@ -1,25 +1,31 @@
 ---
-title: Gitlab CI Integration
+title: GitLab CI Integration
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
 tags: ci, gitlab, continuous integration
-description: This document explains how to integrate Gitlab CI
+description: This document explains how to integrate GitLab CI
 ---
 
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->Gitlab CI integrates with GitHub, GitHub Enterprise, and Bitbucket. Every time you commit code, Gitlab CI creates a build if there is a pipeline defined in your Gitlab environment. Integrating Scantist SCA as part of your development life cycle enforces security and licensing compliance in the CI/CD pipeline. 
+>Discover Scantist's capabilities with GitLab CI integration
+
+## GitLab CI
+
+GitLab CI is a continuous integration solution provided by GitLab that simplifies and automates the process of integrating code changes into a shared repository. With Gitlab CI, each code commit triggers an automated build process, provided that a pipeline is within your GitLab environment. It can be integrated with GitHub, GitHub Enterprise and Bitbucket.
+
+Integrating Scantist into the development lifecycle of GitLab CI can help enforce security and licensing compliance within your CI/CD pipeline.
 
 ## Steps for Integration with Gitlab CI
 
-Follow the following steps to integrate Scantist SCA with your Gitlab CI.
+Follow the following steps to integrate Scantist with your Gitlab CI.
 
-### Step 1 - Get Access Token
+### Step 1 - Create access token
 
-Access token allows Gitlab CI to communicate with Scantist SCA. Click [here](#) to learn how to get your access token.
+You will need to create an access token on Scantist to authenticate and authorize the integration between Scantist and GitLab.
 
 ### Step 2 - Setup Environmental Variables on Gitlab CI
 
@@ -56,7 +62,7 @@ job:
 
 Once the command has been added to your `.gitlab-ci.yml` file, Gitlab CI will trigger a new build automatically and push the 3rd party component information of your project to Scantist SCA after the successful build.
 
-This is an example of a `.gitlab-ci.yml` file for your reference:
+### An example of a `.gitlab-ci.yml` file
 
 ```yaml
 stages:
@@ -71,5 +77,9 @@ build-job:
       - curl -s https://download.scantist.io/scantist-bom-detect.jar --output scantist-bom-detect.jar
       - java -jar scantist-bom-detect.jar
 ```
+
+### Here is how a successful integration will look like
+
+<img src="" />
 
 </ClientOnly>
