@@ -153,12 +153,24 @@ export function enUSSidebar() {
       collapsed: true,
       items: [
         {
+          text: 'Bamboo CI Integration',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Bamboo-CI-Integration'
+        },
+        {
+          text: 'CircleCI Integration',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/CircleCI-Integration'
+        },
+        {
           text: 'Jenkins CI Integration',
           link: '/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration'
         },
         {
-          text: 'Gitlab CI Integration',
-          link: '/en-US/Build-based-Scan-CICD-Pipeline/Gitlab-CI-Integration'
+          text: 'GitLab CI Integration',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration'
+        },
+        {
+          text: 'Travis CI Integration',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration'
         },
       ]
     },

@@ -10,7 +10,7 @@ language: Ruby
 
 # {{ $frontmatter.title }}
 
->![Ruby logo](/images/Language-and-File-Support/Ruby.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+>![Ruby logo](/images/Language-and-File-Support/ruby.svg) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
 
 ## Here's what we support 
 

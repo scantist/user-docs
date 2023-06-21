@@ -9,7 +9,7 @@ tags: java, maven, gradle, ant, kotlin
 
 # {{ $frontmatter.title }}
 
->![Java logo](/images/Language-and-File-Support/Java.png) Discover Scantist's capabilities with Java programming language 
+>![Java logo](/images/Language-and-File-Support/java.svg) Discover Scantist's capabilities with Java programming language 
 
 ## Here's what we support 
 
