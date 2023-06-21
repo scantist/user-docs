@@ -27,7 +27,7 @@ export default defineConfig({
     },
     'zh-CN': {
       label: '简体中文',
-      title: '探明思',
+      title: '思探明',
       link: '/zh-CN/Get-Started-with-Scantist/',
       themeConfig: {
         sidebar: {
