@@ -41,15 +41,15 @@ You will need to create an access token on Scantist to authenticate and authoriz
 Log in to your Bamboo CI to add the Scantist Bamboo Plugin once you have downloaded it.
 
 Select "Manage apps" from the drop-down Administration list.
-<img src="../../../public/images/Build-based-Scan-CICD-Pipeline/bamboo/step3.1.png"/>
+<img src="/images/Build-based-Scan-CICD-Pipeline/bamboo/step3.1.png"/>
 
 Click on "Upload app" and browse for the <b>sbd.scan-1.0.0-SNAPSHOT.obr</b> file you have just downloaded in Step 1 and upload the Scantist Bamboo Plugin.
-<img src="../../../public/images/Build-based-Scan-CICD-Pipeline/bamboo/step3.2.png"/>
+<img src="/images/Build-based-Scan-CICD-Pipeline/bamboo/step3.2.png"/>
 
 <li>Add Scantist scan as a build task</li>
 
 Create a new build task in your Bamboo CI to add <b>Scantist scan</b>.
-<img src="../../../public/images/Build-based-Scan-CICD-Pipeline/bamboo/step4.1.png"/>
+<img src="/images/Build-based-Scan-CICD-Pipeline/bamboo/step4.1.png"/>
 
 In the "Scantist Task Configuration" section fill in the following details:
 
