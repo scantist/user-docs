@@ -183,16 +183,20 @@ export function enUSSidebar() {
           link: "/en-US/Build-based-Scan-CICD-Pipeline/CircleCI-Integration",
         },
         {
-          text: "Jenkins CI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration",
+          text: 'GitHub Actions Integration',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration'
         },
         {
           text: "GitLab CI Integration",
           link: "/en-US/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration",
         },
         {
-          text: "Travis CI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration",
+          text: 'Jenkins CI Integration',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration'
+        },
+        {
+          text: 'Travis CI Integration',
+          link: '/en-US/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration'
         },
       ],
     },
