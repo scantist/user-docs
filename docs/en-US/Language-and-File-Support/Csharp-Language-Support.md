@@ -4,15 +4,21 @@ author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
 tags: c#, nuget, .sln, project.asset.json, project.json, project.lock.json
-language: C#
+language: Csharp
 ---
+
+<script setup>
+import { convertLang } from '../../.vitepress/helperFunctions'
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![C# logo](/images/Language-and-File-Support/CSharp.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+<LanguageHeader :language="$frontmatter.language"/>
 
-## Here's what we support 
+## Here's what we support
 
 <hr class="thick" />
 
@@ -24,7 +30,7 @@ language: C#
     </thead>
     <tbody>
         <tr>
-            <td rowspan="3">{{ $frontmatter.language }}</td>
+            <td rowspan="3">{{ convertLang($frontmatter.language) }}</td>
             <td width="33.33%">Nuget 2</td>
             <td width="100%">.sln and packages.config</td>
         </tr>
@@ -39,11 +45,11 @@ language: C#
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with Scantist 
+## Scan your {{ convertLang($frontmatter.language) }} project with Scantist
 
 <hr class="thick" />
 
-Scantist scans the third-party components managed by Nuget. It locates the `.sln`, `packages.config`, `project.json`, `project.lock.json`, `.csproj (SDK-style)` or `project.assets.json` files in the source code, which provides information about the direct dependencies and their corresponding versions. 
+Scantist scans the third-party components managed by Nuget. It locates the `.sln`, `packages.config`, `project.json`, `project.lock.json`, `.csproj (SDK-style)` or `project.assets.json` files in the source code, which provides information about the direct dependencies and their corresponding versions.
 
 **Please be aware that Nuget 4.9 project.lock.json is not supported yet.**
 

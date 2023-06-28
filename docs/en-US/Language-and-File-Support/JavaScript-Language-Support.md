@@ -4,28 +4,51 @@ author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
 tags: javascript, npm, pnpm, yarn, package.json
+language: JavaScript
 ---
+
+<script setup>
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![JavaScript logo](/images/Language-and-File-Support/JavaScript.png) Discover Scantist's capabilities with JavaScript programming language 
+<LanguageHeader :language="$frontmatter.language"/>
 
-## Here's what we support 
-
-<hr class="thick" />
-
-|Languages |Package Manager|Manifest Files         |
-|----------|---------------|-----------------------|
-|Javascript|NPM            |package.json, package-lock.json, npm-shrinkwrap.json|
-|          |PNPM            |package.json, package-lock.json, npm-shrinkwrap.json|
-|          |Yarn           |yarn.lock, package.json|
-
-## Scan your JavaScript project with Scantist 
+## Here's what we support
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining `package.json`, `package-lock.json`, `npm-shrinkwrap.json` or `yarn.lock` files in the source code. 
+<table>
+    <thead>
+        <th>Languages</th>
+        <th>Package Manager</th>
+        <th>Manifest Files</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">{{ $frontmatter.language }}</td>
+            <td width="13.33%">NPM</td>
+            <td width="100%">package.json, package-lock.json, npm-shrinkwrap.json</td>
+        </tr>
+        <tr>
+            <td>PNPM</td>
+            <td>package.json, package-lock.json, npm-shrinkwrap.json</td>
+        </tr>
+        <tr>
+            <td>Yarn</td>
+            <td>yarn.lock, package.json</td>
+        </tr>
+    </tbody>
+</table>
+
+## Scan your JavaScript project with Scantist
+
+<hr class="thick" />
+
+Scantist scans the third-party components by examining `package.json`, `package-lock.json`, `npm-shrinkwrap.json` or `yarn.lock` files in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 

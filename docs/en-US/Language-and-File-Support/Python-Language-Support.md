@@ -6,13 +6,17 @@ lang: en-US
 tags: python, pip, setup.py, requirements.txt, pipfile.lock
 language: Python
 ---
+<script setup>
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![Python logo](/images/Language-and-File-Support/Python.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+<LanguageHeader :language="$frontmatter.language"/>
 
-## Here's what we support 
+## Here's what we support
 
 <hr class="thick" />
 
@@ -39,17 +43,17 @@ language: Python
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with Scantist 
+## Scan your {{ $frontmatter.language }} project with Scantist
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining `setup.py` file, which is the standard build file that lists the required packages and their versions. 
+Scantist scans the third-party components by examining `setup.py` file, which is the standard build file that lists the required packages and their versions.
 
-Scantist also checks the `requirements.txt` file, which contains a list of the packages and their versions needed to run the project. 
+Scantist also checks the `requirements.txt` file, which contains a list of the packages and their versions needed to run the project.
 
-Additionally, Scantist scans the `pipfile.lock` file, which is used by the Pipenv package manager to secure the versions of all the required packages for the project. 
+Additionally, Scantist scans the `pipfile.lock` file, which is used by the Pipenv package manager to secure the versions of all the required packages for the project.
 
-By examining these files, Scantist can provide comprehensive security scanning to identify any potential vulnerabilities in your project's third-party dependencies. 
+By examining these files, Scantist can provide comprehensive security scanning to identify any potential vulnerabilities in your project's third-party dependencies.
 
 <!--@include: ../../parts/maximize-results.md-->
 
