@@ -34,6 +34,7 @@ pipeline {
             steps {
                 sh '''
                     rm -rf node_modules
+                    rm -rf .vitepress
                     npm install -g pnpm only-allow
                     pnpm install --no-frozen-lockfile
                     pnpm docs:build
