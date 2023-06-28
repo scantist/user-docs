@@ -33,10 +33,12 @@ const languages = ref(["Java", "JavaScript", "Perl", "Go", "Python", "Csharp", "
 Scantist supports various package managers and manifests files for each programming language. To learn more about the language of choice, please refer to the table below and select the corresponding language.
 
 <div style="display:flex;flex-wrap: wrap">
-  <el-static-card v-for="lang in languages" @click="location.replace(`/en-US/Language-and-File-Support/${lang}-Language-Support.html`)" is-border style="margin: 5px;" :class="$style.lang">
-    <img :src="`/images/Language-and-File-Support/${lang}.svg`" style="width:87px;margin-left:auto;margin-right:auto;min-height:87px" >
-    <el-txt type="body" style="display:flex;justify-content: center;margin-top:12px">{{ convertLang(lang) }}</el-txt>
-  </el-static-card>
+  <a v-for="lang in languages" style="text-decoration:none" :href="`/en-US/Language-and-File-Support/${lang}-Language-Support.html`">
+    <el-static-card is-border style="margin: 5px;" :class="$style.lang">
+      <img :src="`/images/Language-and-File-Support/${lang}.svg`" style="width:87px;margin-left:auto;margin-right:auto;height:87px" >
+      <el-txt type="body" style="display:flex;justify-content: center;margin-top:12px">{{ convertLang(lang) }}</el-txt>
+    </el-static-card>
+  </a>
 </div>
 
 <br />
