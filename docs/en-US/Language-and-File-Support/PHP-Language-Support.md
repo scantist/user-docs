@@ -4,13 +4,18 @@ author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
 tags: php, composer, composer.lock, composer.json
-language: PHP
+language: Php
 ---
+
+<script setup>
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![PHP logo](/images/Language-and-File-Support/php.svg) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language
+<LanguageHeader :language="$frontmatter.language"/>
 
 ## Here's what we support
 

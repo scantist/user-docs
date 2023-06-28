@@ -6,13 +6,18 @@ lang: en-US
 tags: objective-c, cocoapods, podfile.lock
 language: Objective-C
 ---
+
+<script setup>
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![Objective-C logo](/images/Language-and-File-Support/Objective-C.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+<LanguageHeader :language="$frontmatter.language"/>
 
-## Here's what we support 
+## Here's what we support
 
 <hr class="thick" />
 
@@ -24,14 +29,14 @@ language: Objective-C
     </thead>
     <tbody>
         <tr>
-            <td>{{ $frontmatter.language }}</td>
+            <td width="30%">{{ $frontmatter.language }}</td>
             <td width="33.33%">CocoaPods</td>
-            <td width="100%">Podfile.lock</td>
+            <td width="36.33%">Podfile.lock</td>
         </tr>
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with Scantist 
+## Scan your {{ $frontmatter.language }} project with Scantist
 
 <hr class="thick" />
 

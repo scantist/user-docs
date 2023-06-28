@@ -6,13 +6,18 @@ lang: en-US
 tags: swift, swift, package.swift
 language: Swift
 ---
+
+<script setup>
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![Swift logo](/images/Language-and-File-Support/Swift.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+<LanguageHeader :language="$frontmatter.language"/>
 
-## Here's what we support 
+## Here's what we support
 
 <hr class="thick" />
 
@@ -31,11 +36,11 @@ language: Swift
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with Scantist 
+## Scan your {{ $frontmatter.language }} project with Scantist
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining the `Package.swift` file in the source code.  
+Scantist scans the third-party components by examining the `Package.swift` file in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 
