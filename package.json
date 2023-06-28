@@ -21,7 +21,7 @@
   "homepage": "https://github.com/scantist/user-docs#readme",
   "dependencies": {
     "@vueuse/core": "^9.13.0",
-    "element-plus": "file:element-plus-v0.1.0-sct.tgz",
+    "element-plus": "file:element-plus-v0.2.0-sct.tgz",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "vue-router": "4"

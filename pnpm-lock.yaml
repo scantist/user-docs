@@ -9,8 +9,8 @@ dependencies:
     specifier: ^9.13.0
     version: 9.13.0(vue@3.2.47)
   element-plus:
-    specifier: file:element-plus-v0.1.0-sct.tgz
-    version: file:element-plus-v0.1.0-sct.tgz(vue@3.2.47)
+    specifier: file:element-plus-v0.2.0-sct.tgz
+    version: file:element-plus-v0.2.0-sct.tgz(vue@3.2.47)
   fs:
     specifier: 0.0.1-security
     version: 0.0.1-security
@@ -895,9 +895,9 @@ packages:
       '@vue/server-renderer': 3.2.47(vue@3.2.47)
       '@vue/shared': 3.2.47
 
-  file:element-plus-v0.1.0-sct.tgz(vue@3.2.47):
-    resolution: {integrity: sha512-/GrfyouS67aDN+FYGYIGTEhIYUa3LXDb9SUi/2Vm/Xlzym7r2wPT4JThqhuVMSLPm4FwaOAST0cmpoPXr3MjJg==, tarball: file:element-plus-v0.1.0-sct.tgz}
-    id: file:element-plus-v0.1.0-sct.tgz
+  file:element-plus-v0.2.0-sct.tgz(vue@3.2.47):
+    resolution: {integrity: sha512-PYse/gFk9/RmTt8b5/XlPDSBG+Y7HjA0qrVlpQJ1UacYvAlzF3EObINPEpqslw3b4HqqDDMoV+ovaaqObzciMA==, tarball: file:element-plus-v0.2.0-sct.tgz}
+    id: file:element-plus-v0.2.0-sct.tgz
     name: element-plus
     version: 0.0.0-dev.1
     peerDependencies:
