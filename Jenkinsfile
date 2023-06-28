@@ -24,7 +24,7 @@ pipeline {
             }
         }
 
-        stage('Build and upload to v4dev') {
+        stage('Build and upload to docs.scantist.io') {
             environment {
                 GCP_CREDENTIALS_ID ='scantist-v4'
                 GCP_BUCKET = 'docs.scantist.io/'
@@ -33,8 +33,11 @@ pipeline {
             }
             steps {
                 sh '''
-                    npm install
-                    yarn docs:build
+                    rm -rf node_modules
+                    rm -rf .vitepress
+                    npm install -g pnpm only-allow
+                    pnpm install --no-frozen-lockfile
+                    pnpm docs:build
                 '''
                 step([$class: 'ClassicUploadStep',
                     credentialsId: env.GCP_CREDENTIALS_ID,
@@ -43,6 +46,11 @@ pipeline {
                     pathPrefix: env.GCP_FILE_PATH_PREFIX,
                     showInline: true])
                 pushHangoutsNotify("Deployed ${env.BRANCH_NAME} to docs.scantist.io.")
+                // Reset for next build
+                sh '''
+                    git config --global --add safe.directory $(pwd)
+                    git reset --hard
+                '''
             }
         }
     }
