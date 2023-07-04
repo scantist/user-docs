@@ -310,6 +310,16 @@ export function enUSSidebar() {
         },
       ]
     },
+    {
+      text: 'References',
+      collapsed: true,
+      items: [
+        {
+          text: 'Scantist BOM Detect CLI Commands & Parameters',
+          link: '/en-US/References/Scantist-BOM-Detect-CLI-Commands-&-Parameters',
+        },
+      ]
+    },
   ]
 }
 
