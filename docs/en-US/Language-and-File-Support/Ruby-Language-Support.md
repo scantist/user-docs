@@ -6,13 +6,17 @@ lang: en-US
 tags: ruby, rubygems, gemfile.lock, gemfile
 language: Ruby
 ---
+<script setup>
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![Ruby logo](/images/Language-and-File-Support/ruby.svg) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+<LanguageHeader :language="$frontmatter.language"/>
 
-## Here's what we support 
+## Here's what we support
 
 <hr class="thick" />
 
@@ -31,11 +35,11 @@ language: Ruby
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with Scantist 
+## Scan your {{ $frontmatter.language }} project with Scantist
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining `gemfile.lock` or `gemfile` files in the source code. 
+Scantist scans the third-party components by examining `gemfile.lock` or `gemfile` files in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 

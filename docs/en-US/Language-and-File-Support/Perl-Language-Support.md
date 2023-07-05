@@ -6,13 +6,17 @@ lang: en-US
 tags: perl, cpan, makefile.pl
 language: Perl
 ---
+<script setup>
+import LanguageHeader from './components/LanguageHeader.vue'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->![Perl logo](/images/Language-and-File-Support/Perl.png) Discover Scantist's capabilities with {{ $frontmatter.language }} programming language 
+<LanguageHeader :language="$frontmatter.language"/>
 
-## Here's what we support 
+## Here's what we support
 
 <hr class="thick" />
 
@@ -31,11 +35,11 @@ language: Perl
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with Scantist 
+## Scan your {{ $frontmatter.language }} project with Scantist
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining `Makefile.PL` file in the source code. 
+Scantist scans the third-party components by examining `Makefile.PL` file in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 
