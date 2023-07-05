@@ -9,18 +9,14 @@ description: This document lists out all Scantist BOM Detect's commands and para
 
 <ClientOnly>
 
-# {{ $frontmatter.title }}
+# Scantist BOM Detect
+
+# CLI Commands & Parameters
 
 [[toc]]
 
-## Authentication Methods
-There are 2 different methods for Scantist-BOM-Detect to authenticate the User:
-- Authentication through Username and Password
-- Authentication through SCANTISTTOKEN environment variable
+## Basic Commands
 
-Both methods of authentication will result in slightly different usage of the CLI commands, described as below.
-
-## Option: Authentication through Username and Password
 <table>
     <thead>
         <th>Command</th>
@@ -29,12 +25,13 @@ Both methods of authentication will result in slightly different usage of the CL
     <tbody>
         <tr>
             <td><code>java -jar sca-bom-detect-v4.jar</code></td>
-            <td>Triggers the detector (JAR file) using default parameters.</td>
+            <td>Triggers the detector (JAR file) using default parameters values.</td>
         </tr>
     </tbody>
 </table>
 
-### Synopsis of Parameters
+## Basic Parameters
+
 <table>
     <thead>
         <th>Parameters</th>
@@ -43,8 +40,30 @@ Both methods of authentication will result in slightly different usage of the CL
     <tbody>
         <tr>
             <td><code>-h</code></td>
-            <td>Display help messages</td>
+            <td>Display help messages, which shows all commands and their respective description</td>
         </tr>
+    </tbody>
+</table>
+
+## Authentication Methods
+
+There are 2 different methods for Scantist BOM Detect to authenticate the user:
+
+- Authentication through Username and Password
+- Authentication through SCANTISTTOKEN environment variable
+
+Different methods of authentication will result in slightly different usage of the CLI commands.
+
+### Option: Authentication through Username and Password
+
+#### Synopsis of Parameters
+
+<table>
+    <thead>
+        <th>Parameters</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
         <tr>
             <td><code>--auth</code></td>
             <td>Authentication flag, requires <code>-serverUrl, -username,-password</code></td>
@@ -92,82 +111,71 @@ Both methods of authentication will result in slightly different usage of the CL
     </tbody>
 </table>
 
-### How To
+#### How To
 
-#### Display help
-Display help messages, which shows all commands and their respective description
+<br />
 
-```shell
-java -jar sca-bom-detect-v4.jar -h
-```
+##### Login
 
-#### Login to server
-Login
+Log in to Scantist's server.
 
 ```shell
-java -jar sca-bom-detect-v4.jar --auth -serverUrl https://api-v4staging.scantist.io/v2/scans/ci-scan/ -username <username> -password <password>
+export USERNAME="your_username"
+export PASSWORD="your_password"
+export SERVERURL="https://api-v4staging.scantist.io/v2/scans/ci-scan/"
+java -jar sca-bom-detect-v4.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
 ```
 
-#### List projects
+##### List projects
+
 Display list of projects that have been scanned. Be sure to login to server first.
 
 ```shell
 java -jar sca-bom-detect-v4.jar --cliScan --list_projects
 ```
 
-#### Create a new project
-Create a project with given project name
+##### Create a new project
+
+Create a project with given project name.
 
 ```shell
 java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name>
 ```
 
-#### Create a new version and upload source code
+##### Create a new version and upload source code
+
 Create a project with given project name, project version and file path to project.
 
 ```shell
 java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
 ```
 
-#### Trigger Scan
+##### Trigger Scan
+
 Trigger a scan on an existing project name, version and file path. If it does not exist, it will be created.
 
 ```shell
 java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
 ```
 
-#### Log out
-Logout of account. Be sure to always logout in order to change accounts
+##### Logout
+
+Log out of the current account. Always log out first to log in to another account.
 
 ```shell
 java -jar sca-bom-detect-v4.jar --logout
 ```
 
-## Option: Authentication through SCANTISTTOKEN
-<table>
-    <thead>
-        <th>Commands</th>
-        <th>Description</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>java -jar sca-bom-detect-v4.jar</code></td>
-            <td>Triggers the detector (JAR file) using default parameters.</td>
-        </tr>
-    </tbody>
-</table>
+### Option: Authentication through SCANTISTTOKEN
 
-### Synopsis of Parameters
+#### Synopsis of Parameters
+
 <table>
     <thead>
         <th>Parameters</th>
         <th>Description</th>
     </thead>
     <tbody>
-        <tr>
-            <td><code>-h</code></td>
-            <td>Display help messages</td>
-        </tr>
         <tr>
             <td><code>-project_name <i>&lt;project_name&gt;</i></code></td>
             <td>Create a new project with <i>&lt;project_name&gt;</i></td>
@@ -184,95 +192,35 @@ java -jar sca-bom-detect-v4.jar --logout
             <td><code>-scanType <i>&lt;e.g. SCA&gt;</i></code></td>
             <td>Trigger a scan of type <i>&lt;scanType&gt;</i>, under <i>&lt;project_name&gt;</i>, <i>&lt;project_version&gt;</i>, <i>&lt;filePath&gt;</i>. Needs to be used with <code>-project_name, -project_version, -filePath</code></td>
         </tr>
-        <tr>
-            <td><code>--logout </code></td>
-            <td>Logout</td>
-        </tr>
     </tbody>
 </table>
 
-### How To
+#### How To
 
-#### Display help
-<table>
-    <tbody>
-        <tr>
-            <td><code>-h</code></td>
-            <td>Display help messages, which shows all commands and their respective description</td>
-        </tr>
-    </tbody>
-</table>
+<br />
 
-```shell
-java -jar sca-bom-detect-v4.jar -h
-```
+##### Create a new project
 
-#### Create a new project
-<table>
-    <tbody>
-        <tr>
-            <td><code>-project_name <i>&lt;project_name&gt;</i></code></td>
-            <td>Create a project with given project name</td>
-        </tr>
-    </tbody>
-</table>
+Create a project using the given project name.
 
 ```shell
 java -jar sca-bom-detect-v4.jar -project_name <project_name>
 ```
 
-#### Create a new version and upload source code
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <code>-project_name <i>&lt;project_name&gt;</i>
-                    -project_version <i>&lt;version_name&gt;</i>
-                    -file <i>&lt;file_path&gt;</i>
-                </code>
-            </td>
-            <td>Create a project with given project name, project version and file path to project.</td>
-        </tr>
-    </tbody>
-</table>
+##### Create a new version and upload source code
+
+Create a project with given project name, project version and file path to project.
 
 ```shell
-java -jar sca-bom-detect-v4.jar -project_name <project_name> -project_version <version_name> -file <filePath>
+java -jar sca-bom-detect-v4.jar -project_name <project_name> -project_version <version_name> -file <file_path>
 ```
 
-#### Trigger Scan
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <code>-project_name <i>&lt;project_name&gt;</i>
-                    -project_version <i>&lt;version_name&gt;</i>
-                    -file <i>&lt;file_path&gt;</i>
-                    -scanType <i>&lt;e.g. SCA&gt;</i>
-                </code>
-            </td>
-            <td>Trigger a scan on an existing project name, version and file path. If it does not exist, it will be created.</td>
-        </tr>
-    </tbody>
-</table>
+##### Trigger Scan
+
+Trigger a scan on an existing project name, version and file path. If it does not exist, it will be created.
 
 ```shell
-java -jar sca-bom-detect-v4.jar -project_name <project_name> -project_version <version_name> -file <filePath>
+java -jar sca-bom-detect-v4.jar -project_name <project_name> -project_version <version_name> -file <file_path> -scanType SCA
 ```
 
-#### Log out
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <code>--logout</code>
-            </td>
-            <td>Logout of account. Be sure to always logout in order to change accounts</td>
-        </tr>
-    </tbody>
-</table>
-
-```shell
-java -jar sca-bom-detect-v4.jar --logout
-```
 </ClientOnly>
