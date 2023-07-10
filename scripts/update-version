@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+env=$1
+release_version=$2
+
+update_version() {
+    echo "-------------Update version-------------"
+    # Download version
+    gsutil cp gs://$env.scantist.io/setting/version version
+    # Read the content of the version file
+    content=$(<version)
+    # Get the userdoc version from the environment variable
+    userdoc_version=$release_version
+    # Replace the userdoc version in the content
+    new_content=$(echo "$content" | awk -v new_version="$userdoc_version" '/userdoc:/ { sub(/userdoc: .*/, "userdoc: " new_version) } 1')
+    # Write the modified content back to the version file
+    echo "$new_content" > version
+    cat version
+    gsutil cp version gs://$env.scantist.io/setting/version 
+}
+
+main() {
+    update_version
+}
+
+main
