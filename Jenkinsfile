@@ -24,6 +24,15 @@ pipeline {
             }
         }
 
+        stage('Configure to download version file') {
+            steps {
+                sh'''
+                    gcloud auth activate-service-account v4-dev-cloudstorage@scantist-v4.iam.gserviceaccount.com --key-file=$SERVICE_ACCOUNT_KEY
+                    gcloud config set project scantist-v4
+                '''
+            }
+        }
+
         stage('Build and upload to docs.scantist.io') {
             environment {
                 GCP_CREDENTIALS_ID ='scantist-v4'
@@ -38,6 +47,7 @@ pipeline {
                     npm install -g pnpm only-allow
                     pnpm install --no-frozen-lockfile
                     pnpm docs:build
+                    bash scripts/update-version docs ${env.TAG_NAME}
                 '''
                 step([$class: 'ClassicUploadStep',
                     credentialsId: env.GCP_CREDENTIALS_ID,
