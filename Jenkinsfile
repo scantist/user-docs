@@ -41,14 +41,14 @@ pipeline {
                 GCP_FILE_PATH_PREFIX = "docs/.vitepress/dist/"
             }
             steps {
-                sh '''
+                sh """
                     rm -rf node_modules
                     rm -rf .vitepress
                     npm install -g pnpm only-allow
                     pnpm install --no-frozen-lockfile
                     pnpm docs:build
-                    bash scripts/update-version docs ${env.BRANCH_NAME}
-                '''
+                    bash scripts/update-version v4dev ${env.BRANCH_NAME}
+                """
                 step([$class: 'ClassicUploadStep',
                     credentialsId: env.GCP_CREDENTIALS_ID,
                     bucket: "gs://${env.GCP_BUCKET}",
