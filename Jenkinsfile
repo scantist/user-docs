@@ -47,7 +47,7 @@ pipeline {
                     npm install -g pnpm only-allow
                     pnpm install --no-frozen-lockfile
                     pnpm docs:build
-                    bash scripts/update-version docs ${env.TAG_NAME}
+                    bash scripts/update-version docs ${env.BRANCH_NAME}
                 '''
                 step([$class: 'ClassicUploadStep',
                     credentialsId: env.GCP_CREDENTIALS_ID,
