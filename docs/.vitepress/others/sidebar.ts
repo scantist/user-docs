@@ -329,8 +329,8 @@ export function enUSSidebar() {
           collapsed: true,
           items: [
             {
-              text: "Jira (WIP)",
-              link: "/en-US/Settings/Integrations-Settings/Jira-WIP",
+              text: 'Jira',
+              link: '/en-US/Settings/Integrations-Settings/Jira',
             },
           ],
         },
