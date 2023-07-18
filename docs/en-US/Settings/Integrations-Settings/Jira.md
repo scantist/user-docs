@@ -1,5 +1,5 @@
 ---
-title: Jira (WIP)
+title: Jira
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
