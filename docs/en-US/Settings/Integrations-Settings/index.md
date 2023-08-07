@@ -32,7 +32,7 @@ Track and manage the progress of reported vulnerability issues.
 
 Issue tracking tools can facilitate this progress: 
 
-* [Jira](Jira-WIP.md)
+* [Jira](Jira.md)
 
 * Chat Notify
 

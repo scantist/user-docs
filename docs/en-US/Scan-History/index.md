@@ -38,6 +38,6 @@ Viewing scan history for SCA and SAST scans can be a useful way to identify tren
 
 You can now review results from multiple scans for your open source projects and remediate any identified vulnerabilities
 
-* [Export Reports on Scantist](../Application-Security-Testing-Solution/SCA/Export-Reports-on-Scantist.md)
+* [Export Reports on Scantist](../SCA/Export-Reports-on-Scantist.md)
 * Fix vulnerabilities
 </ClientOnly>

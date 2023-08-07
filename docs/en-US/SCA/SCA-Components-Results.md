@@ -27,7 +27,7 @@ Scantist provides the component details in a table format. The table includes th
 | Scope             | The scope of component, whether it’s a Dependencies or devDependencies                                                           |
 | Root              | The root of the component, the initial dependency that pulled it into the project                                                |
 | Depth             | The level of the component’s dependency in the software project                                                                  |
-| Language          | The [programming language](../../Language-and-File-Support/) of the component                                                    |
+| Language          | The [programming language](../Language-and-File-Support/) of the component                                                    |
 | File Path         | The path to the file containing the component                                                                                    |
 | Module            | The name of the module that contains the component                                                                               |
 | Vulnerabilities   | The [vulnerabilities]() associated with the components, categorized as critical, high, medium and low                            |
