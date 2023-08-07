@@ -9,13 +9,13 @@ tags: scm, integration, github, gitlab, bitbucket
 
 # {{ $frontmatter.title }}
 
->Do you have repositories in more than one Source Control Management (SCM) account? You can now connect to multiple SCM platforms. 
+>Do you have repositories in more than one Source Control Management (SCM) account? You can now connect to multiple SCM platforms.
 
 ## Supported SCM platforms
 
 <hr class="thick" />
 
-Scantist currently supports integration with the following SCM platforms: 
+Scantist currently supports integration with the following SCM platforms:
 
 - [GitHub](https://github.com)
 
@@ -31,22 +31,21 @@ To use the SCM integration with Scantist, you must have an active Scantist accou
 
 <hr class="thick" />
 
-To connect your SCM account to Scantist, follow these steps: 
+To connect your SCM account to Scantist, follow these steps:
 
-1.&nbsp;&nbsp;&nbsp;Navigate to the profile tab and select "SCM Integration" from the drop-down list
+1. Navigate to the profile tab and select "SCM Integration" from the drop-down list
 
-![profile tab then SCM Integration](/images/Get-Started-with-Scantist/SCM-Integration-1.png)
+    ![profile tab then SCM Integration](/images/Get-Started-with-Scantist/SCM-Integration-1.png)
 
-2.&nbsp;&nbsp;&nbsp;Select the SCM platform you want to integrate with and click "Connect"
+2. Select the SCM platform you want to integrate with and click "Connect"
 
-![SCM platform then Connect](/images/Get-Started-with-Scantist/SCM-Integration-2.png)
+    ![SCM platform then Connect](/images/Get-Started-with-Scantist/SCM-Integration-2.png)
 
-3.&nbsp;&nbsp;&nbsp;Follow the prompts to authorize Scantist to access your SCM account
+3. Follow the prompts to authorize Scantist to access your SCM account
 
-![authorize Scantist to access SCM account](/images/Get-Started-with-Scantist/SCM-Integration-3.png)
+    ![authorize Scantist to access SCM account](/images/Get-Started-with-Scantist/SCM-Integration-3.png)
 
-4.&nbsp;&nbsp;&nbsp;Once authorized, you will be able to view your repositories in Scantist 
-
+4. Once authorized, you will be able to view your repositories in Scantist
 
 ## Disconnect SCM account from Scantist
 
@@ -54,12 +53,12 @@ To connect your SCM account to Scantist, follow these steps:
 
 To disconnect your SCM account from Scantist, follow these steps:
 
-1.&nbsp;&nbsp;&nbsp;Navigate to the profile tab and select "SCM Integration" from the drop-down list 
+1. Navigate to the profile tab and select "SCM Integration" from the drop-down list
 
-2.&nbsp;&nbsp;&nbsp;Find the SCM platform that you want to disconnect and click on the "Disconnect button"
+2. Find the SCM platform that you want to disconnect and click on the "Disconnect button"
 
-3.&nbsp;&nbsp;&nbsp;Confirm that you want to disconnect the SCM account from Scantist
+3. Confirm that you want to disconnect the SCM account from Scantist
 
-4.&nbsp;&nbsp;&nbsp;Once disconnected, Scantist will no longer be able to access your repositories on the SCM platform
+4. Once disconnected, Scantist will no longer be able to access your repositories on the SCM platform
 
 </ClientOnly>
