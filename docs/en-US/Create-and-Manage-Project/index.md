@@ -9,7 +9,7 @@ tags: create project, manage project, connect scm, add scm, upload file directly
 
 # {{ $frontmatter.title }}
 
-> Explore how to effortlessly create new projects by uploading or connecting to SCM, and efficiently manage them for scanning.
+> Explore how to effortlessly create new projects by uploading or connecting to SCM account, and efficiently managing them for scanning.
 
 ## Create a New Project
 
@@ -36,24 +36,24 @@ tags: create project, manage project, connect scm, add scm, upload file directly
     </tbody>
 </table>
 
-## Project Settings
+## Settings
 
 <hr class="thick" />
 
-After you have created a project and it is added to the Scantist dashboard, you can configure the project settings and manage your list of projects. This includes deleting a project if you no longer need it. 
+After you have created a project and it is added to the Scantist dashboard, you can configure the project settings and manage your list of projects. This includes deleting a project if you no longer need it.
 
-### General Settings
+### Project Settings
 
 <div style="display: flex;">
 <div style="flex: 1;">
 
 1. Click on the newly added project
 
-2. Click on "Project Settings" in the top right corner
+2. Click on **"Project Settings"** in the top right corner
 
 3. In the pop-up window, provide a project description, select the teams that you want to assign, and add relevant tags to the project
 
-4. Click on the "Delete" icon if you wish to remove the project. Note that deleting a project will also delete all associated scan reports and findings. 
+4. Click on the **"Delete"** icon if you wish to remove the project. Note that deleting a project will also delete all associated scan reports and findings.
 
 </div>
 <div style="flex: 1; margin: 15px;">
@@ -65,7 +65,7 @@ After you have created a project and it is added to the Scantist dashboard, you 
 
 ### Scan Settings
 
-Scan settings for both upload and SCM scans help you tailor the scanning process to fit your specific needs and preferences. 
+Scan settings for both upload and SCM scans help you tailor the scanning process to fit your specific needs and preferences.
 
 - [Upload Scan Settings](../Trigger-Scan/Upload-Scan-Settings)
 
