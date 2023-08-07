@@ -45,18 +45,6 @@ function getSidebarItems(
     });
 }
 
-// export function getSidebar(options: Options = {}) {
-//   options.contentRoot = options?.contentRoot ?? '/docs/en-US/';
-//   options.contentDirs = options?.contentDirs ?? null;
-//   options.collapsible = options?.collapsible ?? true;
-//   options.collapsed = options?.collapsed ?? true;
-
-// 	options.contentRoot = path.join(process.cwd(), options.contentRoot)
-//   console.log('options contentroot', options.contentRoot);
-// 	const dir = fs.readdirSync(options.contentRoot).filter((file: string) => (options.contentDirs === null || options.contentDirs?.indexOf(file) !== -1) && fs.statSync(path.join(options.contentRoot ?? '/', file)).isDirectory());
-// 	return getSidebarItems(dir, options.contentRoot, options.contentRoot, options)
-// }
-
 export function getSidebar() {
   return [
     {
@@ -156,10 +144,6 @@ export function enUSSidebar() {
       collapsed: true,
       items: [
         {
-          text: "Scan Type",
-          link: "/en-US/Trigger-Scan/Scan-Type",
-        },
-        {
           text: "Upload Scan Settings",
           link: "/en-US/Trigger-Scan/Upload-Scan-Settings",
         },
@@ -183,16 +167,12 @@ export function enUSSidebar() {
           link: "/en-US/Build-based-Scan-CICD-Pipeline/CircleCI-Integration",
         },
         {
-          text: 'GitHub Actions Integration',
+          text: 'GitHub Actions CI Integration',
           link: '/en-US/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration'
         },
         {
           text: "GitLab CI Integration",
           link: "/en-US/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration",
-        },
-        {
-          text: 'Jenkins CI Integration',
-          link: '/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration'
         },
         {
           text: 'Jenkins CI Integration',
@@ -205,52 +185,21 @@ export function enUSSidebar() {
       ],
     },
     {
-      text: "Application Security Testing Solution",
-      link: "/en-US/Application-Security-Testing-Solution/",
+      text: "SCA",
+      link: "/en-US/SCA/",
       collapsed: true,
       items: [
         {
-          text: "SCA",
-          link: "/en-US/Application-Security-Testing-Solution/SCA/",
-          collapsed: true,
-          items: [
-            {
-              text: "SCA Components Results",
-              link: "/en-US/Application-Security-Testing-Solution/SCA/SCA-Components-Results",
-            },
-            {
-              text: "SCA Vulnerabilities Results",
-              link: "/en-US/Application-Security-Testing-Solution/SCA/SCA-Vulnerabilities-Results",
-            },
-            {
-              text: "SCA Licenses",
-              link: "/en-US/Application-Security-Testing-Solution/SCA/SCA-Licenses",
-            },
-            {
-              text: "Export Reports on Scantist",
-              link: "/en-US/Application-Security-Testing-Solution/SCA/Export-Reports-on-Scantist",
-            },
-          ],
+          text: "SCA Components Results",
+          link: "/en-US/SCA/SCA-Components-Results",
         },
         {
-          text: "SAST",
-          link: "/en-US/Application-Security-Testing-Solution/SAST/",
-          collapsed: true,
+          text: "SCA Licenses",
+          link: "/en-US/SCA/SCA-Licenses",
         },
         {
-          text: "IaC",
-          link: "/en-US/Application-Security-Testing-Solution/IaC/",
-          collapsed: true,
-        },
-        {
-          text: "Fuzzing",
-          link: "/en-US/Application-Security-Testing-Solution/Fuzzing/",
-          collapsed: true,
-        },
-        {
-          text: "Code Traceability",
-          link: "/en-US/Application-Security-Testing-Solution/Code-Traceability/",
-          collapsed: true,
+          text: "Export Reports on Scantist",
+          link: "/en-US/SCA/Export-Reports-on-Scantist",
         },
       ],
     },
@@ -318,10 +267,6 @@ export function enUSSidebar() {
               link: "/en-US/Settings/Members-and-Teams/Member-Roles",
             },
           ],
-        },
-        {
-          text: "Tags",
-          link: "/en-US/Settings/Tags",
         },
         {
           text: "Integrations Settings",
