@@ -3,7 +3,7 @@ title: Trigger Scan
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
-tags: scan, sca, sast, fuzzing, iac
+tags: scan, sca, sast, fuzzing, iac, code snippet
 ---
 <ClientOnly>
 
@@ -11,46 +11,36 @@ tags: scan, sca, sast, fuzzing, iac
 
 >Explore what's next after creating a project in Scantist
 
-## Two methods for scanning in Scantist
+## Initiate a scan for your project
 
 <hr class="thick" />
 
-There are two ways to initiate a scan for your project:
-
-### Project List 
-
-Click on the "Scan" icon on the project list 
+Click on the **"Scan"** icon on the project list
 
 ![Scan from Project List](/images/Trigger-Scan/Trigger-Scan-1.png)
 
-### Project Details Page
-
-Click on the project name to open the project details page
-
-Click on the "Scan" button on top right corner
-
-![Scan from Project Details Page](/images/Trigger-Scan/Trigger-Scan-2.png)
-
-
-## Follow these steps to start scanning 
+## Follow these steps to start scanning
 
 <hr class="thick" />
 
-### 1.&nbsp;&nbsp;&nbsp;Configure your project settings
-To initiate scanning for your projects, you will need to configure the project settings based on the type of projects created 
+### 1. Configure your project settings
 
-- Upload Scan Settings 
+To initiate scanning for your projects, you will need to configure the project settings based on the type of projects created
 
-- SCM Scan Settings
+- [Upload Scan Settings](./Upload-Scan-Settings.md)
 
-### 2.&nbsp;&nbsp;&nbsp;Select scan type
-Click on the "Scan" icon next to the project name. This will open a dialog where you can select the type of scan you want to run - [**SCA**](), [**SAST**](), [**Fuzzing**]() or [**IaC**]() (you may select more than one). 
+- [SCM Scan Settings](./SCM-Scan-Settings.md)
 
-You can further customise the scan setting before triggering the scan. Some of the options you can customize include [scan type](./Scan-Type), upload file version, [compliance policy](). 
+### 2. Select scan type
 
-![insert image](/images/Trigger-Scan/Trigger-Scan-3.png)
+Click on the "Scan" icon next to the project name. This will open a dialog where you can select the type of scan you want to run - [**SCA**](../SCA/), **SAST**, **Fuzzing**, **IaC** or **Code Snippet** (you may select more than one).
 
-### 3.&nbsp;&nbsp;&nbsp;Start scanning
+You can further customise the scan setting before triggering the scan. Some of the options you can customize include [scan type](./Scan-Type), select the branch or file version and [compliance policy](../Compliance-Policy-Rules/).
+
+![insert image](/images/Trigger-Scan/Trigger-Scan-2.png)
+
+### 3. Start scanning
+
 Once you have configured the scan settings, you can start scanning by clicking on the "Scan" icon in the pop-up window. This will initiate the scan process and the results will be displayed once the scan is complete.
 
 <br />
@@ -61,10 +51,8 @@ Once you have configured the scan settings, you can start scanning by clicking o
 
 <hr class="thick" />
 
-You can now review your scan results for your open source projects and remediate any identified your vulnerabilities. 
+You can now review your scan results for your open source projects and remediate any identified your vulnerabilities.
 
-- [Results](#)
-
-- [Fix vulnerabilities](#)
+- [SCA Results](../SCA/SCA-Vulnerabilities-Results.md)
 
 </ClientOnly>

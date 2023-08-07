@@ -9,39 +9,43 @@ tags: repository, repositories, scm, add repo, github, gitlab, bitbucket
 
 # {{ $frontmatter.title }}
 
->Creating a new project with your SCM allows you to benefit from greater accuracy in results compared to uploading source code directly. You can view your repositories in Scantist when you link Scantist with your SCM accounts. To learn how to integrate SCM with Scantist, click this link: [SCM Integration](../Get-Started-with-Scantist/SCM-Integration.md)
+>Creating a new project with your SCM allows you to benefit from greater accuracy in results compared to uploading source code directly. You can view your repositories in Scantist when you link Scantist with your SCM accounts.
 
 ## Create a new project with your SCM
 
 <hr class="thick" />
 
-1.&nbsp;&nbsp;&nbsp;Click on the **"Projects"** page on the navigation bar
+::: warning Note:
+Make sure your Scantist account is integrated with your SCM account. Learn more on SCM integration here: [SCM Integration](../Get-Started-with-Scantist/SCM-Integration.md)
+:::
 
-2.&nbsp;&nbsp;&nbsp;Select **"Create Project"** 
+1. Click on the **"Projects"** page on the navigation bar
 
-3.&nbsp;&nbsp;&nbsp;In the pop-up window, select the option to add **"Source Control"** repositories 
+2. Select **"Create Project"**
 
-4.&nbsp;&nbsp;&nbsp;Choose the SCM repository you want to scan by clicking on the **"Add"** icon next to the repository
+3. In the pop-up window, select the option to add **"Source Control"** repositories
 
-![Adding Repository](/images/Create-and-Manage-Project/Add-SCM-Repositories-1.png)
- 
-5.&nbsp;&nbsp;&nbsp;Select the team that you want to assign the project to and choose the compliance policy you want to apply. If you have not created a compliance policy for the project, you can choose the default compliance. 
+4. Choose the SCM repository you want to scan by clicking on the **"Add"** icon next to the repository
 
-![Select Team and Compliance](/images/Create-and-Manage-Project/Add-SCM-Repositories-2.png)
+    ![Adding Repository](/images/Create-and-Manage-Project/Add-SCM-Repositories-1.png)
 
-6.&nbsp;&nbsp;&nbsp;Once you have uploaded your repository, configure the [scan setting]() to your preference
+5. Select the team that you want to assign the project to and choose the compliance policy you want to apply. If you have not created a [compliance policy](../Compliance-Policy-Rules/) for the project, you can choose the default compliance
 
-7.&nbsp;&nbsp;&nbsp;Finally, initiate the scan according to your preferred scan type. Learn about various scan types [here]()
+    ![Select Team and Compliance](/images/Create-and-Manage-Project/Add-SCM-Repositories-2.png)
+
+6. Once you have uploaded your repository, configure the [scan setting](../Trigger-Scan/SCM-Scan-Settings.md) to your preference
+
+7. Finally, initiate the scan according to your preferred scan type
 
 ## How to provide information when creating a new project?
 
 <hr class="thick" />
 
-When creating a new project with your SCM in Scantist, it is important to provide the necessary information. Here's what you need to do: 
+When creating a new project with your SCM in Scantist, it is important to provide the necessary information. Here's what you need to do:
 
-1.&nbsp;&nbsp;&nbsp;Select the team that you want to assign the project to
+1. Select the team that you want to assign the project to
 
-2.&nbsp;&nbsp;&nbsp;Choose the compliance policy you want to apply. If you have not created a compliance policy for the project, you can choose the default compliance. 
+2. Choose the compliance policy you want to apply. If you have not created a compliance policy for the project, you can choose the default compliance
 
 <!--@include: ./whats-next.md-->
 
