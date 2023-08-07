@@ -35,7 +35,7 @@ To initiate scanning for your projects, you will need to configure the project s
 
 Click on the "Scan" icon next to the project name. This will open a dialog where you can select the type of scan you want to run - [**SCA**](../SCA/), **SAST**, **Fuzzing**, **IaC** or **Code Snippet** (you may select more than one).
 
-You can further customise the scan setting before triggering the scan. Some of the options you can customize include [scan type](./Scan-Type), select the branch or file version and [compliance policy](../Compliance-Policy-Rules/).
+You can further customise the scan setting before triggering the scan. Some of the options you can customize include scan type, select the branch or file version and [compliance policy](../Compliance-Policy-Rules/).
 
 ![insert image](/images/Trigger-Scan/Trigger-Scan-2.png)
 
