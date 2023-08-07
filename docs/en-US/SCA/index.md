@@ -41,7 +41,7 @@ SCA scan detects any known vulnerabilities in the third-party components used in
 
 ### License Assessment
 
-SCA scan performs license analysis on the third-party components used in your application. It helps you ensure compliance by identifying any licensing issues associated with the third-party libraries and frameworks used in your application. 
+SCA scan performs license analysis on the third-party components used in your application. It helps you ensure compliance by identifying any licensing issues associated with the third-party libraries and frameworks used in your application.
 
 - SCA Licenses Results
 
