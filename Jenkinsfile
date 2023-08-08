@@ -9,7 +9,7 @@ pipeline {
             args '-u root:root -v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
-    params {
+    parameters {
         choice(name: 'COMPANY_ID', choices: ['False', 'scantist', 'mstl', 'osredm', 'tanxun', 'white-label'], description: 'Build onprem for company')
     }    
     environment {
