@@ -273,10 +273,6 @@ export function enUSSidebar() {
           link: "/en-US/Settings/Integrations-Settings/",
           collapsed: true,
           items: [
-            {
-              text: 'Jira',
-              link: '/en-US/Settings/Integrations-Settings/Jira',
-            },
           ],
         },
       ],
