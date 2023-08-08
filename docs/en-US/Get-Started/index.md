@@ -8,7 +8,7 @@ tags: started, get started, welcome
 
 <script setup>
 import { ref } from 'vue'
-import { config } from '../../../companyConfig.js'
+import { config } from '../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>

@@ -1,6 +1,6 @@
 import { defineConfig, loadEnv } from "vitepress";
 import { enUSSidebar, zhCNSidebar } from "./others/sidebar";
-import { config } from "../../companyConfig.js";
+import { config } from "../../config/companyConfig.js";
 const env = loadEnv("", process.cwd());
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

@@ -9,6 +9,9 @@ pipeline {
             args '-u root:root -v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
+    params {
+        choice(name: 'COMPANY_ID', choices: ['False', 'scantist', 'mstl', 'osredm', 'tanxun', 'white-label'], description: 'Build onprem for company')
+    }    
     environment {
         GOOGLE_CHAT_TOKEN = credentials('google-chat-release-deployment-token')
         GITHUB_CREDS = credentials('scantist-jenkins-bot')
@@ -24,11 +27,12 @@ pipeline {
             }
         }
 
-        stage('Configure to download version file') {
+        stage('Download configuration') {
             steps {
                 sh'''
                     gcloud auth activate-service-account v4-dev-cloudstorage@scantist-v4.iam.gserviceaccount.com --key-file=$SERVICE_ACCOUNT_KEY
                     gcloud config set project scantist-v4
+                    gcloud storage cp -r gs://scantist-devops-resources/frontend-envs .
                 '''
             }
         }
@@ -63,5 +67,38 @@ pipeline {
                 '''
             }
         }
+
+        stage('Build onprem and upload to GCP') {
+            when {
+              anyOf {
+                // branch 'sprint-v4'
+                expression { params.COMPANY_ID != 'False' }
+              }
+            }
+            environment {
+                GCP_CREDENTIALS_ID ='devop-playground'
+                GCP_BUCKET = 'user-docs-onprem/'
+                GCP_FILE_PATTERN = 'docs/.vitepress/dist/**/*'
+                GCP_FILE_PATH_PREFIX = "docs/.vitepress/dist/"
+            }
+            steps {
+                sh """
+                    rm -rf node_modules
+                    rm -rf .vitepress
+                    cp -R frontend-envs/${COMPANY_ID}/config/* config/.
+                    npm install -g pnpm only-allow
+                    pnpm install --no-frozen-lockfile
+                    pnpm docs:build
+                    bash scripts/update-version v4dev ${env.BRANCH_NAME}                    
+                """
+                step([$class: 'ClassicUploadStep',
+                    credentialsId: env.GCP_CREDENTIALS_ID,
+                    bucket: "gs://${env.GCP_BUCKET}${COMPANY_ID}",
+                    pattern: env.GCP_FILE_PATTERN,
+                    pathPrefix: env.GCP_FILE_PATH_PREFIX,
+                    showInline: true])
+                pushHangoutsNotify("Upload ${env.BRANCH_NAME} to gs://${env.GCP_BUCKET}${COMPANY_ID}")
+            }
+        }        
     }
 }
