@@ -1,6 +1,6 @@
 # Getting Started
 
-### **Get started with Scantist’s SCA platform** <a href="#Get-Starteds-sca-platform" id="Get-Starteds-sca-platform"></a>
+### **Get started with Scantist’s SCA platform** <a href="#Get-Started-sca-platform" id="Get-Started-sca-platform"></a>
 
 Welcome to Scantist SCA - the ultimate tool for managing open source security and compliance risks. Scantist provides greater visibility into the software supply chain, enabling proactive identification and remediation of vulnerabilities. With Scantist, you can scan your projects at both binary and source-code level on the same platform, making it the only SCA tool of its kind.
 
