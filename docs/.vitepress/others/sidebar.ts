@@ -192,11 +192,11 @@ export function enUSSidebar() {
       items: [
         {
           text: "SCA Components Results",
-          link: "/en-US/SCA/SCA-Components-Results",
+          link: "/en-US/SCA/Components",
         },
         {
           text: "SCA Licenses",
-          link: "/en-US/SCA/SCA-Licenses",
+          link: "/en-US/SCA/Licenses",
         },
         {
           text: `Export Reports on ${companyConfig.APP_NAME}`,
