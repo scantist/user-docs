@@ -10,6 +10,7 @@ pipeline {
         }
     }
     parameters {
+        choice(name: 'DEPLOY_TO_PRODUCTION', choices: ['False', 'True'], description: 'Deploy to production docs.scantist.io')
         choice(name: 'COMPANY_ID', choices: ['False', 'scantist', 'mstl', 'osredm', 'tanxun', 'white-label'], description: 'Build onprem for company')
     }    
     environment {
@@ -38,6 +39,11 @@ pipeline {
         }
 
         stage('Build and upload to docs.scantist.io') {
+            when {
+              anyOf {
+                expression { params.DEPLOY_TO_PRODUCTION == 'True' }
+              }
+            }
             environment {
                 GCP_CREDENTIALS_ID ='scantist-v4'
                 GCP_BUCKET = 'docs.scantist.io/'
