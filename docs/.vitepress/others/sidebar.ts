@@ -48,9 +48,9 @@ function getSidebarItems(
 export function getSidebar() {
   return [
     {
-      text: "Get Started with Scantist",
+      text: "Get Started",
       collapsed: true,
-      link: "/Get-Started-with-Scantist",
+      link: "/Get-Started",
     },
   ];
 }
@@ -58,21 +58,21 @@ export function getSidebar() {
 export function enUSSidebar() {
   return [
     {
-      text: "Get Started with Scantist",
-      link: "/en-US/Get-Started-with-Scantist/",
+      text: "Get Started",
+      link: "/en-US/Get-Started/",
       collapsed: true,
       items: [
         {
           text: "Sign up for Scantist",
-          link: "/en-US/Get-Started-with-Scantist/Sign-up-for-Scantist",
+          link: "/en-US/Get-Started/Sign-up-for-Scantist",
         },
         {
           text: "SCM Integration",
-          link: "/en-US/Get-Started-with-Scantist/SCM-Integration",
+          link: "/en-US/Get-Started/SCM-Integration",
         },
         {
           text: "Organization Group",
-          link: "/en-US/Get-Started-with-Scantist/Organization-Group",
+          link: "/en-US/Get-Started/Organization-Group",
         },
       ],
     },
@@ -298,7 +298,7 @@ export function zhCNSidebar() {
   return [
     {
       text: "开始使用思探明",
-      link: "/zh-CN/Get-Started-with-Scantist/",
+      link: "/zh-CN/Get-Started/",
       collapsed: true,
       items: [],
     },

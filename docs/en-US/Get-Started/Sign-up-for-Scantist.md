@@ -1,22 +1,32 @@
 ---
-title: Sign up for Scantist
+title: Sign up for
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
 tags: sign up, new account, get started
 ---
 
+<script setup>
+import { ref } from 'vue'
+
+const count = ref(0)
+import { loadEnv } from 'vitepress';
+const env = loadEnv("", process.cwd());
+console.log('env is', env);
+const a = 123;
+</script>
+
 <ClientOnly>
 
-# {{ $frontmatter.title }}
+# {{ $frontmatter.title}} {{ count }}
 
->To start using Scantist, you will need to have an account.
+> To start using this app, you will need to have an account.
 
 ## Sign in with your SCM account
 
 <hr class="thick" />
 
-Linking your Scantist account with your SCM accounts, such as GitHub, GitLab or Bitbucket, provides access to more features.
+Linking your app account with your SCM accounts, such as GitHub, GitLab or Bitbucket, provides access to more features.
 
 <div style="display: flex;">
 <div style="flex: 3;">
@@ -31,7 +41,8 @@ Linking your Scantist account with your SCM accounts, such as GitHub, GitLab or 
 
 </div><div style="flex: 1;">
 
-![GitHub, GitLab, and Bitbucket Logo](/images/Get-Started-with-Scantist/Sign-up-for-Scantist-1.png)
+![GitHub, GitLab, and Bitbucket Logo](/images/Get-Started/Sign-up-for-Scantist-1.png)
+
 </div></div>
 
 <br />

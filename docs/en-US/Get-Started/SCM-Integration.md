@@ -5,11 +5,12 @@ page: true
 lang: en-US
 tags: scm, integration, github, gitlab, bitbucket
 ---
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->Do you have repositories in more than one Source Control Management (SCM) account? You can now connect to multiple SCM platforms.
+> Do you have repositories in more than one Source Control Management (SCM) account? You can now connect to multiple SCM platforms.
 
 ## Supported SCM platforms
 
@@ -35,15 +36,15 @@ To connect your SCM account to Scantist, follow these steps:
 
 1. Navigate to the profile tab and select "SCM Integration" from the drop-down list
 
-    ![profile tab then SCM Integration](/images/Get-Started-with-Scantist/SCM-Integration-1.png)
+   ![profile tab then SCM Integration](/images/Get-Started/SCM-Integration-1.png)
 
 2. Select the SCM platform you want to integrate with and click "Connect"
 
-    ![SCM platform then Connect](/images/Get-Started-with-Scantist/SCM-Integration-2.png)
+   ![SCM platform then Connect](/images/Get-Started/SCM-Integration-2.png)
 
 3. Follow the prompts to authorize Scantist to access your SCM account
 
-    ![authorize Scantist to access SCM account](/images/Get-Started-with-Scantist/SCM-Integration-3.png)
+   ![authorize Scantist to access SCM account](/images/Get-Started/SCM-Integration-3.png)
 
 4. Once authorized, you will be able to view your repositories in Scantist
 

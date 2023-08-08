@@ -1,22 +1,27 @@
 ---
-title: Get Started with Scantist
+title: Get Started with
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
-tags: scantist, started, get started, welcome
+tags: started, get started, welcome
 ---
+
+<script setup>
+import { ref } from 'vue'
+import { config } from '../../../companyConfig.js'
+</script>
 
 <ClientOnly>
 
-# {{ $frontmatter.title }}
+# {{ $frontmatter.title }} {{ config.COMPANY_NAME }}
 
-> Discover the ultimate tool for managing and securing the use of your open source software. With Scantist, you can easily identify vulnerabilities and licensing risks in your open source projects and remediate them efficiently.
+> Discover the ultimate tool for managing and securing the use of your open source software. With {{ config.COMPANY_NAME }}, you can easily identify vulnerabilities and licensing risks in your open source projects and remediate them efficiently.
 
 ## Follow these five simple steps to get started
 
 <hr class="thick">
 
-### 1. Sign up for Scantist
+### 1. Sign up for {{ config.COMPANY_NAME }}
 
 To start using Scantist, [sign up for an account](./Sign-up-for-Scantist) by following the instructions in our documentation.
 
@@ -55,7 +60,7 @@ You are now ready to start scanning your open source projects. Scantist is desig
 
 - Integrate Scantist with your preferred CI/CD pipeline tools
 - [Create compliance policies](../Compliance-Policy-Rules/)
-<br /><br />
+  <br /><br />
 
 With Scantist, managing and securing your open source software has never been easier. Sign up today and start using our powerful tool to improve the security of your software.
 
