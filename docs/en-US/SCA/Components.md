@@ -51,11 +51,11 @@ Scantist provides detailed information on each of the components. Here is a brea
         </tr>
         <tr>
             <td>Scope</td>
-            <td>The scope of component, whether it’s a Dependencies or devDependencies</td>
+            <td>The scope of component, whether it's a Dependencies or devDependencies</td>
         </tr>
         <tr>
             <td>Depth</td>
-            <td>The level of the component’s dependency in the software project</td>
+            <td>The level of the component's dependency in the software project</td>
         </tr>
         <tr>
             <td>File Path</td>
