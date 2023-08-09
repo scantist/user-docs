@@ -23,7 +23,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 Click on the link below to download the SCA Bom Detect
 
-<a :href="`${companyConfig.SBD_DOWNLOAD_LINK}`">{{companyConfig.SBD_DOWNLOAD_LINK}}</a>
+<a :href="`${companyConfig.BASE_URL}/sca-bom-detect-v4.jar`" target="_blank">{{companyConfig.BASE_URL}}/sca-bom-detect-v4.jar</a>
 
 ## Basic Commands
 

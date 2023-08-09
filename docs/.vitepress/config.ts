@@ -10,7 +10,7 @@ export default defineConfig({
   head: [],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: companyConfig.COMPANY_LOGO,
+    logo: `/images/${companyConfig.COMPANY_LOGO}`,
     nav: [],
     i18nRouting: true,
     sidebar: {
