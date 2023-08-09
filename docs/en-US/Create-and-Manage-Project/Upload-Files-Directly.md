@@ -9,6 +9,7 @@ tags: upload, projects, source code, binary file
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}

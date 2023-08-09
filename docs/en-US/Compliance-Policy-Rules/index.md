@@ -6,10 +6,12 @@ lang: en-US
 tags: scantist, compliance, policy, rules
 ---
 
-<ClientOnly>
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
+
+<ClientOnly>
+
 # {{ $frontmatter.title }}
 
 > Learn how to ensure compliance with organizational and industry standards with policy rules now

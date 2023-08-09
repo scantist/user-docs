@@ -11,6 +11,7 @@ language: Python
 import LanguageHeader from './components/LanguageHeader.vue'
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}

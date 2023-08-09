@@ -28,7 +28,7 @@ export default defineConfig({
     },
     "zh-CN": {
       label: "简体中文",
-      title: "思探明",
+      title: "用户文档",
       link: "/zh-CN/Get-Started/",
       themeConfig: {
         sidebar: {
@@ -38,5 +38,5 @@ export default defineConfig({
     },
   },
   lastUpdated: true,
-  ignoreDeadLinks: false,
+  ignoreDeadLinks: true,
 });

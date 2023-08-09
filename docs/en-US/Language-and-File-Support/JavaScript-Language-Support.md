@@ -31,7 +31,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
     <tbody>
         <tr>
             <td rowspan="3">{{ $frontmatter.language }}</td>
-            <td width="13.33%">NPM</td>
+            <td width="25.33%">NPM</td>
             <td width="100%">package.json, package-lock.json, npm-shrinkwrap.json</td>
         </tr>
         <tr>

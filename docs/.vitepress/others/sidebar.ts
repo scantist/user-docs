@@ -287,7 +287,7 @@ export function enUSSidebar() {
       collapsed: true,
       items: [
         {
-          text: `{{companyConfig.COMPANY_NAME}}} BOM Detect CLI Commands & Parameters`,
+          text: "SCA BOM Detect CLI Commands & Parameters",
           link: "/en-US/References/SCA-BOM-Detect-CLI-Commands-&-Parameters",
         },
       ],

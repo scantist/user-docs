@@ -7,7 +7,7 @@ tags: settings, members, teams
 ---
 
 <script setup>
-import { companyConfig } from '../../../config/companyConfig.js'
+import { companyConfig } from '../../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>

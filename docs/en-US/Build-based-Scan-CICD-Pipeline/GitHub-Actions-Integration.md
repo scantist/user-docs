@@ -68,7 +68,7 @@ jobs:
         run: java -jar scantist-bom-detect.jar
 ```
 
-This command will download and execute {{companyConfig.COMPANY_NAME}} BOM Detector to scan after the build. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.COMPANY_NAME}}.
+This command will download and execute SCA BOM Detector to scan after the build. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.COMPANY_NAME}}.
 
 </ol>
 

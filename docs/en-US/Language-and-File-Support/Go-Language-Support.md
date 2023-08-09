@@ -8,9 +8,9 @@ language: Go
 ---
 
 <script setup>
-import { convertLang } from '../../.vitepress/helperFunctions'
 import LanguageHeader from './components/LanguageHeader.vue'
 import { companyConfig } from '../../../config/companyConfig.js'
+import { convertLang } from '../../.vitepress/helperFunctions'
 </script>
 
 <ClientOnly>

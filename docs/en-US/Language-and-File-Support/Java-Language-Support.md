@@ -22,12 +22,32 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-| Languages | Package Manager | Manifest Files     |
-| --------- | --------------- | ------------------ |
-| Java      | Maven           | pom.xml            |
-|           | Gradle          | build.gradle       |
-|           | Ant             | ivy.xml, build.xml |
-|           | Kotlin          | build.gradle.kts   |
+<table>
+    <thead>
+        <th>Languages</th>
+        <th>Package Manager</th>
+        <th>Manifest Files</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">{{ $frontmatter.language }}</td>
+            <td width="33.33%">Maven</td>
+            <td width="100%">pom.xml </td>
+        </tr>
+        <tr>
+            <td>Gradle</td>
+            <td>build.gradle</td>
+        </tr>
+        <tr>
+            <td>Ant</td>
+            <td>ivy.xml, build.xml</td>
+        </tr>
+        <tr>
+            <td>Kotlin</td>
+            <td>build.gradle.kts</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Scan your Java project with {{companyConfig.COMPANY_NAME}}
 

@@ -3,7 +3,7 @@ description: This document explains how to integrate Jenkins CI
 ---
 
 <script setup>
-import { companyConfig } from '../../../config/companyConfig.js'
+import { companyConfig } from '../../../../config/companyConfig.js'
 </script>
 
 # Jenkins CI

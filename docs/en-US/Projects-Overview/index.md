@@ -7,8 +7,14 @@ tags: scantist, project, project scan
 ---
 
 <script setup>
-import { companyConfig } from '../../../config/companyConfig.js'
+import { companyConfig } from '../../../config/companyConfig.js';
 </script>
+<style scoped>
+  .steps {
+    display: block;
+    margin: 10px 0;
+  }
+</style>
 
 <ClientOnly>
 
@@ -50,29 +56,23 @@ Once the scan is complete, the results will be displayed for each application se
 
 Sorting the project list by **Last Scan Time**, **Project Name** and **Project Creation Time** can help you to better find and manage projects based on different parameters. To sort the project list, follow these steps:
 
-<div style="display: flex;">
-<div style="flex: 1; ">
+<img src="/images/Projects-Overview/Projects-Overview-4.png"/>
 
-![project lists](/images/Projects-Overview/Projects-Overview-4.png)
-
-</div>
-
-<div style="flex: 1; margin: 30px;">
-
-1.&nbsp;&nbsp;&nbsp;Click the bar for “sort by” located on top of the project list
-
-2.&nbsp;&nbsp;&nbsp;Select any of the three categories from the drop-down list
-
-</div>
-</div>
-
-3.&nbsp;&nbsp;&nbsp;Click on the arrow next to the drop-down list to sort the list in descending order
-
-**Sorting projects by last scan time** can help you to identify which projects have been scanned most recently
-
-**Sorting projects by project name** can help you to identify projects in ascending order alphabetically
-
-**Sorting projects by project creation time** can be useful for identifying recently added projects
+<ol>
+  <li>Click the bar for “sort by” located on top of the project list</li>
+  <li>Select any of the three categories from the drop-down list</li>
+  <li>Click on the arrow next to the drop-down list to sort the list in descending order
+    <div class="steps">
+      <b>Sorting projects by last scan time</b> can help you to identify which projects have been scanned most recently
+    </div>
+    <div class="steps">
+      <b>Sorting projects by project name</b> can help you to identify projects in ascending order alphabetically
+    </div>
+    <div class="steps">
+      <b>Sorting projects by project creation time</b> can be useful for identifying recently added projects
+    </div>
+  </li>
+</ol>
 
 ### Further Categorizing Projects
 
@@ -81,4 +81,5 @@ Sorting the project list by **Last Scan Time**, **Project Name** and **Project C
 Projects can be further categorized based on various criteria such as severity, scan source and customized scan date range. Learn how to filter your projects for better management and prioritization:
 
 - [Categorize Projects](categorize-projects)
-  </ClientOnly>
+
+</ClientOnly>

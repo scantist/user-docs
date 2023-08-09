@@ -9,6 +9,7 @@ tags: repository, repositories, scm, add repo, github, gitlab, bitbucket
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}

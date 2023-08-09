@@ -1,5 +1,5 @@
 ---
-title: Export Reports on {{companyConfig.COMPANY_NAME}}
+title: Export Reports on
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
@@ -13,7 +13,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <ClientOnly>
 
-# {{ $frontmatter.title }}
+# {{ $frontmatter.title }} {{companyConfig.COMPANY_NAME}}
 
 > You can generate {{companyConfig.COMPANY_NAME}} report and SBOM report to understand the components that are used in an application and to identify any potential vulnerabilities or compliance
 
