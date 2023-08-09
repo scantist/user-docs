@@ -20,19 +20,19 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Discover {{companyConfig.COMPANY_NAME}}'s capabilities with Travis CI integration
+> Discover {{companyConfig.APP_NAME}}'s capabilities with Travis CI integration
 
 ## Travis CI
 
 Travis is a continuous integration platform that automates code integration and testing to streamline development workflows and enhance code quality. It can be integrated with Github, Bitbucket, and Docker.
 
-Integrating {{companyConfig.COMPANY_NAME}} into the development lifecycle of Travis CI can help enforce security and licensing compliance within your CI/CD pipeline.
+Integrating {{companyConfig.APP_NAME}} into the development lifecycle of Travis CI can help enforce security and licensing compliance within your CI/CD pipeline.
 
-## Follow these steps to integrate {{companyConfig.COMPANY_NAME}} with Travis CI
+## Follow these steps to integrate {{companyConfig.APP_NAME}} with Travis CI
 
 <ol>
 <li>Create access token</li>
-You will need to create an access token on {{companyConfig.COMPANY_NAME}} to authenticate and authorize the integration between {{companyConfig.COMPANY_NAME}} and Travis.
+You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and Travis.
 
 <li>Setup Environmental Variables on Travis</li>
 
@@ -41,7 +41,7 @@ Navigate to your project's settings page on Travis and click on the `Environment
 <img src="/images/Build-based-Scan-CICD-Pipeline/travis/step2.1.png" />
 
 :::tip
-Note: If you are using a dedicated {{companyConfig.COMPANY_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
+Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
 :::
 
 <li>Add .travis.yml on your repository</li>
@@ -52,7 +52,7 @@ after_success:
   - bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
 ```
 
-This command will call the {{companyConfig.COMPANY_NAME}} Travis script to receive your successfully built result from Travis CI. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.COMPANY_NAME}} SCA.
+This command will call the {{companyConfig.APP_NAME}} Travis script to receive your successfully built result from Travis CI. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.APP_NAME}} SCA.
 
 </ol>
 

@@ -37,11 +37,11 @@ import { companyConfig } from '../../../config/companyConfig.js'
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with {{companyConfig.COMPANY_NAME}}
+## Scan your {{ $frontmatter.language }} project with {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} examines the third-party components by examining the `Podfile.lock` file in the source code.
+{{companyConfig.APP_NAME}} examines the third-party components by examining the `Podfile.lock` file in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 

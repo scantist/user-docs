@@ -74,7 +74,7 @@ Automate the entire software development lifecycle, from building, testing, and 
 
 - Travis
 
-{{companyConfig.COMPANY_NAME}} supports other [CI/CD tools]().
+{{companyConfig.APP_NAME}} supports other [CI/CD tools]().
 
 </div>
 

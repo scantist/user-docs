@@ -21,7 +21,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 ### 1.&nbsp;&nbsp;&nbsp;注册思探明
 
-要开始使用思探明，请按照我们文档中的说明[注册一个帐户](Sign-up-for-{{companyConfig.COMPANY_NAME}})。
+要开始使用思探明，请按照我们文档中的说明[注册一个帐户](Sign-up-for-{{companyConfig.APP_NAME}})。
 
 注册后，您将可以访问我们强大的开源管理平台。
 

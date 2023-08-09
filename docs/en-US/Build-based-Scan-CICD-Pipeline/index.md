@@ -30,13 +30,13 @@ import { companyConfig } from '../../../config/companyConfig.js'
     </div>
 </div>
 
-## {{companyConfig.COMPANY_NAME}} CI/CD Integration
+## {{companyConfig.APP_NAME}} CI/CD Integration
 
 <hr class="thick" />
 
-By integrating {{companyConfig.COMPANY_NAME}} with your CI/CD system, you can automatically scan your open source components for vulnerabilities and compliance issues, as part of your build and testing processes. To learn more about the CI/CD system of choice, please refer to the table below and select the corresponding system.
+By integrating {{companyConfig.APP_NAME}} with your CI/CD system, you can automatically scan your open source components for vulnerabilities and compliance issues, as part of your build and testing processes. To learn more about the CI/CD system of choice, please refer to the table below and select the corresponding system.
 
-::: warning **To integrate {{companyConfig.COMPANY_NAME}} with your CI/CD system, you need to ensure the followings:**
+::: warning **To integrate {{companyConfig.APP_NAME}} with your CI/CD system, you need to ensure the followings:**
 
 1. Java is available in the build environment (minimum JDK1.8)
 2. A manifest file is available in the source code project
@@ -71,5 +71,5 @@ By integrating {{companyConfig.COMPANY_NAME}} with your CI/CD system, you can au
 
 ### Other CI/CD Tool
 
-{{companyConfig.COMPANY_NAME}} can be integrated with any CI/CD tool that is not mentioned on the list. To integrate with other CI/CD tools, set environmental variables on your system and configure your build script.
+{{companyConfig.APP_NAME}} can be integrated with any CI/CD tool that is not mentioned on the list. To integrate with other CI/CD tools, set environmental variables on your system and configure your build script.
 </ClientOnly>

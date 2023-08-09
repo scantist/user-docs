@@ -20,9 +20,9 @@ import { companyConfig } from '../../../config/companyConfig.js';
 
 # {{ $frontmatter.title }}
 
-> Analyze software dependencies with {{companyConfig.COMPANY_NAME}} on the Project page
+> Analyze software dependencies with {{companyConfig.APP_NAME}} on the Project page
 
-## Summary of Projects in {{companyConfig.COMPANY_NAME}}
+## Summary of Projects in {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 

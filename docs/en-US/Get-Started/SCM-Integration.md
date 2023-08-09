@@ -19,7 +19,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} currently supports integration with the following SCM platforms:
+{{companyConfig.APP_NAME}} currently supports integration with the following SCM platforms:
 
 - [GitHub](https://github.com)
 
@@ -28,14 +28,14 @@ import { companyConfig } from '../../../config/companyConfig.js'
 - [Bitbucket](https://bitbucket.org)
 
 ::: warning Note:
-To use the SCM integration with {{companyConfig.COMPANY_NAME}}, you must have an active {{companyConfig.COMPANY_NAME}} account and have access to your SCM platform
+To use the SCM integration with {{companyConfig.APP_NAME}}, you must have an active {{companyConfig.APP_NAME}} account and have access to your SCM platform
 :::
 
-## Connecting your SCM account to {{companyConfig.COMPANY_NAME}}
+## Connecting your SCM account to {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-To connect your SCM account to {{companyConfig.COMPANY_NAME}}, follow these steps:
+To connect your SCM account to {{companyConfig.APP_NAME}}, follow these steps:
 
 1. Navigate to the profile tab and select "SCM Integration" from the drop-down list
 
@@ -45,24 +45,24 @@ To connect your SCM account to {{companyConfig.COMPANY_NAME}}, follow these step
 
    ![SCM platform then Connect](/images/Get-Started/SCM-Integration-2.png)
 
-3. Follow the prompts to authorize {{companyConfig.COMPANY_NAME}} to access your SCM account
+3. Follow the prompts to authorize {{companyConfig.APP_NAME}} to access your SCM account
 
-   ![authorize {{companyConfig.COMPANY_NAME}} to access SCM account](/images/Get-Started/SCM-Integration-3.png)
+   ![authorize {{companyConfig.APP_NAME}} to access SCM account](/images/Get-Started/SCM-Integration-3.png)
 
-4. Once authorized, you will be able to view your repositories in {{companyConfig.COMPANY_NAME}}
+4. Once authorized, you will be able to view your repositories in {{companyConfig.APP_NAME}}
 
-## Disconnect SCM account from {{companyConfig.COMPANY_NAME}}
+## Disconnect SCM account from {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-To disconnect your SCM account from {{companyConfig.COMPANY_NAME}}, follow these steps:
+To disconnect your SCM account from {{companyConfig.APP_NAME}}, follow these steps:
 
 1. Navigate to the profile tab and select "SCM Integration" from the drop-down list
 
 2. Find the SCM platform that you want to disconnect and click on the "Disconnect button"
 
-3. Confirm that you want to disconnect the SCM account from {{companyConfig.COMPANY_NAME}}
+3. Confirm that you want to disconnect the SCM account from {{companyConfig.APP_NAME}}
 
-4. Once disconnected, {{companyConfig.COMPANY_NAME}} will no longer be able to access your repositories on the SCM platform
+4. Once disconnected, {{companyConfig.APP_NAME}} will no longer be able to access your repositories on the SCM platform
 
 </ClientOnly>

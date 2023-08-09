@@ -14,7 +14,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Manage and customize your organization group on {{companyConfig.COMPANY_NAME}} to ensure that you have the necessary access and control over your repositories.
+> Manage and customize your organization group on {{companyConfig.APP_NAME}} to ensure that you have the necessary access and control over your repositories.
 
 ## Organization settings
 
@@ -34,7 +34,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr style="border:2px solid gray" />
 
-Setting a default organization ensures that you always have quick and easy access to the repositories being scanned by that organization group every time you log in to {{companyConfig.COMPANY_NAME}}. To set your organization group as the default, click on the switch icon next to “Default Organization”.
+Setting a default organization ensures that you always have quick and easy access to the repositories being scanned by that organization group every time you log in to {{companyConfig.APP_NAME}}. To set your organization group as the default, click on the switch icon next to “Default Organization”.
 
 <img src="/images/Settings/Settings-2.png" alt="default organization">
 

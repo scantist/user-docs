@@ -13,7 +13,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Explore what's next after creating a project in {{companyConfig.COMPANY_NAME}}
+> Explore what's next after creating a project in {{companyConfig.APP_NAME}}
 
 ## Initiate a scan for your project
 

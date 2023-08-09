@@ -27,11 +27,11 @@ import { convertLang } from '../../.vitepress/helperFunctions'
 | --------- | --------------- | -------------- |
 | Go        | Go Modules      | go.mod         |
 
-## Scan your Go project with {{companyConfig.COMPANY_NAME}}
+## Scan your Go project with {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} scans the third-party components managed by Go Modules. It locates the `go.mod` file in the source code, which provides information about the dependencies and their corresponding versions. By leverage this information, {{companyConfig.COMPANY_NAME}} scans your Go project for any potential security vulnerabilities that may exist in both direct and transitive dependencies. This enables you to identify and mitigate any potential security risk within your project’s dependency chain.
+{{companyConfig.APP_NAME}} scans the third-party components managed by Go Modules. It locates the `go.mod` file in the source code, which provides information about the dependencies and their corresponding versions. By leverage this information, {{companyConfig.APP_NAME}} scans your Go project for any potential security vulnerabilities that may exist in both direct and transitive dependencies. This enables you to identify and mitigate any potential security risk within your project’s dependency chain.
 
 <!--@include: ../../parts/maximize-results.md-->
 

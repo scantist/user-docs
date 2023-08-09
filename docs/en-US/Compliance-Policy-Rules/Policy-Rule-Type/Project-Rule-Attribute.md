@@ -13,7 +13,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Define policies for projects in your {{companyConfig.COMPANY_NAME}} platform
+> Define policies for projects in your {{companyConfig.APP_NAME}} platform
 
 ## Project-level Policy Rules
 

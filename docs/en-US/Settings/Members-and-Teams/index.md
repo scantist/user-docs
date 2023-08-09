@@ -14,7 +14,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Add members to {{companyConfig.COMPANY_NAME}} and assign them to specific teams for efficient management and collaboration on {{companyConfig.COMPANY_NAME}}.
+> Add members to {{companyConfig.APP_NAME}} and assign them to specific teams for efficient management and collaboration on {{companyConfig.APP_NAME}}.
 
 ## Members and Teams Settings
 
@@ -46,7 +46,7 @@ You can invite members to join your organization and assign roles to them.
 
 <div>
 
-You will not be able to invite if the email address has not been registered with {{companyConfig.COMPANY_NAME}}. You will need to ask the invitee to create an account with {{companyConfig.COMPANY_NAME}} first
+You will not be able to invite if the email address has not been registered with {{companyConfig.APP_NAME}}. You will need to ask the invitee to create an account with {{companyConfig.APP_NAME}} first
 
 </div>
 
@@ -62,7 +62,7 @@ You will not be able to invite if the email address has not been registered with
 
 ### Add member
 
-Adding members to your organization is useful when you want your team to use a single organization on {{companyConfig.COMPANY_NAME}} and streamline the scanning process.
+Adding members to your organization is useful when you want your team to use a single organization on {{companyConfig.APP_NAME}} and streamline the scanning process.
 
 1. Click on “Add member” icon
 

@@ -14,7 +14,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Uploading a source code or binary file for scanning is a straightforward method of utilizing {{companyConfig.COMPANY_NAME}}. However, it is important to note that this method has limitations, as the accuracy of results may be limited since {{companyConfig.COMPANY_NAME}} is not scanning the build environment. Therefore, it is recommended to use this method only when there is no build access for {{companyConfig.COMPANY_NAME}} or as a starting point.
+> Uploading a source code or binary file for scanning is a straightforward method of utilizing {{companyConfig.APP_NAME}}. However, it is important to note that this method has limitations, as the accuracy of results may be limited since {{companyConfig.APP_NAME}} is not scanning the build environment. Therefore, it is recommended to use this method only when there is no build access for {{companyConfig.APP_NAME}} or as a starting point.
 
 ## Create a new project with your source code or binary file
 

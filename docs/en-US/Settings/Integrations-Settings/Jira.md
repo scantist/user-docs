@@ -22,7 +22,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 <hr style="border:2px solid gray" />
 
-{{companyConfig.COMPANY_NAME}} support Jira Cloud integration for all premium and enterprise users to help them track and manage the progress of the reported vulnerability issue to ensure they are resolved effectively and efficiently.
+{{companyConfig.APP_NAME}} support Jira Cloud integration for all premium and enterprise users to help them track and manage the progress of the reported vulnerability issue to ensure they are resolved effectively and efficiently.
 
 To enable Jira integration, follow these steps:
 
@@ -46,7 +46,7 @@ Click on the entered sever URL link which directs you to the Jira application li
 
 <hr style="border:2px solid gray" />
 
-With the Jira integration, {{companyConfig.COMPANY_NAME}} can automatically create issues in Jira for any vulnerabilities or security issues identified during scans. This allows developers to quickly identify and address potential security risks and helps to ensure that software is developed and released securely. The integration also allows for easy tracking and management of the progress of reported issues to ensure they are resolved effectively and efficiently.
+With the Jira integration, {{companyConfig.APP_NAME}} can automatically create issues in Jira for any vulnerabilities or security issues identified during scans. This allows developers to quickly identify and address potential security risks and helps to ensure that software is developed and released securely. The integration also allows for easy tracking and management of the progress of reported issues to ensure they are resolved effectively and efficiently.
 
 … steps …
 

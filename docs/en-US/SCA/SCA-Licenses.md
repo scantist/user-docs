@@ -26,7 +26,7 @@ Open source licenses are legal agreements between the developers of open source 
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} classifies the open source licenses as permissive, neutral and restrictive. It is important to review and understand the terms of each license associated with the OSS components used in the project.
+{{companyConfig.APP_NAME}} classifies the open source licenses as permissive, neutral and restrictive. It is important to review and understand the terms of each license associated with the OSS components used in the project.
 
 ### Permissive Licenses
 

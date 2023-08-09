@@ -13,7 +13,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Track your project’s scan history with {{companyConfig.COMPANY_NAME}}
+> Track your project’s scan history with {{companyConfig.APP_NAME}}
 
 ## View Scan History
 
@@ -41,7 +41,7 @@ Viewing scan history for SCA and SAST scans can be a useful way to identify tren
 
 You can now review results from multiple scans for your open source projects and remediate any identified vulnerabilities
 
-- [Export Reports on {{companyConfig.COMPANY_NAME}}](../SCA/Export-Reports-on-app.md)
+- [Export Reports on {{companyConfig.APP_NAME}}](../SCA/Export-Reports-on-app.md)
 - Fix vulnerabilities
 
 </ClientOnly>

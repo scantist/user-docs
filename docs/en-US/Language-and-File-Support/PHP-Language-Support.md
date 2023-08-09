@@ -37,11 +37,11 @@ import { companyConfig } from '../../../config/companyConfig.js'
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with {{companyConfig.COMPANY_NAME}}
+## Scan your {{ $frontmatter.language }} project with {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} scans the third-party components by examining `composer.lock` or `composer.json` files in the source code project.
+{{companyConfig.APP_NAME}} scans the third-party components by examining `composer.lock` or `composer.json` files in the source code project.
 
 <!--@include: ../../parts/maximize-results.md-->
 

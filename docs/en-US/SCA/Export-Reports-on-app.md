@@ -13,15 +13,15 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <ClientOnly>
 
-# {{ $frontmatter.title }} {{companyConfig.COMPANY_NAME}}
+# {{ $frontmatter.title }} {{companyConfig.APP_NAME}}
 
-> You can generate {{companyConfig.COMPANY_NAME}} report and SBOM report to understand the components that are used in an application and to identify any potential vulnerabilities or compliance
+> You can generate {{companyConfig.APP_NAME}} report and SBOM report to understand the components that are used in an application and to identify any potential vulnerabilities or compliance
 
-## {{companyConfig.COMPANY_NAME}} reports
+## {{companyConfig.APP_NAME}} reports
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} provides the ability to export scan results in multiple file formats, allowing you to easily share the results with stakeholders. Supported formats include:
+{{companyConfig.APP_NAME}} provides the ability to export scan results in multiple file formats, allowing you to easily share the results with stakeholders. Supported formats include:
 
 - **JSON**
 - **XML**
@@ -31,7 +31,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 ## SBOM reports
 
-{{companyConfig.COMPANY_NAME}} provides the ability to generate Software Bill-of-Materials (SBOM) reports in multiple formats, allowing you to better understand the components used in your application as well as their associated metadata. Supported formats include:
+{{companyConfig.APP_NAME}} provides the ability to generate Software Bill-of-Materials (SBOM) reports in multiple formats, allowing you to better understand the components used in your application as well as their associated metadata. Supported formats include:
 
 - **SPDX**
 

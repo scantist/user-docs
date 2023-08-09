@@ -46,7 +46,7 @@ every Monday at 7:00 AM Singapore Timezone
 Starting from the date the scheduled scan is enabled. For example, if you enable the schedule scan settings on Janaury 1, the subsequent monthly scans will occur on the 1st of every month
 :::
 
-To schedule a scan in {{companyConfig.COMPANY_NAME}}, you can follow these steps:
+To schedule a scan in {{companyConfig.APP_NAME}}, you can follow these steps:
 
 1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
 

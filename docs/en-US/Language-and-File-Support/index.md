@@ -31,7 +31,7 @@ const languages = ref(["Java", "JavaScript", "Perl", "Go", "Python", "Csharp", "
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} supports various package managers and manifests files for each programming language. To learn more about the language of choice, please refer to the table below and select the corresponding language.
+{{companyConfig.APP_NAME}} supports various package managers and manifests files for each programming language. To learn more about the language of choice, please refer to the table below and select the corresponding language.
 
 <div style="display:flex;flex-wrap: wrap">
   <a v-for="lang in languages" style="text-decoration:none" :href="`/en-US/Language-and-File-Support/${lang}-Language-Support.html`">
@@ -44,33 +44,33 @@ const languages = ref(["Java", "JavaScript", "Perl", "Go", "Python", "Csharp", "
 
 <br />
 
-| Languages   | Package Manager                                                                                           | Manifest Files                                       |
-| ----------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Java        | Maven                                                                                                     | pom.xml                                              |
-|             | Gradle                                                                                                    | build.gradle                                         |
-|             | Ant                                                                                                       | ivy.xml, build.xml                                   |
-|             | Kotlin                                                                                                    | build.gradle.kts                                     |
-| Javascript  | NPM / PNPM                                                                                                | package.json, package-lock.json, npm-shrinkwrap.json |
-|             | Yarn                                                                                                      | yarn.lock, package.json                              |
-| Perl        | CPAN                                                                                                      | Makefile.PL                                          |
-| Go          | Go Modules                                                                                                | go.mod                                               |
-| Python      | pip                                                                                                       | setup.py                                             |
-|             |                                                                                                           | requirements.txt                                     |
-|             |                                                                                                           | pipfile.lock                                         |
-| C#          | NuGet 2                                                                                                   | .sln, packages.config                                |
-|             | NuGet 3                                                                                                   | .sln, project.json, project.lock.json                |
-|             | NuGet 4                                                                                                   | .sln, .csproj (SDK-style), project.assets.json       |
-| Ruby        | RubyGems                                                                                                  | gemfile.lock, gemfile                                |
-| PHP         | Composer                                                                                                  | composer.lock, composer.json                         |
-| Objective-C | CocoaPods                                                                                                 | Podfile.lock                                         |
-| Swift       | Swift                                                                                                     | Package.swift                                        |
-| C/C++       | C/C++ does not have a package manager hence, {{companyConfig.COMPANY_NAME}} scans the source code instead |                                                      |
+| Languages   | Package Manager                                                                                       | Manifest Files                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Java        | Maven                                                                                                 | pom.xml                                              |
+|             | Gradle                                                                                                | build.gradle                                         |
+|             | Ant                                                                                                   | ivy.xml, build.xml                                   |
+|             | Kotlin                                                                                                | build.gradle.kts                                     |
+| Javascript  | NPM / PNPM                                                                                            | package.json, package-lock.json, npm-shrinkwrap.json |
+|             | Yarn                                                                                                  | yarn.lock, package.json                              |
+| Perl        | CPAN                                                                                                  | Makefile.PL                                          |
+| Go          | Go Modules                                                                                            | go.mod                                               |
+| Python      | pip                                                                                                   | setup.py                                             |
+|             |                                                                                                       | requirements.txt                                     |
+|             |                                                                                                       | pipfile.lock                                         |
+| C#          | NuGet 2                                                                                               | .sln, packages.config                                |
+|             | NuGet 3                                                                                               | .sln, project.json, project.lock.json                |
+|             | NuGet 4                                                                                               | .sln, .csproj (SDK-style), project.assets.json       |
+| Ruby        | RubyGems                                                                                              | gemfile.lock, gemfile                                |
+| PHP         | Composer                                                                                              | composer.lock, composer.json                         |
+| Objective-C | CocoaPods                                                                                             | Podfile.lock                                         |
+| Swift       | Swift                                                                                                 | Package.swift                                        |
+| C/C++       | C/C++ does not have a package manager hence, {{companyConfig.APP_NAME}} scans the source code instead |                                                      |
 
 ## Binary File Formats
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} supports various file extensions for each binary file format. To learn more about the binary file of choice, please refer to the table below.
+{{companyConfig.APP_NAME}} supports various file extensions for each binary file format. To learn more about the binary file of choice, please refer to the table below.
 
 | File Format    | File Extensions                                                                      |
 | -------------- | ------------------------------------------------------------------------------------ |
@@ -86,7 +86,7 @@ const languages = ref(["Java", "JavaScript", "Perl", "Go", "Python", "Csharp", "
 <!--
 <hr class="thick" />
 
-You now set up {{companyConfig.COMPANY_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.COMPANY_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
+You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
 - [Trigger a scan](../Trigger-Scan/)
 

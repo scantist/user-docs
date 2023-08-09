@@ -45,11 +45,11 @@ import { companyConfig } from '../../../config/companyConfig.js'
     </tbody>
 </table>
 
-## Scan your JavaScript project with {{companyConfig.COMPANY_NAME}}
+## Scan your JavaScript project with {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} scans the third-party components by examining `package.json`, `package-lock.json`, `npm-shrinkwrap.json` or `yarn.lock` files in the source code.
+{{companyConfig.APP_NAME}} scans the third-party components by examining `package.json`, `package-lock.json`, `npm-shrinkwrap.json` or `yarn.lock` files in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 

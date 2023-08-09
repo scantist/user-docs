@@ -14,7 +14,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Assign members to various roles and teams based on their privileges to ensure that sensitive tasks are only accessible to those who require access. {{companyConfig.COMPANY_NAME}} owners have all permissions.
+> Assign members to various roles and teams based on their privileges to ensure that sensitive tasks are only accessible to those who require access. {{companyConfig.APP_NAME}} owners have all permissions.
 
 ## Available roles
 

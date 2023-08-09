@@ -64,7 +64,7 @@ export function enUSSidebar() {
       collapsed: true,
       items: [
         {
-          text: `Sign up for ${companyConfig.COMPANY_NAME}`,
+          text: `Sign up for ${companyConfig.APP_NAME}`,
           link: "/en-US/Get-Started/Sign-up-for-more",
         },
         {
@@ -199,7 +199,7 @@ export function enUSSidebar() {
           link: "/en-US/SCA/SCA-Licenses",
         },
         {
-          text: `Export Reports on ${companyConfig.COMPANY_NAME}`,
+          text: `Export Reports on ${companyConfig.APP_NAME}`,
           link: "/en-US/SCA/Export-Reports-on-app",
         },
       ],

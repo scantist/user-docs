@@ -14,13 +14,13 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> You can change the settings of your {{companyConfig.COMPANY_NAME}} account.
+> You can change the settings of your {{companyConfig.APP_NAME}} account.
 
 ## Settings Options
 
 <hr style="border:2px solid gray" />
 
-{{companyConfig.COMPANY_NAME}} provides multiple setting options to help you customize your experience and tailor it to your specific needs. To access these settings, click on the “Settings” tab located at the navigation bar.
+{{companyConfig.APP_NAME}} provides multiple setting options to help you customize your experience and tailor it to your specific needs. To access these settings, click on the “Settings” tab located at the navigation bar.
 
 - [Organization Settings](Organization.md)
 - [Teams and Members](Members-and-Teams/)

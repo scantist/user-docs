@@ -12,7 +12,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <ClientOnly>
 
-# {{ $frontmatter.title}} {{ companyConfig.COMPANY_NAME }}
+# {{ $frontmatter.title}} {{ companyConfig.APP_NAME }}
 
 > To start using this app, you will need to have an account.
 
@@ -25,13 +25,13 @@ Linking your app account with your SCM accounts, such as GitHub, GitLab or Bitbu
 <div style="display: flex;">
 <div style="flex: 3;">
 
-<b>1. Go to [{{companyConfig.APP_URL}}]({{companyConfig.APP_URL}}) login page</b>
+<b>1. Go to [{{companyConfig.FRONTEND_URL}}]({{companyConfig.FRONTEND_URL}}) login page</b>
 
 <b>2. Click on your preferred SCM icon</b>
 
-<b>3. Enter your SCM credentials to authorize {{companyConfig.COMPANY_NAME}} </b>
+<b>3. Enter your SCM credentials to authorize {{companyConfig.APP_NAME}} </b>
 
-<b>4. You will be redirected to {{companyConfig.COMPANY_NAME}} and logged in automatically</b>
+<b>4. You will be redirected to {{companyConfig.APP_NAME}} and logged in automatically</b>
 
 </div><div style="flex: 1;">
 
@@ -41,15 +41,15 @@ Linking your app account with your SCM accounts, such as GitHub, GitLab or Bitbu
 
 <br />
 
-Once you have linked your SCM account with {{companyConfig.COMPANY_NAME}} , you will be able to scan your open source projects directly from your SCM repositories and pipelines. This provides a more streamlined process for managing and securing your open source software.
+Once you have linked your SCM account with {{companyConfig.APP_NAME}} , you will be able to scan your open source projects directly from your SCM repositories and pipelines. This provides a more streamlined process for managing and securing your open source software.
 
 ## Create an account with an email login
 
 <hr class="thick" />
 
-If you do not have an SCM account, you can create a new account with {{companyConfig.COMPANY_NAME}}.
+If you do not have an SCM account, you can create a new account with {{companyConfig.APP_NAME}}.
 
-<b>1. Go to [{{companyConfig.APP_URL}}]({{companyConfig.APP_URL}}) login page</b>
+<b>1. Go to [{{companyConfig.FRONTEND_URL}}]({{companyConfig.FRONTEND_URL}}) login page</b>
 
 <b>2. Click on "Create Account"</b>
 
@@ -59,13 +59,13 @@ If you do not have an SCM account, you can create a new account with {{companyCo
 
 <br />
 
-Congratulations! You have successfully created your {{companyConfig.COMPANY_NAME}} account using your email login. You can now sign in to your account and start scanning your open source projects for vulnerabilities and licensing risks.
+Congratulations! You have successfully created your {{companyConfig.APP_NAME}} account using your email login. You can now sign in to your account and start scanning your open source projects for vulnerabilities and licensing risks.
 
 ## What's next?
 
 <hr class="thick" />
 
-You now set up {{companyConfig.COMPANY_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.COMPANY_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
+You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
 - [Trigger a scan](../Trigger-Scan/)
 

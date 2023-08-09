@@ -3,6 +3,11 @@
 docs/.vitepress/dist
 docs/.vitepress/cache
 
+frontend-envs/
+
+docs/public/*.jar
+docs/public/*.sh
+
 node_modules
 element-plus*.tgz
 temp

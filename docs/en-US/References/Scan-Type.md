@@ -20,7 +20,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} supports various types of scanning under different environments or scenarios. When it comes to uploading files directly or connecting to SCM repositories, each method has its benefits and drawbacks. Here are the main differences between these scan methods. It is recommended to use the **build-based scan** whenever it is feasible.
+{{companyConfig.APP_NAME}} supports various types of scanning under different environments or scenarios. When it comes to uploading files directly or connecting to SCM repositories, each method has its benefits and drawbacks. Here are the main differences between these scan methods. It is recommended to use the **build-based scan** whenever it is feasible.
 
 <table style="text-align:center; vertical-align:middle;">
     <thead>

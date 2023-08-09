@@ -45,17 +45,17 @@ import { companyConfig } from '../../../config/companyConfig.js'
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with {{companyConfig.COMPANY_NAME}}
+## Scan your {{ $frontmatter.language }} project with {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} scans the third-party components by examining `setup.py` file, which is the standard build file that lists the required packages and their versions.
+{{companyConfig.APP_NAME}} scans the third-party components by examining `setup.py` file, which is the standard build file that lists the required packages and their versions.
 
-{{companyConfig.COMPANY_NAME}} also checks the `requirements.txt` file, which contains a list of the packages and their versions needed to run the project.
+{{companyConfig.APP_NAME}} also checks the `requirements.txt` file, which contains a list of the packages and their versions needed to run the project.
 
-Additionally, {{companyConfig.COMPANY_NAME}} scans the `pipfile.lock` file, which is used by the Pipenv package manager to secure the versions of all the required packages for the project.
+Additionally, {{companyConfig.APP_NAME}} scans the `pipfile.lock` file, which is used by the Pipenv package manager to secure the versions of all the required packages for the project.
 
-By examining these files, {{companyConfig.COMPANY_NAME}} can provide comprehensive security scanning to identify any potential vulnerabilities in your project's third-party dependencies.
+By examining these files, {{companyConfig.APP_NAME}} can provide comprehensive security scanning to identify any potential vulnerabilities in your project's third-party dependencies.
 
 <!--@include: ../../parts/maximize-results.md-->
 

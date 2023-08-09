@@ -9,6 +9,7 @@ description: This document lists out all SCA BOM Detect's commands and parameter
 
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
+const baseUrl = window.location.origin;
 </script>
 
 <ClientOnly>
@@ -23,7 +24,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 Click on the link below to download the SCA Bom Detect
 
-<a :href="`${companyConfig.BASE_URL}/sca-bom-detect-v4.jar`" target="_blank">{{companyConfig.BASE_URL}}/sca-bom-detect-v4.jar</a>
+<a :href="`${baseUrl}/sca-bom-detect-v4.jar`" target="_blank">sca-bom-detect-v4.jar</a>
 
 ## Basic Commands
 
@@ -127,7 +128,7 @@ Different methods of authentication will result in slightly different usage of t
 
 ##### Login
 
-Log in to {{companyConfig.COMPANY_NAME}}'s server.
+Log in to {{companyConfig.APP_NAME}}'s server.
 
 ```shell
 export USERNAME="your_username"

@@ -33,7 +33,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
             <a href="./Upload-Files-Directly">Upload Files Directly</a>
             </td>
             <td>
-            For much greater accuracy in results, it is recommended to connect to your GitHub, Gitlab or Bitbucket account to scan SCM repositories with {{companyConfig.COMPANY_NAME}}.
+            For much greater accuracy in results, it is recommended to connect to your GitHub, Gitlab or Bitbucket account to scan SCM repositories with {{companyConfig.APP_NAME}}.
             <br />
             <a href="./Add-SCM-Repositories">Add SCM Repositories</a>
             </td>
@@ -45,7 +45,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-After you have created a project and it is added to the {{companyConfig.COMPANY_NAME}} dashboard, you can configure the project settings and manage your list of projects. This includes deleting a project if you no longer need it.
+After you have created a project and it is added to the {{companyConfig.APP_NAME}} dashboard, you can configure the project settings and manage your list of projects. This includes deleting a project if you no longer need it.
 
 ### Project Settings
 

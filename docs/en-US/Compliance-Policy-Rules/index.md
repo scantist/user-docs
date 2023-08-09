@@ -22,13 +22,13 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 Every organization needs a set of rules to define which open source software can be used and which cannot. The primary objectives for defining these rules are to ensure security and legal compliance, which immediately reduces the organization’s risk. Additional objectives can include improving the organization’s cyber-hygiene and supply chain management, ensuring long-term maintainability, and improving the ability to respond to threats.
 
-If an organization fails to comply with the license terms and conditions, it can impact the organization. {{companyConfig.COMPANY_NAME}} provides compliance functionality, enabling you to set a list of policy rules that your team would comply with.
+If an organization fails to comply with the license terms and conditions, it can impact the organization. {{companyConfig.APP_NAME}} provides compliance functionality, enabling you to set a list of policy rules that your team would comply with.
 
-### Customizing policy rules in {{companyConfig.COMPANY_NAME}}
+### Customizing policy rules in {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-To customize policy rules in {{companyConfig.COMPANY_NAME}}, follow these steps:
+To customize policy rules in {{companyConfig.APP_NAME}}, follow these steps:
 
 1.&nbsp;&nbsp;&nbsp;Click on the “Settings” page on the navigation bar
 
@@ -46,7 +46,7 @@ To customize policy rules in {{companyConfig.COMPANY_NAME}}, follow these steps:
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-2.png" alt="add rule">
 
-7.&nbsp;&nbsp;&nbsp;Choose the action you want {{companyConfig.COMPANY_NAME}} to take when the rule is triggered - Approved, Deny or Flag
+7.&nbsp;&nbsp;&nbsp;Choose the action you want {{companyConfig.APP_NAME}} to take when the rule is triggered - Approved, Deny or Flag
 
 <div style="display: flex; justify-content: center;">
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-3.png" alt="action" width="300" height="200">
@@ -89,7 +89,7 @@ Once you have created your policy rules, you can assign them to specific project
 
 4.&nbsp;&nbsp;&nbsp;Click on the “Scan” button to start scanning
 
-5.&nbsp;&nbsp;&nbsp;{{companyConfig.COMPANY_NAME}} will start scanning your project with the selected policy rules.
+5.&nbsp;&nbsp;&nbsp;{{companyConfig.APP_NAME}} will start scanning your project with the selected policy rules.
 
 </div>
 </div>

@@ -21,7 +21,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class = "thick" />
 
-{{companyConfig.COMPANY_NAME}} provides the component details in a table format. The table includes the following columns:
+{{companyConfig.APP_NAME}} provides the component details in a table format. The table includes the following columns:
 
 | Results          | Description                                                                                                                    |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -73,7 +73,7 @@ insert link
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} use various detection methods to identify and verify the open source component used in a software project.
+{{companyConfig.APP_NAME}} use various detection methods to identify and verify the open source component used in a software project.
 
 <div style="display: flex;">
 <div style="flex: 2;margin-left: 15px;">

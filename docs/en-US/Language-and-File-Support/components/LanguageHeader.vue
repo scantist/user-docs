@@ -12,7 +12,7 @@
       </div>
       <div class="description">
         <span type="h6" style="font-size: 16px; color: var(--vp-c-text-2)"
-          >Discover {{ companyConfig.COMPANY_NAME }}'s capabilities with
+          >Discover {{ companyConfig.APP_NAME }}'s capabilities with
           {{ convertLang(language) }} programming language</span
         >
       </div>

@@ -21,7 +21,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-{{companyConfig.COMPANY_NAME}} supports various application security testing solutions to help you address different risks. When triggering a new scan, you have the option to choose from different methods. To learn more, please refer to the table below and select the corresponding methods.
+{{companyConfig.APP_NAME}} supports various application security testing solutions to help you address different risks. When triggering a new scan, you have the option to choose from different methods. To learn more, please refer to the table below and select the corresponding methods.
 
 <table>
     <thead>
