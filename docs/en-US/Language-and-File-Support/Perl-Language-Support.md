@@ -6,8 +6,10 @@ lang: en-US
 tags: perl, cpan, makefile.pl
 language: Perl
 ---
+
 <script setup>
 import LanguageHeader from './components/LanguageHeader.vue'
+import { companyConfig } from '../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>
@@ -35,11 +37,11 @@ import LanguageHeader from './components/LanguageHeader.vue'
     </tbody>
 </table>
 
-## Scan your {{ $frontmatter.language }} project with Scantist
+## Scan your {{ $frontmatter.language }} project with {{companyConfig.COMPANY_NAME}}
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining `Makefile.PL` file in the source code.
+{{companyConfig.COMPANY_NAME}} scans the third-party components by examining `Makefile.PL` file in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 

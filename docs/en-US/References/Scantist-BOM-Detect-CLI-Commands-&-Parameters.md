@@ -1,15 +1,19 @@
 ---
-title: Scantist BOM Detect CLI Commands & Parameters
+title: {{companyConfig.COMPANY_NAME}} BOM Detect CLI Commands & Parameters
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
 tags: scantist bom detect, cli, commands, parameters
-description: This document lists out all Scantist BOM Detect's commands and parameters.
+description: This document lists out all {{companyConfig.COMPANY_NAME}} BOM Detect's commands and parameters.
 ---
+
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 
 <ClientOnly>
 
-# Scantist BOM Detect
+# {{companyConfig.COMPANY_NAME}} BOM Detect
 
 # CLI Commands & Parameters
 
@@ -47,7 +51,7 @@ description: This document lists out all Scantist BOM Detect's commands and para
 
 ## Authentication Methods
 
-There are 2 different methods for Scantist BOM Detect to authenticate the user:
+There are 2 different methods for {{companyConfig.COMPANY_NAME}} BOM Detect to authenticate the user:
 
 - Authentication through Username and Password
 - Authentication through SCANTISTTOKEN environment variable
@@ -117,7 +121,7 @@ Different methods of authentication will result in slightly different usage of t
 
 ##### Login
 
-Log in to Scantist's server.
+Log in to {{companyConfig.COMPANY_NAME}}'s server.
 
 ```shell
 export USERNAME="your_username"

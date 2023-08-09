@@ -10,6 +10,7 @@ language: Csharp
 <script setup>
 import { convertLang } from '../../.vitepress/helperFunctions'
 import LanguageHeader from './components/LanguageHeader.vue'
+import { companyConfig } from '../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>
@@ -45,11 +46,11 @@ import LanguageHeader from './components/LanguageHeader.vue'
     </tbody>
 </table>
 
-## Scan your {{ convertLang($frontmatter.language) }} project with Scantist
+## Scan your {{ convertLang($frontmatter.language) }} project with {{companyConfig.COMPANY_NAME}}
 
 <hr class="thick" />
 
-Scantist scans the third-party components managed by Nuget. It locates the `.sln`, `packages.config`, `project.json`, `project.lock.json`, `.csproj (SDK-style)` or `project.assets.json` files in the source code, which provides information about the direct dependencies and their corresponding versions.
+{{companyConfig.COMPANY_NAME}} scans the third-party components managed by Nuget. It locates the `.sln`, `packages.config`, `project.json`, `project.lock.json`, `.csproj (SDK-style)` or `project.assets.json` files in the source code, which provides information about the direct dependencies and their corresponding versions.
 
 **Please be aware that Nuget 4.9 project.lock.json is not supported yet.**
 

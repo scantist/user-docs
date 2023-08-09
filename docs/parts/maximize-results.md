@@ -1,3 +1,7 @@
-Maximize your results by building your project with a CI tool before scanning with Scantist. This allows Scantist to obtain both direct and transitive dependencies from the build result. 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 
-- [Integrate Scantist with your preferred CI/CD pipeline tools](#)
+Maximize your results by building your project with a CI tool before scanning with {{companyConfig.COMPANY_NAME}}. This allows {{companyConfig.COMPANY_NAME}} to obtain both direct and transitive dependencies from the build result.
+
+- [Integrate {{companyConfig.COMPANY_NAME}} with your preferred CI/CD pipeline tools](#)

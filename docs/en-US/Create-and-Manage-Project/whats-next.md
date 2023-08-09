@@ -1,8 +1,12 @@
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
+
 ## What's next?
 
 <hr class="thick" />
 
-You can now trigger a scan for your open source projects and configure the [scan settings](). Scantist is designed to integrate seamlessly with your existing software development workflows and tools. 
+You can now trigger a scan for your open source projects and configure the [scan settings](). {{companyConfig.COMPANY_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
 - [Trigger a scan](../Trigger-Scan/)
 

@@ -1,16 +1,16 @@
 import { defineConfig, loadEnv } from "vitepress";
 import { enUSSidebar, zhCNSidebar } from "./others/sidebar";
-import { config } from "../../config/companyConfig.js";
+import { companyConfig } from "../../config/companyConfig.js";
 const env = loadEnv("", process.cwd());
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: config.TITLE,
+  title: companyConfig.TITLE,
   // head: ['script', {}, fs.readFileSync(path.resolve(__dirname, 'lang.js'), 'utf-8')],
   // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   head: [],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: config.COMPANY_LOGO,
+    logo: companyConfig.COMPANY_LOGO,
     nav: [],
     i18nRouting: true,
     sidebar: {
@@ -38,4 +38,5 @@ export default defineConfig({
     },
   },
   lastUpdated: true,
+  ignoreDeadLinks: false,
 });

@@ -7,7 +7,9 @@ tags: scantist, compliance, policy, rules
 ---
 
 <ClientOnly>
-
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 # {{ $frontmatter.title }}
 
 > Learn how to ensure compliance with organizational and industry standards with policy rules now
@@ -16,25 +18,25 @@ tags: scantist, compliance, policy, rules
 
 <hr class="thick" />
 
-Every organization needs a set of rules to define which open source software can be used and which cannot. The primary objectives for defining these rules are to ensure security and legal compliance, which immediately reduces the organization’s risk. Additional objectives can include improving the organization’s cyber-hygiene and supply chain management, ensuring long-term maintainability, and improving the ability to respond to threats. 
+Every organization needs a set of rules to define which open source software can be used and which cannot. The primary objectives for defining these rules are to ensure security and legal compliance, which immediately reduces the organization’s risk. Additional objectives can include improving the organization’s cyber-hygiene and supply chain management, ensuring long-term maintainability, and improving the ability to respond to threats.
 
-If an organization fails to comply with the license terms and conditions, it can impact the organization. Scantist provides compliance functionality, enabling you to set a list of policy rules that your team would comply with. 
+If an organization fails to comply with the license terms and conditions, it can impact the organization. {{companyConfig.COMPANY_NAME}} provides compliance functionality, enabling you to set a list of policy rules that your team would comply with.
 
-### Customizing policy rules in Scantist
+### Customizing policy rules in {{companyConfig.COMPANY_NAME}}
 
 <hr class="thick" />
 
-To customize policy rules in Scantist, follow these steps: 
+To customize policy rules in {{companyConfig.COMPANY_NAME}}, follow these steps:
 
 1.&nbsp;&nbsp;&nbsp;Click on the “Settings” page on the navigation bar
 
-2.&nbsp;&nbsp;&nbsp;Click on the “Policies” tab 
+2.&nbsp;&nbsp;&nbsp;Click on the “Policies” tab
 
 3.&nbsp;&nbsp;&nbsp;To create a new policy, type the name of your policy in the “New Policy Name” box and click on the “Create Policy” button next to the box
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-1.png" alt="Create policy" width="300" height="200">
 
-4.&nbsp;&nbsp;&nbsp;The newly created policy will be shown in the list 
+4.&nbsp;&nbsp;&nbsp;The newly created policy will be shown in the list
 
 5.&nbsp;&nbsp;&nbsp;Click on the newly created policy to add your rules
 
@@ -42,7 +44,7 @@ To customize policy rules in Scantist, follow these steps:
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-2.png" alt="add rule">
 
-7.&nbsp;&nbsp;&nbsp;Choose the action you want Scantist to take when the rule is triggered - Approved, Deny or Flag 
+7.&nbsp;&nbsp;&nbsp;Choose the action you want {{companyConfig.COMPANY_NAME}} to take when the rule is triggered - Approved, Deny or Flag
 
 <div style="display: flex; justify-content: center;">
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-3.png" alt="action" width="300" height="200">
@@ -60,17 +62,17 @@ To customize policy rules in Scantist, follow these steps:
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-5.png" alt="cardinality" width="200" height="100">
 </div>
 
-10.&nbsp;&nbsp;&nbsp;Click “create” to save your new policy rule and you may wish to create more rules to be detected across your projects 
+10.&nbsp;&nbsp;&nbsp;Click “create” to save your new policy rule and you may wish to create more rules to be detected across your projects
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-6.png" alt="more rules" >
 
-For more details on policy rule types, see here. 
+For more details on policy rule types, see here.
 
 ### Scanning your projects with customized policy rules
 
 <hr class="thick" />
 
-Once you have created your policy rules, you can assign them to specific projects or use them as global policies across all projects. To scan your project with those rules, follow these steps: 
+Once you have created your policy rules, you can assign them to specific projects or use them as global policies across all projects. To scan your project with those rules, follow these steps:
 
 <div style="display: flex;">
 <div style="flex: 1; ">
@@ -83,9 +85,10 @@ Once you have created your policy rules, you can assign them to specific project
 
 3.&nbsp;&nbsp;&nbsp;Select the compliance policy you want to apply to the scan
 
-4.&nbsp;&nbsp;&nbsp;Click on the “Scan” button to start scanning 
+4.&nbsp;&nbsp;&nbsp;Click on the “Scan” button to start scanning
 
-5.&nbsp;&nbsp;&nbsp;Scantist will start scanning your project with the selected policy rules. 
+5.&nbsp;&nbsp;&nbsp;{{companyConfig.COMPANY_NAME}} will start scanning your project with the selected policy rules.
+
 </div>
 </div>
 
@@ -93,10 +96,10 @@ Once you have created your policy rules, you can assign them to specific project
 
 <hr class="thick" />
 
-It is important to review your policy rules customized for components detected across your organizations. The policy rules are displayed in the “Policy Rule” tab when you click on a project. 
+It is important to review your policy rules customized for components detected across your organizations. The policy rules are displayed in the “Policy Rule” tab when you click on a project.
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-8.png" alt="policy rule" >
 
-You can categorize the list according to “Approve”, “Deny” and “Flag” status, as well as “License”, “Library” and “Vulnerability” categories. 
+You can categorize the list according to “Approve”, “Deny” and “Flag” status, as well as “License”, “Library” and “Vulnerability” categories.
 
 </ClientOnly>

@@ -7,11 +7,15 @@ tags: ci, continuous integration, cd, continuous deployment, bamboo, jenkins, ci
 description: This document explains how to integrate Gitlab CI
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->Explore the possibilities of automating the entire software development lifecycle, from building, testing, and, deployment to production.
+> Explore the possibilities of automating the entire software development lifecycle, from building, testing, and, deployment to production.
 
 <div style="display: flex;">
     <div style="flex: 1;">
@@ -26,13 +30,13 @@ description: This document explains how to integrate Gitlab CI
     </div>
 </div>
 
-## Scantist CI/CD Integration
+## {{companyConfig.COMPANY_NAME}} CI/CD Integration
 
 <hr class="thick" />
 
-By integrating Scantist with your CI/CD system, you can automatically scan your open source components for vulnerabilities and compliance issues, as part of your build and testing processes. To learn more about the CI/CD system of choice, please refer to the table below and select the corresponding system.
+By integrating {{companyConfig.COMPANY_NAME}} with your CI/CD system, you can automatically scan your open source components for vulnerabilities and compliance issues, as part of your build and testing processes. To learn more about the CI/CD system of choice, please refer to the table below and select the corresponding system.
 
-::: warning **To integrate Scantist with your CI/CD system, you need to ensure the followings:**
+::: warning **To integrate {{companyConfig.COMPANY_NAME}} with your CI/CD system, you need to ensure the followings:**
 
 1. Java is available in the build environment (minimum JDK1.8)
 2. A manifest file is available in the source code project
@@ -67,5 +71,5 @@ By integrating Scantist with your CI/CD system, you can automatically scan your 
 
 ### Other CI/CD Tool
 
-Scantist can be integrated with any CI/CD tool that is not mentioned on the list. To integrate with other CI/CD tools, set environmental variables on your system and configure your build script.
+{{companyConfig.COMPANY_NAME}} can be integrated with any CI/CD tool that is not mentioned on the list. To integrate with other CI/CD tools, set environmental variables on your system and configure your build script.
 </ClientOnly>

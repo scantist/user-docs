@@ -6,6 +6,10 @@ lang: en-US
 tags: settings, integrations
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
@@ -30,11 +34,11 @@ tags: settings, integrations
 
 Track and manage the progress of reported vulnerability issues.
 
-Issue tracking tools can facilitate this progress: 
+Issue tracking tools can facilitate this progress:
 
-* [Jira](Jira.md)
+- [Jira](Jira.md)
 
-* Chat Notify
+- Chat Notify
 
 </div>
 
@@ -54,23 +58,23 @@ Issue tracking tools can facilitate this progress:
 
 <div style="border: 1px solid grey; padding: 5px;">
 
-Automate the entire software development lifecycle, from building, testing, and deployment to production. 
+Automate the entire software development lifecycle, from building, testing, and deployment to production.
 
 <b>CI/CD tools: </b>
 
-* Bamboo
+- Bamboo
 
-* Circle Ci 
+- Circle Ci
 
-* Jenkins
+- Jenkins
 
-* Github Actions
+- Github Actions
 
-* Gitlab
+- Gitlab
 
-* Travis
+- Travis
 
-Scantist supports other [CI/CD tools]().
+{{companyConfig.COMPANY_NAME}} supports other [CI/CD tools]().
 
 </div>
 
@@ -90,13 +94,13 @@ Scantist supports other [CI/CD tools]().
 
 <div style="border: 1px solid grey; padding: 5px;">
 
-Manage vulnerabilities by using textual commands typed into a terminal or console. 
+Manage vulnerabilities by using textual commands typed into a terminal or console.
 
-CLI are often preferred. by developers who are comfortable working with command-line tools, as they can be faster and more efficient than GUIs for certain tasks. 
+CLI are often preferred. by developers who are comfortable working with command-line tools, as they can be faster and more efficient than GUIs for certain tasks.
 
 <b>Scan your project from the command line:</b>
 
-* [insert link]()
+- [insert link]()
 
 </div>
 

@@ -5,11 +5,15 @@ page: true
 lang: en-US
 tags: scan, sca, sast, fuzzing, iac, code snippet
 ---
+
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->Explore what's next after creating a project in Scantist
+> Explore what's next after creating a project in {{companyConfig.COMPANY_NAME}}
 
 ## Initiate a scan for your project
 

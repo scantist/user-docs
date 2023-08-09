@@ -10,6 +10,7 @@ language: Go
 <script setup>
 import { convertLang } from '../../.vitepress/helperFunctions'
 import LanguageHeader from './components/LanguageHeader.vue'
+import { companyConfig } from '../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>
@@ -26,11 +27,11 @@ import LanguageHeader from './components/LanguageHeader.vue'
 | --------- | --------------- | -------------- |
 | Go        | Go Modules      | go.mod         |
 
-## Scan your Go project with Scantist
+## Scan your Go project with {{companyConfig.COMPANY_NAME}}
 
 <hr class="thick" />
 
-Scantist scans the third-party components managed by Go Modules. It locates the `go.mod` file in the source code, which provides information about the dependencies and their corresponding versions. By leverage this information, Scantist scans your Go project for any potential security vulnerabilities that may exist in both direct and transitive dependencies. This enables you to identify and mitigate any potential security risk within your project’s dependency chain.
+{{companyConfig.COMPANY_NAME}} scans the third-party components managed by Go Modules. It locates the `go.mod` file in the source code, which provides information about the dependencies and their corresponding versions. By leverage this information, {{companyConfig.COMPANY_NAME}} scans your Go project for any potential security vulnerabilities that may exist in both direct and transitive dependencies. This enables you to identify and mitigate any potential security risk within your project’s dependency chain.
 
 <!--@include: ../../parts/maximize-results.md-->
 

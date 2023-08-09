@@ -6,11 +6,15 @@ lang: en-US
 tags: scan type, schedule scan, event driven scan
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->Get the most out of your SCM scans with these configuration options
+> Get the most out of your SCM scans with these configuration options
 
 ## Select your Scan Type
 
@@ -28,7 +32,7 @@ tags: scan type, schedule scan, event driven scan
 
 <hr class="thick" />
 
-You can set your scan to be done on a scheduled basis for all scan types. The available options for the scheduled scans are as follows: 
+You can set your scan to be done on a scheduled basis for all scan types. The available options for the scheduled scans are as follows:
 
 ::: tip Daily
 7:00 AM Singapore Timezone
@@ -42,8 +46,7 @@ every Monday at 7:00 AM Singapore Timezone
 Starting from the date the scheduled scan is enabled. For example, if you enable the schedule scan settings on Janaury 1, the subsequent monthly scans will occur on the 1st of every month
 :::
 
-
-To schedule a scan in Scantist, you can follow these steps:
+To schedule a scan in {{companyConfig.COMPANY_NAME}}, you can follow these steps:
 
 <div style="display: flex;">
 <div style="flex: 1;margin-right:5px;">
@@ -55,7 +58,7 @@ To schedule a scan in Scantist, you can follow these steps:
 
 1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
 
-2.&nbsp;&nbsp;&nbsp;Choose whether your project is a source code or binary project 
+2.&nbsp;&nbsp;&nbsp;Choose whether your project is a source code or binary project
 
 3.&nbsp;&nbsp;&nbsp;Select the branch of the project that you want to scan
 
@@ -66,12 +69,11 @@ To schedule a scan in Scantist, you can follow these steps:
 </div>
 </div>
 
-
 ## Event Driven Scan
 
 <hr class="thick" />
 
-You can set your scan to be done on PR triggered event. The available events for the event driven scans are as follows: 
+You can set your scan to be done on PR triggered event. The available events for the event driven scans are as follows:
 
 ::: tip Push Request
 A scan will be triggered automatically for every commit on all the branches of the SCM
@@ -85,8 +87,7 @@ A scan will be triggered automatically for every pull request created on the SCM
 A scan will be triggered automatically for every push and pull requests
 :::
 
-
-To trigger a scan, you can follow these steps: 
+To trigger a scan, you can follow these steps:
 
 <div style="display: flex;">
 <div style="flex: 1;margin-right:5px;">
@@ -98,7 +99,7 @@ To trigger a scan, you can follow these steps:
 
 1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
 
-2.&nbsp;&nbsp;&nbsp;Choose the event of the scan: push, pull or both 
+2.&nbsp;&nbsp;&nbsp;Choose the event of the scan: push, pull or both
 
 3.&nbsp;&nbsp;&nbsp;Select the branch of the project that you want to scan
 

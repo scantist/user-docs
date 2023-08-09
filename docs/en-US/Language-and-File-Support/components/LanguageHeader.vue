@@ -12,7 +12,7 @@
       </div>
       <div class="description">
         <span type="h6" style="font-size: 16px; color: var(--vp-c-text-2)"
-          >Discover {{ COMPANY_NAME }}'s capabilities with
+          >Discover {{ companyConfig.COMPANY_NAME }}'s capabilities with
           {{ convertLang(language) }} programming language</span
         >
       </div>
@@ -21,7 +21,7 @@
 </template>
 <script setup>
 import { convertLang } from "../../../.vitepress/helperFunctions";
-import { COMPANY_NAME } from "../../../.vitepress/constant";
+import { companyConfig } from "../../../../config/companyConfig.js";
 const props = defineProps({
   language: String,
 });

@@ -6,6 +6,10 @@ lang: en-US
 tags: ci, github, continuous integration, actions
 description: This document explains how to integrate with GitHub Actions
 ---
+
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 <style>
     ol > li {
         font-weight: 800;
@@ -16,21 +20,21 @@ description: This document explains how to integrate with GitHub Actions
 
 # {{ $frontmatter.title }}
 
->Discover Scantist's capabilities with GitHub Actions integration
+> Discover {{companyConfig.COMPANY_NAME}}'s capabilities with GitHub Actions integration
 
 ## GitHub Actions
 
 GitHub Actions is a hosted continuous integration service provided by GitHub for developers to build, test and deploy software projects directly from their GitHub repositories. It is commonly used to automate the build and test processes whenever there are new changes to the source code.
 
-Integrating Scantist into the GitHub Actions workflow can enforce security and licensing compliance within your CI/CD pipeline. **The integration works seamlessly for both GitHub and GitHub Enterprise environments.**
+Integrating {{companyConfig.COMPANY_NAME}} into the GitHub Actions workflow can enforce security and licensing compliance within your CI/CD pipeline. **The integration works seamlessly for both GitHub and GitHub Enterprise environments.**
 
-## Follow these steps to integrate Scantist with GitHub Actions
+## Follow these steps to integrate {{companyConfig.COMPANY_NAME}} with GitHub Actions
 
 <ol>
 
 <li>Create access token</li>
 
-You will need to [create an access token]() on Scantist to authenticate and authorize the integration between Scantist and GitHub Actions.
+You will need to [create an access token]() on {{companyConfig.COMPANY_NAME}} to authenticate and authorize the integration between {{companyConfig.COMPANY_NAME}} and GitHub Actions.
 
 <li>Setup Secrets for your GitHub repository</li>
 
@@ -43,7 +47,7 @@ Add a new Secret named `SCANTISTTOKEN` with the value of the access token you ob
 <img src="/images/Build-based-Scan-CICD-Pipeline/github/step2.2.png"/>
 
 :::tip
-Note: If you are using a dedicated Scantist deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
+Note: If you are using a dedicated {{companyConfig.COMPANY_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
 :::
 
 <li>Edit .yml file on your repository</li>
@@ -52,19 +56,19 @@ To complete the integration, you need to add or merge the below command at the b
 
 ```yaml
 jobs:
-  test:    
-    steps:      
-      - name: Download Scantist-Bom-Detect
-        run: curl -s https://download.scantist.io/scantist-bom-detect.jar --output scantist-bom-detect.jar
-      
-      - name: Upload to Scantist 
+  test:
+    steps:
+      - name: Download SCA-Bom-Detect
+        run: curl -s https://download.scantist.io/sca-bom-detect.jar --output sca-bom-detect.jar
+
+      - name: Upload to {{companyConfig.COMPANY_NAME}}
         env: # Setting the Token
           SCANTISTTOKEN: ${{secrets.SCANTISTTOKEN }}
           #SCANTIST_IMPORT_URL : "https://192.xxx.xxx.xx:8237/ci-scan/" #add this line if you are setting up on a dedicated scantist server
         run: java -jar scantist-bom-detect.jar
 ```
 
-This command will download and execute Scantist BOM Detector to scan after the build. After the successful build, the third-party component information of your project will be pushed to Scantist.
+This command will download and execute {{companyConfig.COMPANY_NAME}} BOM Detector to scan after the build. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.COMPANY_NAME}}.
 
 </ol>
 

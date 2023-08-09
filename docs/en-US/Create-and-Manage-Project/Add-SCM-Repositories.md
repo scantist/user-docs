@@ -6,18 +6,21 @@ lang: en-US
 tags: repository, repositories, scm, add repo, github, gitlab, bitbucket
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
-> Creating a new project with your SCM allows you to benefit from greater accuracy in results compared to uploading source code directly. You can view your repositories in Scantist when you link Scantist with your SCM accounts.
+> Creating a new project with your SCM allows you to benefit from greater accuracy in results compared to uploading source code directly. You can view your repositories in {{companyConfig.COMPANY_NAME}} when you link {{companyConfig.COMPANY_NAME}} with your SCM accounts.
 
 ## Create a new project with your SCM
 
 <hr class="thick" />
 
 ::: warning Note:
-Make sure your Scantist account is integrated with your SCM account. Learn more on SCM integration here: [SCM Integration](../Get-Started/SCM-Integration.md)
+Make sure your {{companyConfig.COMPANY_NAME}} account is integrated with your SCM account. Learn more on SCM integration here: [SCM Integration](../Get-Started/SCM-Integration.md)
 :::
 
 1. Click on the **"Projects"** page on the navigation bar
@@ -42,7 +45,7 @@ Make sure your Scantist account is integrated with your SCM account. Learn more 
 
 <hr class="thick" />
 
-When creating a new project with your SCM in Scantist, it is important to provide the necessary information. Here's what you need to do:
+When creating a new project with your SCM in {{companyConfig.COMPANY_NAME}}, it is important to provide the necessary information. Here's what you need to do:
 
 1. Select the team that you want to assign the project to
 
