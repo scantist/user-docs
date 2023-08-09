@@ -1,6 +1,6 @@
 export const companyConfig = {
-  USER_DOCS_TITLE: "DOCS",
-  APP_NAME: "Webapp",
-  COMPANY_LOGO: "white-label.svg",
+  USER_DOCS_TITLE: "SCANTIST",
+  APP_NAME: "Scantist",
+  COMPANY_LOGO: "companyLogo.svg",
   FRONTEND_URL: "https://v4staging.scantist.io",
 };
