@@ -91,6 +91,7 @@ pipeline {
                 sh """
                     rm -rf node_modules
                     rm -rf .vitepress
+                    cp -R frontend-envs/${COMPANY_ID}/images/* docs/public/images/.
                     cp -R frontend-envs/${COMPANY_ID}/config/* config/.
                     npm install -g pnpm only-allow
                     pnpm install --no-frozen-lockfile
