@@ -4,7 +4,7 @@ import { companyConfig } from "../../config/companyConfig.js";
 // https://vitepress.dev/reference/site-config
 
 const env = loadEnv("", process.cwd());
-console.log("env is", env, process.cwd());
+console.log("loading...", env, process.cwd());
 export default defineConfig({
   title: companyConfig.USER_DOCS_TITLE,
   // head: ['script', {}, fs.readFileSync(path.resolve(__dirname, 'lang.js'), 'utf-8')],
@@ -43,7 +43,7 @@ export default defineConfig({
   ignoreDeadLinks: [
     // custom function, ignore all links include "companyConfig"
     (url) => {
-      return url.toLowerCase().includes("companyConfig");
+      return url.includes("companyConfig");
     },
   ],
 });
