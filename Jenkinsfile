@@ -94,7 +94,8 @@ pipeline {
                     cp -R frontend-envs/${COMPANY_ID}/config/* config/.
                     npm install -g pnpm only-allow
                     pnpm install --no-frozen-lockfile
-                    pnpm docs:build                 
+                    pnpm docs:build
+                    bash scripts/download-dependency-files
                 """
                 step([$class: 'ClassicUploadStep',
                     credentialsId: env.GCP_CREDENTIALS_ID,
