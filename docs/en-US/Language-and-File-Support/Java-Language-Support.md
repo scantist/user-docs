@@ -9,6 +9,7 @@ language: Java
 
 <script setup>
 import LanguageHeader from './components/LanguageHeader.vue'
+import { companyConfig } from '../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>
@@ -21,18 +22,38 @@ import LanguageHeader from './components/LanguageHeader.vue'
 
 <hr class="thick" />
 
-| Languages | Package Manager | Manifest Files     |
-| --------- | --------------- | ------------------ |
-| Java      | Maven           | pom.xml            |
-|           | Gradle          | build.gradle       |
-|           | Ant             | ivy.xml, build.xml |
-|           | Kotlin          | build.gradle.kts   |
+<table>
+    <thead>
+        <th>Languages</th>
+        <th>Package Manager</th>
+        <th>Manifest Files</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">{{ $frontmatter.language }}</td>
+            <td width="33.33%">Maven</td>
+            <td width="100%">pom.xml </td>
+        </tr>
+        <tr>
+            <td>Gradle</td>
+            <td>build.gradle</td>
+        </tr>
+        <tr>
+            <td>Ant</td>
+            <td>ivy.xml, build.xml</td>
+        </tr>
+        <tr>
+            <td>Kotlin</td>
+            <td>build.gradle.kts</td>
+        </tr>
+    </tbody>
+</table>
 
-## Scan your Java project with Scantist
+## Scan your Java project with {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining `pom.xml`, `build.gradle`, `ivy.xml`, `build.xml` or `build.gradle.kts` files in the source code.
+{{companyConfig.APP_NAME}} scans the third-party components by examining `pom.xml`, `build.gradle`, `ivy.xml`, `build.xml` or `build.gradle.kts` files in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 
@@ -56,20 +77,20 @@ If you are working with Gradle or Kotlin projects and cannot find any components
 <div style="flex:1; margin:15px;">
 You will find multiple gradleScope inside the dependencies section of the build.gradle file in this screenshot.
 
-By default, Scantist will use the "implementation" gradleScope when scanning the build.gradle file.
+By default, {{companyConfig.APP_NAME}} will use the "implementation" gradleScope when scanning the build.gradle file.
 
 However, some components may not be picked up if they are not under the "implementation" gradleScope.
 
 </div>
 </div>
 
-In this case, you can include the gradleScope parameter with the Scantist Scan Agent command to ensure that all components are scanned.
+In this case, you can include the gradleScope parameter with the {{companyConfig.APP_NAME}} Scan Agent command to ensure that all components are scanned.
 
 ```bash
 java -jar scantist-bom-detect.jar -gradleScope scope1,scope2,scope3
 ```
 
-Here's an example usage of the command where Scantist will consider the components under the specified gradleScopes of "implementation", "compile", "kotlinCompilerClasspath", "kapt", and "testImplementation"
+Here's an example usage of the command where {{companyConfig.APP_NAME}} will consider the components under the specified gradleScopes of "implementation", "compile", "kotlinCompilerClasspath", "kapt", and "testImplementation"
 
 ```bash
 java -jar scantist-bom-detect.jar -gradleScope implementation,compile,kotlinCompilerClasspath,kapt,testImplementation

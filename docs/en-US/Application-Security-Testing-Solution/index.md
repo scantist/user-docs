@@ -7,17 +7,21 @@ tags: AST, AST solutions, SCA, SAST, Fuzzing, IaC
 description: This document explains what are application security testing solutions
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
-> You can scan your project with various application security solutions to ensure your application is tested for specific types of vulnerabilities that are relevant to your application and infrastructure. 
+> You can scan your project with various application security solutions to ensure your application is tested for specific types of vulnerabilities that are relevant to your application and infrastructure.
 
 ## Application Testing Solutions
 
 <hr class="thick" />
 
-Scantist supports various application security testing solutions to help you address different risks. When triggering a new scan, you have the option to choose from different methods. To learn more, please refer to the table below and select the corresponding methods.  
+{{companyConfig.APP_NAME}} supports various application security testing solutions to help you address different risks. When triggering a new scan, you have the option to choose from different methods. To learn more, please refer to the table below and select the corresponding methods.
 
 <table>
     <thead>
@@ -39,4 +43,3 @@ Scantist supports various application security testing solutions to help you add
 </table>
 
 </ClientOnly>
-

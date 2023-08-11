@@ -6,11 +6,15 @@ lang: en-US
 tags: settings, member, roles
 ---
 
+<script setup>
+import { companyConfig } from '../../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
-> Assign members to various roles and teams based on their privileges to ensure that sensitive tasks are only accessible to those who require access. Scantist owners have all permissions. 
+> Assign members to various roles and teams based on their privileges to ensure that sensitive tasks are only accessible to those who require access. {{companyConfig.APP_NAME}} owners have all permissions.
 
 ## Available roles
 
@@ -56,7 +60,5 @@ Only able to view the results of the scans
 ## Roles permissions
 
 <hr style="border:2px solid gray" />
-
-
 
 </ClientOnly>

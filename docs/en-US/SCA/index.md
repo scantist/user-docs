@@ -7,11 +7,15 @@ tags: SCA, software composition analysis, components, vulnerabilities, complianc
 description: This document explains what software composition analysis is
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
-> <img src="/images/Application-Security-Testing-Solution/SCA/SCA-logo.png" width=100 /> Discover Scantist's capabilities with SCA
+> <img src="/images/Application-Security-Testing-Solution/SCA/SCA-logo.png" width=100 /> Discover {{companyConfig.APP_NAME}}'s capabilities with SCA
 
 ## Software Composition Analysis Testing Solution
 
@@ -25,7 +29,7 @@ Software Composition Analysis (SCA) scans your application’s dependencies to i
 
 <hr class="thick" />
 
-Scantist SCA follows a comprehensive scanning process to analyze your project’s components, detect vulnerabilities, and assess associated licenses. The results involved in the scanning process are as follows:
+{{companyConfig.APP_NAME}} SCA follows a comprehensive scanning process to analyze your project’s components, detect vulnerabilities, and assess associated licenses. The results involved in the scanning process are as follows:
 
 ### Components Identification
 

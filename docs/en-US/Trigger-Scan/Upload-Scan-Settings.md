@@ -6,11 +6,15 @@ lang: en-US
 tags: scan type, schedule scan, binary, build-based, docker, cli
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
->Get the most out of your upload scans with these configuration options
+> Get the most out of your upload scans with these configuration options
 
 ## Select your Scan Type
 
@@ -28,7 +32,7 @@ tags: scan type, schedule scan, binary, build-based, docker, cli
 
 <hr class="thick" />
 
-You can set your scan to be done on a scheduled basis for all scan types. The available options for the scheduled scans are as follows: 
+You can set your scan to be done on a scheduled basis for all scan types. The available options for the scheduled scans are as follows:
 
 ::: tip Daily
 7:00 AM Singapore Timezone
@@ -42,15 +46,14 @@ every Monday at 7:00 AM Singapore Timezone
 Starting from the date the scheduled scan is enabled. For example, if you enable the schedule scan settings on Janaury 1, the subsequent monthly scans will occur on the 1st of every month
 :::
 
-
-To schedule a scan in Scantist, you can follow these steps:
+To schedule a scan in {{companyConfig.APP_NAME}}, you can follow these steps:
 
 1.&nbsp;&nbsp;&nbsp;Toggle the switch to enable scheduled scans
 
 <div style="display: flex;">
 <div style="flex: 1;margin-right:5px;">
 
-2.&nbsp;&nbsp;&nbsp;Choose whether your project is a source code or binary project 
+2.&nbsp;&nbsp;&nbsp;Choose whether your project is a source code or binary project
 
 3.&nbsp;&nbsp;&nbsp;Select the version of the project that you want to scan
 

@@ -1,3 +1,3 @@
 <script setup>
-  window.location.replace('/en-US/Get-Started-with-Scantist/')
+  window.location.replace('/en-US/Get-Started/')
 </script>

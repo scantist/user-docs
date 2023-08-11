@@ -1,7 +1,7 @@
 {
   "name": "user-docs",
   "version": "1.0.0",
-  "description": "### **Get started with Scantist’s SCA platform** <a href=\"#get-started-with-scantists-sca-platform\" id=\"get-started-with-scantists-sca-platform\"></a>",
+  "description": "### **Get started with Scantist’s SCA platform** <a href=\"#Get-Started-sca-platform\" id=\"Get-Started-sca-platform\"></a>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

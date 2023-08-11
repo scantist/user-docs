@@ -6,6 +6,10 @@ lang: en-US
 tags: ci, circleci, continuous integration
 description: This document explains how to integrate with CircleCI
 ---
+
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 <style>
     li {
         font-weight: 800;
@@ -16,20 +20,20 @@ description: This document explains how to integrate with CircleCI
 
 # {{ $frontmatter.title }}
 
->Discover Scantist's capabilities with CircleCI integration
+> Discover {{companyConfig.APP_NAME}}'s capabilities with CircleCI integration
 
 ## CircleCI
 
 CircleCI is a continuous integration and delivery platform for developers to integrate their code repositories with the platform and consistently run automated tests. CircleCI can be integrated with GitHub, GitHub Enterprise, Bitbucket, Docker, and AWS.
 
-Integrating Scantist into the development lifecycle of CircleCI can help enforce security and licensing compliance within your CI/CD pipeline.
+Integrating {{companyConfig.APP_NAME}} into the development lifecycle of CircleCI can help enforce security and licensing compliance within your CI/CD pipeline.
 
-Follow these steps to integrate Scantist with CircleCI:
+Follow these steps to integrate {{companyConfig.APP_NAME}} with CircleCI:
 
 <ol>
 <li>Create access token</li>
 
-You will need to create an access token on Scantist to authenticate and authorize the integration between Scantist and CircleCI.
+You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and CircleCI.
 
 <li>Setup Environmental Variable on CircleCI</li>
 
@@ -41,7 +45,7 @@ Add a new variable named `SCANTISTTOKEN` with the value of the access token you 
 <img src="/images/Build-based-Scan-CICD-Pipeline/circleci/step2.2.png" />
 
 :::tip
-Note: If you are using a dedicated Scantist deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
+Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
 :::
 
 <li>Modify config.yml on your repository</li>
@@ -73,9 +77,9 @@ jobs:
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
-      # Then run your Scantist scan!
+      # Then run your {{companyConfig.APP_NAME}} scan!
       - run:
-          name: Scantist-scan
+          name: {{companyConfig.APP_NAME}}-scan
           command: bash <(curl -s https://scripts.scantist.com/ci-circle.sh)
 
 # Invoke jobs via workflows
@@ -83,14 +87,14 @@ jobs:
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
-    jobs:      
+    jobs:
       - build-and-test:
           # add organization context for global environment variables
           context:
             - scantist-access
 ```
 
-This command will call the Scantist Circle script to receive your successfully built result from CircleCI. After the successful build, the third-party component information of your project will be pushed to Scantist SCA.
+This command will call the {{companyConfig.APP_NAME}} Circle script to receive your successfully built result from CircleCI. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.APP_NAME}} SCA.
 
 </ol>
 

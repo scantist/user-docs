@@ -2,6 +2,7 @@ import { Options } from "./types";
 
 import fs from "fs";
 import path from "path";
+import { companyConfig } from "../../../config/companyConfig";
 
 function getSidebarItems(
   dir: string[],
@@ -48,9 +49,9 @@ function getSidebarItems(
 export function getSidebar() {
   return [
     {
-      text: "Get Started with Scantist",
+      text: "Get Started",
       collapsed: true,
-      link: "/Get-Started-with-Scantist",
+      link: "/Get-Started",
     },
   ];
 }
@@ -58,21 +59,21 @@ export function getSidebar() {
 export function enUSSidebar() {
   return [
     {
-      text: "Get Started with Scantist",
-      link: "/en-US/Get-Started-with-Scantist/",
+      text: "Get Started",
+      link: "/en-US/Get-Started/",
       collapsed: true,
       items: [
         {
-          text: "Sign up for Scantist",
-          link: "/en-US/Get-Started-with-Scantist/Sign-up-for-Scantist",
+          text: `Sign up for ${companyConfig.APP_NAME}`,
+          link: "/en-US/Get-Started/Sign-up-for-more",
         },
         {
           text: "SCM Integration",
-          link: "/en-US/Get-Started-with-Scantist/SCM-Integration",
+          link: "/en-US/Get-Started/SCM-Integration",
         },
         {
           text: "Organization Group",
-          link: "/en-US/Get-Started-with-Scantist/Organization-Group",
+          link: "/en-US/Get-Started/Organization-Group",
         },
       ],
     },
@@ -167,20 +168,20 @@ export function enUSSidebar() {
           link: "/en-US/Build-based-Scan-CICD-Pipeline/CircleCI-Integration",
         },
         {
-          text: 'GitHub Actions CI Integration',
-          link: '/en-US/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration'
+          text: "GitHub Actions CI Integration",
+          link: "/en-US/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration",
         },
         {
           text: "GitLab CI Integration",
           link: "/en-US/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration",
         },
         {
-          text: 'Jenkins CI Integration',
-          link: '/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration'
+          text: "Jenkins CI Integration",
+          link: "/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration",
         },
         {
-          text: 'Travis CI Integration',
-          link: '/en-US/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration'
+          text: "Travis CI Integration",
+          link: "/en-US/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration",
         },
       ],
     },
@@ -198,8 +199,8 @@ export function enUSSidebar() {
           link: "/en-US/SCA/SCA-Licenses",
         },
         {
-          text: "Export Reports on Scantist",
-          link: "/en-US/SCA/Export-Reports-on-Scantist",
+          text: `Export Reports on ${companyConfig.APP_NAME}`,
+          link: "/en-US/SCA/Export-Reports-on-app",
         },
       ],
     },
@@ -273,19 +274,23 @@ export function enUSSidebar() {
           link: "/en-US/Settings/Integrations-Settings/",
           collapsed: true,
           items: [
+            {
+              text: "Jira",
+              link: "/en-US/Settings/Integrations-Settings/Jira",
+            },
           ],
         },
       ],
     },
     {
-      text: 'References',
+      text: "References",
       collapsed: true,
       items: [
         {
-          text: 'Scantist BOM Detect CLI Commands & Parameters',
-          link: '/en-US/References/Scantist-BOM-Detect-CLI-Commands-&-Parameters',
+          text: "SCA BOM Detect CLI Commands & Parameters",
+          link: "/en-US/References/SCA-BOM-Detect-CLI-Commands-&-Parameters",
         },
-      ]
+      ],
     },
   ];
 }
@@ -294,7 +299,7 @@ export function zhCNSidebar() {
   return [
     {
       text: "开始使用思探明",
-      link: "/zh-CN/Get-Started-with-Scantist/",
+      link: "/zh-CN/Get-Started/",
       collapsed: true,
       items: [],
     },

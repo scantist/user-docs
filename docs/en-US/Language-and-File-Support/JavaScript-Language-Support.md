@@ -9,6 +9,7 @@ language: JavaScript
 
 <script setup>
 import LanguageHeader from './components/LanguageHeader.vue'
+import { companyConfig } from '../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>
@@ -30,7 +31,7 @@ import LanguageHeader from './components/LanguageHeader.vue'
     <tbody>
         <tr>
             <td rowspan="3">{{ $frontmatter.language }}</td>
-            <td width="13.33%">NPM</td>
+            <td width="25.33%">NPM</td>
             <td width="100%">package.json, package-lock.json, npm-shrinkwrap.json</td>
         </tr>
         <tr>
@@ -44,11 +45,11 @@ import LanguageHeader from './components/LanguageHeader.vue'
     </tbody>
 </table>
 
-## Scan your JavaScript project with Scantist
+## Scan your JavaScript project with {{companyConfig.APP_NAME}}
 
 <hr class="thick" />
 
-Scantist scans the third-party components by examining `package.json`, `package-lock.json`, `npm-shrinkwrap.json` or `yarn.lock` files in the source code.
+{{companyConfig.APP_NAME}} scans the third-party components by examining `package.json`, `package-lock.json`, `npm-shrinkwrap.json` or `yarn.lock` files in the source code.
 
 <!--@include: ../../parts/maximize-results.md-->
 

@@ -6,6 +6,9 @@ lang: en-US
 tags: settings, access tokens, api
 ---
 
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+</script>
 <ClientOnly>
 
 # {{ $frontmatter.title }}
@@ -22,12 +25,12 @@ tags: settings, access tokens, api
 
 3. Enter a name for your token in the designated field and select either **"Create Token"** or **"Create API Token"** located adjacent to the bar
 
-    <img src="/images/Settings/Access-Tokens-1.png" />
+<img src="/images/Settings/Access-Tokens-1.png" />
 
 4. Your access token will be generated for copying on a one-time basis. Be sure to store it securely, as it will be shown only once.
 
-    <img src="/images/Settings/Access-Tokens-2.png" />
+<img src="/images/Settings/Access-Tokens-2.png" />
 
-5. This access token will be referred to as **SCANTISTTOKEN** for future reference. With your access token, you’re ready to continue and scan your projects for vulnerabilities using Scantist SCA
+5. This access token will be referred to as **SCANTISTTOKEN** for future reference. With your access token, you’re ready to continue and scan your projects for vulnerabilities using {{companyConfig.APP_NAME}} SCA
 
 </ClientOnly>

@@ -1,19 +1,30 @@
 ---
-title: Scantist BOM Detect CLI Commands & Parameters
+title: SCA BOM Detect CLI Commands & Parameters
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
-tags: scantist bom detect, cli, commands, parameters
-description: This document lists out all Scantist BOM Detect's commands and parameters.
+tags: SCA bom detect, cli, commands, parameters
+description: This document lists out all SCA BOM Detect's commands and parameters.
 ---
+
+<script setup>
+import { companyConfig } from '../../../config/companyConfig.js'
+const baseUrl = window.location.origin;
+</script>
 
 <ClientOnly>
 
-# Scantist BOM Detect
+# SCA BOM Detect
 
 # CLI Commands & Parameters
 
 [[toc]]
+
+## Download SCA BOM Detect
+
+Click on the link below to download the SCA Bom Detect
+
+<a :href="`${baseUrl}/sca-bom-detect-v4.jar`" target="_blank">sca-bom-detect-v4.jar</a>
 
 ## Basic Commands
 
@@ -47,7 +58,7 @@ description: This document lists out all Scantist BOM Detect's commands and para
 
 ## Authentication Methods
 
-There are 2 different methods for Scantist BOM Detect to authenticate the user:
+There are 2 different methods for SCA BOM Detect to authenticate the user:
 
 - Authentication through Username and Password
 - Authentication through SCANTISTTOKEN environment variable
@@ -117,7 +128,7 @@ Different methods of authentication will result in slightly different usage of t
 
 ##### Login
 
-Log in to Scantist's server.
+Log in to {{companyConfig.APP_NAME}}'s server.
 
 ```shell
 export USERNAME="your_username"

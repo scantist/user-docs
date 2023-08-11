@@ -6,17 +6,21 @@ lang: en-US
 tags: settings, members, teams
 ---
 
+<script setup>
+import { companyConfig } from '../../../../config/companyConfig.js'
+</script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
-> Add members to Scantist and assign them to specific teams for efficient management and collaboration on Scantist. 
+> Add members to {{companyConfig.APP_NAME}} and assign them to specific teams for efficient management and collaboration on {{companyConfig.APP_NAME}}.
 
 ## Members and Teams Settings
 
 <hr style="border:2px solid gray" />
 
-1. Click on the “Settings” tab located at the navigation bar 
+1. Click on the “Settings” tab located at the navigation bar
 
 2. Got to the “Teams and Member” group tab
 
@@ -24,7 +28,7 @@ tags: settings, members, teams
 
 <hr style="border:2px solid gray" />
 
-You can invite members to join your organization and assign roles to them. 
+You can invite members to join your organization and assign roles to them.
 
 ### Invite member
 
@@ -42,11 +46,11 @@ You can invite members to join your organization and assign roles to them.
 
 <div>
 
-You will not be able to invite if the email address has not been registered with Scantist. You will need to ask the invitee to create an account with Scantist first
+You will not be able to invite if the email address has not been registered with {{companyConfig.APP_NAME}}. You will need to ask the invitee to create an account with {{companyConfig.APP_NAME}} first
 
 </div>
 
-</div> 
+</div>
 
 </div>
 
@@ -58,7 +62,7 @@ You will not be able to invite if the email address has not been registered with
 
 ### Add member
 
-Adding members to your organization is useful when you want your team to use a single organization on Scantist and streamline the scanning process. 
+Adding members to your organization is useful when you want your team to use a single organization on {{companyConfig.APP_NAME}} and streamline the scanning process.
 
 1. Click on “Add member” icon
 
@@ -86,22 +90,21 @@ The system will automatically send an email invitation to the provided email add
 
 </div>
 
-</div> 
+</div>
 
 </div>
 
 ### Assign role
 
-By default, the member will be assigned as a “member” role. Click on the “edit” box to assign a role for the member. 
+By default, the member will be assigned as a “member” role. Click on the “edit” box to assign a role for the member.
 
-> **Info:** Learn more about member roles <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Member Roles](Member-Roles.md)
+> **Info:** Learn more about member roles <br> > &nbsp;&nbsp;&nbsp;&nbsp;[Member Roles](Member-Roles.md)
 
 ## Team
 
 <hr style="border:2px solid gray" />
 
-Once you have invited members to your organization, you can assign them to specific teams to manage their access and responsibilities. 
+Once you have invited members to your organization, you can assign them to specific teams to manage their access and responsibilities.
 
 <div style="background-color: #F4F5F7; padding-left: 10px; padding-right: 10px; padding-top: 0.1px; padding-bottom: 0.1px;">
     <p><span style="font-size: 18px;">📓</span> For instance, let's assume that there are two teams being created in the organization: backend and frontend. Under the team settings, members who are in the frontend team can only view and take action on the projects assigned to the frontend team and the same goes for the backend team. This ensures that there is limited access to sensitive information, and the team members can only work on projects that are relevant to their assigned team.</p>
@@ -109,7 +112,7 @@ Once you have invited members to your organization, you can assign them to speci
 
 ### Create team
 
-1. Enter a name for the team e.g. Backend team or Frontend team 
+1. Enter a name for the team e.g. Backend team or Frontend team
 
 2. Select “Create a new team” next to the box
 
@@ -119,12 +122,11 @@ Once you have invited members to your organization, you can assign them to speci
 
 In the members settings, click on the “edit” icon to assign members to specific teams. You may want to choose more than one team.
 
-> **Info:** Learn more about team roles <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Member Roles](Member-Roles.md)
+> **Info:** Learn more about team roles <br> > &nbsp;&nbsp;&nbsp;&nbsp;[Member Roles](Member-Roles.md)
 
 ### Remove members from the team
 
-To remove a member from a team, follow these steps: 
+To remove a member from a team, follow these steps:
 
 1. In the team’s settings, click on the number indicated below the member count
 
@@ -148,11 +150,11 @@ To remove a member from a team, follow these steps:
 
 <div>
 
-Note that this action does not remove the member from your organization entirely. To remove a member from your organization completely, you can click on the “delete” icon next to their name on the members settings. 
+Note that this action does not remove the member from your organization entirely. To remove a member from your organization completely, you can click on the “delete” icon next to their name on the members settings.
 
 </div>
 
-</div> 
+</div>
 
 </div>
 

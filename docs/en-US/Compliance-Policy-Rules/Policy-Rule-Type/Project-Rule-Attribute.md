@@ -6,17 +6,20 @@ lang: en-US
 tags: scantist, project, rules
 ---
 
+<script setup>
+import { companyConfig } from '../../../../config/companyConfig.js'
+</script>
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
-> Define policies for projects in your Scantist platform
+> Define policies for projects in your {{companyConfig.APP_NAME}} platform
 
 ## Project-level Policy Rules
 
 <hr class="thick" />
 
-Once the policies for components, vulnerabilities, and licenses are established, project-level policy rules can be applied based on various attributes such as the number of denied, flagged, and approved components, vulnerabilities, and licenses. These rules can be used to enforce compliance and ensure that projects meet the organization’s security and legal requirement. 
+Once the policies for components, vulnerabilities, and licenses are established, project-level policy rules can be applied based on various attributes such as the number of denied, flagged, and approved components, vulnerabilities, and licenses. These rules can be used to enforce compliance and ensure that projects meet the organization’s security and legal requirement.
 
 <div style="display: flex; background-color: #FFEBE6;">
 
@@ -40,11 +43,9 @@ Such project require additional attention or resources to address security issue
 
 </span>
 
-</div> 
-
 </div>
 
-
+</div>
 
 <div style="display: flex; background-color: #E3FCEF; margin-top: 10px">
 
@@ -68,7 +69,7 @@ Such project indicates that the project meets the organization’s security and 
 
 </span>
 
-</div> 
+</div>
 
 </div>
 
@@ -127,11 +128,11 @@ Such project indicates that the project meets the organization’s security and 
 
 <div>
 
-For each of these policy rules, you can set up specific thresholds for what is considered acceptable or not acceptable. For example, you may decide that any project with more than 5 denied vulnerabilities or more than 10 denied licenses is not compliant and requires further review. 
+For each of these policy rules, you can set up specific thresholds for what is considered acceptable or not acceptable. For example, you may decide that any project with more than 5 denied vulnerabilities or more than 10 denied licenses is not compliant and requires further review.
 
 </div>
 
-</div> 
+</div>
 
 </div>
 
