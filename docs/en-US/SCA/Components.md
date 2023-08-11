@@ -47,7 +47,7 @@ Scantist provides detailed information on each of the components. Here is a brea
         </tr>
         <tr>
             <td>Vulnerabilities</td>
-            <td>The <a href="./Vulnerabilities">vulnerabilities</a> associated with the components, categorized as critical, high, medium and low</td>
+            <td>The <a href="./Vulnerabilities/">vulnerabilities</a> associated with the components, categorized as critical, high, medium and low</td>
         </tr>
         <tr>
             <td>Scope</td>
@@ -88,7 +88,7 @@ To identify vulnerable components that require immediate attention and remediati
 </div>
 
 :::tip
-Learn more about <a href="./Vulnerabilities">vulnerability severity levels</a>
+Learn more about <a href="./Vulnerabilities/Vulnerability-Severity-Level-&-Issue-Types">vulnerability severity levels</a>
 :::
 
 ## What's next?
@@ -98,7 +98,7 @@ Learn more about <a href="./Vulnerabilities">vulnerability severity levels</a>
 You can now evaluate security vulnerabilities that have been detected in the open source components, and take appropriate actions by updating to patch versions or implementing workarounds.
 
 <ul>
-    <li><a href="./Vulnerabilities">SCA Vulnerabilities</a></li>
+    <li><a href="./Vulnerabilities/">SCA Vulnerabilities</a></li>
     <li><a href="./Remediation">SCA Remediation</a></li>
 </ul>
 
