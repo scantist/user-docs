@@ -67,7 +67,7 @@ Congratulations! You have successfully created your {{companyConfig.APP_NAME}} a
 
 You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
-- [Trigger a scan](../Trigger-Scan/)
+- [Trigger a scan](../Trigger-Scan-via-UI/)
 
 - [Review third-party components](../SCA/Components)
 
