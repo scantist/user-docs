@@ -10,8 +10,8 @@ description: This document explains how to integrate with Bamboo CI
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
-<style>
-    li {
+<style scoped>
+    ol>li {
         font-weight: 800;
     }
 </style>
