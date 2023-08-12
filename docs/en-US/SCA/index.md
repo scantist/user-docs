@@ -15,7 +15,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> <img src="/images/Application-Security-Testing-Solution/SCA/SCA-logo.png" width=100 /> Discover {{companyConfig.APP_NAME}}'s capabilities with SCA
+> <img src="/images/SCA/SCA-logo.png" width=100 /> Discover {{companyConfig.APP_NAME}}'s capabilities with SCA
 
 ## Software Composition Analysis Testing Solution
 
@@ -23,7 +23,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 Software Composition Analysis (SCA) scans your application’s dependencies to identify any known vulnerabilities in the third-party libraries and frameworks. By leveraging SCA, you can ensure that your software meets security and compliance standards by addressing potential vulnerabilities in a timely manner.
 
-![SCA result](/images/Application-Security-Testing-Solution/SCA/SCA-1.png)
+<img src="/images/SCA/SCA-1.png" />
 
 ## Scanning Process
 

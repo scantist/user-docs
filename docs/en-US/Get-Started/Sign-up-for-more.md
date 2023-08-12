@@ -1,5 +1,5 @@
 ---
-title: Sign up for
+title: Sign up
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
@@ -12,7 +12,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <ClientOnly>
 
-# {{ $frontmatter.title}} {{ companyConfig.APP_NAME }}
+# {{ $frontmatter.title}} for {{ companyConfig.APP_NAME }}
 
 > To start using this app, you will need to have an account.
 
@@ -69,9 +69,9 @@ You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning yo
 
 - [Trigger a scan](../Trigger-Scan/)
 
-- [Review third-party components](../SCA/SCA-Components-Results.md)
+- [Review third-party components](../SCA/Components)
 
-- [Fix vulnerabilities](../SCA/SCA-Vulnerabilities-Results.md)
+- [Fix vulnerabilities](../SCA/Vulnerabilities/)
 
 - [Create compliance policies](../Compliance-Policy-Rules/)
 
