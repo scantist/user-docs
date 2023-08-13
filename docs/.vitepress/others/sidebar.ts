@@ -266,12 +266,16 @@ export function enUSSidebar() {
         },
         {
           text: "Members and Teams",
-          link: "/en-US/Settings/Members-and-Teams/",
+          link: "/en-US/Settings/Members-and-Teams",
+        },
+        {
+          text: "Roles and Privileges",
+          link: "/en-US/Settings/Roles-and-Privileges/",
           collapsed: true,
           items: [
             {
-              text: "Member Roles",
-              link: "/en-US/Settings/Members-and-Teams/Member-Roles",
+              text: "Available Roles",
+              link: "/en-US/Settings/Roles-and-Privileges/Available-Roles",
             },
           ],
         },

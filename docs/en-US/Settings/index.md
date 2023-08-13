@@ -22,9 +22,9 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 {{companyConfig.APP_NAME}} provides multiple setting options to help you customize your experience and tailor it to your specific needs. To access these settings, click on the “Settings” tab located at the navigation bar.
 
-- [Organization Settings](Organization.md)
-- [Teams and Members](Members-and-Teams/)
-- [Tags Settings](Tags.md)
+- [Organization Settings](Organization)
+- [Teams and Members](./Members-and-Teams)
+- [Tags Settings](Tags)
 - [Integrations Settings](Integrations-Settings/)
 
 </ClientOnly>
