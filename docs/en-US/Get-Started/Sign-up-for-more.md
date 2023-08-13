@@ -10,7 +10,7 @@ tags: sign up, new account, get started
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
 
-<style scope>
+<style scoped>
   ol>li {
     font-weight: 600;
   }
