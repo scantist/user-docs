@@ -140,17 +140,17 @@ export function enUSSidebar() {
       ],
     },
     {
-      text: "Trigger Scan",
-      link: "/en-US/Trigger-Scan/",
+      text: `Trigger Scan via ${companyConfig.APP_NAME} UI`,
+      link: "/en-US/Trigger-Scan-via-UI/",
       collapsed: true,
       items: [
         {
           text: "Upload Scan Settings",
-          link: "/en-US/Trigger-Scan/Upload-Scan-Settings",
+          link: "/en-US/Trigger-Scan-via-UI/Upload-Scan-Settings",
         },
         {
           text: "SCM Scan Settings",
-          link: "/en-US/Trigger-Scan/SCM-Scan-Settings",
+          link: "/en-US/Trigger-Scan-via-UI/SCM-Scan-Settings",
         },
       ],
     },
@@ -191,12 +191,18 @@ export function enUSSidebar() {
       collapsed: true,
       items: [
         {
-          text: "SCA Components Results",
-          link: "/en-US/SCA/SCA-Components-Results",
+          text: "Components",
+          link: "/en-US/SCA/Components",
         },
         {
-          text: "SCA Licenses",
-          link: "/en-US/SCA/SCA-Licenses",
+          text: "Vulnerabilities",
+          link: "/en-US/SCA/Vulnerabilities/",
+          collapsed: true,
+          items: [{}]
+        },
+        {
+          text: "Licenses",
+          link: "/en-US/SCA/Licenses",
         },
         {
           text: `Export Reports on ${companyConfig.APP_NAME}`,
@@ -268,6 +274,10 @@ export function enUSSidebar() {
               link: "/en-US/Settings/Members-and-Teams/Member-Roles",
             },
           ],
+        },
+        {
+          text: "Access Tokens",
+          link: "/en-US/Settings/Access-Tokens",
         },
         {
           text: "Integrations Settings",

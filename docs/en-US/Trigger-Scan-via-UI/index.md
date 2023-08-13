@@ -9,6 +9,7 @@ tags: scan, sca, sast, fuzzing, iac, code snippet
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
+
 <ClientOnly>
 
 # {{ $frontmatter.title }}
@@ -57,6 +58,6 @@ Once you have configured the scan settings, you can start scanning by clicking o
 
 You can now review your scan results for your open source projects and remediate any identified your vulnerabilities.
 
-- [SCA Results](../SCA/SCA-Vulnerabilities-Results.md)
+- [SCA Results](../SCA/)
 
 </ClientOnly>

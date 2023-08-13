@@ -1,5 +1,5 @@
 ---
-title: SCA Licenses
+title: Licenses
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
@@ -7,14 +7,11 @@ tags: SCA, licenses, types, permissive, neutral, restrictive, attributes
 description: This document explains SCA Licenses
 ---
 
-<script setup>
-import { companyConfig } from '../../../config/companyConfig.js'
-</script>
 <ClientOnly>
 
 # {{ $frontmatter.title }}
 
-> Discover how you can ensure that the software project complies with the licensing requirements of the components used.
+> Discover how you can ensure that the software project complies with the licensing requirements of the components used
 
 ## What are OSS Licenses
 
@@ -26,7 +23,16 @@ Open source licenses are legal agreements between the developers of open source 
 
 <hr class="thick" />
 
-{{companyConfig.APP_NAME}} classifies the open source licenses as permissive, neutral and restrictive. It is important to review and understand the terms of each license associated with the OSS components used in the project.
+Scantist classifies open source licenses as permissive, neutral and restrictive. It is important to review and understand the terms of each license associated with the OSS components used in the project.
+
+To understand the rights and obligations associated with each license, you can filter the license bar accordingly.
+
+<img src="/images/SCA/SCA-Licenses-1.png" />
+<ol>
+    <li>Navigate to the "License Type" search bar</li>
+    <li>Select the type of the license</li>
+    <li>Once the filter is applied, the list displays only the licenses that are either permissive, neutral, or restrictive</li>
+</ol>
 
 ### Permissive Licenses
 
@@ -54,13 +60,13 @@ Examples of restrictive licenses include the GNU General Public Licenses (GPL) a
 
 To avoid any legal or financial implications, it is important to review the license attributes associated with each component regularly and update licensing policies to align with the organization’s objectives.
 
-1.&nbsp;&nbsp;&nbsp; Click on the “arrow” icon located in the “info” column
+1. Click on the "arrow" icon located in the "info" column
 
-2.&nbsp;&nbsp;&nbsp; This will expand a pop-up window displaying more information about the license attributes associated with the component.
+2. This will expand a pop-up window displaying more information about the license attributes associated with the component.
 
-This section will be empty if there is no licensing policy is found. Learn to create your [licensing policies]().
+This section will be empty if there is no licensing policy is found. Learn to create your policy rules.
 
-![Example of MIT License](/images/Application-Security-Testing-Solution/SCA/SCA-Licenses-1.png)
+![Example of MIT License](/images/SCA/SCA-Licenses-2.png)
 
 ### Allowed License Attribute
 
@@ -73,5 +79,16 @@ The "Required" category includes licensed open source attributes that require ad
 ### Restricted License Attribute
 
 The "Restricted" category includes licensed open source attributes that are restricted to use under an organization's licensing policy. This may include licenses that impose strong restrictions or have commercially non-viable requirements that are not acceptable to the organization. Organizations may choose to restrict the use of certain licenses based on their policies, compliance requirements, or business objectives.
+
+Categorizing licenses into these attributes simplifies the understanding of license characteristics and helps to navigate the complexion of open source licensing more effectively.
+
+## What's next?
+
+<hr class="thick" />
+
+You can now update your license policy that aligns with the organization’s objectives and review the policy rules used on your projects.
+
+- Create policy rules
+- SCA policy rule results
 
 </ClientOnly>

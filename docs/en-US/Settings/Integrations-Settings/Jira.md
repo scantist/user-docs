@@ -3,7 +3,7 @@ title: Jira
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
-tags: settings, jira
+tags: settings, jira, integration, issues
 ---
 
 <script setup>
@@ -16,9 +16,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 > Integrate with Jira to create, assign and track issues through the software development lifecycle.
 
-[JIRA Integration]()
-
-## Jira Integration
+## Set up your Jira integration
 
 <hr style="border:2px solid gray" />
 
@@ -26,28 +24,39 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 To enable Jira integration, follow these steps:
 
-1. Click on the “Settings” tab located at the navigation bar
+<ol>
+  <li>Click on the <b>Settings</b> button on the left sidebar</li><br />
+  <img src="/images/Settings/Integrations-Settings/Jira-1.png" /><br />
+  <li>Click on the <b>Integrations</b> tab</li>
+  <li>Click on <b>JIRA</b> option to set up the connection</li>
+  <li>Choose the Jira version that matches your Jira instance (either <b>Before version 8.22</b> or <b>Version 8.22 and newer</b>)</li>
+  <li>Enter your full Jira URL in the <b>Server URL</b> textfield</li><br />
+  <img src="/images/Settings/Integrations-Settings/Jira-2.png" />
+  <li>Click <b>Next</b></li>
+  <li>Follow the instructions shown on this page</li><br />
+  <img src="/images/Settings/Integrations-Settings/Jira-3.png" /><br />
+  <li>Jira should look like this after adding all the inputs</li><br />
+  <img src="/images/Settings/Integrations-Settings/Jira-4.png" /><br />
+  <li>Click <b>Save</b>, then go back to {{companyConfig.APP_NAME}} and click <b>Done</b></li>
+  <li>Click <b>Allow</b> when this dialog pops up<br /></li><br />
+  <img src="/images/Settings/Integrations-Settings/Jira-5.png" /><br />
+  <li>Check the checkboxes to <b>Enable auto creation of JIRA tickets</b> and/or <b>Enable auto closure of open JIRA tickets</b>.
+    <li>If they are enabled, select a <b>JIRA Project</b> to connect to the Jira board.</li>
+  Click <b>Done</b> and the integration is done.</li>
+  <img src="/images/Settings/Integrations-Settings/Jira-6.png" />
+</ol>
 
-2. Go to the “Integrations” group tab
-
-3. Click on “Jira” option to set up the connection
-
-4. Choose the Jira version that matches your Jira instance (either before version 8.22 or version 8.22and newer)
-
-5. Enter your full Jira domain URL in the requested field
-
-6. Click on “Next”
-
-Click on the entered sever URL link which directs you to the Jira application link page
-
-…. work together with Charles on this steps..
-
-## Create Jira Issues
+## Create your Jira issues
 
 <hr style="border:2px solid gray" />
 
 With the Jira integration, {{companyConfig.APP_NAME}} can automatically create issues in Jira for any vulnerabilities or security issues identified during scans. This allows developers to quickly identify and address potential security risks and helps to ensure that software is developed and released securely. The integration also allows for easy tracking and management of the progress of reported issues to ensure they are resolved effectively and efficiently.
 
-… steps …
-
+After setting up the Jira integration connection, open one of your project in the Web UI. Click on the <b>Vulnerabilities</b>, then click on the <b>circle with an arrow</b> under the <b>Info</b> column. A logo, which represents <b>Jira Software</b>, will appear next to the vulnerability CVE ID. This logo is a button that allows you to create a Jira issue.
+<img src="/images/Settings/Integrations-Settings/Jira-7.png" /><br />
+When you select the button, a creation form popup appears. Some of the fields, such as <b>Summary</b> and <b>Description</b>, will be automatically populated once the <b>Project Name</b> is selected by you. The rest of the fields will have options based on your configurations on Jira Project. Once you have completed, select <b>Create</b> to create the Jira issue.
+<img src="/images/Settings/Integrations-Settings/Jira-8.png" /><br />
+A popup will appear when the creation is successful. It will also display the link to that newly created Jira issue.
+<img src="/images/Settings/Integrations-Settings/Jira-9.png" /><br />
+<img src="/images/Settings/Integrations-Settings/Jira-10.png" />
 </ClientOnly>

@@ -38,7 +38,7 @@ Make sure your {{companyConfig.APP_NAME}} account is integrated with your SCM ac
 
    ![Select Team and Compliance](/images/Create-and-Manage-Project/Add-SCM-Repositories-2.png)
 
-6. Once you have uploaded your repository, configure the [scan setting](../Trigger-Scan/SCM-Scan-Settings.md) to your preference
+6. Once you have uploaded your repository, configure the [scan setting](../Trigger-Scan-via-UI/SCM-Scan-Settings) to your preference
 
 7. Finally, initiate the scan according to your preferred scan type
 

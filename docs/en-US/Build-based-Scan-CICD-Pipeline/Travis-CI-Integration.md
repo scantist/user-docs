@@ -10,8 +10,8 @@ description: This document explains how to integrate with Travis CI
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 </script>
-<style>
-    ol > li {
+<style scoped>
+    ol>li {
         font-weight: 800;
     }
 </style>

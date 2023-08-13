@@ -82,13 +82,11 @@ const languages = ref(["Java", "JavaScript", "Perl", "Go", "Python", "Csharp", "
 
 ## What's next?
 
-</ClientOnly>
-<!--
 <hr class="thick" />
 
 You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
-- [Trigger a scan](../Trigger-Scan/)
+- [Trigger a scan](../Trigger-Scan-via-UI/)
 
 - [Access scan results](#)
 
@@ -96,4 +94,4 @@ You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning yo
 
 - [Create compliance policies](#)
 
-</ClientOnly> -->
+</ClientOnly>
