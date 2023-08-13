@@ -3,4 +3,5 @@ export const companyConfig = {
   APP_NAME: "Scantist",
   COMPANY_LOGO: "companyLogo.svg",
   FRONTEND_URL: "https://v4staging.scantist.io",
+  EMAIL_ADDRESS: "support@scantist.com",
 };

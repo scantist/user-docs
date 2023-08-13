@@ -20,40 +20,43 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick">
 
-### 1. Sign up for {{ companyConfig.APP_NAME }}
+<ol>
+  <h3><li>Sign up for {{ companyConfig.APP_NAME }}</li></h3>
 
-To start using {{ companyConfig.APP_NAME }}, <a href="./Sign-up-for-more">sign up for an account</a> by following the instructions in our documentation.
+  To start using {{ companyConfig.APP_NAME }}, <a href="./Sign-up-for-more">sign up for an account</a> by following the instructions in our documentation.
 
-Once you have signed up, you will have access to our powerful open source management platform.
+  Once you have signed up, you will have access to our powerful open source management platform.
 
-### 2. Create a project
+  <h3><li>Create a project</li></h3>
 
-To begin scanning your project for vulnerabilities, you'll need to create a project on {{companyConfig.APP_NAME}}. Follow our documentation to learn how to upload your source code projects.
+  To begin scanning your project for vulnerabilities, you'll need to create a project on {{companyConfig.APP_NAME}}. Follow our documentation to learn how to upload your source code projects.
 
-<ul>
-  <li><a href="../Create-and-Manage-Project/Upload-Files-Directly">Upload source code or binary file directly</a></li>
-  <li><a href="../Create-and-Manage-Project/Add-SCM-Repositories">Add SCM repositories</a></li>
-</ul>
+  <ul>
+    <li><a href="../Create-and-Manage-Project/Upload-Files-Directly">Upload source code or binary file directly</a></li>
+    <li><a href="../Create-and-Manage-Project/Add-SCM-Repositories">Add SCM repositories</a></li>
+  </ul>
 
-### 3. Initiate a scan on your project
+  <h3><li>Initiate a scan on your project</li></h3>
 
-Use {{companyConfig.APP_NAME}} to scan your open source projects and identify vulnerabilities and licensing risks. Depending on your project type, you can trigger a scan by selecting from a range of options in our documentation.
+  Use {{companyConfig.APP_NAME}} to scan your open source projects and identify vulnerabilities and licensing risks. Depending on your project type, you can trigger a scan by selecting from a range of options in our documentation.
 
-<ul>
-  <li><a href="../SCA/">Software Composition Analysis (SCA)</a></li>
-  <li>Static Application Security Testing (SAST) (Coming soon)</li>
-  <li>Infrastructure as Code (IaC) Scan (Coming soon)</li>
-  <li>Fuzzing Test (Coming soon)</li>
-  <li>Code Snippets (Coming soon)</li>
-</ul>
+  <ul>
+    <li><a href="../SCA/">Software Composition Analysis (SCA)</a></li>
+    <li>Static Application Security Testing (SAST) (Coming soon)</li>
+    <li>Infrastructure as Code (IaC) Scan (Coming soon)</li>
+    <li>Fuzzing Test (Coming soon)</li>
+    <li>Code Snippets (Coming soon)</li>
+  </ul>
 
-### 4. Access your scan results
+  <h3><li>Access your scan results</li></h3>
 
-After scanning your projects, {{companyConfig.APP_NAME}} will provide a detailed report on any <a href="../SCA/Vulnerabilities/">vulnerabilities</a> or <a href="../SCA/Licenses">licensing risks</a> found.
+  After scanning your projects, {{companyConfig.APP_NAME}} will provide a detailed report on any <a href="../SCA/Vulnerabilities/">vulnerabilities</a> or <a href="../SCA/Licenses">licensing risks</a> found.
 
-### 5. Fix your vulnerabilities
+  <h3><li>Fix your vulnerabilities</li></h3>
 
-It's time to fix the vulnerabilities detected in your scan. Use our remediation strategies to quickly and efficiently address these issues and improve the overall quality of your software.
+  It's time to fix the vulnerabilities detected in your scan. Use our remediation strategies to quickly and efficiently address these issues and improve the overall quality of your software.
+
+</ol>
 
 ## What's next?
 
@@ -68,6 +71,6 @@ You are now ready to start scanning your open source projects. {{companyConfig.A
 
 With {{companyConfig.APP_NAME}}, managing and securing your open source software has never been easier. Sign up today and start using our powerful tool to improve the security of your software.
 
-If you have any questions or need assistance, please don't hesitate to contact {{companyConfig.APP_NAME}} support at <a href="mailto:support@scantist.com">support@scantist.com</a>.
+If you have any questions or need assistance, please don't hesitate to contact {{companyConfig.APP_NAME}} support at <a :href="`mailto:${companyConfig.EMAIL_ADDRESS}`">{{companyConfig.EMAIL_ADDRESS}}</a>.
 
 </ClientOnly>
