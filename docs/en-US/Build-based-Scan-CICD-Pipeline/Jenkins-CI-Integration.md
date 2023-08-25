@@ -56,8 +56,8 @@ If you are using Windows, add a new `Execute Windows Batch Command` step and inc
 ```shell
 export SCANTIST_IMPORT_URL=$dedicated_deployment_scantist_url
 export SCANTISTTOKEN=$your_copied_access_token
-curl -s https://download.scantist.io/scantist-bom-detect.jar --output scantist-bom-detect.jar
-java -jar scantist-bom-detect.jar
+curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
+java -jar sca-bom-detect-v4.jar
 ```
 
 If you are using Linux, add a new `Execute Shell` and include the below script
@@ -65,8 +65,8 @@ If you are using Linux, add a new `Execute Shell` and include the below script
 ```bash
 export SCANTIST_IMPORT_URL=$dedicated_deployment_scantist_url
 export SCANTISTTOKEN=$your_copied_access_token
-curl -s https://download.scantist.io/scantist-bom-detect.jar --output scantist-bom-detect.jar
-java -jar scantist-bom-detect.jar
+curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
+java -jar sca-bom-detect-v4.jar
 ```
 
 <li>Build your project</li>
@@ -80,61 +80,62 @@ Click `Save` and `Build Now` to start building results from Jenkins. This will c
 This approach involves running the Jenkinsfile as part of your Jenkins build process - can be more flexible than using the Jenkinsfile, but it required more configuration and setup.
 
 <ol>
-<li>Create access token</li>
 
-You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and other tools.
+  <li>Create access token</li>
 
-<li>Setup Environmental Variables on Jenkins</li>
+  You will need to <a href="../Settings/Access-Tokens">create an access token</a> on {{companyConfig.APP_NAME}} to authenticate and authorize the integration.
 
-Navigate to `Configure System` in the Jenkins menu, scroll down to find `Global Properties` and click on it.
+  <li>Setup Environmental Variables on Jenkins</li>
 
-Click on the `Environment Variables` tab and add the below two variables.
+  Navigate to `Configure System` in the Jenkins menu, scroll down to find `Global Properties` and click on it.
 
-<table>
-    <thead>
-        <th>Variable</th>
-        <th>Value</th>
-        <th>Options</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SCANTISTTOKEN</td>
-            <td>token_you_copied</td>
-            <td>Mandatory</td>
-        </tr>
-        <tr>
-            <td>SCANTIST_IMPORT_URL</td>
-            <td>dedicated_deployment_scantist_url</td>
-            <td>Optional</td>
-        </tr>
-    </tbody>
-</table>
+  Click on the `Environment Variables` tab and add the below two variables.
 
-<img src="/images/Build-based-Scan-CICD-Pipeline/jenkins/part2-step2.1.png" />
+  <table>
+      <thead>
+          <th>Variable</th>
+          <th>Value</th>
+          <th>Options</th>
+      </thead>
+      <tbody>
+          <tr>
+              <td>SCANTISTTOKEN</td>
+              <td>token_you_copied</td>
+              <td>Mandatory</td>
+          </tr>
+          <tr>
+              <td>SCANTIST_IMPORT_URL</td>
+              <td>dedicated_deployment_scantist_url</td>
+              <td>Optional</td>
+          </tr>
+      </tbody>
+  </table>
 
-<li>Add {{companyConfig.APP_NAME}} Agent to Jenkinsfile</li>
-Navigate to your source code repository to open <b>Jenkinsfile</b> and add a new stage below your stage. You can name the new stage `{{companyConfig.APP_NAME}}` and the below command.
+  <img src="/images/Build-based-Scan-CICD-Pipeline/jenkins/part2-step2.1.png" />
 
-```Groovy
-stage ('{{companyConfig.APP_NAME}}') {
-            steps {
-                sh '''
-                    curl -s https://download.scantist.io/scantist-bom-detect.jar --output scantist-bom-detect.jar
-                    java -jar scantist-bom-detect.jar
-                '''
-            }
-        }
-```
+  <li>Add {{companyConfig.APP_NAME}} Agent to Jenkinsfile</li>
+  Navigate to your source code repository to open <b>Jenkinsfile</b> and add a new stage below your stage. You can name the new stage `{{companyConfig.APP_NAME}}` and the below command.
 
-<li>Download the {{companyConfig.APP_NAME}} Agent if your source code is on-premise hosted</li>
+  ```Groovy
+  stage ('{{companyConfig.APP_NAME}}') {
+              steps {
+                  sh '''
+                      curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
+                      java -jar sca-bom-detect-v4.jar
+                  '''
+              }
+          }
+  ```
 
-On an internet-connected device, download the <b>SCANTIST AGENT</b> package suitable for your environment.
+  <li>Download the {{companyConfig.APP_NAME}} Agent if your source code is on-premise hosted</li>
 
-Transfer the downloaded agent package to your on-premises Jenkins environment by adding a new stage specifically for {{companyConfig.APP_NAME}} with the below command.
+  On an internet-connected device, download the <b>SCANTIST AGENT</b> package suitable for your environment.
 
-<li>Build your Project</li>
+  Transfer the downloaded agent package to your on-premises Jenkins environment by adding a new stage specifically for {{companyConfig.APP_NAME}} with the below command.
 
-Navigate back to Jenkins and select `Build Now` for your project. This will call the {{companyConfig.APP_NAME}} Jenkins script to receive your successful build result from Jenkins CI.
+  <li>Build your Project</li>
+
+  Navigate back to Jenkins and select `Build Now` for your project. This will call the {{companyConfig.APP_NAME}} Jenkins script to receive your successful build result from Jenkins CI.
 
 </ol>
 
