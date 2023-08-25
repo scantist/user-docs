@@ -289,6 +289,10 @@ export function enUSSidebar() {
           collapsed: true,
           items: [
             {
+              text: "Eclipse",
+              link: "/en-US/Settings/Integrations-Settings/Eclipse",
+            },
+            {
               text: "Jira",
               link: "/en-US/Settings/Integrations-Settings/Jira",
             },
