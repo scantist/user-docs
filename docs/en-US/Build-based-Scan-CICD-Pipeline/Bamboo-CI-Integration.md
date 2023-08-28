@@ -39,7 +39,7 @@ Click on the link below to download the {{companyConfig.APP_NAME}} Bamboo Plugin
 
 <li>Create access token</li>
 
-You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and Bamboo.
+You will need to <a href="../Settings/Access-Tokens">create an access token</a> on {{companyConfig.APP_NAME}} to authenticate and authorize the integration.
 
 <li>Add {{companyConfig.APP_NAME}} Bamboo Plugin</li>
 

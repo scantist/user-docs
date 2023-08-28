@@ -29,7 +29,7 @@ Follow the following steps to integrate {{companyConfig.APP_NAME}} with your Git
 
 ### Step 1 - Create access token
 
-You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and GitLab.
+You will need to <a href="../Settings/Access-Tokens">create an access token</a> on {{companyConfig.APP_NAME}} to authenticate and authorize the integration.
 
 ### Step 2 - Setup Environmental Variables on Gitlab CI
 
@@ -44,14 +44,18 @@ Once you have copied your access token, navigate back to Gitlab CI.
    ![Variables > Expand](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.2.png)
 
 3. Click on the `Add Variable` button. In the pop-up box,
-   - set the `Key` as `SCANTISTTOKEN`
-   - paste your access token under `Value`
-   - check the option `Mask variable`
-   - complete the process by clicking on the `Add Variable` button
+    - Set the `Key` as `SCANTISTTOKEN`
+    - Paste your access token under `Value`
+    - Check the option `Mask variable`
+    - Complete the process by clicking on the `Add Variable` button
 
-![Add variable](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.3.png)
+   ![Add variable](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.3.png)
 
-In case you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` in a similar fashion.
+   Click on the `Add Variable` button again. In the pop-up box,
+   - Set the `Key` as `SCANTIST_IMPORT_URL`
+   - Set the `Value` as `https://api-v4staging.scantist.io/v2/scans/ci-scan/`
+   - Check the option `Mask variable`
+   - Complete the process by clicking on the `Add Variable` button
 
 ### Step 3 - Add .gitlab-ci.yml on your repo
 
@@ -60,7 +64,7 @@ Assuming that your code is hosted on Gitlab, the final step you will need to do 
 ```yaml
 job:
   script:
-    - curl -s https://download.scantist.io/scantist-bom-detect.jar --output scantist-bom-detect.jar
+    - curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
     - java -jar scantist-bom-detect.jar
 ```
 
@@ -78,11 +82,9 @@ build-job:
     - apt-get update && apt-get install -y nodejs npm default-jdk
     - cd api
     - npm install
-    - curl -s https://download.scantist.io/scantist-bom-detect.jar --output scantist-bom-detect.jar
+    - curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
     - java -jar scantist-bom-detect.jar
 ```
-
-### Here is how a successful integration will look like
 
 <img src="" />
 

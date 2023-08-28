@@ -32,7 +32,7 @@ Integrating {{companyConfig.APP_NAME}} into the development lifecycle of Travis 
 
 <ol>
 <li>Create access token</li>
-You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and Travis.
+You will need to <a href="../Settings/Access-Tokens">create an access token</a> on {{companyConfig.APP_NAME}} to authenticate and authorize the integration.
 
 <li>Setup Environmental Variables on Travis</li>
 
