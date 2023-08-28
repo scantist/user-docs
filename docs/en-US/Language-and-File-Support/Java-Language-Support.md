@@ -87,13 +87,13 @@ However, some components may not be picked up if they are not under the "impleme
 In this case, you can include the gradleScope parameter with the {{companyConfig.APP_NAME}} Scan Agent command to ensure that all components are scanned.
 
 ```bash
-java -jar scantist-bom-detect.jar -gradleScope scope1,scope2,scope3
+java -jar sca-bom-detect-v4.jar -gradleScope scope1,scope2,scope3
 ```
 
 Here's an example usage of the command where {{companyConfig.APP_NAME}} will consider the components under the specified gradleScopes of "implementation", "compile", "kotlinCompilerClasspath", "kapt", and "testImplementation"
 
 ```bash
-java -jar scantist-bom-detect.jar -gradleScope implementation,compile,kotlinCompilerClasspath,kapt,testImplementation
+java -jar sca-bom-detect-v4.jar -gradleScope implementation,compile,kotlinCompilerClasspath,kapt,testImplementation
 ```
 
 </ClientOnly>

@@ -59,13 +59,13 @@ jobs:
   test:
     steps:
       - name: Download SCA-Bom-Detect
-        run: curl -s https://download.scantist.io/sca-bom-detect.jar --output sca-bom-detect.jar
+        run: curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
 
       - name: Upload to {{companyConfig.APP_NAME}}
         env: # Setting the Token
           SCANTISTTOKEN: ${{secrets.SCANTISTTOKEN }}
           #SCANTIST_IMPORT_URL : "https://192.xxx.xxx.xx:8237/ci-scan/" #add this line if you are setting up on a dedicated scantist server
-        run: java -jar scantist-bom-detect.jar
+        run: java -jar sca-bom-detect-v4.jar
 ```
 
 This command will download and execute SCA BOM Detector to scan after the build. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.APP_NAME}}.
