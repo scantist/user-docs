@@ -34,7 +34,7 @@ Integrating {{companyConfig.APP_NAME}} into the GitHub Actions workflow can enfo
 
 <li>Create access token</li>
 
-You will need to [create an access token]() on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and GitHub Actions.
+You will need to <a href="../Settings/Access-Tokens">create an access token</a> on {{companyConfig.APP_NAME}} to authenticate and authorize the integration.
 
 <li>Setup Secrets for your GitHub repository</li>
 

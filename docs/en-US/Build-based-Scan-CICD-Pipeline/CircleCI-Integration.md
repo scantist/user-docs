@@ -33,7 +33,7 @@ Follow these steps to integrate {{companyConfig.APP_NAME}} with CircleCI:
 <ol>
 <li>Create access token</li>
 
-You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and CircleCI.
+You will need to <a href="../Settings/Access-Tokens">create an access token</a> on {{companyConfig.APP_NAME}} to authenticate and authorize the integration.
 
 <li>Setup Environmental Variable on CircleCI</li>
 

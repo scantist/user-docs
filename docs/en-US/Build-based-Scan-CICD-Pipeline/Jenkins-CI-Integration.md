@@ -39,7 +39,7 @@ This approach allows Jenkins users to scan their code for security vulnerabiliti
 <ol>
 <li>Create access token</li>
 
-You will need to create an access token on {{companyConfig.APP_NAME}} to authenticate and authorize the integration between {{companyConfig.APP_NAME}} and other tools.
+You will need to <a href="../Settings/Access-Tokens">create an access token</a> on {{companyConfig.APP_NAME}} to authenticate and authorize the integration.
 
 <li>Have your build script ready</li>
 
