@@ -65,7 +65,7 @@ Assuming that your code is hosted on Gitlab, the final step you will need to do 
 job:
   script:
     - curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
-    - java -jar scantist-bom-detect.jar
+    - java -jar sca-bom-detect-v4.jar
 ```
 
 Once the command has been added to your `.gitlab-ci.yml` file, Gitlab CI will trigger a new build automatically and push the 3rd party component information of your project to {{companyConfig.APP_NAME}} SCA after the successful build.
@@ -83,7 +83,7 @@ build-job:
     - cd api
     - npm install
     - curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
-    - java -jar scantist-bom-detect.jar
+    - java -jar sca-bom-detect-v4.jar
 ```
 
 <img src="" />
