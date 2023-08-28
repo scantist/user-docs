@@ -54,7 +54,7 @@ Under the `Build` section, make sure you have a build script prepared for your p
 If you are using Windows, add a new `Execute Windows Batch Command` step and include the below script
 
 ```shell
-export SCANTIST_IMPORT_URL=$dedicated_deployment_scantist_url
+export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
 curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
 java -jar sca-bom-detect-v4.jar
@@ -63,7 +63,7 @@ java -jar sca-bom-detect-v4.jar
 If you are using Linux, add a new `Execute Shell` and include the below script
 
 ```bash
-export SCANTIST_IMPORT_URL=$dedicated_deployment_scantist_url
+export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
 curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
 java -jar sca-bom-detect-v4.jar
@@ -105,8 +105,8 @@ This approach involves running the Jenkinsfile as part of your Jenkins build pro
           </tr>
           <tr>
               <td>SCANTIST_IMPORT_URL</td>
-              <td>dedicated_deployment_scantist_url</td>
-              <td>Optional</td>
+              <td>https://api-v4staging.scantist.io/v2/scans/ci-scan/</td>
+              <td>Mandatory</td>
           </tr>
       </tbody>
   </table>
