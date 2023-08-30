@@ -10,6 +10,7 @@ description: This document lists out all SCA BOM Detect's commands and parameter
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 const baseUrl = window.location.origin;
+const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.io/scantist-bom-detect.jar" : `${baseUrl}/sca-bom-detect-v4.jar`;
 </script>
 
 <ClientOnly>
@@ -24,7 +25,7 @@ const baseUrl = window.location.origin;
 
 Click on the link below to download the SCA Bom Detect
 
-<a :href="`${baseUrl}/sca-bom-detect-v4.jar`" target="_blank">sca-bom-detect-v4.jar</a>
+<a :href="`${downloadLink}`" target="_blank">sca-bom-detect-v4.jar</a>
 
 ## Basic Commands
 
