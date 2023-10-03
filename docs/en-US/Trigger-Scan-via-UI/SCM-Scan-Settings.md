@@ -22,9 +22,9 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 1.&nbsp;&nbsp;&nbsp;Click on the newly added project
 
-2.&nbsp;&nbsp;&nbsp;Click on “Project Settings” in the top right corner
+2.&nbsp;&nbsp;&nbsp;Click on "Project Settings" in the top right corner
 
-3.&nbsp;&nbsp;&nbsp;Under the “Scan Settings”, select the testing solution you want to configure
+3.&nbsp;&nbsp;&nbsp;Under the "Scan Settings", select the testing solution you want to configure
 
 ![Testing Solution tabs](/images/Trigger-Scan/SCM-Scan-Settings-1.png)
 

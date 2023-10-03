@@ -21,7 +21,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 Viewing scan history for SCA and SAST scans can be a useful way to identify trends and track the progress of your application security efforts over time. Here are the steps to view previous scan results:
 
-1. Click on “View Scan History” on SCA or SAST results page
+1. Click on "View Scan History" on SCA or SAST results page
 
 <img src="/images/Scan-History/Scan-History-1.png" alt="view scan history"/>
 
@@ -29,7 +29,7 @@ Viewing scan history for SCA and SAST scans can be a useful way to identify tren
 
 <img src="/images/Scan-History/Scan-History-2.png" alt="view all scan history"/>
 
-3. To view the details of a particular scan history, click on “View Detail”
+3. To view the details of a particular scan history, click on "View Detail"
 
 <img src="/images/Scan-History/Scan-History-3.png" alt="specific scan history"/>
 

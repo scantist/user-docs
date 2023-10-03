@@ -12,6 +12,6 @@ You can use your existing account in Github, Gitlab, or Bitbucket to log in to {
 
 ### Option 2: Email Login <a href="#option-2-email-login" id="option-2-email-login"></a>
 
-If you don’t have an SCM account or prefer to use your email address, you can create a new account by clicking on “Create Account” and following the prompts.
+If you don’t have an SCM account or prefer to use your email address, you can create a new account by clicking on "Create Account" and following the prompts.
 
 Once you have signed up and logged in, you can start scanning your projects for vulnerabilities and taking steps to remediate them. If you have any questions or need assistance, don’t hesitate to reach out to Scantist’s support team at [support@scantist.com](mailto:support@scantist.com).

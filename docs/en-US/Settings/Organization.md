@@ -20,9 +20,9 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr style="border:2px solid gray" />
 
-1. Click on the “Settings” tab located at the navigation bar
+1. Click on the "Settings" tab located at the navigation bar
 
-2. Go to the “organization” group tab
+2. Go to the "organization" group tab
 
 3. You can update the name and description of your organization in the corresponding table
 
@@ -34,7 +34,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr style="border:2px solid gray" />
 
-Setting a default organization ensures that you always have quick and easy access to the repositories being scanned by that organization group every time you log in to {{companyConfig.APP_NAME}}. To set your organization group as the default, click on the switch icon next to “Default Organization”.
+Setting a default organization ensures that you always have quick and easy access to the repositories being scanned by that organization group every time you log in to {{companyConfig.APP_NAME}}. To set your organization group as the default, click on the switch icon next to "Default Organization".
 
 <img src="/images/Settings/Settings-2.png" alt="default organization">
 

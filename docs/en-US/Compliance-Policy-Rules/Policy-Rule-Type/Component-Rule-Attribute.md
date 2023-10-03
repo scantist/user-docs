@@ -16,7 +16,7 @@ tags: scantist, component, rules
 
 <hr class="thick" />
 
-The name of a software component, such as a library or framework, that is used in the software project 
+The name of a software component, such as a library or framework, that is used in the software project
 
 <div style="display: flex; background-color: #FFEBE6;">
 
@@ -201,7 +201,7 @@ If the latest version of a library is 1.5, you can approve the version that is e
 
 <hr class="thick" />
 
-When the scope of a policy is set to “dependencies” or “devDependencies”, it means that the policy will only apply to the dependencies or development dependencies of a project, respectively. Dependencies are external libraries or packages that a project requires to function, while devDependencies are packages that are only required for development purposes.
+When the scope of a policy is set to "dependencies" or "devDependencies", it means that the policy will only apply to the dependencies or development dependencies of a project, respectively. Dependencies are external libraries or packages that a project requires to function, while devDependencies are packages that are only required for development purposes.
 
 <div style="display: flex; background-color: #FFFAE6;">
 
@@ -223,7 +223,7 @@ You may want to deny the use of component that are older than the latest version
 
 Example:
 
-Create a policy with an additional combination that applies to the “dependencies” or “devDependencies” and select critical severity
+Create a policy with an additional combination that applies to the "dependencies" or "devDependencies" and select critical severity
 
 </span>
 
