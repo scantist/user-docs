@@ -36,7 +36,7 @@ You may want to deny the use of component with licenses for a variety of reasons
 
 <span style="color: #BF2600;">
 
-1. Licenses may have strict requirements for how the code can be used, modified and distributed, which may not align with the organization’s goals and business practices
+1. Licenses may have strict requirements for how the code can be used, modified and distributed, which may not align with the organization's goals and business practices
 
 2. Licenses may have associated with legal disputes or other controversies, and the organization may want to avoid any potential risks or liabilities
 

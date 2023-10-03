@@ -17,4 +17,4 @@ In summary, these are the differences between the scan methods - each has its ow
 | **Remediation** | Best                 | Limited         | Limited               |
 | **When**        | Always               | No build access | No source-code access |
 
-To trigger a scan via the above-mentioned methods, you will need to log in to your {{companyConfig.APP_NAME}} SCA account. If you don’t have an account, click [here](https://scantist.atlassian.net/wiki/spaces/SD/pages/1777958921) to create one.
+To trigger a scan via the above-mentioned methods, you will need to log in to your {{companyConfig.APP_NAME}} SCA account. If you don't have an account, click [here](https://scantist.atlassian.net/wiki/spaces/SD/pages/1777958921) to create one.

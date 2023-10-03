@@ -13,7 +13,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # {{ $frontmatter.title }}
 
-> Track your project’s scan history with {{companyConfig.APP_NAME}}
+> Track your project's scan history with {{companyConfig.APP_NAME}}
 
 ## View Scan History
 

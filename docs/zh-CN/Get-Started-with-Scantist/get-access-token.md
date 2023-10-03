@@ -4,7 +4,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 # Get Access Token
 
-To generate an access token for your {{companyConfig.APP_NAME}} account, follow these steps once you have logged in (_if you don’t already have a {{companyConfig.APP_NAME}} account, click_ [_here_ ](https://scantist.atlassian.net/wiki/spaces/SD/pages/1777958921)_to create one)_
+To generate an access token for your {{companyConfig.APP_NAME}} account, follow these steps once you have logged in (_if you don't already have a {{companyConfig.APP_NAME}} account, click_ [_here_ ](https://scantist.atlassian.net/wiki/spaces/SD/pages/1777958921)_to create one)_
 
 &#x20;
 

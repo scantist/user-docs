@@ -21,7 +21,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-Software Composition Analysis (SCA) scans your application’s dependencies to identify any known vulnerabilities in the third-party libraries and frameworks. By leveraging SCA, you can ensure that your software meets security and compliance standards by addressing potential vulnerabilities in a timely manner.
+Software Composition Analysis (SCA) scans your application's dependencies to identify any known vulnerabilities in the third-party libraries and frameworks. By leveraging SCA, you can ensure that your software meets security and compliance standards by addressing potential vulnerabilities in a timely manner.
 
 <img src="/images/SCA/SCA-1.png" />
 
@@ -29,7 +29,7 @@ Software Composition Analysis (SCA) scans your application’s dependencies to i
 
 <hr class="thick" />
 
-{{companyConfig.APP_NAME}} SCA follows a comprehensive scanning process to analyze your project’s components, detect vulnerabilities, and assess associated licenses. The results involved in the scanning process are as follows:
+{{companyConfig.APP_NAME}} SCA follows a comprehensive scanning process to analyze your project's components, detect vulnerabilities, and assess associated licenses. The results involved in the scanning process are as follows:
 
 ### Components Identification
 
@@ -51,7 +51,7 @@ SCA scan performs license analysis on the third-party components used in your ap
 
 ### Policy Rule
 
-SCA allows you to define custom policies that align with your organization’s specific requirements. These policies may cover areas such as security, code quality, vulnerability management, or any other relevant guidelines. The engine scans your application’s components against these policies, highlighting any violation and generating comprehensive reports to assist with remediation.
+SCA allows you to define custom policies that align with your organization's specific requirements. These policies may cover areas such as security, code quality, vulnerability management, or any other relevant guidelines. The engine scans your application's components against these policies, highlighting any violation and generating comprehensive reports to assist with remediation.
 
 - Create Compliance Policies
 - SCA Compliance Results
@@ -64,7 +64,7 @@ When vulnerabilities are identified through the scanning process, SCA provides a
 
 ### SBOM Dependency Tree
 
-The dependency graph is a visual representation of the relationships between the various components in your application. It illustrates how different libraries and frameworks depend on each other, providing a clear understanding of the software’s overall structure.
+The dependency graph is a visual representation of the relationships between the various components in your application. It illustrates how different libraries and frameworks depend on each other, providing a clear understanding of the software's overall structure.
 
 - SCA SBOM Dependency Tree
 

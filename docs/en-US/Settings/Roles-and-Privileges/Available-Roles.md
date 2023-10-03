@@ -38,7 +38,7 @@ Access to all functions listed under the Admin role and can also manage the orga
 <span>
 
 **Admin**<br>
-Manage the organization’s projects and scanning activities, as well as add or remove members<br>
+Manage the organization's projects and scanning activities, as well as add or remove members<br>
 
 </span>
 

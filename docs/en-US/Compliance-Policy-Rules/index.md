@@ -20,7 +20,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-Every organization needs a set of rules to define which open source software can be used and which cannot. The primary objectives for defining these rules are to ensure security and legal compliance, which immediately reduces the organization’s risk. Additional objectives can include improving the organization’s cyber-hygiene and supply chain management, ensuring long-term maintainability, and improving the ability to respond to threats.
+Every organization needs a set of rules to define which open source software can be used and which cannot. The primary objectives for defining these rules are to ensure security and legal compliance, which immediately reduces the organization's risk. Additional objectives can include improving the organization's cyber-hygiene and supply chain management, ensuring long-term maintainability, and improving the ability to respond to threats.
 
 If an organization fails to comply with the license terms and conditions, it can impact the organization. {{companyConfig.APP_NAME}} provides compliance functionality, enabling you to set a list of policy rules that your team would comply with.
 

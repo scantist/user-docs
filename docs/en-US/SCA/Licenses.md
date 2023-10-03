@@ -58,7 +58,7 @@ Examples of restrictive licenses include the GNU General Public Licenses (GPL) a
 
 <hr class="thick" />
 
-To avoid any legal or financial implications, it is important to review the license attributes associated with each component regularly and update licensing policies to align with the organization’s objectives.
+To avoid any legal or financial implications, it is important to review the license attributes associated with each component regularly and update licensing policies to align with the organization's objectives.
 
 1. Click on the "arrow" icon located in the "info" column
 
@@ -86,7 +86,7 @@ Categorizing licenses into these attributes simplifies the understanding of lice
 
 <hr class="thick" />
 
-You can now update your license policy that aligns with the organization’s objectives and review the policy rules used on your projects.
+You can now update your license policy that aligns with the organization's objectives and review the policy rules used on your projects.
 
 - Create policy rules
 - SCA policy rule results

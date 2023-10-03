@@ -19,7 +19,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 <hr class="thick" />
 
-Once the policies for components, vulnerabilities, and licenses are established, project-level policy rules can be applied based on various attributes such as the number of denied, flagged, and approved components, vulnerabilities, and licenses. These rules can be used to enforce compliance and ensure that projects meet the organization’s security and legal requirement.
+Once the policies for components, vulnerabilities, and licenses are established, project-level policy rules can be applied based on various attributes such as the number of denied, flagged, and approved components, vulnerabilities, and licenses. These rules can be used to enforce compliance and ensure that projects meet the organization's security and legal requirement.
 
 <div style="display: flex; background-color: #FFEBE6;">
 
@@ -65,7 +65,7 @@ You may want to approve a project with a high number of approved components and 
 
 <span style="color: #006644;">
 
-Such project indicates that the project meets the organization’s security and legal standards and can proceed without further review
+Such project indicates that the project meets the organization's security and legal standards and can proceed without further review
 
 </span>
 
