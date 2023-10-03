@@ -11,9 +11,11 @@ import { companyConfig } from '../../../config/companyConfig.js'
 </script>
 <ClientOnly>
 
-# {{ $frontmatter.title }}
+<h1> {{ $frontmatter.title }} </h1>
 
-> Do you have repositories in more than one Source Control Management (SCM) account? You can now connect to multiple SCM platforms.
+<blockquote>
+    <p>Do you have repositories in more than one Source Control Management (SCM) account? You can now connect to multiple SCM platforms.</p>
+</blockquote>
 
 ## Supported SCM platforms
 
@@ -21,17 +23,17 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 {{companyConfig.APP_NAME}} currently supports integration with the following SCM platforms:
 
-- [GitHub](https://github.com)
-
-- [GitLab](https://gitlab.com)
-
-- [Bitbucket](https://bitbucket.org)
+<ul>
+    <li><a href="https://github.com">GitHub</a></li>
+    <li><a href="https://gitlab.com">GitLab</a></li>
+    <li><a href="https://bitbucket.org">Bitbucket</a></li>
+</ul>
 
 ::: warning Note:
 To use the SCM integration with {{companyConfig.APP_NAME}}, you must have an active {{companyConfig.APP_NAME}} account and have access to your SCM platform
 :::
 
-## Connecting your SCM account to {{companyConfig.APP_NAME}}
+## Connecting your SCM account
 
 <hr class="thick" />
 
@@ -47,11 +49,11 @@ To connect your SCM account to {{companyConfig.APP_NAME}}, follow these steps:
 
 3. Follow the prompts to authorize {{companyConfig.APP_NAME}} to access your SCM account
 
-   ![authorize {{companyConfig.APP_NAME}} to access SCM account](/images/Get-Started/SCM-Integration-3.png)
+   ![authorize the application to access SCM account](/images/Get-Started/SCM-Integration-3.png)
 
 4. Once authorized, you will be able to view your repositories in {{companyConfig.APP_NAME}}
 
-## Disconnect SCM account from {{companyConfig.APP_NAME}}
+## Disconnecting your SCM account
 
 <hr class="thick" />
 
