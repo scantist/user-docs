@@ -1,5 +1,5 @@
 ---
-title: Organization
+title: Organization Details
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
