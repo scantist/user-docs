@@ -12,9 +12,11 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <ClientOnly>
 
-# {{ $frontmatter.title }} with {{ companyConfig.APP_NAME }}
+<h1>{{ $frontmatter.title }} with {{ companyConfig.APP_NAME }}</h1>
 
-> Discover the ultimate tool for managing and securing the use of your open source software. With {{ companyConfig.APP_NAME }}, you can easily identify vulnerabilities and licensing risks in your open source projects and remediate them efficiently.
+<blockquote>
+    <p>Discover the ultimate tool for managing and securing the use of your open source software. With {{ companyConfig.APP_NAME }}, you can easily identify vulnerabilities and licensing risks in your open source projects and remediate them efficiently.</p>
+</blockquote>
 
 ## Follow these five simple steps to get started
 
@@ -58,7 +60,7 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 </ol>
 
-## What's next?
+<h2>What's next?</h2>
 
 <hr class="thick">
 
