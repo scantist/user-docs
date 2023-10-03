@@ -12,19 +12,23 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <ClientOnly>
 
-# {{ $frontmatter.title }}
+<h1> {{ $frontmatter.title }} </h1>
 
-> You can change the settings of your {{companyConfig.APP_NAME}} account.
+<blockquote>
+    <p>You can change the settings of your {{companyConfig.APP_NAME}} account.</p>
+</blockquote>
 
-## Settings Options
+<h2>Settings Options</h2>
 
 <hr style="border:2px solid gray" />
 
-{{companyConfig.APP_NAME}} provides multiple setting options to help you customize your experience and tailor it to your specific needs. To access these settings, click on the “Settings” tab located at the navigation bar.
+{{companyConfig.APP_NAME}} provides multiple setting options to help you customize your experience and tailor it to your specific needs. To access these settings, click on the "Settings" tab located at the navigation bar.
 
-- [Organization Settings](Organization)
-- [Teams and Members](./Members-and-Teams)
-- [Tags Settings](Tags)
-- [Integrations Settings](Integrations-Settings/)
+<ul>
+    <li><a href="./Organization">Organization Settings</a></li>
+    <li><a href="./Members-and-Teams">Teams and Members</a></li>
+    <li><a href="./Tags">Tags Settings</a></li>
+    <li><a href="./Integrations-Settings/">Integrations Settings</a></li>
+</ul>
 
 </ClientOnly>
