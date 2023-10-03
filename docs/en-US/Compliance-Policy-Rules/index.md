@@ -30,11 +30,11 @@ If an organization fails to comply with the license terms and conditions, it can
 
 To customize policy rules in {{companyConfig.APP_NAME}}, follow these steps:
 
-1.&nbsp;&nbsp;&nbsp;Click on the “Settings” page on the navigation bar
+1.&nbsp;&nbsp;&nbsp;Click on the "Settings" page on the navigation bar
 
-2.&nbsp;&nbsp;&nbsp;Click on the “Policies” tab
+2.&nbsp;&nbsp;&nbsp;Click on the "Policies" tab
 
-3.&nbsp;&nbsp;&nbsp;To create a new policy, type the name of your policy in the “New Policy Name” box and click on the “Create Policy” button next to the box
+3.&nbsp;&nbsp;&nbsp;To create a new policy, type the name of your policy in the "New Policy Name" box and click on the "Create Policy" button next to the box
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-1.png" alt="Create policy" width="300" height="200">
 
@@ -42,7 +42,7 @@ To customize policy rules in {{companyConfig.APP_NAME}}, follow these steps:
 
 5.&nbsp;&nbsp;&nbsp;Click on the newly created policy to add your rules
 
-6.&nbsp;&nbsp;&nbsp;To add a new rule, click on the “Add Rule” button
+6.&nbsp;&nbsp;&nbsp;To add a new rule, click on the "Add Rule" button
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-2.png" alt="add rule">
 
@@ -64,7 +64,7 @@ To customize policy rules in {{companyConfig.APP_NAME}}, follow these steps:
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-5.png" alt="cardinality" width="200" height="100">
 </div>
 
-10.&nbsp;&nbsp;&nbsp;Click “create” to save your new policy rule and you may wish to create more rules to be detected across your projects
+10.&nbsp;&nbsp;&nbsp;Click "create" to save your new policy rule and you may wish to create more rules to be detected across your projects
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-6.png" alt="more rules" >
 
@@ -83,11 +83,11 @@ Once you have created your policy rules, you can assign them to specific project
 <div style="flex: 1; margin: 10px;">
 1.&nbsp;&nbsp;&nbsp;Navigate to the project you want to scan on the project list
 
-2.&nbsp;&nbsp;&nbsp;Click on the “Scan” button
+2.&nbsp;&nbsp;&nbsp;Click on the "Scan" button
 
 3.&nbsp;&nbsp;&nbsp;Select the compliance policy you want to apply to the scan
 
-4.&nbsp;&nbsp;&nbsp;Click on the “Scan” button to start scanning
+4.&nbsp;&nbsp;&nbsp;Click on the "Scan" button to start scanning
 
 5.&nbsp;&nbsp;&nbsp;{{companyConfig.APP_NAME}} will start scanning your project with the selected policy rules.
 
@@ -98,10 +98,10 @@ Once you have created your policy rules, you can assign them to specific project
 
 <hr class="thick" />
 
-It is important to review your policy rules customized for components detected across your organizations. The policy rules are displayed in the “Policy Rule” tab when you click on a project.
+It is important to review your policy rules customized for components detected across your organizations. The policy rules are displayed in the "Policy Rule" tab when you click on a project.
 
 <img src="/images/Compliance-Policy-Rules/Compliance-Policy-Rules-8.png" alt="policy rule" >
 
-You can categorize the list according to “Approve”, “Deny” and “Flag” status, as well as “License”, “Library” and “Vulnerability” categories.
+You can categorize the list according to "Approve", "Deny" and "Flag" status, as well as "License", "Library" and "Vulnerability" categories.
 
 </ClientOnly>

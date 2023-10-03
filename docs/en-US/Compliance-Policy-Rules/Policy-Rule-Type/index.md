@@ -38,7 +38,7 @@ For example, you may want to deny the use of a component that has a certain name
 
 Vulnerability rule type allows you to define policies for vulnerabilities detected in your software projects. You can create rules based on the vulnerability score, severity level, vulnerability ID, issue type or remediation status. 
 
-For example, you may want to flag any vulnerabilities with a severity level of “High” or deny the use of any components that have known vulnerabilities. 
+For example, you may want to flag any vulnerabilities with a severity level of "High" or deny the use of any components that have known vulnerabilities. 
 
 > **Info:** Learn more of the vulnerability rule attribute<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Vulnerability Rule Attribute](Vulnerability-Rule-Attribute)
@@ -49,7 +49,7 @@ For example, you may want to flag any vulnerabilities with a severity level of �
 
 License rule type allows you to define policies for licenses used in your software projects. You can create rules based on the license name or attributes. 
 
-For example, you may want to deny the use of any licenses that contain the “Disclose Source” attribute, or approve only licenses that have explicitly allowed by your organization. 
+For example, you may want to deny the use of any licenses that contain the "Disclose Source" attribute, or approve only licenses that have explicitly allowed by your organization. 
 
 > **Info:** Learn more of the license rule attribute<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[License Rule Attribute](License-Rule-Attribute)

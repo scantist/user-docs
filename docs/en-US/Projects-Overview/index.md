@@ -42,7 +42,7 @@ In addition, you will also see projects that have not been scanned in a while or
 
 <hr class="thick" />
 
-Scan a project directly from the project list by clicking on the **“Scan”** icon next to the project in the project list. This will initiate a scan of the project, allowing you to quickly identify any vulnerabilities.
+Scan a project directly from the project list by clicking on the **"Scan"** icon next to the project in the project list. This will initiate a scan of the project, allowing you to quickly identify any vulnerabilities.
 
 ![project scan](/images/Projects-Overview/Projects-Overview-2.png)
 
@@ -59,7 +59,7 @@ Sorting the project list by **Last Scan Time**, **Project Name** and **Project C
 <img src="/images/Projects-Overview/Projects-Overview-4.png"/>
 
 <ol>
-  <li>Click the bar for “sort by” located on top of the project list</li>
+  <li>Click the bar for "sort by" located on top of the project list</li>
   <li>Select any of the three categories from the drop-down list</li>
   <li>Click on the arrow next to the drop-down list to sort the list in descending order
     <div class="steps">
