@@ -53,6 +53,7 @@ Under the `Build` section, make sure you have a build script prepared for your p
 
 If you are using Windows, add a new `Execute Windows Batch Command` step and include the below script
 
+(For V4 staging environment)
 ```shell
 export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
@@ -60,10 +61,27 @@ curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-dete
 java -jar sca-bom-detect-v4.jar
 ```
 
+(For GCC environment)
+```shell
+export SCANTIST_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
+export SCANTISTTOKEN=$your_copied_access_token
+curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
+java -jar sca-bom-detect-v4.jar
+```
+
 If you are using Linux, add a new `Execute Shell` and include the below script
 
+(For V4 staging environment)
 ```bash
 export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
+export SCANTISTTOKEN=$your_copied_access_token
+curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
+java -jar sca-bom-detect-v4.jar
+```
+
+(For GCC environment)
+```bash
+export SCANTIST_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
 curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
 java -jar sca-bom-detect-v4.jar
@@ -105,7 +123,7 @@ This approach involves running the Jenkinsfile as part of your Jenkins build pro
           </tr>
           <tr>
               <td>SCANTIST_IMPORT_URL</td>
-              <td>https://api-v4staging.scantist.io/v2/scans/ci-scan/</td>
+              <td>https://api-v4staging.scantist.io/v2/scans/ci-scan/ (For V4 staging environment) or https://gcc.scantist.io/v2/scans/ci-scan/ (For GCC environment)</td>
               <td>Mandatory</td>
           </tr>
       </tbody>

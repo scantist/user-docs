@@ -47,7 +47,8 @@ To enable Eclipse integration, follow these steps:
     </li>
     <li>Under the <b>Environment</b> tab, click <b>Add...</b> and enter the following <b>Name-Value</b> pairs accordingly:
       <ul>
-        <li>SCANTIST_IMPORT_URL: https://api-v4staging.scantist.io/v2/scans/ci-scan/</li>
+        <li>SCANTIST_IMPORT_URL: <br /><code>https://api-v4staging.scantist.io/v2/scans/ci-scan/</code> (for V4 staging environment)
+        <br /><code>https://gcc.scantist.io/v2/scans/ci-scan/</code> (for GCC environment)</li>
         <li>SCANTISTTOKEN: &lt;The token you copied in Step 1&gt;</li>
       </ul>
     </li>

@@ -131,10 +131,19 @@ Different methods of authentication will result in slightly different usage of t
 
 Log in to {{companyConfig.APP_NAME}}'s server.
 
+(For V4 staging environment)
 ```shell
 export USERNAME="your_username"
 export PASSWORD="your_password"
 export SERVERURL="https://api-v4staging.scantist.io/v2/scans/ci-scan/"
+java -jar sca-bom-detect-v4.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
+```
+
+(For GCC environment)
+```shell
+export USERNAME="your_username"
+export PASSWORD="your_password"
+export SERVERURL="https://gcc.scantist.io/v2/scans/ci-scan/"
 java -jar sca-bom-detect-v4.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
 ```
 

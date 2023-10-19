@@ -53,7 +53,7 @@ Once you have copied your access token, navigate back to Gitlab CI.
 
    Click on the `Add Variable` button again. In the pop-up box,
    - Set the `Key` as `SCANTIST_IMPORT_URL`
-   - Set the `Value` as `https://api-v4staging.scantist.io/v2/scans/ci-scan/`
+   - Set the `Value` as `https://api-v4staging.scantist.io/v2/scans/ci-scan/` (for V4 staging environment) or `https://gcc.scantist.io/v2/scans/ci-scan/` (for GCC environment)
    - Check the option `Mask variable`
    - Complete the process by clicking on the `Add Variable` button
 
