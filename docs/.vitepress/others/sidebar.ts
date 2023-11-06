@@ -208,6 +208,10 @@ export function enUSSidebar() {
           text: `Export Reports on ${companyConfig.APP_NAME}`,
           link: "/en-US/SCA/Export-Reports-on-app",
         },
+        {
+          text: `Scan Comparison`,
+          link: "/en-US/SCA/Scan-Comparison",
+        },
       ],
     },
     {
