@@ -42,12 +42,12 @@ Navigate to your project's settings page on GitHub and click on `Secrets`.
 
 <img src="/images/Build-based-Scan-CICD-Pipeline/github/step2.1.png"/>
 
-Add a new Secret named `SCANTISTTOKEN` with the value of the access token you obtained in Step 1.
+Add a new Secret named `DEVSECOPS_TOKEN` with the value of the access token you obtained in Step 1.
 
 <img src="/images/Build-based-Scan-CICD-Pipeline/github/step2.2.png"/>
 
 :::tip
-Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
+Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to update the `DEVSECOPS_IMPORT_URL` environment variable similarly.
 :::
 
 <li>Edit .yml file on your repository</li>
@@ -59,13 +59,13 @@ jobs:
   test:
     steps:
       - name: Download SCA-Bom-Detect
-        run: curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
+        run: curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
 
       - name: Upload to {{companyConfig.APP_NAME}}
         env: # Setting the Token
-          SCANTISTTOKEN: ${{secrets.SCANTISTTOKEN }}
-          #SCANTIST_IMPORT_URL : "https://192.xxx.xxx.xx:8237/ci-scan/" #add this line if you are setting up on a dedicated scantist server
-        run: java -jar sca-bom-detect-v4.jar
+          DEVSECOPS_TOKEN: ${{secrets.DEVSECOPS_TOKEN }}
+          DEVSECOPS_IMPORT_URL : "https://api-app.scantist.io/v2/scans/ci-scan/"
+        run: java -jar sca-bom-detect-v4.5.jar
 ```
 
 This command will download and execute SCA BOM Detector to scan after the build. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.APP_NAME}}.
