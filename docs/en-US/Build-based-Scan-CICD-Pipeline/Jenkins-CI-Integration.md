@@ -57,16 +57,16 @@ If you are using Windows, add a new `Execute Windows Batch Command` step and inc
 ```shell
 export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
-curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
-java -jar sca-bom-detect-v4.jar
+curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
+java -jar sca-bom-detect-v4.5.jar
 ```
 
 (For GCC environment)
 ```shell
 export SCANTIST_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
-curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
-java -jar sca-bom-detect-v4.jar
+curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
+java -jar sca-bom-detect-v4.5.jar
 ```
 
 If you are using Linux, add a new `Execute Shell` and include the below script
@@ -75,16 +75,16 @@ If you are using Linux, add a new `Execute Shell` and include the below script
 ```bash
 export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
-curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
-java -jar sca-bom-detect-v4.jar
+curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
+java -jar sca-bom-detect-v4.5.jar
 ```
 
 (For GCC environment)
 ```bash
 export SCANTIST_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
 export SCANTISTTOKEN=$your_copied_access_token
-curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
-java -jar sca-bom-detect-v4.jar
+curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
+java -jar sca-bom-detect-v4.5.jar
 ```
 
 <li>Build your project</li>
@@ -138,8 +138,8 @@ This approach involves running the Jenkinsfile as part of your Jenkins build pro
   stage ('{{companyConfig.APP_NAME}}') {
               steps {
                   sh '''
-                      curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output sca-bom-detect-v4.jar
-                      java -jar sca-bom-detect-v4.jar
+                      curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
+                      java -jar sca-bom-detect-v4.5.jar
                   '''
               }
           }

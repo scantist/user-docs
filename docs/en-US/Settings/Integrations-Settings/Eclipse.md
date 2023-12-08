@@ -29,7 +29,7 @@ To enable Eclipse integration, follow these steps:
 
   <h3><li>Download SCA BOM Detect</li></h3>
 
-  You can download the SCA BOM Detect JAR file <a href="https://download.scantist.io/sca-bom-detect-v4.jar">here</a>.
+  You can download the SCA BOM Detect JAR file <a href="https://download.scantist.io/sca-bom-detect-v4.5.jar">here</a>.
 
   <h3><li>Eclipse Configuration</li></h3>
 
@@ -42,7 +42,7 @@ To enable Eclipse integration, follow these steps:
         <li>In <b>Location</b> section, click <b>Browse File System...</b> and select the <b>java.exe</b> that resides in your installed JDK/JRE.</li>
         <li>In <b>Working Directory</b> section, click <b>Browse File System...</b> and select your <b>project directory</b>.</li>
         <li>In <b>Arguments</b> section, enter the following command: <br />
-        <code>-jar &lt;path\to\the\sca-bom-detect-v4.jar&gt; -scanSource "Eclipse IDE"</code></li>
+        <code>-jar &lt;path\to\the\sca-bom-detect-v4.5.jar&gt; -scanSource "Eclipse IDE"</code></li>
       </ul>
     </li>
     <li>Under the <b>Environment</b> tab, click <b>Add...</b> and enter the following <b>Name-Value</b> pairs accordingly:

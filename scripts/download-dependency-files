@@ -6,7 +6,7 @@ set -o nounset
 
 download_sca_bom_detect() {
     echo "Downloading dependency files"
-    curl -s https://download.scantist.io/sca-bom-detect-v4.jar --output docs/.vitepress/dist/sca-bom-detect-v4.jar    
+    curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output docs/.vitepress/dist/sca-bom-detect-v4.5.jar    
 }
 
 main() {

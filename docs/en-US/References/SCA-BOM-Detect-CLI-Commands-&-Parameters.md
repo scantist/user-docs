@@ -10,7 +10,7 @@ description: This document lists out all SCA BOM Detect's commands and parameter
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 const baseUrl = window.location.origin;
-const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.io/scantist-bom-detect.jar" : `${baseUrl}/sca-bom-detect-v4.jar`;
+const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.io/scantist-bom-detect.jar" : `${baseUrl}/sca-bom-detect-v4.5.jar`;
 </script>
 
 <ClientOnly>
@@ -25,7 +25,7 @@ const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.i
 
 Click on the link below to download the SCA Bom Detect
 
-<a :href="`${downloadLink}`" target="_blank">sca-bom-detect-v4.jar</a>
+<a :href="`${downloadLink}`" target="_blank">sca-bom-detect-v4.5.jar</a>
 
 ## Basic Commands
 
@@ -36,7 +36,7 @@ Click on the link below to download the SCA Bom Detect
     </thead>
     <tbody>
         <tr>
-            <td><code>java -jar sca-bom-detect-v4.jar</code></td>
+            <td><code>java -jar sca-bom-detect-v4.5.jar</code></td>
             <td>Triggers the detector (JAR file) using default parameters values.</td>
         </tr>
     </tbody>
@@ -136,7 +136,7 @@ Log in to {{companyConfig.APP_NAME}}'s server.
 export USERNAME="your_username"
 export PASSWORD="your_password"
 export SERVERURL="https://api-v4staging.scantist.io/v2/scans/ci-scan/"
-java -jar sca-bom-detect-v4.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
+java -jar sca-bom-detect-v4.5.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
 ```
 
 (For GCC environment)
@@ -144,7 +144,7 @@ java -jar sca-bom-detect-v4.jar --auth -serverUrl $SERVERURL -username $USERNAME
 export USERNAME="your_username"
 export PASSWORD="your_password"
 export SERVERURL="https://gcc.scantist.io/v2/scans/ci-scan/"
-java -jar sca-bom-detect-v4.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
+java -jar sca-bom-detect-v4.5.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
 ```
 
 ##### List projects
@@ -152,7 +152,7 @@ java -jar sca-bom-detect-v4.jar --auth -serverUrl $SERVERURL -username $USERNAME
 Display list of projects that have been scanned. Be sure to login to server first.
 
 ```shell
-java -jar sca-bom-detect-v4.jar --cliScan --list_projects
+java -jar sca-bom-detect-v4.5.jar --cliScan --list_projects
 ```
 
 ##### Create a new project
@@ -160,7 +160,7 @@ java -jar sca-bom-detect-v4.jar --cliScan --list_projects
 Create a project with given project name.
 
 ```shell
-java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name>
+java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name>
 ```
 
 ##### Create a new version and upload source code
@@ -168,7 +168,7 @@ java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name>
 Create a project with given project name, project version and file path to project.
 
 ```shell
-java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
+java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
 ```
 
 ##### Trigger Scan
@@ -176,7 +176,7 @@ java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name> -project_
 Trigger a scan on an existing project name, version and file path. If it does not exist, it will be created.
 
 ```shell
-java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
+java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
 ```
 
 ##### Logout
@@ -184,7 +184,7 @@ java -jar sca-bom-detect-v4.jar --cliScan -project_name <project_name> -project_
 Log out of the current account. Always log out first to log in to another account.
 
 ```shell
-java -jar sca-bom-detect-v4.jar --logout
+java -jar sca-bom-detect-v4.5.jar --logout
 ```
 
 </ClientOnly>
