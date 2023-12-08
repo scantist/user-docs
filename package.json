@@ -21,7 +21,7 @@
   "homepage": "https://github.com/scantist/user-docs#readme",
   "dependencies": {
     "@vueuse/core": "^9.13.0",
-    "element-plus": "^2.4.0",
+    "element-plus": "file:element-plus-v0.3.4-sct.tgz",
     "fs": "0.0.1-security",
     "i": "^0.3.7",
     "path": "^0.12.7",

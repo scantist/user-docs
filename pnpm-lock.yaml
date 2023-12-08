@@ -5,11 +5,14 @@ dependencies:
     specifier: ^9.13.0
     version: 9.13.0(vue@3.2.47)
   element-plus:
-    specifier: file:element-plus-v0.2.0-sct.tgz
-    version: file:element-plus-v0.2.0-sct.tgz(vue@3.2.47)
+    specifier: file:element-plus-v0.3.4-sct.tgz
+    version: file:element-plus-v0.3.4-sct.tgz(vue@3.2.47)
   fs:
     specifier: 0.0.1-security
     version: 0.0.1-security
+  i:
+    specifier: ^0.3.7
+    version: 0.3.7
   path:
     specifier: ^0.12.7
     version: 0.12.7
@@ -654,6 +657,11 @@ packages:
       function-bind: 1.1.1
     dev: true
 
+  /i@0.3.7:
+    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
+    engines: {node: '>=0.4'}
+    dev: false
+
   /inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
     dev: false
@@ -891,9 +899,9 @@ packages:
       '@vue/server-renderer': 3.2.47(vue@3.2.47)
       '@vue/shared': 3.2.47
 
-  file:element-plus-v0.2.0-sct.tgz(vue@3.2.47):
-    resolution: {integrity: sha512-PYse/gFk9/RmTt8b5/XlPDSBG+Y7HjA0qrVlpQJ1UacYvAlzF3EObINPEpqslw3b4HqqDDMoV+ovaaqObzciMA==, tarball: file:element-plus-v0.2.0-sct.tgz}
-    id: file:element-plus-v0.2.0-sct.tgz
+  file:element-plus-v0.3.4-sct.tgz(vue@3.2.47):
+    resolution: {integrity: sha512-H5j7qtkxR/6Q4zCOTVEHu98KYSfYWCgdfeabVrJuOEP885gtxkB+9w4PAy7txpnZ4sgIWnD5piGfbrYeG3vDpA==, tarball: file:element-plus-v0.3.4-sct.tgz}
+    id: file:element-plus-v0.3.4-sct.tgz
     name: element-plus
     version: 0.0.0-dev.1
     peerDependencies:
