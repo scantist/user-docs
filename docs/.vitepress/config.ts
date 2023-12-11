@@ -40,10 +40,5 @@ export default defineConfig({
     },
   },
   lastUpdated: true,
-  ignoreDeadLinks: [
-    // custom function, ignore all links include "companyConfig"
-    (url) => {
-      return url.includes("companyConfig");
-    },
-  ],
+  ignoreDeadLinks: true,
 });

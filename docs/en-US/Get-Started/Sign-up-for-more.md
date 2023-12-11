@@ -1,13 +1,13 @@
 ---
 title: Sign up
-author: Shamala Mani Vannan, Jackie Tan
+author: Shamala Mani Vannan, Jackie Tan, Jabir
 page: true
 lang: en-US
 tags: sign up, new account, get started
 ---
 
 <script setup>
-import { companyConfig } from '../../../config/companyConfig.js'
+import { companyConfig } from '../../../../user-docs/config/companyConfig.js'
 </script>
 
 <style scoped>
@@ -31,7 +31,7 @@ Linking your app account with your Source Code Management (SCM) accounts, such a
 <div style="display: flex;">
   <div style="flex: 3;">
     <ol>
-      <li>Go to <a :href="`${companyConfig.FRONTEND_URL}`">{{companyConfig.APP_NAME}}</a> login page</li>
+      <li>Go to <a :href="`${companyConfig.FRONTEND_URL}`" target="_blank">{{companyConfig.APP_NAME}}</a> login page</li>
       <li>Click on your preferred SCM icon</li>
       <li>Enter your SCM credentials to authorize {{companyConfig.APP_NAME}}</li>
       <li>You will be redirected to {{companyConfig.APP_NAME}} and logged in automatically</li>
@@ -52,7 +52,7 @@ If you do not have an SCM account, you can create a new account with {{companyCo
 
 <div style="display: flex;">
   <ol>
-    <li>Go to <a :href="`${companyConfig.FRONTEND_URL}`">{{companyConfig.APP_NAME}}</a> login page</li>
+    <li>Go to <a :href="`${companyConfig.FRONTEND_URL}`" target="_blank">{{companyConfig.APP_NAME}}</a> login page</li>
     <li>Click on "Create Account"</li>
     <li>Enter your valid email address and a secure password</li>
     <li>You will receive an email to confirm your account. Click on the link provided in the email to activate your account</li>
@@ -68,10 +68,10 @@ Congratulations! You have successfully created your {{companyConfig.APP_NAME}} a
 You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
 <ul>
-  <li><a href="../Trigger-Scan-via-UI/">Trigger a scan</a></li>
-  <li><a href="../SCA/Components">Review third-party components</a></li>
-  <li><a href="../SCA/Vulnerabilities/">Fix vulnerabilities</a></li>
-  <li><a href="../Compliance-Policy-Rules/">Create compliance policies</a></li>
+  <li><a href="../Scan Triggers/index">Trigger a scan</a></li>
+  <li><a href="../Scan Engines/SCA/Components">Review third-party components</a></li>
+  <li><a href="../Scan Engines/SCA/Vulnerabilities/index">Fix vulnerabilities</a></li>
+  <li><a href="../Settings/Compliance-Policy-Rules/index">Create compliance policies</a></li>
 </ul>
 
 </ClientOnly>

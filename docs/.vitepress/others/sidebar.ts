@@ -2,7 +2,7 @@ import { Options } from "./types";
 
 import fs from "fs";
 import path from "path";
-import { companyConfig } from "../../../config/companyConfig";
+import { companyConfig } from "../../../config/companyConfig.js";
 
 function getSidebarItems(
   dir: string[],
@@ -72,8 +72,30 @@ export function enUSSidebar() {
           link: "/en-US/Get-Started/SCM-Integration",
         },
         {
-          text: "Organization Group",
-          link: "/en-US/Get-Started/Organization-Group",
+          text: "Create and Manage Project",
+          link: "/en-US/Get-Started/Create-and-Manage-Project/",
+          collapsed: true,
+          items: [
+            {
+              text: "Upload Files Directly",
+              link: "/en-US/Get-Started/Create-and-Manage-Project/Upload-Files-Directly",
+            },
+            {
+              text: "Add SCM Repositories",
+              link: "/en-US/Get-Started/Create-and-Manage-Project/Add-SCM-Repositories",
+            }
+          ]
+        },
+        {
+          text: "Projects Overview",
+          link: "/en-US/Get-Started/Projects-Overview/",
+          collapsed: true,
+          items: [
+            {
+              text: "Categorize Projects",
+              link: "/en-US/Get-Started/Projects-Overview/categorize-projects",
+            },
+          ],
         },
       ],
     },
@@ -125,148 +147,124 @@ export function enUSSidebar() {
       ],
     },
     {
-      text: "Create and Manage Project",
-      link: "/en-US/Create-and-Manage-Project/",
+      text: "Scan Engines",
+      link: "/en-US/Scan-Engines/index",
       collapsed: true,
       items: [
         {
-          text: "Upload Files Directly",
-          link: "/en-US/Create-and-Manage-Project/Upload-Files-Directly",
-        },
-        {
-          text: "Add SCM Repositories",
-          link: "/en-US/Create-and-Manage-Project/Add-SCM-Repositories",
-        },
-      ],
-    },
-    {
-      text: `Trigger Scan via ${companyConfig.APP_NAME} UI`,
-      link: "/en-US/Trigger-Scan-via-UI/",
-      collapsed: true,
-      items: [
-        {
-          text: "Upload Scan Settings",
-          link: "/en-US/Trigger-Scan-via-UI/Upload-Scan-Settings",
-        },
-        {
-          text: "SCM Scan Settings",
-          link: "/en-US/Trigger-Scan-via-UI/SCM-Scan-Settings",
-        },
-      ],
-    },
-    {
-      text: "Build-based Scan - CI/CD Pipeline",
-      link: "/en-US/Build-based-Scan-CICD-Pipeline/",
-      collapsed: true,
-      items: [
-        {
-          text: "Bamboo CI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/Bamboo-CI-Integration",
-        },
-        {
-          text: "CircleCI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/CircleCI-Integration",
-        },
-        {
-          text: "GitHub Actions CI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration",
-        },
-        {
-          text: "GitLab CI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration",
-        },
-        {
-          text: "Jenkins CI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration",
-        },
-        {
-          text: "Travis CI Integration",
-          link: "/en-US/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration",
-        },
-      ],
-    },
-    {
-      text: "SCA",
-      link: "/en-US/SCA/",
-      collapsed: true,
-      items: [
-        {
-          text: "Components",
-          link: "/en-US/SCA/Components",
-        },
-        {
-          text: "Vulnerabilities",
-          link: "/en-US/SCA/Vulnerabilities/",
-          collapsed: true,
-          items: [{}]
-        },
-        {
-          text: "Licenses",
-          link: "/en-US/SCA/Licenses",
-        },
-        {
-          text: `Export Reports on ${companyConfig.APP_NAME}`,
-          link: "/en-US/SCA/Export-Reports-on-app",
-        },
-        {
-          text: `Scan Comparison`,
-          link: "/en-US/SCA/Scan-Comparison",
-        },
-      ],
-    },
-    {
-      text: "Compliance Policy Rules",
-      link: "/en-US/Compliance-Policy-Rules/",
-      collapsed: true,
-      items: [
-        {
-          text: "Policy Rule Type",
-          link: "/en-US/Compliance-Policy-Rules/Policy-Rule-Type/",
+          text: "SCA",
+          link: "/en-US/Scan-Engines/SCA/index",
           collapsed: true,
           items: [
             {
-              text: "Component Rule Attribute",
-              link: "/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute",
+              text: "Components",
+              link: "/en-US/Scan-Engines/SCA/Components",
             },
             {
-              text: "Vulnerability Rule Attribute",
-              link: "/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute",
+              text: "Vulnerabilites",
+              link: "/en-US/Scan-Engines/SCA/Vulnerabilities/index",
             },
             {
-              text: "License Rule Attribute",
-              link: "/en-US/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute",
+              text: "Licenses",
+              link: "/en-US/Scan-Engines/SCA/Licenses",
             },
             {
-              text: "Project Rule Attribute",
-              link: "/en-US/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute",
+              text: `Export Reports on ${companyConfig.APP_NAME}`,
+              link: "/en-US/Scan-Engines/SCA/Export-Reports-on-app",
             },
-          ],
+            {
+              text: "Scan Comparison",
+              link: "/en-US/Scan-Engines/SCA/Scan-Comparison",
+            }
+          ]
+        },
+        {
+          text: "SAST",
+          link: "/en-US/Scan-Engines/SAST/index",
+          collapsed: true,
+          items: [
+            {
+              text: "Severity Levels",
+              link: "/en-US/Scan-Engines/SAST/sast-severity-levels",
+            }
+          ]
+        },
+        {
+          text: "IaC",
+          link: "/en-US/Scan-Engines/IaC/index",
+        },
+        {
+          text: "Fuzz Testing",
+          link: "/en-US/Scan-Engines/Fuzzing/index",
+        },
+        {
+          text: "Code Snippets",
+          link: "/en-US/Scan-Engines/Code-Snippet/index",
         },
       ],
     },
     {
-      text: "Projects Overview",
-      link: "/en-US/Projects-Overview/",
+      text: "Scan Triggers",
+      link: "/en-US/Scan-Triggers/index",
       collapsed: true,
       items: [
-        {
-          text: "Categorize Projects",
-          link: "/en-US/Projects-Overview/categorize-projects",
-        },
-      ],
-    },
-    {
-      text: "Scan History",
-      link: "/en-US/Scan-History/",
+        
+          {
+            text: `Trigger Scan via ${companyConfig.APP_NAME} UI`,
+            link: "/en-US/Scan-Triggers/Trigger-Scan-via-UI/",
+            collapsed: true,
+            items: [
+              {
+                text: "Upload Scan Settings",
+                link: "/en-US/Scan-Triggers/Trigger-Scan-via-UI/Upload-Scan-Settings",
+              },
+              {
+                text: "SCM Scan Settings",
+                link: "/en-US/Scan-Triggers/Trigger-Scan-via-UI/SCM-Scan-Settings",
+              },
+            ],
+          },
+          {
+            text: "Build-based Scan - CI/CD Pipeline",
+            link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/",
+            collapsed: true,
+            items: [
+              {
+                text: "Bamboo CI Integration",
+                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/Bamboo-CI-Integration",
+              },
+              {
+                text: "CircleCI Integration",
+                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/CircleCI-Integration",
+              },
+              {
+                text: "GitHub Actions CI Integration",
+                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration",
+              },
+              {
+                text: "GitLab CI Integration",
+                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration",
+              },
+              {
+                text: "Jenkins CI Integration",
+                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration",
+              },
+              {
+                text: "Travis CI Integration",
+                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration",
+              },
+            ],
+          },
+      ]
     },
     {
       text: "Settings",
-      link: "/en-US/Settings/",
+      link: "",
       collapsed: true,
       items: [
         {
           text: "Organization",
-          link: "/en-US/Settings/Organization",
+          link: "/en-US/Settings/Organization-Details",
         },
         {
           text: "Members and Teams",
@@ -274,7 +272,7 @@ export function enUSSidebar() {
         },
         {
           text: "Roles and Privileges",
-          link: "/en-US/Settings/Roles-and-Privileges/",
+          link: "",
           collapsed: true,
           items: [
             {
@@ -302,6 +300,40 @@ export function enUSSidebar() {
             },
           ],
         },
+        {
+          text: "Organization Group",
+          link: "/en-US/Settings/Organization-Group.md",
+        },
+        {
+          text: "Compliance Policy Rules",
+          link: "/en-US/Settings/Compliance-Policy-Rules/",
+          collapsed: true,
+          items: [
+            {
+              text: "Policy Rule Type",
+              link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/",
+              collapsed: true,
+              items: [
+                {
+                  text: "Component Rule Attribute",
+                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute",
+                },
+                {
+                  text: "Vulnerability Rule Attribute",
+                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute",
+                },
+                {
+                  text: "License Rule Attribute",
+                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute",
+                },
+                {
+                  text: "Project Rule Attribute",
+                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute",
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -312,6 +344,14 @@ export function enUSSidebar() {
           text: "SCA BOM Detect CLI Commands & Parameters",
           link: "/en-US/References/SCA-BOM-Detect-CLI-Commands-&-Parameters",
         },
+        {
+          text: "Scan History",
+          link: "/en-US/References/Scan-History/",
+        },
+        {
+          text: "Scan Type",
+          link: "/en-US/References/Scan-Type",
+        }
       ],
     },
   ];
