@@ -7,7 +7,7 @@ tags: settings, access tokens, api
 ---
 
 <script setup>
-import { companyConfig } from '../../../config/companyConfig.js'
+import { companyConfig } from '../../../../user-docs/config/companyConfig.js'
 </script>
 <ClientOnly>
 
@@ -31,6 +31,6 @@ import { companyConfig } from '../../../config/companyConfig.js'
 
 <img src="/images/Settings/Access-Tokens-2.png" />
 
-5. This access token will be referred to as **SCANTISTTOKEN** for future reference. With your access token, you're ready to continue and scan your projects for vulnerabilities using {{companyConfig.APP_NAME}} SCA
+5. This access token will be referred to as **{{companyConfig.SCANTIST_TOKEN}}** for future reference. With your access token, you're ready to continue and scan your projects for vulnerabilities using {{companyConfig.APP_NAME}} SCA
 
 </ClientOnly>

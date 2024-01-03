@@ -7,7 +7,7 @@ tags: settings, integrations
 ---
 
 <script setup>
-import { companyConfig } from '../../../../config/companyConfig.js'
+import { companyConfig } from '../../../../../user-docs/config/companyConfig.js'
 </script>
 
 <ClientOnly>
@@ -38,7 +38,7 @@ Issue tracking tools can facilitate this progress:
 
 - [Jira](Jira.md)
 
-- Chat Notify
+- Chat Notify (Coming Soon !)
 
 </div>
 
@@ -62,19 +62,17 @@ Automate the entire software development lifecycle, from building, testing, and 
 
 <b>CI/CD tools: </b>
 
-- Bamboo
+- <a href="../../Scan-Triggers/Build-based-Scan-CICD-Pipeline/Bamboo-CI-Integration">Bamboo</a>
 
-- Circle Ci
+- <a href="../../Scan-Triggers/Build-based-Scan-CICD-Pipeline/CircleCI-Integration">Circle Ci</a>
 
-- Jenkins
+- <a href="../../Scan-Triggers/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration">Jenkins</a>
 
-- Github Actions
+- <a href="../../Scan-Triggers/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration">Github Actions</a>
 
-- Gitlab
+- <a href="../../Scan-Triggers/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration">Gitlab</a>
 
-- Travis
-
-{{companyConfig.APP_NAME}} supports other [CI/CD tools]().
+- <a href="../../Scan-Triggers/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration">Travis</a>
 
 </div>
 
@@ -100,7 +98,7 @@ CLI are often preferred. by developers who are comfortable working with command-
 
 <b>Scan your project from the command line:</b>
 
-- [insert link]()
+- <a href="../../References/SCA-BOM-Detect-CLI-Commands-&-Parameters">SCA BOM Detect</a>
 
 </div>
 

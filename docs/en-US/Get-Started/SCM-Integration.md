@@ -1,13 +1,13 @@
 ---
 title: SCM Integration
-author: Shamala Mani Vannan, Jackie Tan
+author: Shamala Mani Vannan, Jackie Tan, Jabir
 page: true
 lang: en-US
 tags: scm, integration, github, gitlab, bitbucket
 ---
 
 <script setup>
-import { companyConfig } from '../../../config/companyConfig.js'
+import { companyConfig } from '../../../../user-docs/config/companyConfig.js'
 </script>
 <ClientOnly>
 
@@ -24,9 +24,9 @@ import { companyConfig } from '../../../config/companyConfig.js'
 {{companyConfig.APP_NAME}} currently supports integration with the following SCM platforms:
 
 <ul>
-    <li><a href="https://github.com">GitHub</a></li>
-    <li><a href="https://gitlab.com">GitLab</a></li>
-    <li><a href="https://bitbucket.org">Bitbucket</a></li>
+    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+    <li><a href="https://gitlab.com" target="_blank">GitLab</a></li>
+    <li><a href="https://bitbucket.org" target="_blank">Bitbucket</a></li>
 </ul>
 
 ::: warning Note:

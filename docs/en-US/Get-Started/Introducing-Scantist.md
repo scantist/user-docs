@@ -1,9 +1,9 @@
 ---
-title: Get Started
+title: Introducing Scantist
 author: Shamala Mani Vannan, Jackie Tan, Jabir
 page: true
 lang: en-US
-tags: started, get started, welcome
+tags: started, get started, welcome, introducing
 ---
 
 <script setup>
@@ -12,7 +12,7 @@ import { companyConfig } from '../../../../user-docs/config/companyConfig.js'
 
 <ClientOnly>
 
-<h1>{{ $frontmatter.title }} with {{ companyConfig.APP_NAME }}</h1>
+<h1>Introducing {{ companyConfig.APP_NAME }}</h1>
 
 <blockquote>
     <p>Discover the ultimate tool for managing and securing the use of your open source software. With {{ companyConfig.APP_NAME }}, you can easily identify vulnerabilities and licensing risks in your open source projects and remediate them efficiently.</p>
