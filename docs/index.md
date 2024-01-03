@@ -25,11 +25,11 @@ features:
 
   - title: Build-based Scan - CI/CD Pipeline
     details: Explore the possibilities of automating the entire software development lifecycle, from building, testing, and, deployment to production.
-    link: en-US/Scan Triggers/Build-based-Scan-CICD-Pipeline/
+    link: en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/
 
   - title: Trigger Scan via Scantist UI
     details: Explore what's next after creating a project in Scantist
-    link: en-US/Scan Triggers/Trigger-Scan-via-UI/
+    link: en-US/Scan-Triggers/Trigger-Scan-via-UI/
 
   - title: Compliance Policy Rules
     details: Learn how to ensure compliance with organizational and industry standards with policy rules now

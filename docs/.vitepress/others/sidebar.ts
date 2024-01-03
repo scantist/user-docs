@@ -64,6 +64,10 @@ export function enUSSidebar() {
       collapsed: true,
       items: [
         {
+          text: `Introducing ${companyConfig.APP_NAME}`,
+          link: "/en-US/Get-Started/Introducing-Scantist",
+        },
+        {
           text: `Sign up for ${companyConfig.APP_NAME}`,
           link: "/en-US/Get-Started/Sign-up-for-more",
         },
