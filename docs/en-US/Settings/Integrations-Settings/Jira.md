@@ -7,7 +7,7 @@ tags: settings, jira, integration, issues
 ---
 
 <script setup>
-import { companyConfig } from '../../../../../user-docs/config/companyConfig.js'
+import { companyConfig } from '../../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>
