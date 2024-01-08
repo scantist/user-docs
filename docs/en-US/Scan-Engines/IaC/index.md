@@ -8,7 +8,7 @@ description: This document explains what Infrastructure as Code tool is
 ---
 
 <script setup>
-import { companyConfig } from '../../../../../user-docs/config/companyConfig.js'
+import { companyConfig } from '../../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>

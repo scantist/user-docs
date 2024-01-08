@@ -7,7 +7,7 @@ tags: upload, projects, source code, binary file
 ---
 
 <script setup>
-import { companyConfig } from '../../../../../user-docs/config/companyConfig.js'
+import { companyConfig } from '../../../../config/companyConfig.js'
 </script>
 
 <ClientOnly>

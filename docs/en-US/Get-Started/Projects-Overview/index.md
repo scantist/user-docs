@@ -7,7 +7,7 @@ tags: scantist, project, project scan
 ---
 
 <script setup>
-import { companyConfig } from '../../../../../user-docs/config/companyConfig.js';
+import { companyConfig } from '../../../../config/companyConfig.js';
 </script>
 <style scoped>
   .steps {
