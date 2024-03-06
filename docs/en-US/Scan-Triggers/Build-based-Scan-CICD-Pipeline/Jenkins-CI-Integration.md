@@ -53,36 +53,36 @@ Under the `Build` section, make sure you have a build script prepared for your p
 
 If you are using Windows, add a new `Execute Windows Batch Command` step and include the below script
 
-(For V4 staging environment)
+(For APP environment)
 ```shell
-export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
-export SCANTISTTOKEN=$your_copied_access_token
+export DEVSECOPS_IMPORT_URL=https://api-app.scantist.io/v2/scans/ci-scan/
+export DEVSECOPS_TOKEN=$your_copied_access_token
 curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
 java -jar sca-bom-detect-v4.5.jar
 ```
 
 (For GCC environment)
 ```shell
-export SCANTIST_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
-export SCANTISTTOKEN=$your_copied_access_token
+export DEVSECOPS_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
+export DEVSECOPS_TOKEN=$your_copied_access_token
 curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
 java -jar sca-bom-detect-v4.5.jar
 ```
 
 If you are using Linux, add a new `Execute Shell` and include the below script
 
-(For V4 staging environment)
+(For APP environment)
 ```bash
-export SCANTIST_IMPORT_URL=https://api-v4staging.scantist.io/v2/scans/ci-scan/
-export SCANTISTTOKEN=$your_copied_access_token
+set DEVSECOPS_IMPORT_URL=https://api-app.scantist.io/v2/scans/ci-scan/
+set DEVSECOPS_TOKEN=$your_copied_access_token
 curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
 java -jar sca-bom-detect-v4.5.jar
 ```
 
 (For GCC environment)
 ```bash
-export SCANTIST_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
-export SCANTISTTOKEN=$your_copied_access_token
+set DEVSECOPS_IMPORT_URL=https://gcc.scantist.io/v2/scans/ci-scan/
+set DEVSECOPS_TOKEN=$your_copied_access_token
 curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
 java -jar sca-bom-detect-v4.5.jar
 ```
