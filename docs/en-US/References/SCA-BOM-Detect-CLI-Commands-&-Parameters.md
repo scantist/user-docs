@@ -62,7 +62,7 @@ Click on the link below to download the SCA Bom Detect
 There are 2 different methods for SCA BOM Detect to authenticate the user:
 
 - Authentication through Username and Password
-- Authentication through SCANTISTTOKEN environment variable
+- Authentication through <b>DEVSECOPS_TOKEN</b> and <b>DEVSECOPS_IMPORT_URL</b> environment variable
 
 Different methods of authentication will result in slightly different usage of the CLI commands.
 
