@@ -72,6 +72,10 @@ export function enUSSidebar() {
           link: "/en-US/Get-Started/Sign-up-for-more",
         },
         {
+          text: `Understanding ${companyConfig.APP_NAME} Dashboard`,
+          link: "/en-US/Get-Started/Scantist-Dashboard",
+        },
+        {
           text: "SCM Integration",
           link: "/en-US/Get-Started/SCM-Integration",
         },
