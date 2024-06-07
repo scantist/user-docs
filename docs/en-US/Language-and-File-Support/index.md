@@ -86,12 +86,12 @@ const languages = ref(["Java", "JavaScript", "Perl", "Go", "Python", "Csharp", "
 
 You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
-- [Trigger a scan](../Trigger-Scan-via-UI/)
+- [Trigger a scan](../Plugins-and-Integrations/Trigger-Scan-via-UI/index)
 
-- [Access scan results](#)
+- [Access scan results](../Scan-Engines/SCA/Scan-Result-Analysis/Organization-Vulnerability-Management)
 
-- [Fix vulnerabilities](#)
+- [Fix vulnerabilities](../Scan-Engines/SCA/Vulnerabilities/index)
 
-- [Create compliance policies](#)
+- [Create compliance policies](../Management-and-Settings/Compliance-Policy-Rules/index)
 
 </ClientOnly>

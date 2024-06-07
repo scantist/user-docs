@@ -1,5 +1,5 @@
 ---
-title: Components
+title: Components & Dependency Tree
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
@@ -35,7 +35,7 @@ Scantist provides detailed information on each of the components. Here is a brea
         </tr>
         <tr>
             <td>Language</td>
-            <td>The <a href="../Language-and-File-Support/">programming language</a> of the component</td>
+            <td>The <a href="../../Language-and-File-Support/">programming language</a> of the component</td>
         </tr>
         <tr>
             <td>Current Version</td>
@@ -47,7 +47,7 @@ Scantist provides detailed information on each of the components. Here is a brea
         </tr>
         <tr>
             <td>Vulnerabilities</td>
-            <td>The <a href="./Vulnerabilities/">vulnerabilities</a> associated with the components, categorized as critical, high, medium and low</td>
+            <td>The <a href="./Vulnerabilities">vulnerabilities</a> associated with the components, categorized as critical, high, medium and low</td>
         </tr>
         <tr>
             <td>Scope</td>
@@ -88,8 +88,18 @@ To identify vulnerable components that require immediate attention and remediati
 </div>
 
 :::tip
-Learn more about <a href="./Vulnerabilities/Vulnerability-Severity-Level-&-Issue-Types">vulnerability severity levels</a>
+Learn more about <a href="./Vulnerabilities#_2-Severity">vulnerability severity levels</a>
 :::
+
+## Dependecy Tree
+
+<hr class="thick" />
+
+Dependency tree displays which subset of libraries that are vulnerable that will cause a superset of library to be vulnerable.
+
+  <div style="flex: 1;">
+    <img src="/images/SCA/sca-dependencies.png" />
+  </div>
 
 ## What's next?
 
@@ -98,7 +108,7 @@ Learn more about <a href="./Vulnerabilities/Vulnerability-Severity-Level-&-Issue
 You can now evaluate security vulnerabilities that have been detected in the open source components, and take appropriate actions by updating to patch versions or implementing workarounds.
 
 <ul>
-    <li><a href="./Vulnerabilities/">SCA Vulnerabilities</a></li>
+    <li><a href="./Vulnerabilities">SCA Vulnerabilities</a></li>
     <li><a href="./Remediation">SCA Remediation</a></li>
 </ul>
 

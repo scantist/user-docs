@@ -28,7 +28,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 4.&nbsp;&nbsp;&nbsp;Choose the file you want to upload and provide any necessary information
 
-![Create New Project](/images/Create-and-Manage-Project/Upload-Files-Directly-1.png)
+![Create New Project](/images/Create-and-Manage-Project/upload_sbom.png)
 
 5.&nbsp;&nbsp;&nbsp;Once you have uploaded your file, configure the scan settings according to your preferences
 
@@ -42,9 +42,9 @@ When creating a new project by uploading your file directly, it is important to 
 
 1.&nbsp;&nbsp;&nbsp;Provide a descriptive project name to help identify it
 
-2.&nbsp;&nbsp;&nbsp;Select the [team](../../Settings/Members-and-Teams) that you want to assign the project to
+2.&nbsp;&nbsp;&nbsp;Select the [team](../../Management-and-Settings/Members-and-Teams) that you want to assign the project to
 
-3.&nbsp;&nbsp;&nbsp;Choose the compliance policy you want to apply. If you have not created a [compliance policy](../../Settings/Compliance-Policy-Rules/index) for the project, you can choose the default compliance
+3.&nbsp;&nbsp;&nbsp;Choose the compliance policy you want to apply. If you have not created a [compliance policy](../../Management-and-Settings/Compliance-Policy-Rules/index) for the project, you can choose the default compliance
 
 4.&nbsp;&nbsp;&nbsp;Add relevant tags to the project to make it easier to find later
 
@@ -67,7 +67,5 @@ If you have made updates to your source code or binary file and wish to rescan i
 4.&nbsp;&nbsp;&nbsp;Choose the file you want to upload and provide a new file version to the project
 
 5.&nbsp;&nbsp;&nbsp;Once you have uploaded your file, initiate a scan according to your preferred scan type
-
-<!--@include: ./whats-next.md-->
 
 </ClientOnly>

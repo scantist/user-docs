@@ -43,16 +43,16 @@ import { companyConfig } from '../../../config/companyConfig.js'
   Use {{companyConfig.APP_NAME}} to scan your open source projects and identify vulnerabilities and licensing risks. Depending on your project type, you can trigger a scan by selecting from a range of options in our documentation.
 
   <ul>
-    <li><a href="../../en-US/Scan Engines/SCA/index">Software Composition Analysis (SCA)</a></li>
-    <li><a href="../../en-US/Scan Engines/SAST/index">Static Application Security Testing (SAST)</a></li>
-    <li><a href="../../en-US/Scan Engines/IaC/index">Infrastructure as Code (IaC) Scan</a></li>
-    <li><a href="../../en-US/Scan Engines/Fuzzing/index">Fuzzing Test (Coming soon)</a></li>
-    <li><a href="../../en-US/Scan Engines/Code-Snippet/index">Code Snippets (Coming soon)</a></li>
+    <li><a href="../../en-US/Scan-Engines/SCA/index">Software Composition Analysis (SCA)</a></li>
+    <li><a href="../../en-US/Scan-Engines/SAST-and-IaC/index">Static Application Security Testing (SAST)</a></li>
+    <li><a href="../../en-US/Scan-Engines/SAST-and-IaC/index">Infrastructure as Code (IaC) Scan</a></li>
+    <li><a href="../../en-US/Scan-Engines/Fuzzing/index">Fuzzing Test</a></li>
+    <li><a href="../../en-US/Scan-Engines/Code-Snippet/index">Code Snippets</a></li>
   </ul>
 
   <h3><li>Access your scan results</li></h3>
 
-  After scanning your projects, {{companyConfig.APP_NAME}} will provide a detailed report on any <a href="../Scan Engines/SCA/Vulnerabilities/index">vulnerabilities</a> or <a href="../Scan Engines/SCA/Licenses">licensing risks</a> found.
+  After scanning your projects, {{companyConfig.APP_NAME}} will provide a detailed report on any <a href="../Scan-Engines/SCA/Vulnerabilities/index">vulnerabilities</a> or <a href="../Scan-Engines/SCA/Licenses">licensing risks</a> found.
 
   <h3><li>Fix your vulnerabilities</li></h3>
 
@@ -67,8 +67,8 @@ import { companyConfig } from '../../../config/companyConfig.js'
 You are now ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
 <ul>
-  <li><a href="../Settings/Integrations-Settings/index">Integrate {{companyConfig.APP_NAME}} with your preferred CI/CD pipeline tools</a></li>
-  <li><a href="../Settings/Compliance-Policy-Rules/index">Create compliance policies</a></li>
+  <li><a href="../Management-and-Settings/Integrations-Settings/index">Integrate {{companyConfig.APP_NAME}} with your preferred CI/CD pipeline tools</a></li>
+  <li><a href="../Management-and-Settings/Compliance-Policy-Rules/index">Create compliance policies</a></li>
 </ul>
 
 With {{companyConfig.APP_NAME}}, managing and securing your open source software has never been easier. Sign up today and start using our powerful tool to improve the security of your software.

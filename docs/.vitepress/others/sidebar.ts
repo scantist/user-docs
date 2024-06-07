@@ -85,8 +85,16 @@ export function enUSSidebar() {
           collapsed: true,
           items: [
             {
+              text: "Sample Project Scanning",
+              link: "/en-US/Get-Started/Create-and-Manage-Project/Sample-Project-Scanning",
+            },
+            {
               text: "Upload Files Directly",
               link: "/en-US/Get-Started/Create-and-Manage-Project/Upload-Files-Directly",
+            },
+            {
+              text: "Filtering Projects",
+              link: "/en-US/Get-Started/Create-and-Manage-Project/Filtering-Projects",
             },
             {
               text: "Add SCM Repositories",
@@ -99,6 +107,10 @@ export function enUSSidebar() {
           link: "/en-US/Get-Started/Projects-Overview/",
           collapsed: true,
           items: [
+            {
+              text: "Start Scan and Report Generation",
+              link: "/en-US/Get-Started/Projects-Overview/report-generation",
+            },
             {
               text: "Categorize Projects",
               link: "/en-US/Get-Started/Projects-Overview/categorize-projects",
@@ -137,12 +149,16 @@ export function enUSSidebar() {
           link: "/en-US/Language-and-File-Support/Csharp-Language-Support",
         },
         {
+          text: "C / C++ Language Support",
+          link: "/en-US/Language-and-File-Support/Cpp-Language-Support",
+        },
+        {
           text: "Ruby Language Support",
           link: "/en-US/Language-and-File-Support/Ruby-Language-Support",
         },
         {
           text: "PHP Language Support",
-          link: "/en-US/Language-and-File-Support/PHP-Language-Support",
+          link: "/en-US/Language-and-File-Support/Php-Language-Support",
         },
         {
           text: "Objective-C Language Support",
@@ -165,182 +181,322 @@ export function enUSSidebar() {
           collapsed: true,
           items: [
             {
-              text: "Components",
+              text: "Components & Dependency Tree",
               link: "/en-US/Scan-Engines/SCA/Components",
             },
             {
               text: "Vulnerabilites",
-              link: "/en-US/Scan-Engines/SCA/Vulnerabilities/index",
+              link: "/en-US/Scan-Engines/SCA/Vulnerabilities",
+            },
+            {
+              text: `Remediation`,
+              link: "/en-US/Scan-Engines/SCA/Remediation",
             },
             {
               text: "Licenses",
               link: "/en-US/Scan-Engines/SCA/Licenses",
             },
             {
-              text: `Export Reports on ${companyConfig.APP_NAME}`,
+              text: `Compliance Policy Rules Monitoring`,
+              link: "/en-US/Scan-Engines/SCA/Compliance-Policy-Rules",
+            },
+            {
+              text: `Reports`,
               link: "/en-US/Scan-Engines/SCA/Export-Reports-on-app",
             },
             {
-              text: "Scan Comparison",
+              text: `Project Settings`,
+              link: "/en-US/Scan-Engines/SCA/project-settings",
+            },
+            {
+              text: "Scan History & Comparison",
               link: "/en-US/Scan-Engines/SCA/Scan-Comparison",
+            },
+            {
+              text: `Scan Result Analysis`,
+              link: "/en-US/Scan-Engines/SCA/Scan-Result-Analysis/index",
+              collapsed: true,
+              items: [
+                {
+                  text: `Organization Component Management`,
+                  link: "/en-US/Scan-Engines/SCA/Scan-Result-Analysis/Organization-Component-Management",
+                },
+                {
+                  text: `Organization Vulnerability Management`,
+                  link: "/en-US/Scan-Engines/SCA/Scan-Result-Analysis/Organization-Vulnerability-Management",
+                },
+                {
+                  text: `Organization Compliance Management`,
+                  link: "/en-US/Scan-Engines/SCA/Scan-Result-Analysis/Organization-Compliance-Management",
+                },
+                {
+                  text: `*Organization Component and Vulnerability Management Report`,
+                  link: "/en-US/Scan-Engines/SCA/Scan-Result-Analysis/Organization-Component-and-Vulnerability-Management-Report",
+                },
+              ]
+            },
+            {
+              text: `*Components Result Action`,
+              link: "/en-US/Scan-Engines/SCA/Component-Result-Action",
+            },
+            {
+              text: `*Vulnerability Result Suppression`,
+              link: "/en-US/Scan-Engines/SCA/Vulnerability-Result-Suppression",
+            },
+            {
+              text: `Schedule and Event Trigger Scan`,
+              link: "/en-US/Scan-Engines/SCA/Schedule-and-Event-Trigger-Scan",
             }
           ]
         },
         {
-          text: "SAST",
-          link: "/en-US/Scan-Engines/SAST/index",
+          text: "SAST & IaC",
+          link: "/en-US/Scan-Engines/SAST-and-IaC/index",
+          collapsed: true,
+          items: [
+            // {
+            //   text: "Monthly Scan",
+            //   link: "/en-US/Scan-Engines/SAST-and-IaC/monthly-scan",
+            // },
+            {
+              text: "Vulnerability, Bugs, Code Smell, Security HotSpot Detection",
+              link: "/en-US/Scan-Engines/SAST-and-IaC/vulnerability-bugs",
+            },
+            {
+              text: "Issue highlight in Source Code",
+              link: "/en-US/Scan-Engines/SAST-and-IaC/issue-highlight-source-code",
+            },
+            {
+              text: "PDF Report Generation",
+              link: "/en-US/Scan-Engines/SAST-and-IaC/pdf-report-generation",
+            },
+            {
+              text: "Schedule and Event Trigger Scan",
+              link: "/en-US/Scan-Engines/SAST-and-IaC/schedule-event-trigger",
+            },
+            // {
+            //   text: "Severity Levels",
+            //   link: "/en-US/Scan-Engines/SAST-and-IaC/sast-severity-levels",
+            // }
+          ]
+        },
+        {
+          text: "*Fuzzing Test",
+          link: "/en-US/Scan-Engines/Fuzzing/index",
           collapsed: true,
           items: [
             {
-              text: "Severity Levels",
-              link: "/en-US/Scan-Engines/SAST/sast-severity-levels",
-            }
+              text: "Issue Detections",
+              link: "/en-US/Scan-Engines/Fuzzing/Issue-Detections",
+            },
+            {
+              text: "Crash Detections",
+              link: "/en-US/Scan-Engines/Fuzzing/Crash-Detections",
+            },
           ]
         },
         {
-          text: "IaC",
-          link: "/en-US/Scan-Engines/IaC/index",
-        },
-        {
-          text: "Fuzz Testing",
-          link: "/en-US/Scan-Engines/Fuzzing/index",
-        },
-        {
-          text: "Code Snippets",
+          text: "*Code Snippets",
           link: "/en-US/Scan-Engines/Code-Snippet/index",
+          collapsed: true,
+          items: [
+            {
+              text: "Code Traceability Analysis",
+              link: "/en-US/Scan-Engines/Code-Snippet/Code-Traceability-Analysis",
+            },
+            {
+              text: "OSS Components Identification",
+              link: "/en-US/Scan-Engines/Code-Snippet/OSS-Components-Identification",
+            },
+            {
+              text: "License Detection",
+              link: "/en-US/Scan-Engines/Code-Snippet/License1",
+            },
+            {
+              text: "License Conflict Analysis",
+              link: "/en-US/Scan-Engines/Code-Snippet/License-Conflict-Analysis",
+            },
+            {
+              text: "Copyright Detection",
+              link: "/en-US/Scan-Engines/Code-Snippet/Copyright",
+            }
+          ]
         },
       ],
     },
     {
-      text: "Scan Triggers",
-      link: "/en-US/Scan-Triggers/index",
+      text: "Plugins and Integrations",
+      link: "/en-US/Plugins-and-Integrations/index",
       collapsed: true,
       items: [
-        
-          {
-            text: `Trigger Scan via ${companyConfig.APP_NAME} UI`,
-            link: "/en-US/Scan-Triggers/Trigger-Scan-via-UI/",
-            collapsed: true,
-            items: [
-              {
-                text: "Upload Scan Settings",
-                link: "/en-US/Scan-Triggers/Trigger-Scan-via-UI/Upload-Scan-Settings",
-              },
-              {
-                text: "SCM Scan Settings",
-                link: "/en-US/Scan-Triggers/Trigger-Scan-via-UI/SCM-Scan-Settings",
-              },
-            ],
-          },
-          {
-            text: "Build-based Scan - CI/CD Pipeline",
-            link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/",
-            collapsed: true,
-            items: [
-              {
-                text: "Bamboo CI Integration",
-                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/Bamboo-CI-Integration",
-              },
-              {
-                text: "CircleCI Integration",
-                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/CircleCI-Integration",
-              },
-              {
-                text: "GitHub Actions CI Integration",
-                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration",
-              },
-              {
-                text: "GitLab CI Integration",
-                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration",
-              },
-              {
-                text: "Jenkins CI Integration",
-                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration",
-              },
-              {
-                text: "Travis CI Integration",
-                link: "/en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration",
-              },
-            ],
-          },
+        {
+          text: `Trigger Scan via UI`,
+          link: "/en-US/Plugins-and-Integrations/Trigger-Scan-via-UI/",
+          collapsed: true,
+          items: [
+            {
+              text: "Upload Scan Settings",
+              link: "/en-US/Plugins-and-Integrations/Trigger-Scan-via-UI/Upload-Scan-Settings",
+            },
+            {
+              text: "SCM Scan Settings",
+              link: "/en-US/Plugins-and-Integrations/Trigger-Scan-via-UI/SCM-Scan-Settings",
+            },
+          ],
+        },
+        {
+          text: "Build-based Scan - CI/CD Pipeline",
+          link: "/en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/",
+          collapsed: true,
+          items: [
+            {
+              text: "Bamboo CI Integration",
+              link: "/en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/Bamboo-CI-Integration",
+            },
+            {
+              text: "CircleCI Integration",
+              link: "/en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/CircleCI-Integration",
+            },
+            {
+              text: "GitHub Actions CI Integration",
+              link: "/en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/GitHub-Actions-Integration",
+            },
+            {
+              text: "GitLab CI Integration",
+              link: "/en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/GitLab-CI-Integration",
+            },
+            {
+              text: "Jenkins CI Integration",
+              link: "/en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/Jenkins-CI-Integration",
+            },
+            {
+              text: "Travis CI Integration",
+              link: "/en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/Travis-CI-Integration",
+            },
+          ],
+        },
+        {
+          text: `IDE Plugin`,
+          link: "/en-US/Plugins-and-Integrations/IDE-Plugin",
+        },
+        {
+          text: `Jira Integration`,
+          link: "/en-US/Plugins-and-Integrations/Jira-Integration",
+        },
+        {
+          text: `SSO (LDAP, OIDC, KeyCloak)`,
+          link: "/en-US/Plugins-and-Integrations/SSO-LDAP-OIDC-KeyCloak",
+        },
       ]
     },
+    // {
+    //   text: "Knowledge Base",
+    //   link: "/en-US/Knowledge-Base/index",
+    //   collapsed: true,
+    //   items: [
+    //     {
+    //       text: "SBOM Enquiry",
+    //       link: "/en-US/Knowledge-Base/SBOM-Enquiry",
+    //     },
+    //     {
+    //       text: "Self Components Management",
+    //       link: "/en-US/Knowledge-Base/Scan-History/",
+    //     },
+    //     {
+    //       text: "Vulnerability Enquiry",
+    //       link: "/en-US/Knowledge-Base/Scan-Type",
+    //     },
+    //     {
+    //       text: "Self Vulnerability Management",
+    //       link: "/en-US/Knowledge-Base/Scan-Type",
+    //     },
+    //     {
+    //       text: "Scan Type",
+    //       link: "/en-US/Knowledge-Base/Scan-Type",
+    //     },
+    //     {
+    //       text: "Scan Type",
+    //       link: "/en-US/Knowledge-Base/Scan-Type",
+    //     }
+    //   ],
+    // },
     {
-      text: "Settings",
+      text: "Management and Settings",
       link: "",
       collapsed: true,
       items: [
         {
           text: "Organization",
-          link: "/en-US/Settings/Organization-Details",
+          link: "/en-US/Management-and-Settings/Organization-Details",
         },
         {
           text: "Members and Teams",
-          link: "/en-US/Settings/Members-and-Teams",
+          link: "/en-US/Management-and-Settings/Members-and-Teams",
         },
         {
           text: "Roles and Privileges",
-          link: "",
+          link: "/en-US/Management-and-Settings/Roles-and-Privileges",
+        },
+        {
+          text: "Project Tags",
+          link: "/en-US/Management-and-Settings/Project-Tags",
+        },
+        {
+          text: "Integrations Settings",
+          link: "/en-US/Management-and-Settings/Integrations-Settings/",
           collapsed: true,
           items: [
             {
-              text: "Available Roles",
-              link: "/en-US/Settings/Roles-and-Privileges/Available-Roles",
+              text: "Eclipse",
+              link: "/en-US/Management-and-Settings/Integrations-Settings/Eclipse",
+            },
+            {
+              text: "Jira",
+              link: "/en-US/Management-and-Settings/Integrations-Settings/Jira",
+            },
+            {
+              text: "SCM Integration",
+              link: "/en-US/Management-and-Settings/Integrations-Settings/SCM-Integration",
             },
           ],
         },
         {
           text: "Access Tokens",
-          link: "/en-US/Settings/Access-Tokens",
+          link: "/en-US/Management-and-Settings/Access-Tokens",
         },
         {
-          text: "Integrations Settings",
-          link: "/en-US/Settings/Integrations-Settings/",
+          text: "Compliance Policy Rules",
+          link: "/en-US/Management-and-Settings/Compliance-Policy-Rules/",
           collapsed: true,
           items: [
             {
-              text: "Eclipse",
-              link: "/en-US/Settings/Integrations-Settings/Eclipse",
-            },
-            {
-              text: "Jira",
-              link: "/en-US/Settings/Integrations-Settings/Jira",
+              text: "Policy Rule Type",
+              link: "/en-US/Management-and-Settings/Compliance-Policy-Rules/Policy-Rule-Type/",
+              collapsed: true,
+              items: [
+                {
+                  text: "Component Rule Attribute",
+                  link: "/en-US/Management-and-Settings/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute",
+                },
+                {
+                  text: "Vulnerability Rule Attribute",
+                  link: "/en-US/Management-and-Settings/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute",
+                },
+                {
+                  text: "License Rule Attribute",
+                  link: "/en-US/Management-and-Settings/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute",
+                },
+                {
+                  text: "Project Rule Attribute",
+                  link: "/en-US/Management-and-Settings/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute",
+                },
+              ],
             },
           ],
         },
         {
           text: "Organization Group",
-          link: "/en-US/Settings/Organization-Group.md",
-        },
-        {
-          text: "Compliance Policy Rules",
-          link: "/en-US/Settings/Compliance-Policy-Rules/",
-          collapsed: true,
-          items: [
-            {
-              text: "Policy Rule Type",
-              link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/",
-              collapsed: true,
-              items: [
-                {
-                  text: "Component Rule Attribute",
-                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/Component-Rule-Attribute",
-                },
-                {
-                  text: "Vulnerability Rule Attribute",
-                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/Vulnerability-Rule-Attribute",
-                },
-                {
-                  text: "License Rule Attribute",
-                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/License-Rule-Attribute",
-                },
-                {
-                  text: "Project Rule Attribute",
-                  link: "/en-US/Settings/Compliance-Policy-Rules/Policy-Rule-Type/Project-Rule-Attribute",
-                },
-              ],
-            },
-          ],
+          link: "/en-US/Management-and-Settings/Organization-Group.md",
         },
       ],
     },

@@ -68,10 +68,10 @@ Congratulations! You have successfully created your {{companyConfig.APP_NAME}} a
 You now set up {{companyConfig.APP_NAME}} SCA and are ready to start scanning your open source projects. {{companyConfig.APP_NAME}} is designed to integrate seamlessly with your existing software development workflows and tools.
 
 <ul>
-  <li><a href="../Scan Triggers/index">Trigger a scan</a></li>
-  <li><a href="../Scan Engines/SCA/Components">Review third-party components</a></li>
-  <li><a href="../Scan Engines/SCA/Vulnerabilities/index">Fix vulnerabilities</a></li>
-  <li><a href="../Settings/Compliance-Policy-Rules/index">Create compliance policies</a></li>
+  <li><a href="../Plugins-and-Integrations/Trigger-Scan-via-UI/index">Trigger a scan</a></li>
+  <li><a href="../Scan-Engines/SCA/Components">Review third-party components</a></li>
+  <li><a href="../Scan-Engines/SCA/Vulnerabilities/index">Fix vulnerabilities</a></li>
+  <li><a href="../Management-and-Settings/Compliance-Policy-Rules/index">Create compliance policies</a></li>
 </ul>
 
 </ClientOnly>

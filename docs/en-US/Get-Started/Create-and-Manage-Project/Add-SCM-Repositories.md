@@ -16,6 +16,14 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 > Explore how to effortlessly create new projects by uploading or connecting to SCM account, and efficiently managing them for scanning.
 
+## Integrate SCM to your account
+
+It is possible to add Source Code Management to your account after it is created. It can be found under Organization; integrations tab. Currently, Github and Gitlab are supported for SCM integration.
+
+  <div style="flex: 1;">
+    <img src="/images/Create-and-Manage-Project/scm-integrations.png" />
+  </div>
+
 ## Create a New Project
 
 <hr class="thick" />
@@ -72,8 +80,8 @@ After you have created a project and it is added to the {{companyConfig.APP_NAME
 
 Scan settings for both upload and SCM scans help you tailor the scanning process to fit your specific needs and preferences.
 
-- [Upload Scan Settings](../Create-and-Manage-Project/Upload-Files-Directly)
+- [Upload Files for Scanning](../Create-and-Manage-Project/Upload-Files-Directly)
 
-- [SCM Scan Settings](../Create-and-Manage-Project/Add-SCM-Repositories)
+- [SCM Integration](../Create-and-Manage-Project/Add-SCM-Repositories)
 
 </ClientOnly>
