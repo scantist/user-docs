@@ -1,5 +1,5 @@
 ---
-title: Code Snippets - Work in Progress
+title: Code Snippets
 author: Shamala Mani Vannan, Jackie Tan, Jabir
 page: true
 lang: en-US
@@ -19,11 +19,9 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 ## Overview
 
-This document is currently in progress and will provide insights into Code Snippets tools. We're working diligently to compile essential information about IaC testing solutions, insights, and best practices.
+> *This feature is only available for enterprise users only.
 
-Stay tuned for updates! 
-
-We're striving to deliver comprehensive information to help you understand Code Snippets better and leverage it effectively within your projects.
+> Code Snippet scan through the code written in the project to identify licenses that are being used, or copyrights applied to any code.
 
 
 </ClientOnly>

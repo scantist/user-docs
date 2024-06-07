@@ -72,8 +72,8 @@ After you have created a project and it is added to the {{companyConfig.APP_NAME
 
 Scan settings for both upload and SCM scans help you tailor the scanning process to fit your specific needs and preferences.
 
-- [Upload Scan Settings](../Trigger-Scan-via-UI/Upload-Scan-Settings)
+- [Upload Scan Settings](../../Plugins-and-Integrations/Trigger-Scan-via-UI/Upload-Scan-Settings)
 
-- [SCM Scan Settings](../Trigger-Scan-via-UI/SCM-Scan-Settings)
+- [SCM Scan Settings](../../Plugins-and-Integrations/Trigger-Scan-via-UI/SCM-Scan-Settings)
 
 </ClientOnly>

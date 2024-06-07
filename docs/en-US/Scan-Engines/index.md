@@ -22,17 +22,17 @@ tags: scan types, scan engines
 
 - Supported languages: Java, JavaScript, Python, Ruby, PHP <a href="../Language-and-File-Support/index">etc</a>.
 
-## [Static Application Security Tool](../Scan-Engines/SAST/index)
+## [Static Application Security Tool](../Scan-Engines/SAST-and-IaC/index)
 
 - SAST, or Static Application Security Testing, examines source code for potential vulnerabilities without executing the program. By analyzing code structure and patterns, it identifies security weaknesses early in the development cycle, enabling proactive remediation to fortify the software against potential threats
 
 - Supported languages: Java, JavaScript, Python, C#, PHP <a href="../Language-and-File-Support/index">etc</a>.
 
-## [Infrastructure As Code](../Scan-Engines/IaC/index)
+## [Infrastructure As Code](../Scan-Engines/SAST-and-IaC/index)
 
 - Infrastructure as Code (IaC) scans focus on inspecting configuration files and scripts to pinpoint security misconfigurations within cloud infrastructure setups. By analyzing templates and definitions in tools like Terraform or CloudFormation, IaC scanning identifies potential security gaps, ensuring robust and secure deployment practices in cloud environments. 
 
-- Supported platforms/languages: Terraform, CloudFormation, Dockerfile <a href="../Scan-Engines/IaC/#_4-iac-language">etc</a>.
+- Supported platforms/languages: Terraform, CloudFormation, Dockerfile <a href="../Scan-Engines/SAST-and-IaC/#_4-iac-language">etc</a>.
 
 ## [Fuzzing Test](../Scan-Engines/Fuzzing/index)
 

@@ -1,5 +1,5 @@
 ---
-title: Scan Comparison
+title: Scan History & Comparison
 author: Jackie Tan
 page: true
 lang: en-US
@@ -30,7 +30,13 @@ import { companyConfig } from '../../../../config/companyConfig.js'
     <img src="/images/SCA/Scan-Comparison-Step3.png" />
     <br />
     <li>After the comparison is generated, review the results which will display both a summary (with component and vulnerability counts by severity) and detailed information (including individual component versions and identified vulnerabilities).</li>
-    <img src="/images/SCA/Scan-Comparison-Step4.png" />
+    <img src="/images/SCA/comparison.png" />
+    <br />
+    <li>Under the component tab, it shows a list of all compared components, including component name, version, package management platform and the results of each scan ID. Components that appeared in a previous scan but are not present in the latest scan records will be presented at the top, with a green background color. Subsequent components are those that were not present in previous scan records, but are discovered in the latest scan, highlighted in red. Lastly, the components that appeared in both the lastest and previous scan records are displayed.</li>
+    <img src="/images/SCA/comparison2.png" />
+    <br />
+    <li>Under the vulnerabilities tab, it is displayed by Vulnerability ID, Vulnerability Category, Release Date, and the results of each scan ID.</li>
+    <img src="/images/SCA/comparison1.png" />
 </ol>
 
 </ClientOnly>

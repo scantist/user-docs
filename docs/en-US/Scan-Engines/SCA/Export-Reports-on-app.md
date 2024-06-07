@@ -1,10 +1,11 @@
 ---
-title: Export Reports on
+title: Export Reports # {{companyConfig.APP_NAME}}
 author: Shamala Mani Vannan, Jackie Tan
 page: true
 lang: en-US
 tags: SBOM, report, format, spdx, cyclonedx, swid, json, xml, csv, pdf, docx
 description: This document explains how to export reports
+
 ---
 
 <script setup>
@@ -13,7 +14,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 <ClientOnly>
 
-# {{ $frontmatter.title }} {{companyConfig.APP_NAME}}
+# {{ $frontmatter.title }} 
 
 > You can generate {{companyConfig.APP_NAME}} report and SBOM report to understand the components that are used in an application and to identify any potential vulnerabilities or compliance
 
@@ -39,6 +40,8 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 - **SWID**
 
+- **CSAF VEX**
+
 :::tip **Define SBOM Formats**
 
 **SPDX (Software Package Data Exchange)**
@@ -59,6 +62,10 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 - SWID tags are XML files that contain information about the software components, such as library name, version and vendor, as well as associated metadata, such as license information and security vulnerabilities
 
+**CSAF VEX (Common Security Advisory Framework)**
+
+- A standard used to disclose security vulnerabilities in a machine-readeable format that allows software and hardware producers to automate vulnerability assessment.
+
 :::
 
 ## Follow these steps to generate and export reports
@@ -69,7 +76,7 @@ import { companyConfig } from '../../../../config/companyConfig.js'
 
 2. In the pop-up window, select the files you want to export (you may select more than one)
 
-<img src="/images/Application-Security-Testing-Solution/SCA/Export-Reports-on-app-2.png" alt="Select the files to export" style="width:380px; display: block; margin: 0 auto">
+<img src="/images/Application-Security-Testing-Solution/SCA/export-report.png" alt="Select the files to export" style="width:380px; display: block; margin: 0 auto">
 
 3. Click on the "Generate" button
 

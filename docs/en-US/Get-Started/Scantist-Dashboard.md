@@ -25,10 +25,10 @@ import { companyConfig } from '../../../config/companyConfig.js'
 <hr class="thick" />
 
   <div style="flex: 1;">
-    <img src="/images/Scantist-Dashboard/latest_vulnerability_alert.png" />
+    <img src="/images/Scantist-Dashboard/latest_vulnerability_alert2.png" />
   </div>
 
-The latest vulnerability alert card shows the newest scanned vulnerability result in your project.
+After Scantist updates the database to get the latest vulnerabilities, Latest Vulnerabilities Alert Card will show the new vulnerabilities that are affecting your current projects.
 
 ## Compliance Card
 
@@ -38,11 +38,7 @@ The latest vulnerability alert card shows the newest scanned vulnerability resul
     <img src="/images/Scantist-Dashboard/compliance.png" />
   </div>
 
-The compliance card shows the general compliance rules used for every scan. By default, there are 3 deny rules, 2 approve rules and 1 flag rule as shown below.
-
-  <div style="flex: 1;">
-    <img src="/images/Scantist-Dashboard/compliance_2.png" />
-  </div>
+The compliance card shows the total number of rules that match with the individual vulnerabilities of the scan results.
 
 ## SCA Card
 

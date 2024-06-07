@@ -1,3 +1,5 @@
+<!--@include: ./whats-next.md-->
+
 ## What's next?
 
 <hr class="thick" />

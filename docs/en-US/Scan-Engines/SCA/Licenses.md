@@ -27,7 +27,7 @@ Scantist classifies open source licenses as permissive, neutral and restrictive.
 
 To understand the rights and obligations associated with each license, you can filter the license bar accordingly.
 
-<img src="/images/SCA/SCA-Licenses-1.png" />
+<img src="/images/SCA/license.png" />
 <ol>
     <li>Navigate to the "License Type" search bar</li>
     <li>Select the type of the license</li>
