@@ -1,17 +1,12 @@
-import { defineConfig, loadEnv } from "vitepress";
-import { enUSSidebar, zhCNSidebar } from "./others/sidebar";
+import { defineConfig } from "vitepress";
+import { enUSSidebar, zhCNSidebar } from "./others/sidebar.js";
 import { companyConfig } from "../../config/companyConfig.js";
-// https://vitepress.dev/reference/site-config
 
-const env = loadEnv("", process.cwd());
-console.log("loading...", env, process.cwd());
+// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: companyConfig.USER_DOCS_TITLE,
-  // head: ['script', {}, fs.readFileSync(path.resolve(__dirname, 'lang.js'), 'utf-8')],
-  // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  head: [],
+  title: "User Docs",
+  description: "User Docs for DevSecOps Platform",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: `/images/${companyConfig.COMPANY_LOGO}`,
     nav: [],
     i18nRouting: true,
@@ -40,5 +35,5 @@ export default defineConfig({
     },
   },
   lastUpdated: true,
-  ignoreDeadLinks: true,
+  ignoreDeadLinks: ["./Sign-up-for-%7B%7BcompanyConfig.APP_NAME%7D%7D"],
 });
