@@ -25,19 +25,19 @@ features:
 
   - title: Build-based Scan - CI/CD Pipeline
     details: Explore the possibilities of automating the entire software development lifecycle, from building, testing, and, deployment to production.
-    link: en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/
+    link: en-US/Scan-Triggers/Build-based-Scan-CICD-Pipeline/
 
   - title: Trigger Scan via Scantist UI
     details: Explore what's next after creating a project in Scantist
-    link: en-US/Plugins-and-Integrations/Trigger-Scan-via-UI/
+    link: en-US/Scan-Triggers/Trigger-Scan-via-UI/
 
   - title: Compliance Policy Rules
     details: Learn how to ensure compliance with organizational and industry standards with policy rules now
-    link: en-US/Management-and-Settings/Compliance-Policy-Rules/
+    link: en-US/Settings/Compliance-Policy-Rules/
 
   - title: Access Tokens
     details: Learn how to generate access tokens for your build-based scans.
-    link: en-US/Management-and-Settings/Access-Tokens
+    link: en-US/Settings/Access-Tokens
 ---
 
 <!-- <script setup>
