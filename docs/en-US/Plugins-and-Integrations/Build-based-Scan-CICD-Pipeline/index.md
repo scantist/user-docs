@@ -62,7 +62,11 @@ By integrating {{companyConfig.APP_NAME}} with your CI/CD system, you can automa
             <td><img class="ci_logo" src="/images/Build-based-Scan-CICD-Pipeline/travis.svg" /></td>
         </tr>
         <tr>
-            <td>Gitlab CI</td>
+            <td>
+                <a href="https://gitlab.com/users/sign_in">
+                    Gitlab CI
+                </a>
+            </td>
             <td>Jenkins</td>
             <td>Travis</td>
         </tr>
