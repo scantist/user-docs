@@ -3,7 +3,7 @@ library 'jenkins-shared-lib@main'
 pipeline {
     agent {
         docker {
-            image 'swr.ap-southeast-3.myhuaweicloud.com/scantist-images/frontend-build:v1.1.1'
+            image 'swr.ap-southeast-3.myhuaweicloud.com/scantist-images/frontend-build:v1.2.0'
             registryUrl 'https://swr.ap-southeast-3.myhuaweicloud.com'
             registryCredentialsId 'hwc-swr-cred'
             args '-u root:root -v /var/run/docker.sock:/var/run/docker.sock'
