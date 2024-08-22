@@ -193,6 +193,10 @@ export function enUSSidebar() {
               link: "/en-US/Scan-Engines/SCA/Remediation",
             },
             {
+              text: `AI Remediation`,
+              link: "/en-US/Scan-Engines/SCA/AI-Remediation",
+            },
+            {
               text: "Licenses",
               link: "/en-US/Scan-Engines/SCA/Licenses",
             },
