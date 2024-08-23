@@ -47,12 +47,7 @@
     #129A97 30%,
     #5bd4f5
   );
-
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #129A97 50%,
-    #5bd4f5 50%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #8cf9f6 50%, #6fdffd 50%);
   --vp-home-hero-image-filter: blur(40px);
 }
 
@@ -82,6 +77,11 @@
   --vp-custom-block-tip-border: var(--vp-c-brand);
   --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
   --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #129A97 50%,
+    #3f9fb9 50%
+  );
 }
 
 /**
@@ -129,12 +129,11 @@
 }
 
 div.VPNavBarTitle > a.title {
-  font-family: 'GoodTime', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 22px;
 }
 
 a.title > img.logo {
-  margin-top: -10px;
   height: 40px;
 }
 

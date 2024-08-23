@@ -4,38 +4,47 @@ layout: home
 
 hero:
   name: "Scantist Toolchain"
-  text: "Secure. Continuous. The AI driven DevSecOps platform you need."
+  text: "The AI driven DevSecOps Platform."
   tagline: Scan and remediate security, licensing and compliance risks across your software development lifecycle.
+  image:
+    src: /images/companyLogo.svg
+    alt: Scantist
   actions:
-     - theme: brand
-       text: Documentation
-       link: en-US/Get-Started/
+    - theme: brand
+      text: Documentation
+      link: en-US/Get-Started/
   #   - theme: alt
   #     text: API Examples
   #     link: /api-examples
 
 features:
-  - title: Language and File Support
+  - icon: 📦
+    title: Language and File Support
     details: You can work with a wide range of programming languages, along with their corresponding package managers and binary file formats. Each language may have unique file extensions associated with their specific package manager of the manifest files.
     link: en-US/Language-and-File-Support/
 
-  - title: SCM Integration
+  - icon: 🛠️
+    title: SCM Integration
     details: Do you have repositories in more than one Source Control Management (SCM) account? You can now connect to multiple SCM platforms.
     link: en-US/Get-Started/SCM-Integration
 
-  - title: Build-based Scan - CI/CD Pipeline
+  - icon: 🚀
+    title: Build-based Scan - CI/CD Pipeline
     details: Explore the possibilities of automating the entire software development lifecycle, from building, testing, and, deployment to production.
     link: en-US/Plugins-and-Integrations/Build-based-Scan-CICD-Pipeline/
 
-  - title: Trigger Scan via Scantist UI
+  - icon: 💻
+    title: Trigger Scan via Scantist UI
     details: Explore what's next after creating a project in Scantist
     link: en-US/Plugins-and-Integrations/Trigger-Scan-via-UI/
 
-  - title: Compliance Policy Rules
+  - icon: ⚖️
+    title: Compliance Policy Rules
     details: Learn how to ensure compliance with organizational and industry standards with policy rules now
     link: en-US/Management-and-Settings/Compliance-Policy-Rules/
 
-  - title: Access Tokens
+  - icon: 🔑
+    title: Access Tokens
     details: Learn how to generate access tokens for your build-based scans.
     link: en-US/Management-and-Settings/Access-Tokens
 ---
