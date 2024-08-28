@@ -391,6 +391,10 @@ export function enUSSidebar() {
           text: `SSO (LDAP, OIDC, KeyCloak)`,
           link: "/en-US/Plugins-and-Integrations/SSO-LDAP-OIDC-KeyCloak",
         },
+        {
+          text: `AI Agent`,
+          link: "/en-US/Plugins-and-Integrations/AI-Agent",
+        },
       ]
     },
     // {

@@ -21,6 +21,14 @@ const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.i
 
 [[toc]]
 
+## Install Windows Terminal
+
+*Only for Windows Users* 
+
+Windows Terminal is a modern host application for the command-line shells like Command Prompt, PowerShell, and bash (via Windows Subsystem for Linux (WSL)). Its main features include multiple tabs, panes, Unicode and UTF-8 character support, a GPU accelerated text rendering engine, and the ability to create your own themes and customize text, colors, backgrounds, and shortcuts.
+
+<a href="https://learn.microsoft.com/en-us/windows/terminal/" target="_blank">Windows Terminal</a>
+
 ## Download SCA BOM Detect
 
 Click on the link below to download the SCA Bom Detect
