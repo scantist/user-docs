@@ -21,13 +21,32 @@ const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.i
 
 [[toc]]
 
-## Install Windows Terminal
+## Windows UTF-8 support
 
-*Only for Windows Users* 
+*Only for Windows Users*
 
-Windows Terminal is a modern host application for the command-line shells like Command Prompt, PowerShell, and bash (via Windows Subsystem for Linux (WSL)). Its main features include multiple tabs, panes, Unicode and UTF-8 character support, a GPU accelerated text rendering engine, and the ability to create your own themes and customize text, colors, backgrounds, and shortcuts.
+Example of error
+```shell
+Error: Unable to get Charset 'cp65001' for property 'sun.stdout.encoding', using default windows latin and continuing
+```
 
-<a href="https://learn.microsoft.com/en-us/windows/terminal/" target="_blank">Windows Terminal</a>
+This solution shows how to switch the character encoding in Windows consoles (terminals) to (BOM-less) UTF-8 system-wide (code page 65001), so that shells such as cmd.exe and PowerShell properly encode and decode characters (text) when communicating with external (console) programs with full Unicode support, and in cmd.exe also for file I/O.
+
+Solution steps:
+
+1) Open run command - Windows Key + R
+
+2) Run 'intl.cpl'
+  <div style="flex: 1;">
+    <img src="/images/References/winr_command.png" />
+  </div>
+
+3) Follow the instructions in the screen shot below.
+  <div style="flex: 1;">
+    <img src="/images/References/winr_instruction1.png" />
+  </div>
+
+<a href="https://stackoverflow.com/questions/57131654/using-utf-8-encoding-chcp-65001-in-command-prompt-windows-powershell-window" target="_blank">Reference Link</a>
 
 ## Download SCA BOM Detect
 
