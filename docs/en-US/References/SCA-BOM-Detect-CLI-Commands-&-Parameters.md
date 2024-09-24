@@ -10,7 +10,7 @@ description: This document lists out all SCA BOM Detect's commands and parameter
 <script setup>
 import { companyConfig } from '../../../config/companyConfig.js'
 const baseUrl = window.location.origin;
-const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.io/sca-bom-detect-v4.5.jar" : `${baseUrl}/sca-bom-detect-v4.5.jar`;
+const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.io/sca-bom-detect.jar" : `${baseUrl}/sca-bom-detect.jar`;
 </script>
 
 <ClientOnly>
@@ -52,7 +52,7 @@ Solution steps:
 
 Click on the link below to download the SCA Bom Detect
 
-<a :href="`${downloadLink}`" target="_blank">sca-bom-detect-v4.5.jar</a>
+<a :href="`${downloadLink}`" target="_blank">sca-bom-detect.jar</a>
 
 ## Basic Commands
 
@@ -63,7 +63,7 @@ Click on the link below to download the SCA Bom Detect
     </thead>
     <tbody>
         <tr>
-            <td><code>java -jar sca-bom-detect-v4.5.jar</code></td>
+            <td><code>java -jar sca-bom-detect.jar</code></td>
             <td>Triggers the detector (JAR file) using default parameters values.</td>
         </tr>
     </tbody>
@@ -79,43 +79,67 @@ Click on the link below to download the SCA Bom Detect
     <tbody>
         <tr>
             <td><code>-h</code></td>
-            <td>Display help messages, which shows all commands and their respective description</td>
+            <td>Displays help information and usage instructions.</td>
+        </tr>
+        <tr>
+            <td><code>-v</code></td>
+            <td>Displays the version of the SCA BOM Detect tool.</td>
         </tr>
     </tbody>
 </table>
 
 ## Authentication Methods
 
-There is 1 method for SCA BOM Detect to authenticate the user:
+SCA BOM Detect uses environment variables for user authentication. Currently, there's only one supported method:
 
 - Authentication through <b>DEVSECOPS_TOKEN</b> and <b>DEVSECOPS_IMPORT_URL</b> environment variable
 
-### Authentication through DEVSECOPS_TOKEN
+### Steps to authenticate
 
-Additional steps are required to retrieve a personal DEVSECOPS_TOKEN from the logged in account. *This token is tied to individual accounts, and cannot be shared.
+1. Login to Scantist: <a href="https://www.app.scantist.io" target="_blank">Scantist</a>
 
-1. Log in to Scantist account, and open developer tools. (Note: This can be done by right clicking on the screen, and select inspect)
+2. Click on "Organization" on the left-hand side menu.
 
-2. Under 'Application' tab, Select 'local storage' and then 'https://app.scantist.io'. There will be a key called access_token. Select that and copy the value out. An example with steps is shown below.
+3. Go to the "Access Tokens" tab.
+
+4. Click "Create New Token," provide a name, and generate the token.
+
+5. Copy the generated token. Note: You cannot view the token again after saving it.
 
   <div style="flex: 1;">
-    <img src="/images/References/api-key1.png" />
+    <img src="/images/References/api-key2.png" />
   </div>
 
-3. Note: Scantist BOM detect requires Java to be installed in your environment first before it can be executed.
+<b>Prerequisites:</b>
+
+-   Scantist BOM detect requires Java to be installed in your environment first before it can be executed.
+
+<b>Authentication:</b>
+
+1. Set the DEVSECOPS_TOKEN environment variable with the copied token from step 5 above.
+
+2. Set the SERVERURL environment variable with the Scantist API endpoint URL (https://api-app.scantist.io/).
+
+- <b>Export your authentication token and server URL:</b>
 
 ```shell
-export DEVSECOPS_TOKEN="KEY-FROM_STEP-3"
+export DEVSECOPS_TOKEN="YOUR_GENERATED_TOKEN"
 export SERVERURL="https://api-app.scantist.io/"
+```
+
+- <b>Run the SCA BOM Detect JAR with authentication</b>
+
+```shell
 java -jar sca-bom-detect.jar --auth -serverUrl $SERVERURL -apiKey $DEVSECOPS_TOKEN
 ```
 
+### Additional Commands
 ##### List projects
 
 Display list of projects that have been scanned. Be sure to login to server first.
 
 ```shell
-java -jar sca-bom-detect-v4.5.jar --cliScan --list_projects
+java -jar sca-bom-detect.jar --cliScan --list_projects
 ```
 
 ##### Create a new project
@@ -123,7 +147,7 @@ java -jar sca-bom-detect-v4.5.jar --cliScan --list_projects
 Create a project with given project name.
 
 ```shell
-java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name>
+java -jar sca-bom-detect.jar --cliScan -project_name <project_name>
 ```
 
 ##### Create a new version and upload source code
@@ -131,7 +155,7 @@ java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name>
 Create a project with given project name, project version and file path to project.
 
 ```shell
-java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
+java -jar sca-bom-detect.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
 ```
 
 ##### Trigger Scan
@@ -139,15 +163,29 @@ java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name> -projec
 Trigger a scan on an existing project name, version and file path. If it does not exist, it will be created.
 
 ```shell
-java -jar sca-bom-detect-v4.5.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
+java -jar sca-bom-detect.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
 ```
+
+##### Report
+
+Include the parameters below to download the report post scan:
+
+```shell
+java -jar sca-bom-detect.jar -f <filePath> -report_format xml -checkCompliance
+```
+
+<b>Report Formats</b>
+
+  <div style="flex: 1;">
+    <img src="/images/References/export-report1.png" />
+  </div>
 
 ##### Logout
 
 Log out of the current account. Always log out first to log in to another account.
 
 ```shell
-java -jar sca-bom-detect-v4.5.jar --logout
+java -jar sca-bom-detect.jar --logout
 ```
 
 </ClientOnly>
