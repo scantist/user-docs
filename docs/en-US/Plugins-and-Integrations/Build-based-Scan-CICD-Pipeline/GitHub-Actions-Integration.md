@@ -59,13 +59,13 @@ jobs:
   test:
     steps:
       - name: Download SCA-Bom-Detect
-        run: curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
+        run: curl -s https://download.scantist.io/sca-bom-detect.jar --output sca-bom-detect.jar
 
       - name: Upload file
         env: # Setting the Token
           DEVSECOPS_TOKEN: ${{secrets.DEVSECOPS_TOKEN }}
-          DEVSECOPS_IMPORT_URL : "https://api-app.scantist.io/v2/scans/ci-scan/"
-        run: java -jar sca-bom-detect-v4.5.jar
+          DEVSECOPS_IMPORT_URL: "https://api-app.scantist.io/v2/scans/ci-scan/"
+        run: java -jar sca-bom-detect.jar
 ```
 
 This command will download and execute SCA BOM Detector to scan after the build. After the successful build, the third-party component information of your project will be pushed to {{companyConfig.APP_NAME}}.
