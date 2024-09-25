@@ -44,14 +44,16 @@ Once you have copied your access token, navigate back to Gitlab CI.
    ![Variables > Expand](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.2.png)
 
 3. Click on the `Add Variable` button. In the pop-up box,
-    - Set the `Key` as `SCANTISTTOKEN`
-    - Paste your access token under `Value`
-    - Check the option `Mask variable`
-    - Complete the process by clicking on the `Add Variable` button
+
+   - Set the `Key` as `SCANTISTTOKEN`
+   - Paste your access token under `Value`
+   - Check the option `Mask variable`
+   - Complete the process by clicking on the `Add Variable` button
 
    ![Add variable](/images/Build-based-Scan-CICD-Pipeline/gitlab/step2.3.png)
 
    Click on the `Add Variable` button again. In the pop-up box,
+
    - Set the `Key` as `SCANTIST_IMPORT_URL`
    - Set the `Value` as `https://api-v4staging.scantist.io/v2/scans/ci-scan/` (for V4 staging environment) or `https://gcc.scantist.io/v2/scans/ci-scan/` (for GCC environment)
    - Check the option `Mask variable`
@@ -64,8 +66,8 @@ Assuming that your code is hosted on Gitlab, the final step you will need to do 
 ```yaml
 job:
   script:
-    - curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
-    - java -jar sca-bom-detect-v4.5.jar
+    - curl -s https://download.scantist.io/sca-bom-detect.jar --output sca-bom-detect.jar
+    - java -jar sca-bom-detect.jar
 ```
 
 Once the command has been added to your `.gitlab-ci.yml` file, Gitlab CI will trigger a new build automatically and push the 3rd party component information of your project to {{companyConfig.APP_NAME}} SCA after the successful build.
@@ -82,8 +84,8 @@ build-job:
     - apt-get update && apt-get install -y nodejs npm default-jdk
     - cd api
     - npm install
-    - curl -s https://download.scantist.io/sca-bom-detect-v4.5.jar --output sca-bom-detect-v4.5.jar
-    - java -jar sca-bom-detect-v4.5.jar
+    - curl -s https://download.scantist.io/sca-bom-detect.jar --output sca-bom-detect.jar
+    - java -jar sca-bom-detect.jar
 ```
 
 <img src="" />

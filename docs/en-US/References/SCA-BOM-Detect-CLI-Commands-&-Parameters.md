@@ -23,9 +23,10 @@ const downloadLink = baseUrl.includes('scantist') ? "https://download.scantist.i
 
 ## Windows UTF-8 support
 
-*Only for Windows Users*
+_Only for Windows Users_
 
 Example of error
+
 ```shell
 Error: Unable to get Charset 'cp65001' for property 'sun.stdout.encoding', using default windows latin and continuing
 ```
@@ -34,17 +35,17 @@ This solution shows how to switch the character encoding in Windows consoles (te
 
 Solution steps:
 
-1) Open run command - Windows Key + R
+1. Open run command - Windows Key + R
 
-2) Run 'intl.cpl'
-  <div style="flex: 1;">
-    <img src="/images/References/winr_command.png" />
-  </div>
+2. Run 'intl.cpl'
+<div style="flex: 1;">
+  <img src="/images/References/winr_command.png" />
+</div>
 
-3) Follow the instructions in the screen shot below.
-  <div style="flex: 1;">
-    <img src="/images/References/winr_instruction1.png" />
-  </div>
+3. Follow the instructions in the screen shot below.
+<div style="flex: 1;">
+  <img src="/images/References/winr_instruction1.png" />
+</div>
 
 <a href="https://stackoverflow.com/questions/57131654/using-utf-8-encoding-chcp-65001-in-command-prompt-windows-powershell-window" target="_blank">Reference Link</a>
 
@@ -112,7 +113,7 @@ SCA BOM Detect uses environment variables for user authentication. Currently, th
 
 <b>Prerequisites:</b>
 
--   Scantist BOM detect requires Java to be installed in your environment first before it can be executed.
+- Scantist BOM detect requires Java to be installed in your environment first before it can be executed.
 
 <b>Authentication:</b>
 
@@ -134,6 +135,7 @@ java -jar sca-bom-detect.jar --auth -serverUrl $SERVERURL -apiKey $DEVSECOPS_TOK
 ```
 
 ### Additional Commands
+
 ##### List projects
 
 Display list of projects that have been scanned. Be sure to login to server first.
@@ -189,7 +191,6 @@ java -jar sca-bom-detect.jar --logout
 ```
 
 </ClientOnly>
-
 
 <!-- ### Option: Authentication through Username and Password
 
@@ -261,7 +262,7 @@ Log in to {{companyConfig.APP_NAME}}'s server.
 export USERNAME="your_username"
 export PASSWORD="your_password"
 export SERVERURL="https://api-v4staging.scantist.io/v2/scans/ci-scan/"
-java -jar sca-bom-detect-v4.5.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
+java -jar sca-bom-detect.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
 ```
 
 (For GCC environment)
@@ -269,5 +270,5 @@ java -jar sca-bom-detect-v4.5.jar --auth -serverUrl $SERVERURL -username $USERNA
 export USERNAME="your_username"
 export PASSWORD="your_password"
 export SERVERURL="https://gcc.scantist.io/v2/scans/ci-scan/"
-java -jar sca-bom-detect-v4.5.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
+java -jar sca-bom-detect.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
 ``` -->
