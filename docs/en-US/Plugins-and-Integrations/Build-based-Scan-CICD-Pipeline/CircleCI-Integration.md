@@ -1,6 +1,6 @@
 ---
 title: CircleCI Integration
-author: Shamala Mani Vannan, Jackie Tan
+author: Shamala Mani Vannan, Jackie Tan, Zeng Feifan
 page: true
 lang: en-US
 tags: ci, circleci, continuous integration
@@ -41,11 +41,11 @@ Navigate to your project's settings page on CircleCI and click on the `Environme
 
 <img src="/images/Build-based-Scan-CICD-Pipeline/circleci/step2.1.png" />
 
-Add a new variable named `SCANTISTTOKEN` with the value of the access token you obtained in Step 1.
+Add a new variable named `DEVSECOPS_TOKEN` with the value of the access token you obtained in Step 1.
 <img src="/images/Build-based-Scan-CICD-Pipeline/circleci/step2.2.png" />
 
 :::tip
-Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
+Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `DEVSECOPS_IMPORT_URL` environment variable similarly.
 :::
 
 <li>Modify config.yml on your repository</li>

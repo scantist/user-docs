@@ -1,6 +1,6 @@
 ---
 title: Eclipse
-author: Shamala Mani Vannan, Jackie Tan
+author: Shamala Mani Vannan, Jackie Tan, Zeng Feifan
 page: true
 lang: en-US
 tags: settings, eclipse, integration
@@ -47,8 +47,7 @@ To enable Eclipse integration, follow these steps:
     </li>
     <li>Under the <b>Environment</b> tab, click <b>Add...</b> and enter the following <b>Name-Value</b> pairs accordingly:
       <ul>
-        <li>{{companyConfig.SCANTIST_IMPORT_URL}}: <br /><code>https://api-v4staging.scantist.io/v2/scans/ci-scan/</code> (for V4 staging environment)
-        <br /><code>https://gcc.scantist.io/v2/scans/ci-scan/</code> (for GCC environment)</li>
+        <li>{{companyConfig.DEVSECOPS_IMPORT_URL}}: <br /><code>https://api-app.scantist.io/v2/scans/ci-scan/</code></li>
         <li>{{companyConfig.SCANTIST_TOKEN}}: &lt;The token you copied in Step 1&gt;</li>
       </ul>
     </li>
