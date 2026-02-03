@@ -1,6 +1,6 @@
 ---
 title: Travis CI Integration
-author: Shamala Mani Vannan, Jackie Tan
+author: Shamala Mani Vannan, Jackie Tan, Zeng Feifan
 page: true
 lang: en-US
 tags: ci, travis, continuous integration
@@ -36,12 +36,12 @@ You will need to <a href="../../Management-and-Settings/Access-Tokens">create an
 
 <li>Setup Environmental Variables on Travis</li>
 
-Navigate to your project's settings page on Travis and click on the `Environment Variables` tab. Add a new variable named `SCANTISTTOKEN` with the value of the access token you obtained in Step 1.
+Navigate to your project's settings page on Travis and click on the `Environment Variables` tab. Add a new variable named `DEVSECOPS_TOKEN` with the value of the access token you obtained in Step 1.
 
 <img src="/images/Build-based-Scan-CICD-Pipeline/travis/step2.1.png" />
 
 :::tip
-Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `SCANTIST_IMPORT_URL` environment variable similarly.
+Note: If you are using a dedicated {{companyConfig.APP_NAME}} deployment, you might need to set the `DEVSECOPS_IMPORT_URL` environment variable similarly.
 :::
 
 <li>Add .travis.yml on your repository</li>

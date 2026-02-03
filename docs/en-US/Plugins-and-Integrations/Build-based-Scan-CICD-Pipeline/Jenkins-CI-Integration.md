@@ -1,6 +1,6 @@
 ---
 title: Jenkins CI Integration
-author: Shamala Mani Vannan, Jackie Tan
+author: Shamala Mani Vannan, Jackie Tan, Zeng Feifan
 page: true
 lang: en-US
 tags: ci, jenkins, continuous integration
@@ -121,13 +121,13 @@ Click on the `Environment Variables` tab and add the below two variables.
       </thead>
       <tbody>
           <tr>
-              <td>SCANTISTTOKEN</td>
+              <td>DEVSECOPS_TOKEN</td>
               <td>token_you_copied</td>
               <td>Mandatory</td>
           </tr>
           <tr>
-              <td>SCANTIST_IMPORT_URL</td>
-              <td>https://api-v4staging.scantist.io/v2/scans/ci-scan/ (For V4 staging environment) or https://gcc.scantist.io/v2/scans/ci-scan/ (For GCC environment)</td>
+              <td>DEVSECOPS_IMPORT_URL</td>
+              <td>https://api-app.scantist.io/v2/scans/ci-scan/</td>
               <td>Mandatory</td>
           </tr>
       </tbody>

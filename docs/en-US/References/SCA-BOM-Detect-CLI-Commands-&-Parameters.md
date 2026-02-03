@@ -1,6 +1,6 @@
 ---
 title: SCA BOM Detect CLI Commands & Parameters
-author: Shamala Mani Vannan, Jackie Tan
+author: Shamala Mani Vannan, Jackie Tan, Zeng Feifan
 page: true
 lang: en-US
 tags: SCA bom detect, cli, commands, parameters
@@ -65,7 +65,7 @@ Click on the link below to download the SCA Bom Detect
     <tbody>
         <tr>
             <td><code>java -jar sca-bom-detect.jar</code></td>
-            <td>Triggers the detector (JAR file) using default parameters values.</td>
+            <td>Triggers the detector (JAR file) using default parameters values. It will start to scan the current directory.</td>
         </tr>
     </tbody>
 </table>
@@ -97,7 +97,7 @@ SCA BOM Detect uses environment variables for user authentication. Currently, th
 
 ### Steps to authenticate
 
-1. Login to Scantist: <a href="https://www.app.scantist.io" target="_blank">Scantist</a>
+1. Login to Scantist: <a href="https://app.scantist.io" target="_blank">Scantist</a>
 
 2. Click on "Organization" on the left-hand side menu.
 
@@ -125,47 +125,39 @@ SCA BOM Detect uses environment variables for user authentication. Currently, th
 
 ```shell
 export DEVSECOPS_TOKEN="YOUR_GENERATED_TOKEN"
-export SERVERURL="https://api-app.scantist.io/"
+export DEVSECOPS_IMPORT_URL="https://api-app.scantist.io/v2/scans/ci-scan/"
 ```
 
 - <b>Run the SCA BOM Detect JAR with authentication</b>
 
 ```shell
-java -jar sca-bom-detect.jar --auth -serverUrl $SERVERURL -apiKey $DEVSECOPS_TOKEN
+java -jar sca-bom-detect.jar
 ```
 
 ### Additional Commands
 
-##### List projects
+##### Debug Mode
 
-Display list of projects that have been scanned. Be sure to login to server first.
+Export debug level log to file devsecops_report.log in current directory
 
 ```shell
-java -jar sca-bom-detect.jar --cliScan --list_projects
+java -jar sca-bom-detect.jar --debug
 ```
 
-##### Create a new project
+##### Airgap Mode
 
-Create a project with given project name.
+To run in offline mode, assume no internet access is available and project is not built in the running environment, results will be limited.
 
 ```shell
-java -jar sca-bom-detect.jar --cliScan -project_name <project_name>
+java -jar sca-bom-detect.jar -airgap
 ```
 
 ##### Create a new version and upload source code
 
-Create a project with given project name, project version and file path to project.
+Scan the targetted directory with given project name and version.
 
 ```shell
-java -jar sca-bom-detect.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
-```
-
-##### Trigger Scan
-
-Trigger a scan on an existing project name, version and file path. If it does not exist, it will be created.
-
-```shell
-java -jar sca-bom-detect.jar --cliScan -project_name <project_name> -project_version <version_name> -file <filePath>
+java -jar sca-bom-detect.jar -project_name <project_name> -project_version <version_name> -working_dir <filePath>
 ```
 
 ##### Report
@@ -173,7 +165,7 @@ java -jar sca-bom-detect.jar --cliScan -project_name <project_name> -project_ver
 Include the parameters below to download the report post scan:
 
 ```shell
-java -jar sca-bom-detect.jar -f <filePath> -report_format xml -checkCompliance
+java -jar sca-bom-detect.jar -report_format xml
 ```
 
 <b>Report Formats</b>
@@ -181,14 +173,6 @@ java -jar sca-bom-detect.jar -f <filePath> -report_format xml -checkCompliance
   <div style="flex: 1;">
     <img src="/images/References/export-report1.png" />
   </div>
-
-##### Logout
-
-Log out of the current account. Always log out first to log in to another account.
-
-```shell
-java -jar sca-bom-detect.jar --logout
-```
 
 </ClientOnly>
 
@@ -261,7 +245,7 @@ Log in to {{companyConfig.APP_NAME}}'s server.
 ```shell
 export USERNAME="your_username"
 export PASSWORD="your_password"
-export SERVERURL="https://api-v4staging.scantist.io/v2/scans/ci-scan/"
+export SERVERURL="https://api-app.scantist.io/v2/scans/ci-scan/"
 java -jar sca-bom-detect.jar --auth -serverUrl $SERVERURL -username $USERNAME -password $PASSWORD
 ```
 

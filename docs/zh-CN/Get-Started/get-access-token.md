@@ -24,4 +24,4 @@ To generate an access token for your {{companyConfig.APP_NAME}} account, follow 
 
 &#x20;
 
-This access token will be referred to later as **SCANTISTTOKEN**, so make a note of it for future reference. With your access token in hand, you can now proceed to scan your projects for vulnerabilities using {{companyConfig.APP_NAME}} SCA.
+This access token will be referred to later as **DEVSECOPS_TOKEN**, so make a note of it for future reference. With your access token in hand, you can now proceed to scan your projects for vulnerabilities using {{companyConfig.APP_NAME}} SCA.
